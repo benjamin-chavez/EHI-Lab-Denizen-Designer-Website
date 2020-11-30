@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>EHILabDenizenDesignerWebsite</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<head>
+  <title>EHI Lab Denizen Designer</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+</head>
+
+<body>
+
+
+  <%= yield %>
+</body>
+
 </html>
