@@ -19,7 +19,7 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
-import { createHistory as history } from "history";
+// import { createHistory as history } from "history";
 
 // Internal modules
 import AppDenizen from "./components/app_denizen";
@@ -69,7 +69,8 @@ const root = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}>
     {/* <AppDenizen /> */}
-    <Router history={history}>
+    {/* <Router history={history}> */}
+    <Router>
       {/* <div className='thin-container'> */}
       <div className=''>
         <Switch>
