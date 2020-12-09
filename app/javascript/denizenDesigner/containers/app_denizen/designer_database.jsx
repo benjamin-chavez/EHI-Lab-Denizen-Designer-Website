@@ -1,13 +1,22 @@
 import React, { Component } from "react";
-import ParticipantList from "./participant_list";
+import DesignersIndex from "./designers_index";
+import ParticipantsIndex from "./participants_index";
 
 class DesignerDatabase extends Component {
   render() {
     return (
-      <div>
+      <div className='container'>
         <div>
-          <h1>DesignerDatabase Page</h1>
-          <ParticipantList />
+          <ul className='designer-city-menu'>
+            <li className='designer-city-item selected'>ATL</li>
+            <li className='designer-city-item'>BST</li>
+            <li className='designer-city-item'>CHI</li>
+            <li className='designer-city-item'>DT</li>
+            <li className='designer-city-item'>ATL</li>
+            <li className='designer-city-item'>ATL</li>
+          </ul>
+          <DesignersIndex />
+          {/* <ParticipantList /> */}
         </div>
       </div>
     );

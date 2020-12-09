@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import ParticipantList from "./participant_list";
+import DesignersIndex from "./designers_index";
+// import DesignersIndex from "./participants_index";
 import ParticipantsIndex from "./participants_index";
 
 class Interviews extends Component {
@@ -7,9 +8,7 @@ class Interviews extends Component {
     return (
       <div className='container'>
         <div>
-          <h1>Interviews Page</h1>
           <ParticipantsIndex />
-          {/* <ParticipantList /> */}
         </div>
       </div>
     );

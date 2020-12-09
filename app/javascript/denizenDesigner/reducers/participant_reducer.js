@@ -4,7 +4,7 @@ import {
   FETCH_PARTICIPANT,
 } from "../actions";
 
-const participantsReducer = (state, action) => {
+const participantReducer = (state, action) => {
   // Compute and returen the new state
   if (state == undefined) {
     return [];
@@ -24,4 +24,4 @@ const participantsReducer = (state, action) => {
   }
 };
 
-export default participantsReducer;
+export default participantReducer;

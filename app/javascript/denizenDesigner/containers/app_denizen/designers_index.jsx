@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 
 import { fetchParticipants } from "../../actions";
 
-class ParticipantsIndex extends Component {
+class DesignersIndex extends Component {
   componentWillMount() {
     this.props.fetchParticipants();
   }
@@ -16,17 +16,21 @@ class ParticipantsIndex extends Component {
   renderParticipants() {
     return this.props.participants.map((participant) => {
       return (
-        <Link
-          to={`/denizendesigner/interviews/${participant.id}`}
-          key={participant.id}
-        >
-          <div className='card participant-item'>
-            <p>
-              {participant.first_name} {participant.last_name}
-            </p>
-            <p>{participant.designer_type}</p>
-          </div>
-        </Link>
+        <div>
+          <Row className='database-card'>
+            <Col>
+              <p className='card-text'>
+                {participant.first_name} {participant.last_name}
+              </p>
+            </Col>
+            <Col>
+              <p className='card-text'>{participant.designer_type}</p>
+            </Col>
+            <Col>
+              <p className='card-text'>Contact</p>
+            </Col>
+          </Row>
+        </div>
       );
     });
   }
@@ -34,11 +38,15 @@ class ParticipantsIndex extends Component {
   render() {
     return (
       <div>
-        <Row className='justify-content-center'>
-          <Col md='auto'>
-            <div className='participant-list'>{this.renderParticipants()}</div>
+        <Row>
+          <Col>
+            <p>Name</p>
           </Col>
+          <Col>Designer</Col>
+          <Col>Contact</Col>
         </Row>
+
+        <div className=''>{this.renderParticipants()}</div>
       </div>
     );
   }
@@ -54,4 +62,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchParticipants }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ParticipantsIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(DesignersIndex);

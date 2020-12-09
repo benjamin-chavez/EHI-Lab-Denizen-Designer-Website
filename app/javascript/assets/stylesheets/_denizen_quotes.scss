@@ -1,0 +1,23 @@
+.denizen-quote-card {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  /* black */
+
+  color: #2a2e33;
+}
+
+.quote-item {
+  margin: 10px;
+  width: 407px;
+  // height: 223px;
+  border-radius: 6px;
+}

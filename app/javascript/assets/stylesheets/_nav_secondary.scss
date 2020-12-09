@@ -1,6 +1,26 @@
 .Nav-Secondary {
   display: inline;
+  // border-bottom: 1px solid #bcc5d2;
+  border-bottom: 10px solid red;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.nav-secondaryy {
+  line-height: 19px;
+  display: flex;
+  justify-content: left; /* align horizontal */
+  align-items: center;
+}
+
+.nav-secondaryy > ul {
   // background-color: red;
+  display: flex;
+  justify-content: left; /* align horizontal */
+  align-items: center;
+  border-bottom: 1px solid #bcc5d2;
 }
 
 .List-Inline {
@@ -11,5 +31,10 @@
 .List-Inline > li {
   display: inline;
   margin: 10px;
+}
+
+.denizen-tab {
+  // color: #8593a8;
+  color: #45558e;
 }
 // Nav-Secondary,List-Inline

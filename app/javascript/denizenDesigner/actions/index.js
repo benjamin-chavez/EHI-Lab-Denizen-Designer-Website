@@ -7,6 +7,8 @@ export const DENIZEN_TAB_SELECTED = "DENIZEN_TAB_SELECTED";
 export const FETCH_PARTICIPANTS = "FETCH_PARTICIPANTS";
 export const FETCH_PARTICIPANT = "FETCH_PARTICIPANT";
 
+export const FETCH_QUOTES = "FETCH_QUOTES";
+
 export function setParticipants() {
   // switch this url to local route once in rails
   return fetch(`${ROOT_URL}`)
@@ -46,6 +48,17 @@ export function fetchParticipants() {
   const promise = fetch(`${ROOT_URL}`).then((response) => response.json());
   return {
     type: FETCH_PARTICIPANTS,
+    payload: promise,
+  };
+}
+
+// QUOTES
+export function fetchQuotes() {
+  const promise = fetch(
+    "https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json"
+  ).then((response) => response.json());
+  return {
+    type: FETCH_QUOTES,
     payload: promise,
   };
 }

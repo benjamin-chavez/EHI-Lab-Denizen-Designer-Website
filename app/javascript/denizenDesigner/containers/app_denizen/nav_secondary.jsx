@@ -3,6 +3,9 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { selectDenizenTab, setNavSecondaryz } from "../../actions";
 import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class NavSecondary extends Component {
   // componentWillReceiveProps(nextProps) {
@@ -23,6 +26,7 @@ class NavSecondary extends Component {
         role='presentation'
       >
         <Link
+          className='denizen-tab'
           to={`/denizendesigner/` + denizenTab.replace(/ /g, "").toLowerCase()}
         >
           {denizenTab}
@@ -33,12 +37,16 @@ class NavSecondary extends Component {
 
   render() {
     return (
-      <div className='col-sm-12 Nav-Secondary'>
-        <div>
-          <ul className='List-Inline'>
-            {this.props.denizenTabs.map(this.renderDenizenTab)}
-          </ul>
-        </div>
+      <div>
+        <Row>
+          <Col>
+            <div className='nav-secondaryy'>
+              <ul className='List-Inline'>
+                {this.props.denizenTabs.map(this.renderDenizenTab)}
+              </ul>
+            </div>
+          </Col>
+        </Row>
       </div>
     );
   }

@@ -1,22 +1,10 @@
-// import React from "react";
-
-// const AppDenizen = (props) => {
-//   return (
-//     <div>
-//       <p>test home page</p>
-//     </div>
-//   );
-// };
-
-// export default AppDenizen;
-
 import React from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import { createHistory as history } from "history";
 
 import NavSecondary from "../containers/app_denizen/nav_secondary";
-// import ParticipantList from "../containers/app_denizen/participant_list";
+
 import DenizenHome from "../components/app_denizen/denizen_home";
 import Interviews from "../containers/app_denizen/interviews";
 import Report from "../components/app_denizen/report";
@@ -30,9 +18,8 @@ import ParticipantsIndex from "../containers/app_denizen/participants_index";
 const AppDenizen = (props) => {
   return (
     <div>
-      <div className='row'>
-        <NavSecondary />
-      </div>
+      <NavSecondary />
+
       <Route path='/denizendesigner/home' component={DenizenHome} />
       <Route exact path='/denizendesigner/interviews' component={Interviews} />
       <Route exact path='/denizendesigner/report' component={Report} />
