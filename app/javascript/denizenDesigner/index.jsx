@@ -11,7 +11,7 @@ import {
   Switch,
 } from "react-router-dom";
 // import { useRouterHistory } from "react-router";
-import { createHistory as history } from "history";
+// import { createHistory as history } from "history";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -76,7 +76,8 @@ const root = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}>
     {/* <AppDenizen /> */}
-    <Router history={history}>
+    {/* <Router history={history}> */}
+    <Router>
       {/* <div className='thin-container'> */}
       <div>
         <Container>
