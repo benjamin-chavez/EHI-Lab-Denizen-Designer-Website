@@ -34,8 +34,8 @@ export class ParticipantsShow extends Component {
           </Row>
           <Row>
             <Col lg={4}>
-              <div className='img-container'>
-                <div className='participant-show-img'></div>
+              <div className='participant-show-img'>
+                <div></div>
               </div>
             </Col>
             <Col lg={8}>

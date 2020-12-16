@@ -20,11 +20,25 @@ class ParticipantsIndex extends Component {
           to={`/denizendesigner/interviews/${participant.id}`}
           key={participant.id}
         >
-          <div className='card participant-item'>
-            <p>
-              {participant.first_name} {participant.last_name}
-            </p>
-            <p>{participant.designer_type}</p>
+          <div className='participant-item'>
+            {/* removed card class from the prev line */}
+            <div className='participant-item-img'>
+              <Row>
+                <Col md='auto'>
+                  <span className='participant-item-name'>
+                    {participant.first_name} {participant.last_name}
+                  </span>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col md='auto'>
+                  <span className='participant-item-designer'>
+                    {participant.designer_type}
+                  </span>
+                </Col>
+              </Row>
+            </div>
           </div>
         </Link>
       );

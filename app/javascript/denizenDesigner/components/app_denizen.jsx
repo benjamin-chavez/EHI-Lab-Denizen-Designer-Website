@@ -7,7 +7,7 @@ import NavSecondary from "../containers/app_denizen/nav_secondary";
 
 import DenizenHome from "../components/app_denizen/denizen_home";
 import Interviews from "../containers/app_denizen/interviews";
-import Report from "../components/app_denizen/report";
+import Report from "../containers/app_denizen/report";
 import DesignerDatabase from "../containers/app_denizen/designer_database";
 import Quotes from "../containers/app_denizen/quotes";
 import Resources from "../components/app_denizen/resources";

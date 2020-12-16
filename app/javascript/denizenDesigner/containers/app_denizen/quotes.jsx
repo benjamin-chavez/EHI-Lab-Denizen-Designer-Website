@@ -4,10 +4,15 @@ import QuotesIndex from "./quotes_index";
 class Quotes extends Component {
   render() {
     return (
-      <div>
+      <div className='container'>
         <div>
-          <h1>Quotes Page</h1>
-          <p></p>
+          <ul className='quote-filter-menu'>
+            <li className='quote-filter-item selected'>
+              Made data meaningful for individuals
+            </li>
+            <li className='quote-filter-item'>Opportunity to advance</li>
+            <li className='quote-filter-item'>Co-design</li>
+          </ul>
           <QuotesIndex />
         </div>
       </div>

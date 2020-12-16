@@ -4,6 +4,7 @@ const ROOT_URL =
 export const SET_PARTICIPANTS = "SET_PARTICIPANTS";
 export const SET_NAV_SECONDARY = "SET_NAV_SECONDARY";
 export const DENIZEN_TAB_SELECTED = "DENIZEN_TAB_SELECTED";
+export const HOPD_TAB_SELECTED = "HOPD_TAB_SELECTED";
 export const FETCH_PARTICIPANTS = "FETCH_PARTICIPANTS";
 export const FETCH_PARTICIPANT = "FETCH_PARTICIPANT";
 
@@ -32,6 +33,12 @@ export function selectDenizenTab(denizenTab) {
   return {
     type: DENIZEN_TAB_SELECTED,
     payload: denizenTab,
+  };
+}
+export function selectHopdTab(hopdTab) {
+  return {
+    type: HOPD_TAB_SELECTED,
+    payload: hopdTab,
   };
 }
 

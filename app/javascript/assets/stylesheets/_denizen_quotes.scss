@@ -1,23 +1,83 @@
+.quote-filter-menu {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+.quote-filter-menu > li {
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153.4%;
+  align-items: center;
+  color: #6b7390;
+  cursor: pointer;
+}
+
+.quote-filter-item.selected {
+  color: #f0f0f0;
+  padding: 6px 18px;
+  background-color: #475ca7;
+  border-radius: 20px;
+}
+
+.quote-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
 .denizen-quote-card {
+  width: 340px;
+  margin: 10px;
+}
+
+.denizen-quote-body {
+  padding: 25px;
+
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
   /* or 27px */
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  background-color: #ffffff;
+  box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
+  border-radius: 6px;
+  width: 340px;
+  // min-height: 223px;
+}
 
+.denizen-quote-author {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.02em;
 
-  /* black */
+  /* secondary */
 
-  color: #2a2e33;
+  color: #5a6795;
+  margin: 14px 0px 0px 10px;
 }
 
 .quote-item {
-  margin: 10px;
-  width: 407px;
-  // height: 223px;
-  border-radius: 6px;
 }

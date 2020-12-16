@@ -3,6 +3,22 @@ body {
   background-color: #f1f3f8;
 }
 
+.List-Inline {
+  list-style: none;
+  padding: 0;
+}
+// @import "card";
+@import "nav_secondary";
+@import "nav_primary";
+@import "denizen_home";
+@import "denizen_quotes";
+@import "denizen_report";
+@import "denizen_resources";
+@import "landing_page";
+
+// IMPORT FONTS
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 // #root {
 //   height: 100vh;
 //   display: flex;
@@ -18,7 +34,6 @@ body {
 }
 
 .participant-item {
-  padding: 10px;
   flex: 50% 0 0;
   color: white;
   cursor: pointer;
@@ -27,6 +42,8 @@ body {
   width: 150px;
   height: 143px;
   border-radius: 6px;
+  padding: 10px;
+  border-radius: 6px;
   background: linear-gradient(
       180deg,
       rgba(196, 196, 196, 0) 0%,
@@ -36,13 +53,44 @@ body {
     #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: text-bottom;
+  position: relative;
 }
 
-.img-container {
-  box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
-  border-radius: 6px;
+.participant-item-img {
+  position: absolute;
+  bottom: 5%;
+  left: 4.03;
+}
+.participant-item-name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.participant-item-designer {
+  // color: salmon;
+  // vertical-align: text-bottom;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.participant-show-img {
   width: 303.06px;
   height: 260px;
+  box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
+  border-radius: 6px;
   background: linear-gradient(
       180deg,
       rgba(196, 196, 196, 0) 0%,
@@ -53,26 +101,19 @@ body {
   border-radius: 6px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   margin: auto;
   display: block;
   text-decoration: none !important;
 }
 
-.participant-show-img {
-}
+// . {
+// }
 
 .back-btn {
   background-color: #eaedf3 !important;
-  // display: flex !important;
-  // flex-direction: row !important;
-  // align-items: center !important;
-  // padding: 12px 29px;
   width: 102px !important;
   height: 40px !important;
-  // text-align: center;
-  // left: 320px;
-  // top: 143px;
-  // background: #eaedf3;
   border-radius: 29px !important;
 }
 
@@ -123,9 +164,3 @@ body {
 //   // justify-content: center; /* align horizontal */
 //   // align-items: center;
 // }
-
-// @import "card";
-@import "nav_secondary";
-@import "nav_primary";
-@import "denizen_home";
-@import "denizen_quotes";

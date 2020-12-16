@@ -11,7 +11,7 @@ import {
   Switch,
 } from "react-router-dom";
 // import { useRouterHistory } from "react-router";
-// import { createHistory as history } from "history";
+import { createHistory as history } from "history";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -24,11 +24,16 @@ import ParticipantsShow from "./containers/app_denizen/participants_show";
 // import ParticipantsShow from "./containers/app_denizen/participants_show";
 import NavPrimary from "./containers/app_denizen/nav_primary";
 import "../assets/stylesheets/application.scss";
+import LandingPage from "./components/landing_page";
+
+// Internal Modules | History of Participatory Design
+import AppHopd from "./components/app_hopd";
 
 // Reducers
 import navSecondaryReducer from "./reducers/nav_secondary_reducer";
 import participantReducer from "./reducers/participant_reducer";
 import selectedDenizenTabReducer from "./reducers/selected_denizen_tab_reducer";
+import selectedhopdTabReducer from "./reducers/selected_hopd_tab_reducer";
 import quoteReducer from "./reducers/quote_reducer";
 
 const identityReducer = (state = null) => state;
@@ -44,6 +49,7 @@ const initialState = {
     "Quotes",
     "Resources",
   ],
+  hopdTabs: ["Timeline", "Data Visualization", "Repository of Papers"],
   selectedDenizenTab: "home",
 };
 
@@ -52,6 +58,8 @@ const reducers = combineReducers({
   participants: participantReducer,
   denizenTabs: identityReducer,
   selectedDenizenTab: selectedDenizenTabReducer,
+  hopdTabs: identityReducer,
+  selectedhopdTab: selectedhopdTabReducer,
   quotes: quoteReducer,
 });
 
@@ -68,14 +76,16 @@ const root = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}>
     {/* <AppDenizen /> */}
-    {/* <Router history={history}> */}
-    <Router>
+    <Router history={history}>
       {/* <div className='thin-container'> */}
       <div>
         <Container>
           <NavPrimary />
+          {/* <LandingPage /> */}
 
           <Switch>
+            <Route path='/historyofparticipatorydesign' component={AppHopd} />
+
             <Route path='/denizendesigner' component={AppDenizen} />
             <Redirect exact from='/' to='/denizendesigner/home' />
           </Switch>
