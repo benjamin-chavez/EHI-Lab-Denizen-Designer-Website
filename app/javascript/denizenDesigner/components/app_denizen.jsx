@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import { createHistory as history } from "history";
 
-import NavSecondary from "../containers/app_denizen/nav_secondary";
+import NavSecondary from '../containers/app_denizen/nav_secondary';
+// import ParticipantList from "../containers/app_denizen/participant_list";
+import DenizenHome from '../components/app_denizen/denizen_home';
+import Interviews from '../containers/app_denizen/interviews';
+import Report from '../containers/app_denizen/report';
+import DesignerDatabase from '../containers/app_denizen/designer_database';
+import Quotes from '../containers/app_denizen/quotes';
+import Resources from '../components/app_denizen/resources';
 
-import DenizenHome from "../components/app_denizen/denizen_home";
-import Interviews from "../containers/app_denizen/interviews";
-import Report from "../containers/app_denizen/report";
-import DesignerDatabase from "../containers/app_denizen/designer_database";
-import Quotes from "../containers/app_denizen/quotes";
-import Resources from "../components/app_denizen/resources";
-
-import ParticipantsShow from "../containers/app_denizen/participants_show";
-import ParticipantsIndex from "../containers/app_denizen/participants_index";
+import ParticipantsShow from '../containers/app_denizen/participants_show';
+import ParticipantsIndex from '../containers/app_denizen/participants_index';
 
 const AppDenizen = (props) => {
   return (
@@ -24,7 +24,6 @@ const AppDenizen = (props) => {
       <Route exact path='/denizendesigner/interviews' component={Interviews} />
       <Route exact path='/denizendesigner/report' component={Report} />
       <Route
-        exact
         path='/denizendesigner/designerdatabase'
         component={DesignerDatabase}
       />

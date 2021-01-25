@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-import { selectHopdTab, setNavSecondaryz } from "../../actions";
-import { Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { selectHopdTab, setNavSecondaryz } from '../../actions';
+import { Link, NavLink } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class NavSecondary extends Component {
   handleClick = (hopdTab) => {
@@ -18,15 +18,15 @@ class NavSecondary extends Component {
         onClick={() => this.handleClick(hopdTab)}
         role='presentation'
       >
-        <Link
+        <NavLink
           className='denizen-tab'
           to={
             `/historyofparticipatorydesign/` +
-            hopdTab.replace(/ /g, "").toLowerCase()
+            hopdTab.replace(/ /g, '').toLowerCase()
           }
         >
           {hopdTab}
-        </Link>
+        </NavLink>
       </li>
     );
   };

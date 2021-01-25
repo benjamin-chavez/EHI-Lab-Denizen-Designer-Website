@@ -1,14 +1,14 @@
 const ROOT_URL =
-  "https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/participants.json";
+  'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/participants.json';
 
-export const SET_PARTICIPANTS = "SET_PARTICIPANTS";
-export const SET_NAV_SECONDARY = "SET_NAV_SECONDARY";
-export const DENIZEN_TAB_SELECTED = "DENIZEN_TAB_SELECTED";
-export const HOPD_TAB_SELECTED = "HOPD_TAB_SELECTED";
-export const FETCH_PARTICIPANTS = "FETCH_PARTICIPANTS";
-export const FETCH_PARTICIPANT = "FETCH_PARTICIPANT";
+export const SET_PARTICIPANTS = 'SET_PARTICIPANTS';
+export const SET_NAV_SECONDARY = 'SET_NAV_SECONDARY';
+export const DENIZEN_TAB_SELECTED = 'DENIZEN_TAB_SELECTED';
+export const HOPD_TAB_SELECTED = 'HOPD_TAB_SELECTED';
+export const FETCH_PARTICIPANTS = 'FETCH_PARTICIPANTS';
+export const FETCH_PARTICIPANT = 'FETCH_PARTICIPANT';
 
-export const FETCH_QUOTES = "FETCH_QUOTES";
+export const FETCH_QUOTES = 'FETCH_QUOTES';
 
 export function setParticipants() {
   // switch this url to local route once in rails
@@ -25,7 +25,7 @@ export function setParticipants() {
 export function setNavSecondary() {
   return {
     type: SET_NAV_SECONDARY,
-    payload: "???",
+    payload: '???',
   };
 }
 
@@ -62,10 +62,22 @@ export function fetchParticipants() {
 // QUOTES
 export function fetchQuotes() {
   const promise = fetch(
-    "https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json"
+    'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
   ).then((response) => response.json());
   return {
     type: FETCH_QUOTES,
     payload: promise,
   };
 }
+
+// export const fetchQuoteDetails = (id) => async (dispatch) => {
+//   try {
+//     dispatch({ type: FETCH_QUOTE_REQUEST });
+
+//     // const { data } = await axios.get (${id})
+
+//     dispatch({
+//       type:
+//     })
+//   }
+// }

@@ -1,9 +1,6 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-import ReportImg1 from "../../../assets/images/report-img-1.svg";
+import React, { Component } from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import reportImage from '../../../../assets/images/report-img-1.svg';
 
 class Report extends Component {
   render() {
@@ -27,7 +24,7 @@ class Report extends Component {
       //   </div>
       // </div>
       <Row>
-        <Col sm={2}>
+        <Col sm={2} className='mr-2'>
           <ul className='test123'>
             <li className='selected'>Executive Summary</li>
             <li>Introduction</li>
@@ -56,8 +53,8 @@ class Report extends Component {
               ullamcorper interdum proin sit.
             </p>
             <div className='report-img'>
-              {" "}
-              <img src={ReportImg1} alt='Denizen Designer Logo' />
+              {' '}
+              <Image src={reportImage} alt='Denizen Designer Logo' fluid />
             </div>
 
             <p>

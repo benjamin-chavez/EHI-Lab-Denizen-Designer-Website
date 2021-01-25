@@ -1,12 +1,10 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { fetchParticipants } from "../../actions";
+import { fetchParticipants } from '../../actions';
 
 class ParticipantsIndex extends Component {
   componentWillMount() {

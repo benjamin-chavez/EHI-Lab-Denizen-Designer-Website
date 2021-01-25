@@ -1,13 +1,10 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
-import { fetchParticipant } from "../../actions";
+import { fetchParticipant } from '../../actions';
 
 export class ParticipantsShow extends Component {
   componentWillMount() {
@@ -20,31 +17,33 @@ export class ParticipantsShow extends Component {
       return <p>Loading...</p>;
     }
     return (
-      <div className='container'>
+      <div className='container participant-show'>
         <Container>
-          <Row className='my-2'>
+          <Row className='mt-2'>
             <Col sm={12}>
               <Link to='/denizendesigner/interviews'>
                 <Button className='back-btn' variant='light'>
-                  {" "}
+                  {' '}
                   <i className='fa fa-chevron-left back-btn-text'> Back</i>
                 </Button>
               </Link>
             </Col>
           </Row>
-          <Row>
-            <Col lg={4}>
-              <div className='participant-show-img'>
-                <div></div>
-              </div>
+          <Row className='my-4'>
+            <Col sm={12} lg={4} className='mb-4'>
+              <div className='participant-show-img'></div>
             </Col>
-            <Col lg={8}>
-              <h2>
-                {this.props.participant.first_name}{" "}
+            <Col sm={12} lg={8}>
+              <h2 className='name ml-4'>
+                {this.props.participant.first_name}{' '}
                 {this.props.participant.last_name}
               </h2>
-              <p>{this.props.participant.designer_type}</p>
-              <p>{this.props.participant.bio}</p>
+              <p className='designer-type  ml-4'>
+                {this.props.participant.designer_type}
+              </p>
+              <p className='bio ml-4'>
+                {this.props.participant.bio.replaceAll('\n', '\n\n')}
+              </p>
             </Col>
           </Row>
         </Container>

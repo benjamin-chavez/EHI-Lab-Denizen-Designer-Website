@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import DesignersIndex from "./designers_index";
-import ParticipantsIndex from "./participants_index";
+import React, { Component } from 'react';
+import DesignersIndex from './designers_index';
+import ParticipantsIndex from './participants_index';
 
 class Interviews extends Component {
   render() {

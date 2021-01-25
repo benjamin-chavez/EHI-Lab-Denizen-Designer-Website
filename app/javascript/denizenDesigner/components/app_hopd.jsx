@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import { createHistory as history } from "history";
 
-import NavSecondary from "../containers/app_hopd/nav_secondary";
-import HopdTimeline from "../containers/app_hopd/timeline";
-import HopdDataVis from "../containers/app_hopd/data_visualization";
-import HopdPapers from "../containers/app_hopd/repository_of_papers";
+import NavSecondary from '../containers/app_hopd/nav_secondary';
+import HopdTimeline from '../containers/app_hopd/timeline';
+import HopdDataVis from '../containers/app_hopd/data_visualization';
+import HopdPapers from '../containers/app_hopd/repository_of_papers';
 
 const AppHopd = (props) => {
   return (
@@ -14,6 +14,7 @@ const AppHopd = (props) => {
       <NavSecondary />
 
       <Route
+        exact
         path='/historyofparticipatorydesign/timeline'
         component={HopdTimeline}
       />

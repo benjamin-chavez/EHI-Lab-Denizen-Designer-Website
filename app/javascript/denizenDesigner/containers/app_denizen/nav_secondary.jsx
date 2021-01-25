@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-import { selectDenizenTab, setNavSecondaryz } from "../../actions";
-import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { Component, useState } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { selectDenizenTab, setNavSecondaryz } from '../../actions';
+import { Link, NavLink } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class NavSecondary extends Component {
   // componentWillReceiveProps(nextProps) {
@@ -25,12 +25,12 @@ class NavSecondary extends Component {
         onClick={() => this.handleClick(denizenTab)}
         role='presentation'
       >
-        <Link
+        <NavLink
           className='denizen-tab'
-          to={`/denizendesigner/` + denizenTab.replace(/ /g, "").toLowerCase()}
+          to={`/denizendesigner/` + denizenTab.replace(/ /g, '').toLowerCase()}
         >
           {denizenTab}
-        </Link>
+        </NavLink>
       </li>
     );
   };

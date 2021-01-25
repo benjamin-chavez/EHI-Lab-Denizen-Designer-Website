@@ -1,8 +1,10 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // import Card from "react-bootstrap/Card";
+import ArticleLinkIcon from '../../../../assets/images/article-link-icon.svg';
+import ArticlCardImage from '../../../../assets/images/Aricle-card-image.svg';
 
 class Resources extends Component {
   render() {
@@ -21,16 +23,10 @@ class Resources extends Component {
         <Row>
           <Col md='auto'>
             <div className='article-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
 
               <div className='article-card-img-container'></div>
-              <img
-                src='../../../assets/images/Aricle-card-image.svg'
-                className='article-card-img'
-              />
+              <img src={ArticlCardImage} className='article-card-img' />
               <div className='article-card-body'>
                 <p className='article-card-title'>The Whole New Normal</p>
                 <p className='article-card-author'>By Chole Rockford</p>
@@ -39,16 +35,10 @@ class Resources extends Component {
           </Col>
           <Col md='auto'>
             <div className='article-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
 
               <div className='article-card-img-container'></div>
-              <img
-                src='../../../assets/images/Aricle-card-image.svg'
-                className='article-card-img'
-              />
+              <img src={ArticlCardImage} className='article-card-img' />
               <div className='article-card-body'>
                 <p className='article-card-title'>The Whole New Normal</p>
                 <p className='article-card-author'>By Chole Rockford</p>
@@ -57,16 +47,10 @@ class Resources extends Component {
           </Col>
           <Col md='auto'>
             <div className='article-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
 
               <div className='article-card-img-container'></div>
-              <img
-                src='../../../assets/images/Aricle-card-image.svg'
-                className='article-card-img'
-              />
+              <img src={ArticlCardImage} className='article-card-img' />
               <div className='article-card-body'>
                 <p className='article-card-title'>The Whole New Normal</p>
                 <p className='article-card-author'>By Chole Rockford</p>
@@ -75,16 +59,10 @@ class Resources extends Component {
           </Col>
           <Col md='auto'>
             <div className='article-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
 
               <div className='article-card-img-container'></div>
-              <img
-                src='../../../assets/images/Aricle-card-image.svg'
-                className='article-card-img'
-              />
+              <img src={ArticlCardImage} className='article-card-img' />
               <div className='article-card-body'>
                 <p className='article-card-title'>The Whole New Normal</p>
                 <p className='article-card-author'>By Chole Rockford</p>
@@ -101,10 +79,7 @@ class Resources extends Component {
         <Row>
           <Col md='auto'>
             <div className='publication-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
               <div className='publication-card-body'>
                 <Row className='publication-card-title-row'>
                   <Col>
@@ -124,10 +99,7 @@ class Resources extends Component {
           </Col>
           <Col md='auto'>
             <div className='publication-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
               <div className='publication-card-body'>
                 <Row className='publication-card-title-row'>
                   <Col>
@@ -147,10 +119,7 @@ class Resources extends Component {
           </Col>
           <Col md='auto'>
             <div className='publication-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
               <div className='publication-card-body'>
                 <Row className='publication-card-title-row'>
                   <Col>
@@ -170,10 +139,7 @@ class Resources extends Component {
           </Col>
           <Col md='auto'>
             <div className='publication-card'>
-              <img
-                src='../../../assets/images/article-link-icon.svg'
-                className='article-link-icon'
-              />
+              <img src={ArticleLinkIcon} className='article-link-icon' />
               <div className='publication-card-body'>
                 <Row className='publication-card-title-row'>
                   <Col>
