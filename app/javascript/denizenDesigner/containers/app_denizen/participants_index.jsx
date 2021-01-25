@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Container, Row, Col } from 'react-bootstrap';
+import ParticipantImage from '../../../../assets/images/participant.jpeg';
 
 import { fetchParticipants } from '../../actions';
 
@@ -19,6 +20,8 @@ class ParticipantsIndex extends Component {
           key={participant.id}
         >
           <div className='participant-item'>
+            {/* <div className=''> */}
+            {/* <img src={ParticipantImage} className='participant-item' /> */}
             {/* removed card class from the prev line */}
             <div className='participant-item-img'>
               <Row>

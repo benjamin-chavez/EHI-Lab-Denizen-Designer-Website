@@ -210,7 +210,8 @@ body {
       rgba(196, 196, 196, 0) 0%,
       rgba(20, 54, 92, 0.56) 100%
     ),
-    url('../images/participant.jpeg'), #c4c4c4;
+    url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'),
+    #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -256,7 +257,8 @@ body {
       rgba(196, 196, 196, 0) 0%,
       rgba(20, 54, 92, 0.56) 100%
     ),
-    url('../images/participant.jpeg'), #c4c4c4;
+    url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'),
+    #c4c4c4;
   border-radius: 6px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -410,4 +412,4 @@ body {
 @import '../../javascript/assets/stylesheets/denizen_report';
 @import '../../javascript/assets/stylesheets/denizen_resources';
 @import '../../javascript/assets/stylesheets/landing_page';
-@import '../../javascript/assets/stylesheets/application.scss';
+@import '../../javascript/assets/stylesheets/timeline.scss';
