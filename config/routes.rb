@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  # get 'pages/home'
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   get "/historyofparticipatorydesign/timeline", to: 'pages#home'
   get "/historyofparticipatorydesign/timeline", to: 'pages#home'
