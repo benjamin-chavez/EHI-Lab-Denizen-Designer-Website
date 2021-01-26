@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Logo from '../../../assets/images/dd-logo.svg';
 
 class LandingPage extends Component {
   render() {
@@ -12,14 +13,14 @@ class LandingPage extends Component {
         <Row className='logo-landing-pg justify-content-md-center'>
           <Col md='auto'>
             <img
-              src='../../../assets/images/dd-logo.svg'
+              src={Logo}
               className='d-inline-block align-top'
               alt='Denizen Designer Logo'
             />
           </Col>
         </Row>
         <Row className='justify-content-sm-center'>
-          <Link to={`/denizendesigner/home`}>
+          <Link to={`/historyofparticipatorydesign/timeline`}>
             <div className='btn-landing-pg'>
               History of Participatory Design
             </div>
