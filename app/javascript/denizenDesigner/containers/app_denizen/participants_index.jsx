@@ -19,28 +19,30 @@ class ParticipantsIndex extends Component {
           to={`/denizendesigner/interviews/${participant.id}`}
           key={participant.id}
         >
-          <div className='participant-item'>
-            {/* <div className=''> */}
-            {/* <img src={ParticipantImage} className='participant-item' /> */}
-            {/* removed card class from the prev line */}
-            <div className='participant-item-img'>
-              <Row>
-                <Col md='auto'>
-                  <span className='participant-item-name'>
-                    {participant.first_name} {participant.last_name}
-                  </span>
-                </Col>
-              </Row>
+          <Col xs={12}>
+            <div className='participant-item'>
+              {/* <div className=''> */}
+              {/* <img src={ParticipantImage} className='participant-item' /> */}
+              {/* removed card class from the prev line */}
+              <div className='participant-item-img'>
+                <Row>
+                  <Col md='auto'>
+                    <span className='participant-item-name'>
+                      {participant.first_name} {participant.last_name}
+                    </span>
+                  </Col>
+                </Row>
 
-              <Row>
-                <Col md='auto'>
-                  <span className='participant-item-designer'>
-                    {participant.designer_type}
-                  </span>
-                </Col>
-              </Row>
+                <Row>
+                  <Col md='auto'>
+                    <span className='participant-item-designer'>
+                      {participant.designer_type}
+                    </span>
+                  </Col>
+                </Row>
+              </div>
             </div>
-          </div>
+          </Col>
         </Link>
       );
     });
@@ -48,7 +50,7 @@ class ParticipantsIndex extends Component {
 
   render() {
     return (
-      <div>
+      <div className=''>
         {/* <Row className='justify-content-center'>
           <Col xs='auto'> */}
         <Row>

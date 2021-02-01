@@ -16,7 +16,7 @@ class DesignersIndex extends Component {
   renderParticipants() {
     return this.props.participants.map((participant) => {
       return (
-        <div>
+        <div className=''>
           {participant.location == this.props.city ||
           this.props.city == 'designerdatabase' ? (
             <Row className='database-card'>

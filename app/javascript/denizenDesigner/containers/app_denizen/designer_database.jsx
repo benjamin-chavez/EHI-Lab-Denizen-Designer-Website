@@ -23,7 +23,7 @@ class DesignerDatabase extends Component {
   render() {
     return (
       // <div className='container'>
-      <div>
+      <div className='container'>
         <Row>
           <NavLink className='participate-btn' to='#'>
             Participate
