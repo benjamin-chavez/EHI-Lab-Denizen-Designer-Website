@@ -198,25 +198,24 @@ body {
   flex: 50% 0 0;
   color: white;
   cursor: pointer;
-  margin-left: 20px;
+  // margin-left: 20px;
   margin-bottom: 24px;
-  width: 150px;
+  width: 243.85px;
   height: 143px;
   border-radius: 6px;
   padding: 10px;
   border-radius: 6px;
-  background: linear-gradient(
-      180deg,
-      rgba(196, 196, 196, 0) 0%,
-      rgba(20, 54, 92, 0.56) 100%
-    ),
-    url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'),
-    #c4c4c4;
+  background: linear-gradient(179.91deg, #475ca7 0.08%, #113f83 69.55%),
+    url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg');
+  background-blend-mode: screen;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   vertical-align: text-bottom;
   position: relative;
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 .participant-item-img {
@@ -253,18 +252,21 @@ body {
   box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
   border-radius: 6px;
   background: linear-gradient(
-      180deg,
-      rgba(196, 196, 196, 0) 0%,
-      rgba(20, 54, 92, 0.56) 100%
+      179.91deg,
+      rgba(71, 92, 167, 0.67) 0.08%,
+      rgba(17, 63, 131, 0.67) 69.55%
     ),
-    url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'),
-    #c4c4c4;
+    url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg');
+
+  background-blend-mode: screen;
   border-radius: 6px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;
   display: block;
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
   text-decoration: none !important;
 }
 
@@ -335,6 +337,89 @@ body {
   align-items: center; /* align vertical */
   border-radius: 2px;
   height: 39px;
+}
+
+.participate-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 8px;
+  color: red;
+  width: 126px;
+  height: 28px;
+  /* Primary */
+
+  border: 1px solid #475ca7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  /* Primary */
+
+  color: #475ca7;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  // margin: 0px 8px;
+}
+
+.participate-btn:hover {
+  text-decoration: none;
+  /* Primary */
+
+  color: #475ca7;
+}
+
+.designer-city-banner {
+  // background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1612154128/Denizen%20Designer%20%28Temp%29/database-city-banner-background_xf7z8f.svg');
+  // width: 100%;
+  height: 66px;
+  background: #475ca7;
+  border-radius: 4px;
+  align-items: center; /* align vertical */
+  // background-color: red !important;
+  // color: red !important;
+}
+
+// #bannerContainer {
+//   color: red;
+//   background-color: #ffffff;
+
+//   margin-bottom: 10px;
+//   display: flex;
+//   // justify-content: center; /* align horizontal */
+//   align-items: center; /* align vertical */
+//   border-radius: 2px;
+//   height: 39px;
+//   // height: 500px;
+// }
+
+.designer-city-banner #dropdown-basic {
+  margin: auto;
+  // color: red !important;
+  // background-color: blue !important;
+  // vertical-align: middle !important;
+}
+
+.designer-city-banner #dropdown-basic:hover {
+  // margin: auto;
+  // color: red !important;
+  // opacity: 0.5;
+  // color: white;
+  // background-color: blue !important;
+  // vertical-align: middle !important;
 }
 
 .designer-city-menu {
@@ -413,3 +498,4 @@ body {
 @import '../../javascript/assets/stylesheets/denizen_resources';
 @import '../../javascript/assets/stylesheets/landing_page';
 @import '../../javascript/assets/stylesheets/timeline.scss';
+@import '../../javascript/assets/stylesheets/_denizen_interviews';

@@ -49,8 +49,10 @@ class ParticipantsIndex extends Component {
   render() {
     return (
       <div>
-        <Row className='justify-content-center'>
-          <Col md='auto'>
+        {/* <Row className='justify-content-center'>
+          <Col xs='auto'> */}
+        <Row>
+          <Col>
             <div className='participant-list'>{this.renderParticipants()}</div>
           </Col>
         </Row>

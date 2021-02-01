@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "/denizendesigner/interviews/:id", to: 'pages#home' 
   get "/denizendesigner/report", to: 'pages#home' 
   get "/denizendesigner/designerdatabase", to: 'pages#home' 
+  get "/denizendesigner/designerdatabase/DT", to: 'pages#home'    # update this to be #city once you link navigation to the navbar
   get "/denizendesigner/quotes", to: 'pages#home' 
   get "/denizendesigner/resources", to: 'pages#home' 
 end

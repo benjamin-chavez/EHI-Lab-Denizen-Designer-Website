@@ -37,9 +37,9 @@ class NavSecondary extends Component {
 
   render() {
     return (
-      <div>
+      <div className='p-0 m-0'>
         <Row>
-          <Col>
+          <Col className='p-0 m-0'>
             <div className='nav-secondaryy'>
               <ul className='List-Inline'>
                 {this.props.denizenTabs.map(this.renderDenizenTab)}

@@ -4,6 +4,7 @@ import ParticipantsIndex from './participants_index';
 import { Link, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router';
 import queryString from 'query-string';
+import { Row, Col, Dropdown, DropdownButton, Button } from 'react-bootstrap';
 
 class DesignerDatabase extends Component {
   location = () => {
@@ -21,16 +22,51 @@ class DesignerDatabase extends Component {
 
   render() {
     return (
-      <div className='container'>
-        <div>
-          <ul className='designer-city-menu'>
-            {/* <li className='designer-city-item selected'>ATL</li>
-            <li className='designer-city-item'>BST</li>
-            <li className='designer-city-item'>CHI</li>
-            <li className='designer-city-item'>DT</li>
-            <li className='designer-city-item'>ATL</li>
-            <li className='designer-city-item'>ATL</li> */}
+      // <div className='container'>
+      <div>
+        <Row>
+          <NavLink className='participate-btn' to='#'>
+            Participate
+          </NavLink>
+        </Row>
+        <Row className='designer-city-banner my-2'>
+          <Col>
+            <Dropdown>
+              <Dropdown.Toggle
+                variant='outline-light'
+                id='dropdown-basic'
+                classname='dropdownButon'
+              >
+                Cities
+              </Dropdown.Toggle>
 
+              <Dropdown.Menu>
+                <Dropdown.Item>
+                  <NavLink to='/denizendesigner/designerdatabase/ATL'>
+                    Atlanta
+                  </NavLink>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <NavLink to='/denizendesigner/designerdatabase/BST'>
+                    Boston
+                  </NavLink>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <NavLink to='/denizendesigner/designerdatabase/CHI'>
+                    Chicago
+                  </NavLink>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <NavLink to='/denizendesigner/designerdatabase/DT'>
+                    Detroit
+                  </NavLink>
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Col>
+        </Row>
+        <div className='mt-3'>
+          {/* <ul className='designer-city-menu'>
             <li className='designer-city-item '>
               <NavLink to='/denizendesigner/designerdatabase/ATL'>ATL</NavLink>
             </li>
@@ -43,7 +79,7 @@ class DesignerDatabase extends Component {
             <li className='designer-city-item '>
               <NavLink to='/denizendesigner/designerdatabase/DT'>DT</NavLink>
             </li>
-          </ul>
+          </ul> */}
           {this.renderDesignersIndex()}
           {/* <ParticipantList /> */}
         </div>
