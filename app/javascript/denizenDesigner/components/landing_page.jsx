@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import { Row, Col, Button, Image } from 'react-bootstrap';
 import Logo from '../../../assets/images/dd-logo.svg';
 
 class LandingPage extends Component {
@@ -12,11 +10,12 @@ class LandingPage extends Component {
       <div className='landing-pg'>
         <Row className='logo-landing-pg justify-content-md-center'>
           <Col md='auto'>
-            <img
+            <Image
               src={Logo}
               className='d-inline-block align-top'
               alt='Denizen Designer Logo'
-            />
+              fluid
+            />{' '}
           </Col>
         </Row>
         <Row className='justify-content-sm-center'>
