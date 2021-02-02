@@ -362,6 +362,7 @@ body {
   text-align: right;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  align-items: center; /* align vertical */
 
   /* Primary */
 
@@ -373,6 +374,12 @@ body {
   order: 1;
   flex-grow: 0;
   // margin: 0px 8px;
+}
+
+.participate-btn-text {
+  height: 100%;
+
+  align-items: center; /* align vertical */
 }
 
 .participate-btn:hover {
@@ -422,6 +429,24 @@ body {
   // vertical-align: middle !important;
 }
 
+.cities-banner-graphic {
+  // background-color: red;
+  height: 100%;
+  // vertical-align: text-bottom;
+  // align-items: bottom !important;
+  align-items: center;
+  // background-color: red;
+  position: relative;
+}
+
+.cities-banner-graphic-img {
+  // background-color: red;
+  position: absolute;
+  bottom: 0;
+  // left: 0;
+  right: 0;
+  padding-right: 4px;
+}
 .designer-city-menu {
   list-style: none;
   padding: 0;

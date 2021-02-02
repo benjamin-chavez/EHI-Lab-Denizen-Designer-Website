@@ -9,12 +9,26 @@ import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useLocation } from 'react-router';
 
 // import test from "../../../assets/images/dd-logo-nav";
 import Media from 'react-bootstrap/Media';
 import NavLogo from '../../../../assets/images/dd-logo-nav.svg';
 
 class NavPrimary extends Component {
+  // location = () => {
+  //   useLocation();
+  // };
+
+  // renderDesignersIndex() {
+  //   const city = location.pathname.split('/').pop();
+  //   return (
+  //     <div>
+  //       <div>sdf{city}</div>
+  //     </div>
+  //   );
+  // }
+
   render() {
     return (
       <div className='nav-primary'>
