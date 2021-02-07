@@ -53,7 +53,7 @@ class Interviews extends Component {
           </div>
         </Row>
 
-        <Row className='my-4'>
+        <Row className='my-4 '>
           <ParticipantsIndex />
         </Row>
       </div>

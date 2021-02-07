@@ -19,7 +19,7 @@ class ParticipantsIndex extends Component {
           to={`/denizendesigner/interviews/${participant.id}`}
           key={participant.id}
         >
-          <Col xs={12}>
+          <Col xs={12} className=''>
             <div className='participant-item'>
               {/* <div className=''> */}
               {/* <img src={ParticipantImage} className='participant-item' /> */}
@@ -55,7 +55,9 @@ class ParticipantsIndex extends Component {
           <Col xs='auto'> */}
         <Row>
           <Col>
-            <div className='participant-list'>{this.renderParticipants()}</div>
+            <div className='participant-list justify-content-sm-center'>
+              {this.renderParticipants()}
+            </div>
           </Col>
         </Row>
       </div>

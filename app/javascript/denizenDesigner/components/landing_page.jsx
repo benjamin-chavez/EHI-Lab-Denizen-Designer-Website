@@ -8,8 +8,8 @@ class LandingPage extends Component {
   render() {
     return (
       <div className='landing-pg'>
-        <Row className='logo-landing-pg justify-content-md-center'>
-          <Col md='auto'>
+        <Row className='logo-landing-pg justify-content-sm-center'>
+          <Col sm='auto'>
             <Image
               src={Logo}
               className='d-inline-block align-top'
@@ -19,14 +19,16 @@ class LandingPage extends Component {
           </Col>
         </Row>
         <Row className='justify-content-sm-center'>
-          <Link to={`/historyofparticipatorydesign/timeline`}>
-            <div className='btn-landing-pg'>
-              History of Participatory Design
-            </div>
-          </Link>
-          <Link to={`/denizendesigner/home`}>
-            <div className='btn-landing-pg'>Denizen Designer</div>
-          </Link>
+          <Col sm='auto'>
+            <Link to={`/historyofparticipatorydesign/timeline`}>
+              <div className='btn-landing-pg '>
+                History of Participatory Design
+              </div>
+            </Link>
+            <Link to={`/denizendesigner/home`}>
+              <div className='btn-landing-pg'>Denizen Designer</div>
+            </Link>
+          </Col>
         </Row>
         <Row className='justify-content-md-center'>
           <Col md='auto'>
