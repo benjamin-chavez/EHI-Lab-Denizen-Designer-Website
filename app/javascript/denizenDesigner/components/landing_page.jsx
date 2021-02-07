@@ -12,7 +12,7 @@ class LandingPage extends Component {
       <div className='landing-pg pt-5'>
         <div className='wrapper py-5 '>
           <Row className='logo-landing-pg justify-content-sm-center pt-5'>
-            <Col className='pt-5' lg={5} md={7} sm={10} xs={12}>
+            <Col className='' lg={5} md={7} sm={10} xs={12}>
               <Image
                 src={Logo}
                 className='d-inline-block align-top'
