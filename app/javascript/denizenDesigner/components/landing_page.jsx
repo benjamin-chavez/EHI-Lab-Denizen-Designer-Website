@@ -38,7 +38,7 @@ class LandingPage extends Component {
             </Col>
           </Row>
 
-          <div className='push'></div>
+          {/* <div className='push'></div> */}
         </div>
         <Row className='justify-content-sm-center footer'>
           <Col lg={5} md={7} sm={10}>
