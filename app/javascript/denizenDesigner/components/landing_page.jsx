@@ -21,8 +21,8 @@ class LandingPage extends Component {
               />{' '}
             </Col>
           </Row>
-          <Row className='justify-content-sm-center'>
-            <Col lg={4} md={6} sm={12} xs={12} className='mb-4'>
+          <Row className='justify-content-sm-center mt-0'>
+            <Col lg={4} md={6} sm={12} xs={12} className=''>
               <Link to={`/historyofparticipatorydesign/timeline`}>
                 <Button variant='primary' size='lg' block>
                   History of Participatory Design
@@ -39,7 +39,7 @@ class LandingPage extends Component {
           </Row>
           <div className='push'></div>
         </div>
-        <Row className='justify-content-sm-center'>
+        <Row className='justify-content-sm-center footer'>
           <Col lg={5} md={7} sm={10}>
             <footer className='footer-landing-pg py-2'>
               © {currentYear} -{' '}

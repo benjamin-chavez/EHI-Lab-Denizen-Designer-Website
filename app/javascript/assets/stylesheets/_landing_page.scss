@@ -1,14 +1,25 @@
-.wrapper {
-  // min-height: 100%;
-  // margin-bottom: -50px;
+.landing-pg {
+ height: 100vh;
+  // background-color: red;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  text-align: center;
+  // margin-bottom: -60px;
+}
+.logo-landing-pg {
+  // margin: 215px 0px 57px 0px;
+  padding: 13.438rem 0rem 3.563rem 0rem;
+  
 }
 
-.logo-landing-pg {
-  margin: 215px 0px 57px 0px;
-  // height: 100vw;
-  // align-items: center; /* align vertical */
-  // height: 100%;
-  // margin: 0;
+.wrapper {
+  height:100%;
+  // background-color: pink;
+  // margin: 0;  
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  text-align: center;
+  margin-bottom: -80px;
 }
 
 .btn-landing-pg {
@@ -59,7 +70,8 @@
   // margin-top: 80%;
 }
 
+// .footer,
 .push {
-  height: 0.01rem;
-  margin-top: 24.5rem;
+  // height: 60px;
+  // background-color: red;
 }
