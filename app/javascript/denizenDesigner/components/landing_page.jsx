@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Button, Image } from 'react-bootstrap';
 import Logo from '../../../assets/images/dd-logo.svg';
 
-// d
 class LandingPage extends Component {
   render() {
     return (
