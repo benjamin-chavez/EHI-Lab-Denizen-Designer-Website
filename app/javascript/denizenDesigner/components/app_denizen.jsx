@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import { createHistory as history } from "history";
 
+import NavPrimary from '../containers/app_denizen/nav_primary';
 import NavSecondary from '../containers/app_denizen/nav_secondary';
 // import ParticipantList from "../containers/app_denizen/participant_list";
 import DenizenHome from '../components/app_denizen/denizen_home';
@@ -18,6 +19,7 @@ import ParticipantsIndex from '../containers/app_denizen/participants_index';
 const AppDenizen = (props) => {
   return (
     <div>
+      <NavPrimary />
       <NavSecondary />
 
       <Route path='/denizendesigner/home' component={DenizenHome} />

@@ -19,7 +19,7 @@ import ParticipantsIndex from './containers/app_denizen/participants_index';
 import ParticipantsShow from './containers/app_denizen/participants_show';
 // import DenizenHome from "./components/app_denizen/denizen_home";
 // import ParticipantsShow from "./containers/app_denizen/participants_show";
-import NavPrimary from './containers/app_denizen/nav_primary';
+
 import '../assets/stylesheets/application.scss';
 // import LandingPage from './components/landing_page';
 
@@ -50,7 +50,6 @@ class HelloWorld extends React.Component {
             {/* <div className='thin-container'> */}
             <div>
               <Container>
-                <NavPrimary />
                 {/* <LandingPage /> */}
 
                 <Switch>
