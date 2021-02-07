@@ -12,11 +12,14 @@
 }
 .logo-landing-pg {
   // margin: 215px 0px 57px 0px;
-  padding: 10rem 0rem 0rem 0rem;
+  // padding: 10rem 0rem 0rem 0rem;
   // height:100%;
   // background-color: red;
 }
 
+.landing-pg a {
+  text-decoration: none !important;
+}
 .align-me {
   // display: flex;
   // align-items: center;
@@ -32,10 +35,10 @@
 }
 
 .btn-landing-pg {
-  background-color: #475ca7 !important;
-  border-radius: 8px !important;
+  // background-color: #475ca7 !important;
+  // border-radius: 8px !important;
   // padding: 24px 28px;
-  align-items: center;
+  // align-items: center;
   // width: 332px;
   min-height: 60px;
   font-family: Roboto;
@@ -50,6 +53,31 @@
   margin: 10px 40px;
   cursor: pointer;
 }
+
+.landing-btn{
+  color: #ffffff !important;
+  background-color: #475ca7 ;
+  border-radius: 8px;
+  font-family: Roboto;
+  min-height: 3.75rem;
+  // outline: none !important;
+  // box-shadow: none !important;
+}
+
+.landing-btn:hover{
+  // color: red ;
+  background-color: #3a4d8f ;
+  text-decoration: none !important;
+}
+
+.landing-btn:focus, .landing-btn:active{
+  background-color: #3a4d8f !important;
+  // text-decoration: none !important;
+  // outline: none !important;
+  // box-shadow: none !important;
+}
+
+
 
 .footer-landing-pg {
   align-items: center;
