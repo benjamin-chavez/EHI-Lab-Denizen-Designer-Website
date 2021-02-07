@@ -10,9 +10,9 @@ class LandingPage extends Component {
   render() {
     return (
       <div className='landing-pg'>
-        <div className='wrapper'>
-          <Row className='logo-landing-pg justify-content-sm-center'>
-            <Col lg={5} md={7} sm={10} xs={12}>
+        <div className='wrapper '>
+          <Row className='logo-landing-pg justify-content-sm-center  mb-2'>
+            <Col className='' lg={5} md={7} sm={10} xs={12}>
               <Image
                 src={Logo}
                 className='d-inline-block align-top'
@@ -21,8 +21,8 @@ class LandingPage extends Component {
               />{' '}
             </Col>
           </Row>
-          <Row className='justify-content-sm-center mt-0'>
-            <Col lg={4} md={6} sm={12} xs={12} className=''>
+          <Row className='justify-content-sm-center mt-5'>
+            <Col lg={4} md={6} sm={12} xs={12} className='mb-4'>
               <Link to={`/historyofparticipatorydesign/timeline`}>
                 <Button variant='primary' size='lg' block>
                   History of Participatory Design
@@ -37,6 +37,7 @@ class LandingPage extends Component {
               </Link>
             </Col>
           </Row>
+
           <div className='push'></div>
         </div>
         <Row className='justify-content-sm-center footer'>
