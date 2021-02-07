@@ -48,26 +48,23 @@ class HelloWorld extends React.Component {
           {/* <AppDenizen /> */}
           <Router history={history}>
             {/* <div className='thin-container'> */}
-            <div>
-              <Container>
-                {/* <LandingPage /> */}
-
-                <Switch>
-                  <Route
-                    path='/historyofparticipatorydesign'
-                    component={AppHopd}
-                  />
-                  <Route
-                    path='/historyofparticipatorydesign'
-                    component={AppHopd}
-                  />
-
-                  <Route path='/denizendesigner' component={AppDenizen} />
-                  <Route exact path='/' component={LandingPage} />
-                  {/* <Redirect exact from='/' to='/denizendesigner/home' /> */}
-                </Switch>
-              </Container>
-            </div>
+            {/* <div> */}
+            <Container>
+              <Switch>
+                <Route
+                  path='/historyofparticipatorydesign'
+                  component={AppHopd}
+                />
+                <Route
+                  path='/historyofparticipatorydesign'
+                  component={AppHopd}
+                />
+                <Route path='/denizendesigner' component={AppDenizen} />
+                <Route exact path='/' component={LandingPage} />
+                {/* <Redirect exact from='/' to='/denizendesigner/home' /> */}
+              </Switch>
+            </Container>
+            {/* </div> */}
           </Router>
         </Provider>
       </React.Fragment>
