@@ -31,8 +31,8 @@ class NavPrimary extends Component {
 
   render() {
     return (
-      <div className='nav-primary'>
-        <Navbar collapseOnSelect expand='lg'>
+      <div className='nav-primary px-0'>
+        <Navbar className='px-0' collapseOnSelect expand='lg'>
           <Navbar.Brand as={Link} to='/' href='/'>
             <img
               src={NavLogo}

@@ -18,6 +18,12 @@ html, body, #root, .App {
   height: 100%;
   margin: 0;
   // background-color: green;
+  // padding-top: 100px;
+}
+
+.container-fluid {
+  // background-color: green;
+  max-width: 80.188rem;
 }
 
 .List-Inline {

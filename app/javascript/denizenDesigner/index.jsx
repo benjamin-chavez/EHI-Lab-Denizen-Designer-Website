@@ -49,7 +49,7 @@ class HelloWorld extends React.Component {
           <Router history={history}>
             {/* <div className='thin-container'> */}
             {/* <div> */}
-            <Container>
+            <Container fluid>
               <Switch>
                 <Route
                   path='/historyofparticipatorydesign'
