@@ -21,11 +21,10 @@ class DesignerDatabase extends Component {
     useLocation();
   };
 
-  renderDesignersIndex() {
-    const city = location.pathname.split('/').pop();
+  renderDesignersIndex(city) {
+    // const city = location.pathname.split('/').pop();
     return (
       <div>
-        {city}
         <DesignersIndex city={city} />
       </div>
     );
@@ -102,7 +101,7 @@ class DesignerDatabase extends Component {
               <NavLink to='/denizendesigner/designerdatabase/DT'>DT</NavLink>
             </li>
           </ul> */}
-          {this.renderDesignersIndex()}
+          {this.renderDesignersIndex(city)}
           {/* <ParticipantList /> */}
         </div>
       </div>

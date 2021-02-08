@@ -17,10 +17,10 @@ export class ParticipantsShow extends Component {
       return <p>Loading...</p>;
     }
     return (
-      <div className='container participant-show'>
-        <Container>
+      <div className='participant-show'>
+        <div>
           <Row className='mt-2'>
-            <Col sm={12}>
+            <Col xs={12}>
               <Link to='/denizendesigner/interviews'>
                 <Button className='back-btn' variant='light'>
                   {' '}
@@ -30,10 +30,10 @@ export class ParticipantsShow extends Component {
             </Col>
           </Row>
           <Row className='my-4'>
-            <Col sm={12} lg={4} className='mb-4'>
+            <Col xs={12} lg={4} className='mb-4'>
               <div className='participant-show-img'></div>
             </Col>
-            <Col sm={12} lg={8}>
+            <Col xs={12} lg={8}>
               <h2 className='name ml-4'>
                 {this.props.participant.first_name}{' '}
                 {this.props.participant.last_name}
@@ -46,7 +46,7 @@ export class ParticipantsShow extends Component {
               </p>
             </Col>
           </Row>
-        </Container>
+        </div>
         {/* <div className='row'>
           <div className='col-sm-12'>
             <Link to='/denizendesigner/interviews'>
