@@ -34,14 +34,14 @@ export class ParticipantsShow extends Component {
               <div className='participant-show-img'></div>
             </Col>
             <Col xs={12} lg={8}>
-              <h2 className='name ml-4'>
+              <h2 className='name mx-4'>
                 {this.props.participant.first_name}{' '}
                 {this.props.participant.last_name}
               </h2>
-              <p className='designer-type  ml-4'>
+              <p className='designer-type  mx-4'>
                 {this.props.participant.designer_type}
               </p>
-              <p className='bio ml-4'>
+              <p className='bio mx-4'>
                 {this.props.participant.bio.replaceAll('\n', '\n\n')}
               </p>
             </Col>
