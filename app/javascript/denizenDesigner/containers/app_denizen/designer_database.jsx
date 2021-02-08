@@ -25,14 +25,15 @@ class DesignerDatabase extends Component {
     const city = location.pathname.split('/').pop();
     return (
       <div>
+        {city}
         <DesignersIndex city={city} />
       </div>
     );
   }
 
   render() {
+    const city = location.pathname.split('/').pop();
     return (
-      // <div className='container'>
       <div className=''>
         <Row>
           <NavLink className='participate-btn' to='#'>
@@ -50,9 +51,9 @@ class DesignerDatabase extends Component {
               <Dropdown.Toggle
                 variant='outline-light'
                 id='dropdown-basic'
-                classname='dropdownButon'
+                className='dropdownButon'
               >
-                Cities
+                {city == 'designerdatabase' ? 'Cities' : city}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>

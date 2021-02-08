@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import QuotesIndex from "./quotes_index";
+import React, { Component } from 'react';
+import QuotesIndex from './quotes_index';
 
 class Quotes extends Component {
   render() {
     return (
-      <div className='container'>
+      <div>
         <div>
           <ul className='quote-filter-menu'>
             <li className='quote-filter-item selected'>

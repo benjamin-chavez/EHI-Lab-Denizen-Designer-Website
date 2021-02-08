@@ -9,7 +9,7 @@ import BannerBackground from '../../../assets/images/interviews-banner-backgroun
 class Interviews extends Component {
   render() {
     return (
-      <div className='container'>
+      <div>
         {/* <Row>
           <Card className='bg-dark text-white'>
             <Card.Img src={BannerBackground} alt='Card image' />
