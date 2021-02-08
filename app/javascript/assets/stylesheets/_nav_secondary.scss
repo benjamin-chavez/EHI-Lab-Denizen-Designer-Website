@@ -23,30 +23,27 @@
   // border-bottom: 1px solid #bcc5d2;
 }
 
-.List-Inline {
+.list-inline-nav-sec{
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.List-Inline > li {
+.list-inline-nav-sec > li {
   display: inline;
-  margin: 10px;
+  margin: 10px 20px 10px 0px;
 }
 
 .denizen-tab {
-  // color: #8593a8;
   color: #8593a8;
 }
 .denizen-tab:hover {
-  // color: #8593a8;
   color: #8593a8;
   text-decoration: none;
 }
 
 .denizen-tab.active {
-  // color: #8593a8;
   color: #45558e;
 }
 // Nav-Secondary,List-Inline

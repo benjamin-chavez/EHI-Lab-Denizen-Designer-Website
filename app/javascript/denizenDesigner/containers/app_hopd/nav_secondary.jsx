@@ -37,9 +37,8 @@ class NavSecondary extends Component {
         <Row>
           <Col>
             <div className='nav-secondaryy'>
-              <ul className='List-Inline'>
+              <ul className='list-inline-nav-sec'>
                 {this.props.hopdTabs.map(this.renderHopdTab)}
-                {/* testing */}
               </ul>
             </div>
           </Col>
@@ -52,7 +51,6 @@ class NavSecondary extends Component {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
-      // setNavSecondary: setNavSecondary
       selectHopdTab,
     },
     dispatch
@@ -67,4 +65,3 @@ function mapReduxStateToProps(reduxState) {
 }
 
 export default connect(mapReduxStateToProps, mapDispatchToProps)(NavSecondary);
-// export default NavSecondary;

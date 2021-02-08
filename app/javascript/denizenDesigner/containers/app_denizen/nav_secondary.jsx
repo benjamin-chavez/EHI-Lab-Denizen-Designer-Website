@@ -8,12 +8,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 class NavSecondary extends Component {
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.selectedDenizenTab !== this.props.selectedDenizenTab) {
-  //     this.props.fetchMessages(nextProps.selectedDenizenTab);
-  //   }
-  // }
-
   handleClick = (denizenTab) => {
     this.props.selectDenizenTab(denizenTab);
   };
@@ -37,11 +31,11 @@ class NavSecondary extends Component {
 
   render() {
     return (
-      <div className='p-0 m-0'>
+      <div>
         <Row>
-          <Col className='p-0 m-0'>
+          <Col>
             <div className='nav-secondaryy'>
-              <ul className='List-Inline'>
+              <ul className='list-inline-nav-sec'>
                 {this.props.denizenTabs.map(this.renderDenizenTab)}
               </ul>
             </div>
