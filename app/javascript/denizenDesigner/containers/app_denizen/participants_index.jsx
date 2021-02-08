@@ -19,7 +19,7 @@ class ParticipantsIndex extends Component {
           to={`/denizendesigner/interviews/${participant.id}`}
           key={participant.id}
         >
-          <Col className='px-0'>
+          <Col xs={12} sm={6} className='px-0'>
             <div className='participant-item'>
               <div className='participant-item-img'>
                 <Row>
