@@ -74,7 +74,8 @@ class ParticipantsIndex extends Component {
       <div>
         <Container fluid>
           <Row>
-            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => (
+            {/* {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => ( */}
+            {this.props.participants.map((participant) => (
               <Col xs={6} sm={4} md={3} lg={2} className='mb-4'>
                 {/* col-lg-4 col-md-6 col-sm-12 mb-4' */}
                 {/* <Card> HERE IS A TEST CARD</Card> */}
@@ -83,11 +84,27 @@ class ParticipantsIndex extends Component {
                     <Card.Img
                       src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'
                       style={{ maxWidth: '15.241rem', maxHeight: '8.938rem' }}
+                      // className='participant-item-img1'
                     />
                     <Card.Body>
                       <Card.ImgOverlay>
-                        <Card.Title> Card Title</Card.Title>
-                        <Card.Text>Testing123</Card.Text>
+                        {/* <Card.Title> {participant.first_name} </Card.Title>
+                        <Card.Text>Testing123</Card.Text> */}
+                        <Row>
+                          <Col md='auto'>
+                            <span className='participant-item-name'>
+                              {participant.first_name} {participant.last_name}
+                            </span>
+                          </Col>
+                        </Row>
+
+                        <Row>
+                          <Col md='auto'>
+                            <span className='participant-item-designer'>
+                              {participant.designer_type}
+                            </span>
+                          </Col>
+                        </Row>
                       </Card.ImgOverlay>
                     </Card.Body>
                   </Link>

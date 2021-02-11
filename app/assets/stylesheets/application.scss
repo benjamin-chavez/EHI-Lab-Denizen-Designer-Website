@@ -233,6 +233,16 @@ html, body, #root, .App {
   bottom: 5%;
   left: 4.03;
 }
+
+.participant-item-img1 {
+  // maxWidth: '15.241rem', maxHeight: '8.938rem'
+  background-blend-mode: screen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .participant-item-name {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
