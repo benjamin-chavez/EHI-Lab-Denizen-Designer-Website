@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import DesignersIndex from './designers_index';
 import ParticipantsIndex from './participants_index';
 
-import { Row, Col, Jumbotron, Button, Card } from 'react-bootstrap';
+import { Row, Col, Jumbotron, Button, Card, Container } from 'react-bootstrap';
 
 import BannerBackground from '../../../assets/images/interviews-banner-background.png';
 
@@ -11,7 +11,7 @@ class Interviews extends Component {
     return (
       <div>
         <Row>
-          <div className=''>
+          <Container className='' fluid>
             <div className='interviewsBanner py-4 px-5'>
               <Col>
                 <Row>
@@ -36,7 +36,7 @@ class Interviews extends Component {
                 </Row>
               </Col>
             </div>
-          </div>
+          </Container>
         </Row>
 
         <Row className='my-4 '>
