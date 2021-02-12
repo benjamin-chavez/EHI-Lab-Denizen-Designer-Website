@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Footer } from 'react-bootstrap';
 import ParticipantImage from '../../../../assets/images/participant.jpeg';
 
 import { fetchParticipants } from '../../actions';
@@ -76,20 +76,15 @@ class ParticipantsIndex extends Component {
           <Row>
             {/* {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => ( */}
             {this.props.participants.map((participant) => (
-              <Col xs={6} sm={4} md={3} lg={2} className='mb-4'>
-                {/* col-lg-4 col-md-6 col-sm-12 mb-4' */}
-                {/* <Card> HERE IS A TEST CARD</Card> */}
-                <Card style={{ maxWidth: '15.241rem', maxHeight: '8.938rem' }}>
-                  <Link>
-                    <Card.Img
-                      src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'
-                      style={{ maxWidth: '15.241rem', maxHeight: '8.938rem' }}
-                      // className='participant-item-img1'
-                    />
-                    <Card.Body>
-                      <Card.ImgOverlay>
-                        {/* <Card.Title> {participant.first_name} </Card.Title>
-                        <Card.Text>Testing123</Card.Text> */}
+              <Col xs={6} sm={6} md={4} lg={3} xl={2} className='mb-4'>
+                <Card className='participant-item '>
+                  <Link
+                    to={`/denizendesigner/interviews/${participant.id}`}
+                    key={participant.id}
+                  >
+                    {/* <Card.Body className='cardBodyInterview'> */}
+                    <Card.ImgOverlay class='cardImageOverlay'>
+                      <Card.Body className='cardBodyInterview p-2'>
                         <Row>
                           <Col md='auto'>
                             <span className='participant-item-name'>
@@ -105,15 +100,17 @@ class ParticipantsIndex extends Component {
                             </span>
                           </Col>
                         </Row>
-                      </Card.ImgOverlay>
-                    </Card.Body>
+                      </Card.Body>
+                    </Card.ImgOverlay>
                   </Link>
+                  {/* <span class='align-text-bottom'>text-bottom</span> */}
                 </Card>
               </Col>
             ))}
           </Row>
         </Container>
       </div>
+
       // <div className=''>
       //   <Row>
       //     {/* <Col> */}
