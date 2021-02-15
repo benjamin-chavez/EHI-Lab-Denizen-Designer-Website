@@ -17,45 +17,32 @@ class DesignersIndex extends Component {
     return this.props.participants.map((participant) => {
       return (
         <div className=''>
-          {/* {participant.location == this.props.city ||
+          {participant.location == this.props.city ||
           this.props.city == 'designerdatabase' ? (
-            <Row className='database-card'>
-              <Col>
-                <p className='card-text card-name'>
-                  {participant.first_name} {participant.last_name}
-                </p>
-              </Col>
-              <Col>
-                <p className='card-text'>{participant.designer_type}</p>
-              </Col>
-              <Col>
-                <p className='card-text'>Contact</p>
-              </Col>
-            </Row>
+            <div>
+              <Row className='mb-2'>
+                <Col className='px-0'>
+                  <Card className='database-card'>
+                    <div className='py-2 px-3'>
+                      <Row>
+                        <Col xs={3} className='card-name'>
+                          {participant.first_name} {participant.last_name}
+                        </Col>
+                        <Col xs={4} className='card-text'>
+                          {participant.designer_type}
+                        </Col>
+                        <Col xs={5} className='card-text'>
+                          Contact
+                        </Col>
+                      </Row>
+                    </div>
+                  </Card>
+                </Col>
+              </Row>
+            </div>
           ) : (
             ''
-          )} */}
-          <div>
-            <Row className='mb-2'>
-              <Col className='px-0'>
-                <Card className='database-card'>
-                  <div className='py-2 px-3'>
-                    <Row>
-                      <Col xs={3} className='card-name'>
-                        {participant.first_name} {participant.last_name}
-                      </Col>
-                      <Col xs={4} className='card-text'>
-                        {participant.designer_type}
-                      </Col>
-                      <Col xs={5} className='card-text'>
-                        Contact
-                      </Col>
-                    </Row>
-                  </div>
-                </Card>
-              </Col>
-            </Row>
-          </div>
+          )}
         </div>
       );
     });
