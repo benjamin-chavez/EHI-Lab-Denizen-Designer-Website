@@ -362,16 +362,7 @@ html, body, #root, .App {
   color: #4f4f4f !important;
 }
 
-.database-card {
-  background-color: #ffffff;
 
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
-  border-radius: 2px;
-  height: 39px;
-}
 
 .participate-btn {
   display: flex;
@@ -511,43 +502,7 @@ html, body, #root, .App {
   color: white;
 }
 
-.designer-database-col-headers {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
 
-  display: flex;
-  align-items: center;
-
-  /* secondary */
-
-  color: #5a6795;
-}
-
-.database-card .card-name {
-  // color: red;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500 !important;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-
-  /* black */
-
-  color: #2a2e33;
-}
-// .card-text {
-//   // display: flex;
-//   // justify-content: center; /* align horizontal */
-//   // align-items: center;
-// }
 
 @import '../../javascript/assets/stylesheets/nav_secondary';
 @import '../../javascript/assets/stylesheets/nav_primary';
@@ -558,3 +513,4 @@ html, body, #root, .App {
 @import '../../javascript/assets/stylesheets/landing_page';
 @import '../../javascript/assets/stylesheets/timeline.scss';
 @import '../../javascript/assets/stylesheets/_denizen_interviews';
+@import '../../javascript/assets/stylesheets/_denizen_desiegner_database';

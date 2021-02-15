@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Container from 'react-bootstrap/Container';
+import { Card } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -17,7 +17,7 @@ class DesignersIndex extends Component {
     return this.props.participants.map((participant) => {
       return (
         <div className=''>
-          {participant.location == this.props.city ||
+          {/* {participant.location == this.props.city ||
           this.props.city == 'designerdatabase' ? (
             <Row className='database-card'>
               <Col>
@@ -34,7 +34,28 @@ class DesignersIndex extends Component {
             </Row>
           ) : (
             ''
-          )}
+          )} */}
+          <div>
+            <Row className='mb-2'>
+              <Col className='px-0'>
+                <Card className='database-card'>
+                  <div className='py-2 px-3'>
+                    <Row>
+                      <Col xs={3} className='card-name'>
+                        {participant.first_name} {participant.last_name}
+                      </Col>
+                      <Col xs={4} className='card-text'>
+                        {participant.designer_type}
+                      </Col>
+                      <Col xs={5} className='card-text'>
+                        Contact
+                      </Col>
+                    </Row>
+                  </div>
+                </Card>
+              </Col>
+            </Row>
+          </div>
         </div>
       );
     });
@@ -43,13 +64,16 @@ class DesignersIndex extends Component {
   render() {
     return (
       <div>
-        {/* <h1>{this.props.city}</h1> */}
-        <Row>
-          <Col>
-            <p className='designer-database-col-headers'>Name</p>
+        <Row className='mb-3'>
+          <Col xs={3} className=''>
+            <span className='designer-database-col-headers'>Name</span>
           </Col>
-          <Col className='designer-database-col-headers'>Role</Col>
-          <Col className='designer-database-col-headers'>Contact</Col>
+          <Col xs={4} className=''>
+            <span className='designer-database-col-headers'>Role</span>
+          </Col>
+          <Col xs={5} className=''>
+            <span className='designer-database-col-headers'>Contact</span>
+          </Col>
         </Row>
         <div className=''>{this.renderParticipants()}</div>
       </div>

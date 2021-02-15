@@ -1,0 +1,58 @@
+.database-card {
+  // background-color: #ffffff;
+
+  // margin-bottom: 10px;
+  // display: flex;
+  // justify-content: center; /* align horizontal */
+  // align-items: center; /* align vertical */
+  border-radius: 2px;
+  min-height:39px;
+  // background-color: red;
+  // height: 39px;
+}
+
+.designer-database-col-headers {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* secondary */
+
+  color: #5a6795;
+}
+
+.database-card .card-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* black */
+
+  color: #2a2e33;
+}
+
+.database-card .card-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  display: flex;
+  align-items: center;
+
+  /* black */
+  color: #2A2E33;
+}
