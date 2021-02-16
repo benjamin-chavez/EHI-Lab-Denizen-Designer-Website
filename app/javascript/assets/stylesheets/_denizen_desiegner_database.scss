@@ -35,8 +35,7 @@
 }
 
 .designer-database .data-list > li {
-  display: inline-block;
-  color: red;
+  // color: red;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -80,4 +79,10 @@
 
   /* black */
   color: #2a2e33;
+}
+
+@media (max-width: 768px) {
+  .designer-database .data-list > li {
+    display: inline-block;
+  }
 }

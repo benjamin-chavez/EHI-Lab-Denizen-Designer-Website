@@ -21,25 +21,6 @@ class DesignersIndex extends Component {
           {participant.location == this.props.city ||
           this.props.city == 'designerdatabase' ? (
             <div>
-              {/* <Row className='mb-2'>
-                <Col className='px-0'>
-                  <Card className='database-card'>
-                    <div className='py-2 px-3'>
-                      <Row>
-                        <Col xs={3} className='card-name'>
-                          {participant.first_name} {participant.last_name}
-                        </Col>
-                        <Col xs={4} className='card-text'>
-                          {participant.designer_type}
-                        </Col>
-                        <Col xs={5} className='card-text'>
-                          Contact
-                        </Col>
-                      </Row>
-                    </div>
-                  </Card>
-                </Col>
-              </Row> */}
               <Row className='designer-database'>
                 {/* {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => ( */}
                 {this.props.participants.map((participant) => (
@@ -57,7 +38,7 @@ class DesignersIndex extends Component {
                     </Row>
                     <Row>
                       <ul className='data-list pl-1'>
-                        <li className='mb-2'>
+                        <li className='mb-2 mr-3'>
                           <Image
                             src={twitterIcon}
                             className='d-inline-block align-top mr-1'
@@ -66,7 +47,7 @@ class DesignersIndex extends Component {
                           />{' '}
                           Mark_1234
                         </li>
-                        <li className='mb-2'>
+                        <li className='mb-2 mr-3'>
                           <Image
                             src={mailIcon}
                             className='d-inline-block align-top mr-1'
@@ -75,7 +56,7 @@ class DesignersIndex extends Component {
                           />{' '}
                           Mark1234@usbc.edu
                         </li>
-                        <li className='mb-2'>
+                        <li className='mb-2 mr-3'>
                           <Image
                             src={igIcon}
                             className='d-inline-block align-top mr-1'
@@ -101,17 +82,6 @@ class DesignersIndex extends Component {
   render() {
     return (
       <div>
-        {/* <Row className='mb-3'>
-          <Col xs={3} className=''>
-            <span className='designer-database-col-headers'>Name</span>
-          </Col>
-          <Col xs={4} className=''>
-            <span className='designer-database-col-headers'>Role</span>
-          </Col>
-          <Col xs={5} className=''>
-            <span className='designer-database-col-headers'>Contact</span>
-          </Col>
-        </Row> */}
         <div className=''>{this.renderParticipants()}</div>
       </div>
     );
