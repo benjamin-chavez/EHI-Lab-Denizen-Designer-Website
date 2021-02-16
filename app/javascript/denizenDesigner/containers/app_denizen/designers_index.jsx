@@ -39,27 +39,30 @@ class DesignersIndex extends Component {
                     <Row>
                       <ul className='data-list pl-1'>
                         <li className='mb-2 mr-3'>
+                          {''}
                           <Image
                             src={twitterIcon}
-                            className='d-inline-block align-top mr-1'
+                            className='d-inline-block align-top '
                             alt='Twitter Icon'
                             fluid
                           />{' '}
                           Mark_1234
                         </li>
                         <li className='mb-2 mr-3'>
+                          {''}
                           <Image
                             src={mailIcon}
-                            className='d-inline-block align-top mr-1'
+                            className='d-inline-block align-top'
                             alt='Email Icon'
                             fluid
                           />{' '}
                           Mark1234@usbc.edu
                         </li>
                         <li className='mb-2 mr-3'>
+                          {''}
                           <Image
                             src={igIcon}
-                            className='d-inline-block align-top mr-1'
+                            className='d-inline-block align-top'
                             alt='Instagram Icon'
                             fluid
                           />{' '}
