@@ -1,3 +1,11 @@
+.homeScreen {
+  background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613448105/Denizen%20Designer%20%28Temp%29/home_background_jpkmo7.png');
+  // background-blend-mode: screen;
+  // background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
 .homeScreen .title {
   font-family: Montserrat;
   font-style: normal;
@@ -21,7 +29,7 @@
   line-height: 171%;
   /* or 27px */
 
-  text-align: justify;
+  // text-align: justify;
   letter-spacing: 0.02em;
 
   /* Primary */
@@ -41,19 +49,54 @@
 //   margin-top: 40px;
 // }
 
-// .denizen-link {
-//   font-family: "Roboto", sans-serif;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 18px;
-//   line-height: 21px;
-//   /* identical to box height */
+.denizen-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
 
-//   // display: flex;
-//   // align-items: center;
-//   text-align: center;
+  // display: flex;
+  // align-items: center;
+  text-align: center;
 
-//   /* Primary */
+  /* Primary */
 
-//   color: #475ca7;
-// }
+  color: #475ca7;
+}
+
+.homeScreen .homeBtn {
+  // background-color: red;
+  border: 1px solid #475ca7;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* Primary */
+
+  color: #475ca7;
+}
+
+.homeScreen .homeBtn:hover {
+  background-color: #475ca7;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.homeScreen a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  // .homeScreen,
+  // .title,
+  // .textBody {
+  // background-color: red;
+  .homeScreen .center {
+    text-align: center;
+    align-items: center;
+  }
+}
