@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import store from './store';
+import ScrollToTop from './components/ScrollToTop';
 
 import {
   BrowserRouter as Router,
@@ -47,6 +48,7 @@ class HelloWorld extends React.Component {
         <Provider store={store}>
           {/* <AppDenizen /> */}
           <Router history={history}>
+            <ScrollToTop />
             {/* <div className='thin-container'> */}
             {/* <div> */}
             <Container fluid>
