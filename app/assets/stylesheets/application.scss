@@ -12,7 +12,10 @@
 @import 'components/index';
 @import 'pages/index';
 
-html, body, #root, .App {
+html,
+body,
+#root,
+.App {
   font-family: Helvetica;
   background-color: #f1f3f8;
   height: 100%;
@@ -212,8 +215,8 @@ html, body, #root, .App {
   // margin-bottom: 24px;
   // width: 243.85px;
   // height: 143px;
-  max-Width: 15.241rem; 
-  min-Height: 8.938rem;
+  max-width: 15.241rem;
+  min-height: 8.938rem;
   padding: 10px;
   border-radius: 6px;
   background: linear-gradient(179.91deg, #475ca7 0.08%, #113f83 69.55%),
@@ -223,18 +226,17 @@ html, body, #root, .App {
   background-repeat: no-repeat;
   background-position: center;
   vertical-align: text-bottom;
-  
+
   border: 4px solid #ffffff;
   box-sizing: border-box;
   border-radius: 6px;
   text-align: bottom;
 }
 
-.participant-item.card{
+.participant-item.card {
   position: relative;
   // margin: 10px;
 }
-
 
 .participant-item-img {
   position: absolute;
@@ -255,7 +257,6 @@ html, body, #root, .App {
   background-position: center;
 }
 
-
 .participant-item-name {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -265,7 +266,6 @@ html, body, #root, .App {
   display: flex;
   align-items: center;
   color: #ffffff;
-  
 }
 .participant-item-designer {
   // color: salmon;
@@ -361,8 +361,6 @@ html, body, #root, .App {
 .back-btn-text {
   color: #4f4f4f !important;
 }
-
-
 
 .participate-btn {
   display: flex;
@@ -501,8 +499,6 @@ html, body, #root, .App {
   background-color: #6b7390;
   color: white;
 }
-
-
 
 @import '../../javascript/assets/stylesheets/nav_secondary';
 @import '../../javascript/assets/stylesheets/nav_primary';
