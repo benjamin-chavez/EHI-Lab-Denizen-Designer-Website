@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-import ArticleLinkIcon from '../../../../assets/images/article-link-icon.svg';
-import ArticlCardImage from '../../../../assets/images/Aricle-card-image.svg';
-import resourcesImage1 from '../../../../assets/images/resourcesImage1.png';
+// import ArticleLinkIcon from '../../../../assets/images/article-link-icon.svg';
+// import ArticlCardImage from '../../../../assets/images/Aricle-card-image.svg';
+// import resourcesImage1 from '../../../../assets/images/resourcesImage1.png';
 
 class Resources extends Component {
   render() {
@@ -13,7 +13,7 @@ class Resources extends Component {
     }
 
     return (
-      <div className='resourcesPage'>
+      <div className='resourcesPage pb-3'>
         <Row className='mb-4'>
           <Col sm={12}>
             <Card className='resourceCard card1'>

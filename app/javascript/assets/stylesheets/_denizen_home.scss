@@ -1,28 +1,59 @@
-.denizen-home {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 33px;
-  /* or 206% */
-
-  text-align: center;
-  margin-top: 40px;
-}
-
-.denizen-link {
-  font-family: "Roboto", sans-serif;
+.homeScreen .title {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
+  font-size: 2.625rem;
+  line-height: 106.4%;
+  /* or 45px */
 
-  // display: flex;
-  // align-items: center;
-  text-align: center;
+  text-transform: uppercase;
 
   /* Primary */
 
   color: #475ca7;
 }
+
+.homeScreen .textBody {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 171%;
+  /* or 27px */
+
+  text-align: justify;
+  letter-spacing: 0.02em;
+
+  /* Primary */
+
+  color: #475ca7;
+}
+
+// .denizen-home {
+//   font-family: "Roboto", sans-serif;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 16px;
+//   line-height: 33px;
+//   /* or 206% */
+
+//   text-align: center;
+//   margin-top: 40px;
+// }
+
+// .denizen-link {
+//   font-family: "Roboto", sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 18px;
+//   line-height: 21px;
+//   /* identical to box height */
+
+//   // display: flex;
+//   // align-items: center;
+//   text-align: center;
+
+//   /* Primary */
+
+//   color: #475ca7;
+// }
