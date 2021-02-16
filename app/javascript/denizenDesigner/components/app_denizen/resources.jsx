@@ -14,12 +14,12 @@ class Resources extends Component {
 
     return (
       <div className='resourcesPage'>
-        <Row>
+        <Row className='mb-4'>
           <Col sm={12}>
             <Card className='resourceCard card1'>
-              <Card.Body>
+              <Card.Body className='px-5 pt-4'>
                 <Row>
-                  <Col sm={12} className='mb-4'>
+                  <Col sm={12} md={7} className='mb-4'>
                     <p className='title mb-2'>The Denizen Designer Zine</p>
                     <span className='bodyText '>
                       The DD Zine distills the information from the report in a
@@ -30,7 +30,7 @@ class Resources extends Component {
                     </span>
                     <Link className='cardLink mt-2'>Download</Link>
                   </Col>
-                  <Col sm={12} className='mb-4'>
+                  <Col sm={12} md={5} className='mb-4'>
                     <p className='title mb-2'>
                       Design for social good in higher education
                     </p>
@@ -41,6 +41,43 @@ class Resources extends Component {
                       design. Denizen Designers often noted that there was a
                       lack of exposure to PD in both higher education and in the
                       work force.{' '}
+                    </span>
+                    <Link className='cardLink mt-2'>Visit</Link>
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
+        <Row className='mb-4'>
+          <Col sm={12}>
+            <Card className='resourceCard card2'>
+              <Card.Body className='px-5 pt-4'>
+                <Row>
+                  <Col sm={12} md={7} className='mb-4'>
+                    <p className='title mb-2'>
+                      Guide to understanding PD (Participatory Design){' '}
+                    </p>
+                    <span className='bodyText '>
+                      Participatory design can be traced back to the ‘70s, where
+                      it was coined in Scandinavia after the rise of workplace
+                      democracy and unionization. It was inherently political
+                      and challenged historical systems of power through open
+                      dialogue and democratized input. It has since been adopted
+                      by designers worldwide who take a collaborative approach
+                      to design and has shaped various theories.
+                    </span>
+                    <Link className='cardLink mt-2'>Visit</Link>
+                  </Col>
+                  <Col sm={12} md={5} className='mb-4'>
+                    <p className='title mb-2'>Design Justice</p>
+                    <span className='bodyText '>
+                      Design justice focuses explicitly on how design reproduces
+                      and/or challenges the matrix of domination (Patricia Hill
+                      Collins): white supremacy, heteropatriarchy, capitalism,
+                      ableism, settler colonialism, and other forms of
+                      structural inequality.{' '}
                     </span>
                     <Link className='cardLink mt-2'>Visit</Link>
                   </Col>

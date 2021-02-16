@@ -1,5 +1,16 @@
-.resourcesPage .resourceCard.card1 {
+.resourcesPage .resourceCard {
+  // background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613443433/Denizen%20Designer%20%28Temp%29/resourcesImage1_y6yyqq.png');
+  min-height: 11.25rem;
+  border-radius: 4px;
+}
+.card1 {
   background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613443433/Denizen%20Designer%20%28Temp%29/resourcesImage1_y6yyqq.png');
+  min-height: 11.25rem;
+  border-radius: 4px;
+}
+
+.card2 {
+  background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613443433/Denizen%20Designer%20%28Temp%29/resourcesImage2_rysbkj.png');
   min-height: 11.25rem;
   border-radius: 4px;
 }
@@ -22,6 +33,7 @@
 
 .resourceCard .bodyText {
   // display: block;
+  // min-height: 28.55rem;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
