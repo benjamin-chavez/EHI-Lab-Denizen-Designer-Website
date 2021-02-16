@@ -45,40 +45,40 @@ class DesignersIndex extends Component {
                 {this.props.participants.map((participant) => (
                   <Col xs={12} sm={12} md={4} lg={3} xl={3} className=''>
                     <Row>
-                      <span className='participant-name pl-1 pr-3'>
+                      <span className='participant-name pl-1 pr-3 mb-2'>
                         {participant.first_name}
                         {participant.last_name}
                       </span>
                     </Row>
                     <Row>
-                      <span className='role pl-1'>
+                      <span className='role pl-1 mb-1'>
                         {participant.designer_type}
                       </span>
                     </Row>
                     <Row>
                       <ul className='data-list pl-1'>
-                        <li>
+                        <li className='mb-2'>
                           <Image
                             src={twitterIcon}
-                            className='d-inline-block align-top'
+                            className='d-inline-block align-top mr-1'
                             alt='Twitter Icon'
                             fluid
                           />{' '}
                           Mark_1234
                         </li>
-                        <li>
+                        <li className='mb-2'>
                           <Image
                             src={mailIcon}
-                            className='d-inline-block align-top'
+                            className='d-inline-block align-top mr-1'
                             alt='Email Icon'
                             fluid
                           />{' '}
                           Mark1234@usbc.edu
                         </li>
-                        <li>
+                        <li className='mb-2'>
                           <Image
                             src={igIcon}
-                            className='d-inline-block align-top'
+                            className='d-inline-block align-top mr-1'
                             alt='Instagram Icon'
                             fluid
                           />{' '}
