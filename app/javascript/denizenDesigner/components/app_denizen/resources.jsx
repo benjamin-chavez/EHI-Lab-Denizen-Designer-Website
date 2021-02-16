@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-// import Card from "react-bootstrap/Card";
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+
 import ArticleLinkIcon from '../../../../assets/images/article-link-icon.svg';
 import ArticlCardImage from '../../../../assets/images/Aricle-card-image.svg';
+import resourcesImage1 from '../../../../assets/images/resourcesImage1.png';
 
 class Resources extends Component {
   render() {
@@ -13,149 +13,40 @@ class Resources extends Component {
     }
 
     return (
-      <div>
+      <div className='resourcesPage'>
         <Row>
-          <Col>
-            <h3 className='resources-headers'>Articles</h3>
-            <div className='resource-btm-border'></div>
-          </Col>
-        </Row>
-        <Row>
-          <Col md='auto'>
-            <div className='article-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-
-              <div className='article-card-img-container'></div>
-              <img src={ArticlCardImage} className='article-card-img' />
-              <div className='article-card-body'>
-                <p className='article-card-title'>The Whole New Normal</p>
-                <p className='article-card-author'>By Chole Rockford</p>
-              </div>
-            </div>
-          </Col>
-          <Col md='auto'>
-            <div className='article-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-
-              <div className='article-card-img-container'></div>
-              <img src={ArticlCardImage} className='article-card-img' />
-              <div className='article-card-body'>
-                <p className='article-card-title'>The Whole New Normal</p>
-                <p className='article-card-author'>By Chole Rockford</p>
-              </div>
-            </div>
-          </Col>
-          <Col md='auto'>
-            <div className='article-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-
-              <div className='article-card-img-container'></div>
-              <img src={ArticlCardImage} className='article-card-img' />
-              <div className='article-card-body'>
-                <p className='article-card-title'>The Whole New Normal</p>
-                <p className='article-card-author'>By Chole Rockford</p>
-              </div>
-            </div>
-          </Col>
-          <Col md='auto'>
-            <div className='article-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-
-              <div className='article-card-img-container'></div>
-              <img src={ArticlCardImage} className='article-card-img' />
-              <div className='article-card-body'>
-                <p className='article-card-title'>The Whole New Normal</p>
-                <p className='article-card-author'>By Chole Rockford</p>
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h3 className='resources-headers'>Publications</h3>
-            <div className='resource-btm-border'></div>
-          </Col>
-        </Row>
-        <Row>
-          <Col md='auto'>
-            <div className='publication-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-              <div className='publication-card-body'>
-                <Row className='publication-card-title-row'>
-                  <Col>
-                    <p className='publication-card-title'>
-                      The Unexpected Downside of Paying or Sending Messages to
-                      People to...
+          <Col sm={12}>
+            <Card className='resourceCard card1'>
+              <Card.Body>
+                <Row>
+                  <Col sm={12} className='mb-4'>
+                    <p className='title mb-2'>The Denizen Designer Zine</p>
+                    <span className='bodyText '>
+                      The DD Zine distills the information from the report in a
+                      way that makes it portable and easily sharable. The zine
+                      illustrates what socially driven, community-based design
+                      is and how it can be used in order to encourage people to
+                      consider the relevance of design in community projects.
+                    </span>
+                    <Link className='cardLink mt-2'>Download</Link>
+                  </Col>
+                  <Col sm={12} className='mb-4'>
+                    <p className='title mb-2'>
+                      Design for social good in higher education
                     </p>
+                    <span className='bodyText '>
+                      Although there are 406 “design schools” in the United
+                      States, there are only 6 universities that offer programs
+                      with a focus on design-for-social-good/participatory
+                      design. Denizen Designers often noted that there was a
+                      lack of exposure to PD in both higher education and in the
+                      work force.{' '}
+                    </span>
+                    <Link className='cardLink mt-2'>Visit</Link>
                   </Col>
                 </Row>
-                <Row className='publication-card-auth-row'>
-                  <p className='publication-card-author'>Chole Rockford</p>
-
-                  <p className='publication-card-author'>Chole Rockford</p>
-                </Row>
-              </div>
-            </div>
-          </Col>
-          <Col md='auto'>
-            <div className='publication-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-              <div className='publication-card-body'>
-                <Row className='publication-card-title-row'>
-                  <Col>
-                    <p className='publication-card-title'>
-                      The Unexpected Downside of Paying or Sending Messages to
-                      People to...
-                    </p>
-                  </Col>
-                </Row>
-                <Row className='publication-card-auth-row'>
-                  <p className='publication-card-author'>Chole Rockford</p>
-
-                  <p className='publication-card-author'>Chole Rockford</p>
-                </Row>
-              </div>
-            </div>
-          </Col>
-          <Col md='auto'>
-            <div className='publication-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-              <div className='publication-card-body'>
-                <Row className='publication-card-title-row'>
-                  <Col>
-                    <p className='publication-card-title'>
-                      The Unexpected Downside of Paying or Sending Messages to
-                      People to...
-                    </p>
-                  </Col>
-                </Row>
-                <Row className='publication-card-auth-row'>
-                  <p className='publication-card-author'>Chole Rockford</p>
-
-                  <p className='publication-card-author'>Chole Rockford</p>
-                </Row>
-              </div>
-            </div>
-          </Col>
-          <Col md='auto'>
-            <div className='publication-card'>
-              <img src={ArticleLinkIcon} className='article-link-icon' />
-              <div className='publication-card-body'>
-                <Row className='publication-card-title-row'>
-                  <Col>
-                    <p className='publication-card-title'>
-                      The Unexpected Downside of Paying or Sending Messages to
-                      People to...
-                    </p>
-                  </Col>
-                </Row>
-                <Row className='publication-card-auth-row'>
-                  <p className='publication-card-author'>Chole Rockford</p>
-
-                  <p className='publication-card-author'>Chole Rockford</p>
-                </Row>
-              </div>
-            </div>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </div>
