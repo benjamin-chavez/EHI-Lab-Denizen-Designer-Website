@@ -37,7 +37,20 @@ export class ParticipantsShow extends Component {
 
           <Row className='my-4'>
             <Col xs={12} lg={4} xl={3} className='mb-4'>
+              {/* <Card>
+                <Card.Body>
+                  <Image src={InstagramColorIcon} alt='Instagram Icon' fluid />
+                </Card.Body>
+              </Card> */}
+
+              {/* <Image
+                src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'
+                className='showImage'
+                fluid
+              /> */}
+
               <div className='participant-show-img'></div>
+
               {/* THE ABOVE LINE IS THE IMAGE THAT NEEDS TO BE EDITED */}
             </Col>
             <Col xs={12} lg={8} xl={8}>
@@ -108,7 +121,8 @@ export class ParticipantsShow extends Component {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col xs={12} lg={4} xl={3}></Col>
+            <Col xs={12} lg={8} xl={8}>
               <ul className='socialLinksList p-0'>
                 <li className='mr-3'>
                   <Link className='socialLinks'>
