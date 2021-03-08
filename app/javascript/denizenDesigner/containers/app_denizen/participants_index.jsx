@@ -83,7 +83,7 @@ class ParticipantsIndex extends Component {
                     key={participant.id}
                   >
                     {/* <Card.Body className='cardBodyInterview'> */}
-                    <Card.ImgOverlay class='cardImageOverlay'>
+                    <Card.ImgOverlay className='cardImageOverlay'>
                       <Card.Body className='cardBodyInterview p-2'>
                         <Row>
                           <Col md='auto'>

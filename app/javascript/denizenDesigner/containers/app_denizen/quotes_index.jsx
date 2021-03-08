@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect, useSelector } from 'react-redux';
-import { Row, Col, Card, Container } from 'react-bootstrap';
+import { Row, Col, Card, Container, Modal, Button } from 'react-bootstrap';
 // yarn add react-masonry-layout
 import MasonryLayout from 'react-masonry-layout';
 
@@ -26,68 +26,15 @@ class QuotesIndex extends Component {
     this.props.fetchQuotes();
   }
 
-  // renderQuotes() {
-  //   return this.props.quotes.map((quote) => {
-  //     return (
-  //       <div>
-  //         <div className='denizen-quote-card'>
-  //           <div className='denizen-quote-body'>
-  //             "{quote.quote_body}"
-  //             <div className='denizen-quote-author'>{quote.participant_id}</div>
-  //             {/* <h1>{quote.participant_id == 1 ? 'hello' : 'no'}</h1> */}
-  //           </div>
-  //         </div>
-  //       </div>
-  //     );
-  //   });
-  // }
+  state = {
+    isOpen: true,
+    quote: '',
+    name: 'firstName lastName',
+    role: 'Designer',
+  };
 
   renderQuotes() {
-    return (
-      <div>test</div>
-      // <div>
-      //   {/* <QuoteHooks /> */}
-      //   {/* <Row className='justify-content-center'>
-      //     <Col md='auto'> */}
-      //   {/* <div className='quote-list'>{this.renderQuotes()}</div> */}
-      //   {/* <div className=''>{this.renderQuotes()}</div> */}
-      //   <div className='quote-list'>
-      //     <MasonryLayout
-      //       id='masonry-layout'
-      //       infiniteScroll={this.loadItems}
-      //       sizes={sizes}
-      //     >
-      //       {this.props.quotes.map((v, i) => {
-      //         let height = i % 2 === 0 ? 200 : 100;
-      //         return (
-      //           <div
-      //             key={i}
-      //             style={{
-      //               width: '340px',
-      //               // display: 'flex',
-      //               // flexWrap: 'wrap',
-      //               // // list-style: 'none',
-      //               justifyContent: 'space-around',
-      //             }}
-      //           >
-      //             <div className='denizen-quote-card'>
-      //               <div className='denizen-quote-body'>
-      //                 "{v.quote_body}"
-      //                 <div className='denizen-quote-author'>
-      //                   {v.participant_id}
-      //                 </div>
-      //                 {/* <h1>{quote.participant_id == 1 ? 'hello' : 'no'}</h1> */}
-      //               </div>
-      //             </div>
-      //           </div>
-      //         );
-      //       })}
-      //     </MasonryLayout>
-      //   </div>
-      //   {/* </Col>
-      //   </Row> */}
-      // </div>
-    );
+    return <div>test</div>;
   }
   shuffledArray = shuffleArray(this.props.quotes);
 
@@ -100,13 +47,41 @@ class QuotesIndex extends Component {
       { mq: '1200px', columns: 3, gutter: 30 },
       { mq: '1400px', columns: 3, gutter: 30 },
     ];
+    const { isOpen } = this.state;
+    const { quote } = this.state;
+    const { name } = this.state;
+    const { role } = this.state;
+
     return (
       <div>
-        {/* <QuoteHooks /> */}
-        {/* <Row className='justify-content-center'>
-          <Col md='auto'> */}
-        {/* <div className='quote-list'>{this.renderQuotes()}</div> */}
-        {/* <div className=''>{this.renderQuotes()}</div> */}
+        <Modal show={isOpen} size='lg' centered className='quote-modal'>
+          <Modal.Body>
+            <Row>
+              <Col>
+                <Button
+                  variant='primary'
+                  onClick={() => this.setState({ isOpen: !isOpen })}
+                  className='close-button'
+                >
+                  close
+                </Button>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <p>{quote}</p>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <p>{name}</p>
+                <p>{role}</p>
+              </Col>
+            </Row>
+            {/* <Modal.Body id='contained-modal-title-vcenter'>{quote}</Modal.Body> */}
+          </Modal.Body>
+        </Modal>
+
         <div className='quote-list'>
           <MasonryLayout
             id='masonry-layout'
@@ -120,19 +95,25 @@ class QuotesIndex extends Component {
                   key={i}
                   style={{
                     width: '340px',
-                    // display: 'flex',
-                    // flexWrap: 'wrap',
-                    // // list-style: 'none',
                     justifyContent: 'space-around',
                   }}
                 >
-                  <div className='denizen-quote-card'>
+                  <div
+                    className='denizen-quote-card'
+                    onClick={() =>
+                      this.setState({
+                        isOpen: !isOpen,
+                        quote: v.quote_body,
+                        // name: v.participant_id,
+                        // role: v.participant_id,
+                      })
+                    }
+                  >
                     <div className='denizen-quote-body'>
                       "{v.quote_body}"
                       <div className='denizen-quote-author'>
                         {v.participant_id}
                       </div>
-                      {/* <h1>{quote.participant_id == 1 ? 'hello' : 'no'}</h1> */}
                     </div>
                   </div>
                 </div>
@@ -140,12 +121,7 @@ class QuotesIndex extends Component {
             })}
           </MasonryLayout>
         </div>
-        {/* </Col>
-        </Row> */}
       </div>
-      // <div>
-      //   <div>{this.renderQuotes()}</div>
-      // </div>
     );
   }
 }

@@ -34,6 +34,7 @@
 
 .denizen-quote-card {
   width: 340px;
+  cursor: pointer;
   // margin: 10px;
 }
 
@@ -80,4 +81,12 @@
 }
 
 .quote-item {
+}
+
+.quote-modal .modal-content {
+  border-radius: 12px;
+}
+
+.quote-modal .close-button {
+  background: red;
 }
