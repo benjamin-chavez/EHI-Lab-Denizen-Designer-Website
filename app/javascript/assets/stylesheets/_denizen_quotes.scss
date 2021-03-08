@@ -88,5 +88,65 @@
 }
 
 .quote-modal .close-button {
-  background: red;
+  background: #ffffff;
+  // width: 55px;
+  // height: 31px;
+  border: 1px solid #8593a8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #8593a8;
+}
+
+.quote-modal .close-button:hover {
+  background-color: #8593a8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.quote-modal .modal-quote-body {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 150%;
+  /* or 39px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* black */
+
+  color: #2a2e33;
+}
+
+.quote-modal .modal-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 159%;
+  /* or 22px */
+
+  text-align: center;
+  border-bottom: 1px solid #bcc5d2;
+
+  /* infographic primary */
+
+  color: #08439a;
+}
+
+.quote-modal .modal-role {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 159%;
+  text-align: center;
+  /* identical to box height, or 19px */
+
+  /* secondary */
+
+  color: #8593a8;
 }

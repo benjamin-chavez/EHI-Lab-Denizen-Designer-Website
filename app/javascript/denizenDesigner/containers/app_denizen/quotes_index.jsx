@@ -27,7 +27,7 @@ class QuotesIndex extends Component {
   }
 
   state = {
-    isOpen: true,
+    isOpen: false,
     quote: '',
     name: 'firstName lastName',
     role: 'Designer',
@@ -56,26 +56,39 @@ class QuotesIndex extends Component {
       <div>
         <Modal show={isOpen} size='lg' centered className='quote-modal'>
           <Modal.Body>
+            {/* <Row className='center justify-content-sm-center pb-5'>
+              <Col sm={12} md={3}>
+                <Link className='denizen-link' to='/denizendesigner/interviews'>
+                  <Button
+                    className='homeBtn p-3'
+                    variant='outline-primary'
+                    block
+                  >
+                    Meet The Denizen Designers
+                  </Button>
+                </Link>
+              </Col>
+            </Row> */}
+            <Row className='justify-content-sm-center pb-1'>
+              {/* <Col sm={12} md={2}> */}
+              <Button
+                variant='outline-primary'
+                onClick={() => this.setState({ isOpen: !isOpen })}
+                className='close-button'
+              >
+                close
+              </Button>
+              {/* </Col> */}
+            </Row>
             <Row>
               <Col>
-                <Button
-                  variant='primary'
-                  onClick={() => this.setState({ isOpen: !isOpen })}
-                  className='close-button'
-                >
-                  close
-                </Button>
+                <p className='modal-quote-body'>"{quote}"</p>
               </Col>
             </Row>
             <Row>
               <Col>
-                <p>{quote}</p>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <p>{name}</p>
-                <p>{role}</p>
+                <p className='modal-name'>{name}</p>
+                <p className='modal-role'>{role}</p>
               </Col>
             </Row>
             {/* <Modal.Body id='contained-modal-title-vcenter'>{quote}</Modal.Body> */}

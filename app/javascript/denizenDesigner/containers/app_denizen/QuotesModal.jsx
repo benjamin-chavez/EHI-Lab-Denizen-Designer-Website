@@ -13,10 +13,6 @@ class QuotesModal extends Component {
 
     return (
       <div>
-        {/* <button onClick={() => this.setState({ status: !status })}>
-          {`Current status: ${status ? 'on' : 'off'}`}
-        </button> */}
-        <p>test</p>
         <Button
           variant='primary'
           onClick={() => this.setState({ isOpen: !isOpen })}
