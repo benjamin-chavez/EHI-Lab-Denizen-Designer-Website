@@ -56,20 +56,7 @@ class QuotesIndex extends Component {
       <div>
         <Modal show={isOpen} size='lg' centered className='quote-modal'>
           <Modal.Body>
-            {/* <Row className='center justify-content-sm-center pb-5'>
-              <Col sm={12} md={3}>
-                <Link className='denizen-link' to='/denizendesigner/interviews'>
-                  <Button
-                    className='homeBtn p-3'
-                    variant='outline-primary'
-                    block
-                  >
-                    Meet The Denizen Designers
-                  </Button>
-                </Link>
-              </Col>
-            </Row> */}
-            <Row className='justify-content-sm-center pb-1'>
+            <Row className='justify-content-center pb-1'>
               {/* <Col sm={12} md={2}> */}
               <Button
                 variant='outline-primary'
@@ -80,16 +67,16 @@ class QuotesIndex extends Component {
               </Button>
               {/* </Col> */}
             </Row>
-            <Row>
+            <Row className='justify-content-center pb-1'>
               <Col>
                 <p className='modal-quote-body'>"{quote}"</p>
               </Col>
             </Row>
-            <Row>
-              <Col>
-                <p className='modal-name'>{name}</p>
-                <p className='modal-role'>{role}</p>
-              </Col>
+            <Row className='justify-content-center pb-2'>
+              <span className='modal-name px-3'>{name}</span>
+            </Row>
+            <Row className='justify-content-center pb-1'>
+              <span className='modal-role'>{role}</span>
             </Row>
             {/* <Modal.Body id='contained-modal-title-vcenter'>{quote}</Modal.Body> */}
           </Modal.Body>

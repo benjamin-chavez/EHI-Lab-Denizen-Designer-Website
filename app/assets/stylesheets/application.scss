@@ -247,6 +247,7 @@ body,
 .cardBodyInterview.card-body {
   height: 100%;
   // padding: 10rem;
+  // vertical-align: text-bottom;
 }
 
 .participant-item-img1 {
@@ -269,7 +270,7 @@ body,
 }
 .participant-item-designer {
   // color: salmon;
-  // vertical-align: text-bottom;
+  vertical-align: text-bottom;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;

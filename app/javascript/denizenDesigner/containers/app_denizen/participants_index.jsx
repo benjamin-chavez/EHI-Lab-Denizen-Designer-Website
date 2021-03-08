@@ -15,32 +15,6 @@ class ParticipantsIndex extends Component {
   renderParticipants() {
     return this.props.participants.map((participant) => {
       return (
-        // <Link
-        //   to={`/denizendesigner/interviews/${participant.id}`}
-        //   key={participant.id}
-        // >
-        //   <Col xs={6} sm={6} md={6} lg={4} className='px-0'>
-        //     <div className='participant-item'>
-        //       <div className='participant-item-img'>
-        //         <Row>
-        //           <Col md='auto'>
-        //             <span className='participant-item-name'>
-        //               {participant.first_name} {participant.last_name}
-        //             </span>
-        //           </Col>
-        //         </Row>
-
-        //         <Row>
-        //           <Col md='auto'>
-        //             <span className='participant-item-designer'>
-        //               {participant.designer_type}
-        //             </span>
-        //           </Col>
-        //         </Row>
-        //       </div>
-        //     </div>
-        //   </Col>
-        // </Link>
         <Col
           xs='4'
           // sm={6}
@@ -85,7 +59,7 @@ class ParticipantsIndex extends Component {
                     {/* <Card.Body className='cardBodyInterview'> */}
                     <Card.ImgOverlay className='cardImageOverlay'>
                       <Card.Body className='cardBodyInterview p-2'>
-                        <Row>
+                        <Row className='align-text-bottom'>
                           <Col md='auto'>
                             <span className='participant-item-name'>
                               {participant.first_name} {participant.last_name}
@@ -93,7 +67,7 @@ class ParticipantsIndex extends Component {
                           </Col>
                         </Row>
 
-                        <Row>
+                        <Row className='align-text-bottom'>
                           <Col md='auto'>
                             <span className='participant-item-designer'>
                               {participant.designer_type}
