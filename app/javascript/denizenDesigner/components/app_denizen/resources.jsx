@@ -86,9 +86,146 @@ class Resources extends Component {
             </Card>
           </Col>
         </Row>
+        <Container>
+          <Row>
+            <Col xs={12} sm={6} md={4} lg={4} className='resource-ext-link p-0'>
+              <a target='_blank' href='https://floxstudio.com/resources'>
+                <Row>
+                  <Col xs={3} className=''>
+                    IMG
+                  </Col>
+                  <Col xs={9} className=''>
+                    Resources1
+                  </Col>
+                </Row>
+              </a>
+            </Col>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              2
+            </Col>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              3
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              4
+            </Col>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              5
+            </Col>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              6
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              7
+            </Col>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              8
+            </Col>
+            <Col xs={12} sm={6} md={4} lg={4}>
+              9
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
 }
 
 export default Resources;
+
+// <ul className='resources-list'>
+//           <li className='m-1'>
+//             {/* <a
+//               className='ext-resource-link px-2 py-1'
+//               target='_blank'
+//               href='https://floxstudio.com/resources'
+//             > */}
+//             Flox Studio Resources
+//             {/* </a> */}
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://www.aiga.org/designforgood-get-involved '
+//             >
+//               AIGA - Design for good
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://www.communitydesign.org'
+//             >
+//               Association for community design
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://www.publicinterestdesign.com/ '
+//             >
+//               Public Interest Design
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://www.creativereactionlab.com '
+//             >
+//               Creative Reaction Lab
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://colloqate.org/ '
+//             >
+//               Colloqate
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://www.arts.gov/ '
+//             >
+//               National Endowment For the arts
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://lbodre.ideo.com/about.html '
+//             >
+//               The Little Book For Design Research Ethics
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://www.kounkuey.org/'
+//             >
+//               Kounkuey Design Initiative
+//             </a>
+//           </li>
+//           <li className='m-1'>
+//             <a
+//               className='ext-resource-link'
+//               target='_blank'
+//               href='https://www.blackspace.org/ '
+//             >
+//               Blackspace
+//             </a>
+//           </li>
+//         </ul>
