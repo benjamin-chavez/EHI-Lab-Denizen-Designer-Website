@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 
 // import ArticleLinkIcon from '../../../../assets/images/article-link-icon.svg';
 // import ArticlCardImage from '../../../../assets/images/Aricle-card-image.svg';
 // import resourcesImage1 from '../../../../assets/images/resourcesImage1.png';
+import ResourcesThumbnail from '../../../../assets/images/resources-thumbnail.png';
 
 class Resources extends Component {
   render() {
@@ -87,46 +88,292 @@ class Resources extends Component {
           </Col>
         </Row>
         <Container>
-          <Row>
-            <Col xs={12} sm={6} md={4} lg={4} className='resource-ext-link p-0'>
-              <a target='_blank' href='https://floxstudio.com/resources'>
-                <Row>
-                  <Col xs={3} className=''>
-                    IMG
-                  </Col>
-                  <Col xs={9} className=''>
-                    Resources1
-                  </Col>
-                </Row>
-              </a>
+          <Row className=''>
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://floxstudio.com/resources'
+                      >
+                        Flox Studio Resources
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              2
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.aiga.org/designforgood-get-involved '
+                      >
+                        AIGA - Design For Good
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              3
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.communitydesign.org  '
+                      >
+                        Association For Community Design
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-          </Row>
-          <Row>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              4
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.publicinterestdesign.com/   '
+                      >
+                        Public Interest Design
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              5
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.creativereactionlab.com   '
+                      >
+                        Creative Reaction Lab
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              6
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://colloqate.org/'
+                      >
+                        Colloqate
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-          </Row>
-          <Row>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              7
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.arts.gov/'
+                      >
+                        National Endowment For The Arts
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              8
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://lbodre.ideo.com/about.html'
+                      >
+                        The Little Book For Design Research Ethics
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={4}>
-              9
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.kounkuey.org/ '
+                      >
+                        Kounkuey Design Initiative
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              {/* <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.kounkuey.org/ '
+                      >
+                        Kounkuey Design Initiative
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card> */}
+            </Col>
+            <Col
+              xs={12}
+              sm={12}
+              md={6}
+              lg={4}
+              className='resource-ext-link mb-3'
+            >
+              <Card className='resource-ext-card'>
+                <Card.Body>
+                  <Row>
+                    <Col xs={3} className='redred'>
+                      <Image src={ResourcesThumbnail}></Image>
+                    </Col>
+                    <Col xs={9} className='greengreen '>
+                      <a
+                        className=''
+                        target='_blank'
+                        href='https://www.blackspace.org/'
+                      >
+                        Blackspace
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>

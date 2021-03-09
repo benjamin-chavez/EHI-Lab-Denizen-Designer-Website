@@ -70,12 +70,7 @@
 }
 
 .resource-ext-link {
-  background-color: #ffffff;
   border-radius: 8px;
-  // min-width: 19.063rem;
-  min-height: 4.25rem;
-  // width: 305px;
-  // height: 68px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
@@ -90,18 +85,42 @@
   /* Primary */
 
   color: #475ca7;
+  justify-content: space-between;
+  // background-color: #ffffff;
 }
 
 .resource-ext-link a {
-  // background-color: blue;
-  width: 100%;
-  height: 100%;
   cursor: pointer;
+  display: flex;
+  // justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
-// .greengreen {
-//   background-color: green;
-// }
+.resource-ext-link a:hover {
+  color: #2dba90;
+}
+
+.resource-ext-card {
+  // background-color: #ffffff;
+  // min-width: 19.063rem;
+  min-width: 340px;
+  max-width: 340px;
+  min-height: 4.25rem;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.redred {
+  // background-color: blue;
+  // background-color: #ffffff;
+}
+.greengreen {
+  // background-color: red;
+  // background-color: #ffffff;
+  display: flex;
+  align-items: center; /* align vertical */
+  width: 100%;
+}
 
 @media (max-width: 768px) {
   .resourceCard .title {
