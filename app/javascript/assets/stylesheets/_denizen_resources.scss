@@ -78,18 +78,19 @@
   line-height: 159%;
   /* or 22px */
 
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   text-transform: uppercase;
 
   /* Primary */
 
   color: #475ca7;
-  justify-content: space-between;
+  // justify-content: space-between;
   // background-color: #ffffff;
 }
 
 .resource-ext-link a {
+  color: 475ca7;
   cursor: pointer;
   display: flex;
   // justify-content: center; /* align horizontal */
@@ -103,6 +104,7 @@
 .resource-ext-card {
   // background-color: #ffffff;
   // min-width: 19.063rem;
+
   min-width: 340px;
   max-width: 340px;
   min-height: 4.25rem;

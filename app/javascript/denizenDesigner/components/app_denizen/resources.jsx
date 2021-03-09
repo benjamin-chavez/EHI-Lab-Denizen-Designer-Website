@@ -87,7 +87,7 @@ class Resources extends Component {
             </Card>
           </Col>
         </Row>
-        <Container>
+        <Container fluid>
           <Row className=''>
             <Col
               xs={12}
