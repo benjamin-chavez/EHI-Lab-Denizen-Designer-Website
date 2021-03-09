@@ -98,9 +98,16 @@
 }
 
 .quote-modal .close-button:hover {
-  background-color: #8593a8;
+  background-color: #475ca7;
+  // background-color: #475ca7;
   color: #ffffff;
   text-decoration: none;
+}
+
+.quote-modal .close-button:focus,
+.close-button:active {
+  background-color: #3a4d8f !important;
+  color: #ffffff !important;
 }
 
 .quote-modal .modal-quote-body {

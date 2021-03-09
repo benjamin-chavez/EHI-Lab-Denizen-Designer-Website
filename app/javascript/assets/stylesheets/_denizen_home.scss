@@ -1,7 +1,5 @@
 .homeScreen {
-  background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613448105/Denizen%20Designer%20%28Temp%29/home_background_jpkmo7.png');
-  // background-blend-mode: screen;
-  // background-size: cover;
+  // background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613448105/Denizen%20Designer%20%28Temp%29/home_background_jpkmo7.png');
   background-repeat: repeat;
   background-position: center;
 }
@@ -85,6 +83,25 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+.homeScreen .homeBtn:focus,
+.homeBtn:active {
+  background-color: #3a4d8f !important;
+  color: #ffffff !important;
+}
+
+// .landing-btn{
+//   color: #ffffff !important;
+//   background-color: #475ca7 ;
+//   border-radius: 8px;
+//   font-family: Roboto;
+//   min-height: 3.75rem;
+// }
+
+// .landing-btn:hover{
+//   background-color: #3a4d8f ;
+//   text-decoration: none !important;
+// }
 
 .homeScreen a {
   text-decoration: none;

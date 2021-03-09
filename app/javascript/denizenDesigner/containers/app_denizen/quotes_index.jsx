@@ -59,8 +59,9 @@ class QuotesIndex extends Component {
             <Row className='justify-content-center pb-1'>
               {/* <Col sm={12} md={2}> */}
               <Button
-                variant='outline-primary'
+                variant='light'
                 onClick={() => this.setState({ isOpen: !isOpen })}
+                onMouseDown={(e) => e.preventDefault()}
                 className='close-button'
               >
                 close

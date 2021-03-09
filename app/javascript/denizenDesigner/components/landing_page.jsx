@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Row, Col, Button, Image } from 'react-bootstrap';
-import Logo from '../../../assets/images/dd-logo.svg';
+import Logo from '../../../assets/images/dd-logo2.svg';
 
 const currentYear = new Date().getFullYear();
 
@@ -24,15 +24,31 @@ class LandingPage extends Component {
           <Row className='justify-content-sm-center mt-5'>
             <Col lg={4} md={6} sm={12} xs={12} className='mb-4'>
               <Link to={`/historyofparticipatorydesign/timeline`}>
-                <Button className='landing-btn' variant='light' size='lg' block>
-                  History of Participatory Design
+                <Button
+                  className='landing-btn'
+                  variant='light'
+                  size='lg'
+                  onMouseDown={(e) => e.preventDefault()}
+                  block
+                >
+                  <span className='btn-text'>
+                    History of Participatory Design
+                  </span>
                 </Button>
               </Link>
             </Col>
             <Col lg={4} md={6} sm={12} xs={12}>
               <Link to={`/denizendesigner/home`}>
-                <Button className='landing-btn' variant='light' size='lg' block>
-                  Denizen Designer
+                <Button
+                  className='landing-btn'
+                  variant='light'
+                  size='lg'
+                  onMouseDown={(e) => e.preventDefault()}
+                  block
+                >
+                  <span className='btn-text '>
+                    The Denizen Designer Project
+                  </span>
                 </Button>
               </Link>
             </Col>
@@ -47,7 +63,8 @@ class LandingPage extends Component {
               <span style={{ textDecorationLine: 'underline' }}>
                 Equity & Health Innovations Design Research Lab
               </span>{' '}
-              | All rights reserved (847) 497-5453‬ / depaulEHILab@gmail.com
+              <span>| All rights reserved </span> <br />
+              <span>(847) 497-5453‬ / depaulEHILab@gmail.com</span>
             </footer>
           </Col>
         </Row>
