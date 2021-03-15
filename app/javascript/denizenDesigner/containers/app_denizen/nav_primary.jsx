@@ -34,7 +34,8 @@ class NavPrimary extends Component {
       <div className='nav-primary px-0'>
         <Navbar
           fixed='top'
-          className='px-0 navredtest'
+          // className='px-0 navredtest'
+          className='fixed-navbar '
           collapseOnSelect
           expand='lg'
         >

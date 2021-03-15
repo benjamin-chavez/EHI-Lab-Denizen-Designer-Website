@@ -8,7 +8,7 @@ class DenizenHome extends Component {
   render() {
     return (
       <div className='homeScreen pt-4 pb-3'>
-        <Row className='center mb-3'>
+        <Row className='center mb-3 '>
           <Col>
             <h1 className='title'>Design + Community</h1>
           </Col>
