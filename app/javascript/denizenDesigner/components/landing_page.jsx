@@ -61,7 +61,13 @@ class LandingPage extends Component {
             <footer className='footer-landing-pg py-2'>
               © {currentYear} -{' '}
               <span style={{ textDecorationLine: 'underline' }}>
-                Equity & Health Innovations Design Research Lab
+                <a
+                  className='main-site-link'
+                  target='_blank'
+                  href='https://ehilab.cdm.depaul.edu/'
+                >
+                  Equity & Health Innovations Design Research Lab
+                </a>
               </span>{' '}
               <span>| All rights reserved </span> <br />
               <span>(847) 497-5453‬ / depaulEHILab@gmail.com</span>

@@ -60,8 +60,8 @@ export function fetchParticipants() {
 }
 
 // QUOTES
-export function fetchQuotes() {
-  const promise = fetch(
+export async function fetchQuotes() {
+  const promise = await fetch(
     'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
   ).then((response) => response.json());
   return {

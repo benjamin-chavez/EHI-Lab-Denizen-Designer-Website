@@ -54,11 +54,11 @@
 
 .landing-btn:hover .btn-text {
   // background-color: #3a4d8f;
-  text-decoration: none !important;
+  // text-decoration: none !important;
   background-color: #f1f3f8;
   color: #475ca7;
-  border-bottom: 1px solid #2dba90;
-  // text-decoration: underline solid #2dba90;
+  // border-bottom: 1px solid #2dba90;
+  text-decoration: underline 1px solid #2dba90 !important;
 }
 
 .landing-btn:focus,
@@ -88,4 +88,8 @@
 }
 .homeScreen a {
   text-decoration: none;
+}
+
+.footer-landing-pg .main-site-link {
+  color: #475ca7;
 }
