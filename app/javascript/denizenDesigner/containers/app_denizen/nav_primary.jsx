@@ -32,37 +32,44 @@ class NavPrimary extends Component {
   render() {
     return (
       <div className='nav-primary px-0'>
-        <Navbar className='px-0' collapseOnSelect expand='lg'>
-          <Navbar.Brand as={Link} to='/' href='/'>
-            <img
-              src={NavLogo}
-              className='d-inline-block align-top'
-              alt='Denizen Designer Logo'
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav'>
-            <Nav className='mr-auto'></Nav>
-            <Nav>
-              <Nav.Link
-                as={Link}
-                href='/historyofparticipatorydesign/timeline'
-                to='/historyofparticipatorydesign/timeline'
-                className='nav-primary-text'
-              >
-                History of Participatory Design
-              </Nav.Link>
-              <Nav.Link
-                as={Link}
-                eventKey={2}
-                href='/denizendesigner/home'
-                to='/denizendesigner/home'
-                className='nav-primary-text'
-              >
-                Denizen Designer
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+        <Navbar
+          fixed='top'
+          className='px-0 navredtest'
+          collapseOnSelect
+          expand='lg'
+        >
+          <Container fluid>
+            <Navbar.Brand as={Link} to='/' href='/'>
+              <img
+                src={NavLogo}
+                className='d-inline-block align-top'
+                alt='Denizen Designer Logo'
+              />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+            <Navbar.Collapse id='responsive-navbar-nav'>
+              <Nav className='mr-auto'></Nav>
+              <Nav>
+                <Nav.Link
+                  as={Link}
+                  href='/historyofparticipatorydesign/timeline'
+                  to='/historyofparticipatorydesign/timeline'
+                  className='nav-primary-text'
+                >
+                  History of Participatory Design
+                </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  eventKey={2}
+                  href='/denizendesigner/home'
+                  to='/denizendesigner/home'
+                  className='nav-primary-text'
+                >
+                  Denizen Designer
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
         </Navbar>
       </div>
     );

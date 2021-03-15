@@ -13,6 +13,8 @@ import DesignerDatabase from '../containers/app_denizen/designer_database';
 import Quotes from '../containers/app_denizen/quotes';
 import Resources from '../components/app_denizen/resources';
 
+import { Container } from 'react-bootstrap';
+
 import ParticipantsShow from '../containers/app_denizen/participants_show';
 import ParticipantsIndex from '../containers/app_denizen/participants_index';
 
