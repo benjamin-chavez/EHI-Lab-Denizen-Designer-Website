@@ -8,7 +8,9 @@ export const HOPD_TAB_SELECTED = 'HOPD_TAB_SELECTED';
 export const FETCH_PARTICIPANTS = 'FETCH_PARTICIPANTS';
 export const FETCH_PARTICIPANT = 'FETCH_PARTICIPANT';
 
-export const FETCH_QUOTES = 'FETCH_QUOTES';
+// QUOTE TYPES
+// export const FETCH_QUOTES = 'FETCH_QUOTES';
+export * from './quoteActions';
 
 export function setParticipants() {
   // switch this url to local route once in rails
@@ -60,24 +62,12 @@ export function fetchParticipants() {
 }
 
 // QUOTES
-export async function fetchQuotes() {
-  const promise = await fetch(
-    'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
-  ).then((response) => response.json());
-  return {
-    type: FETCH_QUOTES,
-    payload: promise,
-  };
-}
-
-// export const fetchQuoteDetails = (id) => async (dispatch) => {
-//   try {
-//     dispatch({ type: FETCH_QUOTE_REQUEST });
-
-//     // const { data } = await axios.get (${id})
-
-//     dispatch({
-//       type:
-//     })
-//   }
+// export async function fetchQuotes() {
+//   const promise = await fetch(
+//     'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
+//   ).then((response) => response.json());
+//   return {
+//     type: FETCH_QUOTES,
+//     payload: promise,
+//   };
 // }

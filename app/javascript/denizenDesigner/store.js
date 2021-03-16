@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-// import thunk from 'redux-thunk';
+import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { logger } from 'redux-logger';
 import reduxPromise from 'redux-promise';
@@ -39,7 +39,9 @@ const reducers = combineReducers({
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const middlewares = composeEnhancers(applyMiddleware(logger, reduxPromise));
+const middlewares = composeEnhancers(
+  applyMiddleware(logger, reduxPromise, thunk)
+);
 const store = createStore(reducers, initialState, middlewares);
 
 export default store;
