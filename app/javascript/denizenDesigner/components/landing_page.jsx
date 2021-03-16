@@ -22,6 +22,13 @@ class LandingPage extends Component {
             </Col>
           </Row>
           <Row className='justify-content-sm-center mt-5'>
+            <p className='lp-subtitle'>
+              The Denizen Designer Project is an ethnographic exploration of
+              best practices and use cases of participatory design as a
+              methodological framework.
+            </p>
+          </Row>
+          <Row className='justify-content-sm-center mt-5'>
             <Col lg={4} md={6} sm={12} xs={12} className='mb-4'>
               <Link to={`/historyofparticipatorydesign/timeline`}>
                 <Button
