@@ -61,7 +61,7 @@ function QuotesIndex({ quoteData, fetchQuotes }) {
         </Modal>
       </div>
       {/* <QuotesModal /> */}
-      <div>
+      <div className='quote-list'>
         {quoteData &&
           quoteData.quotes &&
           quoteData.quotes.map((quote) => (
