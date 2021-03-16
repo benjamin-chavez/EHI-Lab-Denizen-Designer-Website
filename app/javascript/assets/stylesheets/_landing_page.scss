@@ -14,20 +14,21 @@
   margin-bottom: -80px;
 }
 
-.btn-landing-pg {
-  min-height: 60px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
-  /* Gray 5 */
-  color: #ffffff !important;
-  margin: 10px 40px;
-  cursor: pointer;
-}
+// .btn-landing-pg {
+//   min-height: 60px;
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 16px;
+//   line-height: 19px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   /* Gray 5 */
+//   color: #ffffff !important;
+//   margin: 10px 40px;
+//   cursor: pointer;
+//   color: red;
+// }
 
 .landing-btn {
   // color: #ffffff !important;
@@ -40,7 +41,8 @@
   background-color: #f1f3f8;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  // font-weight: normal;
+  font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   color: #475ca7;
