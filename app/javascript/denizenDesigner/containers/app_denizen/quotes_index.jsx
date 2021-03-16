@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect, useSelector } from 'react-redux';
 import { Row, Col, Card, Container, Modal, Button } from 'react-bootstrap';
+// delete: yarn add masonry-layout
+// react-masonry-css
+import Masonry from 'react-masonry-css';
 // yarn add react-masonry-layout
 import MasonryLayout from 'react-masonry-layout';
 // import QuotesModal from './QuotesModal';
@@ -20,6 +23,19 @@ function QuotesIndex({ quoteData, fetchQuotes }) {
   const [curQuote, setCurQuote] = useState('');
   const [quoteOwner, setQuoteOwner] = useState('');
   const [ownerRole, setOwnerRole] = useState('');
+
+  const breakpointColumnsObj = {
+    default: 3,
+    1200: 3,
+    992: 3,
+    768: 2,
+    576: 1,
+
+    // default: 4,
+    // 1100: 3,
+    // 700: 2,
+    // 500: 1,
+  };
 
   return quoteData.loading ? (
     <h2>Loading...</h2>
@@ -61,34 +77,43 @@ function QuotesIndex({ quoteData, fetchQuotes }) {
         </Modal>
       </div>
       {/* <QuotesModal /> */}
-      <div className='quote-list'>
-        {quoteData &&
-          quoteData.quotes &&
-          quoteData.quotes.map((quote) => (
-            <div
-              style={{
-                width: '340px',
-                justifyContent: 'space-around',
-              }}
-            >
+      {/* <div className='quote-list'> */}
+      <div className=''>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          // breakpointCols={4}
+          className='my-masonry-grid'
+          columnClassName='my-masonry-grid_column'
+        >
+          {quoteData &&
+            quoteData.quotes &&
+            quoteData.quotes.map((quote) => (
               <div
-                className='denizen-quote-card'
-                onClick={() => {
-                  setCurQuote(quote.quote_body);
-                  setQuoteOwner(quote.participant_id);
-                  setOwnerRole('Designer Type');
-                  handleShow();
+                className=''
+                style={{
+                  width: '340px',
+                  justifyContent: 'space-around',
                 }}
               >
-                <div className='denizen-quote-body'>
-                  "{quote.quote_body}"
-                  <div className='denizen-quote-author'>
-                    {quote.participant_id}
+                <div
+                  className='denizen-quote-card'
+                  onClick={() => {
+                    setCurQuote(quote.quote_body);
+                    setQuoteOwner(quote.participant_id);
+                    setOwnerRole('Designer Type');
+                    handleShow();
+                  }}
+                >
+                  <div className='denizen-quote-body'>
+                    "{quote.quote_body}"
+                    <div className='denizen-quote-author'>
+                      {quote.participant_id}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+        </Masonry>
       </div>
     </div>
   );
