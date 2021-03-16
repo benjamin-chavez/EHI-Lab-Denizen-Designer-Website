@@ -189,3 +189,10 @@
 //     margin-bottom: 15px; /* space between items */
 //   }
 // }
+
+@media (max-width: 576px) {
+  .quote-modal .modal-quote-body {
+    // color: red;
+    font-size: 18px;
+  }
+}
