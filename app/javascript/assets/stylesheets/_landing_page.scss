@@ -11,9 +11,10 @@
 
 .wrapper {
   height: 100%;
-  margin-bottom: 0px;
+  margin-bottom: -80px;
   // background-color: red;
 }
+
 .landing-pg .col-center {
   display: flex;
   justify-content: center; /* align horizontal */
@@ -114,4 +115,17 @@
 
 .footer-landing-pg .main-site-link {
   color: #475ca7;
+}
+
+@media (max-width: 992px) {
+  .landing-pg {
+    padding-top: 0px !important;
+    // height: 100vh;
+  }
+
+  .wrapper {
+    height: 100%;
+    margin-bottom: 0px;
+    // background-color: red;
+  }
 }
