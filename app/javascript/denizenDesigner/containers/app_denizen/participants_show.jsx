@@ -61,29 +61,7 @@ export class ParticipantsShow extends Component {
               <p className='designer-type'>
                 {this.props.participant.designer_type}
               </p>
-              <p className='bio'>
-                {/* {this.props.participant.bio.replaceAll('\n', '\n\n')} */}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-                enim, aliquet velit ut. Sem amet arcu senectus venenatis dictum
-                ac et sed metus. Massa amet urna diam tellus, ac nunc integer
-                tristique. Viverra aliquet cras eleifend ut. Imperdiet at
-                pellentesque vulputate amet. Turpis orci amet quis arcu tortor
-                ultrices lacus. Pharetra, laoreet sed non mi cursus gravida.
-                Gravida mus lobortis nisi at id velit varius. In est phasellus
-                tortor gravida. Sit vitae adipiscing purus tincidunt
-                pellentesque non
-              </p>
-              <p className='bio'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-                enim, aliquet velit ut. Sem amet arcu senectus venenatis dictum
-                ac et sed metus. Massa amet urna diam tellus, ac nunc integer
-                tristique. Viverra aliquet cras eleifend ut. Imperdiet at
-                pellentesque vulputate amet. Turpis orci amet quis arcu tortor
-                ultrices lacus. Pharetra, laoreet sed non mi cursus gravida.
-                Gravida mus lobortis nisi at id velit varius. In est phasellus
-                tortor gravida. Sit vitae adipiscing purus tincidunt
-                pellentesque non
-              </p>
+              <p className='bio'>{this.props.participant.bio}</p>
 
               <Card className='mb-3'>
                 <Card.Body className='quoteCard'>
@@ -95,7 +73,6 @@ export class ParticipantsShow extends Component {
                   </span>
                 </Card.Body>
               </Card>
-
               <Card className='mb-3'>
                 <Card.Body className='quoteCard'>
                   <span>
@@ -106,7 +83,7 @@ export class ParticipantsShow extends Component {
                   </span>
                 </Card.Body>
               </Card>
-
+              {/* 
               <p className='bio'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
                 enim, aliquet velit ut. Sem amet arcu senectus venenatis dictum
@@ -117,7 +94,7 @@ export class ParticipantsShow extends Component {
                 Gravida mus lobortis nisi at id velit varius. In est phasellus
                 tortor gravida. Sit vitae adipiscing purus tincidunt
                 pellentesque non
-              </p>
+              </p> */}
             </Col>
           </Row>
           <Row>

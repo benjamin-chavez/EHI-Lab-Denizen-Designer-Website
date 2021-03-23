@@ -26,6 +26,7 @@ class DesignersIndex extends Component {
                   <Row>
                     <span className='participant-name pl-1 pr-3 mb-2'>
                       {participant.first_name}
+                      {` `}
                       {participant.last_name}
                     </span>
                   </Row>

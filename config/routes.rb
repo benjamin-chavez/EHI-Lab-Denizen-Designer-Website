@@ -15,4 +15,12 @@ Rails.application.routes.draw do
   get "/denizendesigner/designerdatabase/DT", to: 'pages#home'    # update this to be #city once you link navigation to the navbar
   get "/denizendesigner/quotes", to: 'pages#home' 
   get "/denizendesigner/resources", to: 'pages#home' 
+
+  # API
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      # TODO
+      resources :participants, only: [ :index, :show ]
+    end
+  end
 end
