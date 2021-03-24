@@ -37,36 +37,77 @@ class DesignersIndex extends Component {
                   </Row>
                   <Row>
                     <ul className='data-list pl-1'>
-                      <li className='mb-2 mr-3'>
-                        {''}
-                        <Image
-                          src={twitterIcon}
-                          className='d-inline-block align-top '
-                          alt='Twitter Icon'
-                          fluid
-                        />{' '}
-                        Mark_1234
-                      </li>
-                      <li className='mb-2 mr-3'>
-                        {''}
-                        <Image
-                          src={mailIcon}
-                          className='d-inline-block align-top'
-                          alt='Email Icon'
-                          fluid
-                        />{' '}
-                        Mark1234@usbc.edu
-                      </li>
-                      <li className='mb-2 mr-3'>
-                        {''}
-                        <Image
-                          src={igIcon}
-                          className='d-inline-block align-top'
-                          alt='Instagram Icon'
-                          fluid
-                        />{' '}
-                        <span> Mark_1234</span>
-                      </li>
+                      {participant.twitter != '' ? (
+                        <li className='mb-2 mr-3'>
+                          {' '}
+                          <Image
+                            src={twitterIcon}
+                            className='d-inline-block align-top mr-1'
+                            alt='Twitter Icon'
+                            fluid
+                          />
+                          {``}
+                          <span>
+                            {' '}
+                            <a
+                              className=''
+                              target='_blank'
+                              href={`https://twitter.com/${participant.twitter}`}
+                            >
+                              {participant.twitter}
+                            </a>
+                          </span>
+                        </li>
+                      ) : (
+                        ''
+                      )}
+
+                      {participant.email != '' ? (
+                        <li className='mb-2 mr-3'>
+                          {''}
+                          <Image
+                            src={mailIcon}
+                            className='d-inline-block align-top mr-1'
+                            alt='Email Icon'
+                            fluid
+                          />{' '}
+                          <span>
+                            <a
+                              className=''
+                              target='_blank'
+                              href={`mailto: ${participant.email}`}
+                            >
+                              {participant.email}
+                            </a>
+                          </span>
+                        </li>
+                      ) : (
+                        ''
+                      )}
+
+                      {participant.instagram != '' ? (
+                        <li className='mb-2 mr-3'>
+                          {''}
+                          <Image
+                            src={igIcon}
+                            className='d-inline-block align-top mr-1'
+                            alt='Instagram Icon'
+                            fluid
+                          />{' '}
+                          <span>
+                            {' '}
+                            <a
+                              className=''
+                              target='_blank'
+                              href={`https://instagram.com/${participant.instagram}`}
+                            >
+                              {participant.instagram}
+                            </a>
+                          </span>
+                        </li>
+                      ) : (
+                        ''
+                      )}
                     </ul>
                   </Row>
                 </Col>
