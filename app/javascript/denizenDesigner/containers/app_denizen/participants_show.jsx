@@ -101,26 +101,52 @@ export class ParticipantsShow extends Component {
             <Col xs={12} lg={4} xl={3}></Col>
             <Col xs={12} lg={8} xl={8}>
               <ul className='socialLinksList p-0'>
-                <li className='mr-3'>
-                  <Link className='socialLinks'>
-                    <Button variant='light' className='socialLinksBtn'>
-                      <Image
-                        src={InstagramColorIcon}
-                        alt='Instagram Icon'
-                        fluid
-                      />
-                      <span className='ml-1'> Handle1</span>
-                    </Button>
-                  </Link>
-                </li>
-                <li className='mr-3'>
-                  <Link className='socialLinks'>
-                    <Button variant='light' className='socialLinksBtn'>
-                      <Image src={TwitterColorIcon} alt='Twitter Icon' fluid />
-                      <span className='ml-1'> Handle2</span>
-                    </Button>
-                  </Link>
-                </li>
+                {this.props.participant.instagram != '' ? (
+                  <li className='mr-3'>
+                    <a
+                      className='socialLinks'
+                      target='_blank'
+                      href={`https://instagram.com/${this.props.participant.instagram}`}
+                    >
+                      <Button variant='light' className='socialLinksBtn'>
+                        <Image
+                          src={InstagramColorIcon}
+                          alt='Instagram Icon'
+                          fluid
+                        />
+                        <span className='ml-1'>
+                          {' '}
+                          {this.props.participant.instagram}
+                        </span>
+                      </Button>
+                    </a>
+                  </li>
+                ) : (
+                  ''
+                )}
+                {this.props.participant.twitter != '' ? (
+                  <li className='mr-3'>
+                    <a
+                      className='socialLinks'
+                      target='_blank'
+                      href={`https://twitter.com/${this.props.participant.twitter}`}
+                    >
+                      <Button variant='light' className='socialLinksBtn'>
+                        <Image
+                          src={TwitterColorIcon}
+                          alt='Twitter Icon'
+                          fluid
+                        />
+                        <span className='ml-1'>
+                          {' '}
+                          {this.props.participant.twitter}
+                        </span>
+                      </Button>
+                    </a>
+                  </li>
+                ) : (
+                  ''
+                )}
               </ul>
             </Col>
           </Row>
