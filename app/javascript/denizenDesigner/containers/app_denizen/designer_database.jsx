@@ -21,19 +21,6 @@ import DocumentIcon from '../../../../assets/images/documentIcon.svg';
 
 import { fetchParticipants } from '../../actions';
 
-// function getUniqueCities(array, uniqueCities) {
-// for (i = 0; i < array.length; index++) {
-//   console.log(array[i]);
-// }
-// console.log('testing123');
-// return uniqueCities;
-// function getUniqueCities(participantsyaya) {
-//   participantsyaya.map((participant) => {
-//     console.log(participant);
-//   });
-//   console.log(`TESTINTESTING123123`);
-// }
-
 class DesignerDatabase extends Component {
   componentDidMount() {
     this.props.fetchParticipants();
@@ -53,7 +40,7 @@ class DesignerDatabase extends Component {
   }
 
   render() {
-    const city = location.pathname.split('/').pop();
+    const city = location.pathname.split('/').pop().replace('%20', ' ');
     let uniqueCities = [];
 
     function getUniqueCities(participantsyaya) {
