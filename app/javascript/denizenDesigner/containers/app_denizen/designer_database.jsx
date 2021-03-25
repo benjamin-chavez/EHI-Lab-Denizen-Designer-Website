@@ -49,6 +49,7 @@ class DesignerDatabase extends Component {
           uniqueCities.push(participant.location_city);
         }
       });
+      uniqueCities.sort();
     }
 
     getUniqueCities(this.props.participants);
