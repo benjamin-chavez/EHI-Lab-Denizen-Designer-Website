@@ -22,7 +22,7 @@ import DocumentIcon from '../../../../assets/images/documentIcon.svg';
 import { fetchParticipants } from '../../actions';
 
 class DesignerDatabase extends Component {
-  componentDidMount() {
+  componentwillMount() {
     this.props.fetchParticipants();
   }
 
