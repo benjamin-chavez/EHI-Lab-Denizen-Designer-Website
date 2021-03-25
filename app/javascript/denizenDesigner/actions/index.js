@@ -12,6 +12,7 @@ export const FETCH_PARTICIPANT = 'FETCH_PARTICIPANT';
 // QUOTE TYPES
 // export const FETCH_QUOTES = 'FETCH_QUOTES';
 export * from './quoteActions';
+export * from './cityActions';
 
 export function setParticipants() {
   // switch this url to local route once in rails

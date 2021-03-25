@@ -10,6 +10,7 @@ import participantReducer from './reducers/participant_reducer';
 import selectedDenizenTabReducer from './reducers/selected_denizen_tab_reducer';
 import selectedhopdTabReducer from './reducers/selected_hopd_tab_reducer';
 import quoteReducer from './reducers/quote_reducer';
+import cityReducer from './reducers/quote_reducer';
 
 const identityReducer = (state = null) => state;
 
@@ -26,6 +27,7 @@ const initialState = {
   ],
   hopdTabs: ['Timeline', 'Data Visualization', 'Repository of Papers'],
   selectedDenizenTab: 'home',
+  cities: [],
 };
 
 const reducers = combineReducers({
@@ -36,6 +38,7 @@ const reducers = combineReducers({
   hopdTabs: identityReducer,
   selectedhopdTab: selectedhopdTabReducer,
   quotes: quoteReducer,
+  cities: cityReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

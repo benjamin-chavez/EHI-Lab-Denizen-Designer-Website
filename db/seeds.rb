@@ -384,7 +384,7 @@ Participant.create!({
   last_name: "Nichols",
   designer_type: "Social impact designer",
   location_state: "CA",
-  location_city: "San Francisc",
+  location_city: "San Francisco",
   bio: "De Nichols is a social impact designer, entrepreneur, and lecturer. De is the Principal of Design & Social Practice at Civic Creatives, a 2020 Monument Lab Fellow and 2020 Loeb Fellow of Harvard University’s Graduate School of Design.",
   twitter: "de_nichols",
   instagram: "de_nichols",

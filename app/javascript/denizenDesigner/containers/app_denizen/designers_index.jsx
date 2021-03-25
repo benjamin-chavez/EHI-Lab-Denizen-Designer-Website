@@ -20,7 +20,7 @@ class DesignersIndex extends Component {
         <div>
           <Row className='designer-database'>
             {this.props.participants.map((participant) => {
-              return participant.location == this.props.city ||
+              return participant.location_city == this.props.city ||
                 this.props.city == 'designerdatabase' ? (
                 <Col xs={12} sm={12} md={4} lg={3} xl={3} className=''>
                   <Row>
