@@ -52,11 +52,12 @@ class ParticipantsIndex extends Component {
             {/* {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => ( */}
             {this.props.participants.map((participant) =>
               participant.interviewed ? (
-                <Col xs={6} sm={6} md={4} lg={3} xl={2} className='mb-4'>
+                <Col xs={6} sm={6} md={4} lg={3} xl={3} className='mb-4'>
                   <Card className='participant-item'>
                     <Card.Img
                       alt='Card image'
                       src={participant.profileImgLink}
+                      className='participant-item-img-background'
                     />
                     <Link
                       to={`/denizendesigner/interviews/${participant.id}`}

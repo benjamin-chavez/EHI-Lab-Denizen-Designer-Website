@@ -10,9 +10,9 @@ class Interviews extends Component {
   render() {
     return (
       <div>
-        <Row className=''>
-          <ParticipantsIndex />
-        </Row>
+        {/* <Row className=''> */}
+        <ParticipantsIndex />
+        {/* </Row> */}
       </div>
     );
   }

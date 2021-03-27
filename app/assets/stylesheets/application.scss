@@ -264,6 +264,8 @@ body,
   // opacity: 0.8;
 
   // text-align: bottom;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .participant-item.card {
@@ -336,6 +338,8 @@ body,
   border: 4px solid #ffffff;
   box-sizing: border-box;
   text-decoration: none !important;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .participant-show .name {
