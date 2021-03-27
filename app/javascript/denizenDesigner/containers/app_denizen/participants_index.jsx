@@ -50,39 +50,46 @@ class ParticipantsIndex extends Component {
         <Container fluid>
           <Row>
             {/* {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => ( */}
-            {this.props.participants.map((participant) => (
-              <Col xs={6} sm={6} md={4} lg={3} xl={2} className='mb-4'>
-                <Card className='participant-item'>
-                  <Card.Img alt='Card image' src={participant.profileImgLink} />
-                  <Link
-                    to={`/denizendesigner/interviews/${participant.id}`}
-                    key={participant.id}
-                  >
-                    {/* <Card.Body className='cardBodyInterview'> */}
-                    <Card.ImgOverlay className='cardImageOverlay'>
-                      <Card.Body className='cardBodyInterview p-2'>
-                        <Row className='align-text-bottom'>
-                          <Col md='auto'>
-                            <span className='participant-item-name'>
-                              {participant.first_name} {participant.last_name}
-                            </span>
-                          </Col>
-                        </Row>
+            {this.props.participants.map((participant) =>
+              participant.interviewed ? (
+                <Col xs={6} sm={6} md={4} lg={3} xl={2} className='mb-4'>
+                  <Card className='participant-item'>
+                    <Card.Img
+                      alt='Card image'
+                      src={participant.profileImgLink}
+                    />
+                    <Link
+                      to={`/denizendesigner/interviews/${participant.id}`}
+                      key={participant.id}
+                    >
+                      {/* <Card.Body className='cardBodyInterview'> */}
+                      <Card.ImgOverlay className='cardImageOverlay'>
+                        <Card.Body className='cardBodyInterview p-2'>
+                          <Row className='align-text-bottom'>
+                            <Col md='auto'>
+                              <span className='participant-item-name'>
+                                {participant.first_name} {participant.last_name}
+                              </span>
+                            </Col>
+                          </Row>
 
-                        <Row className='align-text-bottom'>
-                          <Col md='auto'>
-                            <span className='participant-item-designer'>
-                              {participant.designer_type}
-                            </span>
-                          </Col>
-                        </Row>
-                      </Card.Body>
-                    </Card.ImgOverlay>
-                  </Link>
-                  {/* <span class='align-text-bottom'>text-bottom</span> */}
-                </Card>
-              </Col>
-            ))}
+                          <Row className='align-text-bottom'>
+                            <Col md='auto'>
+                              <span className='participant-item-designer'>
+                                {participant.designer_type}
+                              </span>
+                            </Col>
+                          </Row>
+                        </Card.Body>
+                      </Card.ImgOverlay>
+                    </Link>
+                    {/* <span class='align-text-bottom'>text-bottom</span> */}
+                  </Card>
+                </Col>
+              ) : (
+                ''
+              )
+            )}
           </Row>
         </Container>
       </div>
