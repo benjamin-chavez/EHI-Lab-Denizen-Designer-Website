@@ -30,6 +30,7 @@ class ParticipantsIndex extends Component {
           <Card style={{ maxWidth: '15.241rem', maxHeight: '8.938rem' }}>
             <Link>
               <Card.Img src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg' />
+              {/* <Card.Img src={participant.profileImgLink} /> */}
               <Card.Body>
                 <Card.ImgOverlay>
                   <Card.Title> Card Title</Card.Title>
@@ -51,7 +52,8 @@ class ParticipantsIndex extends Component {
             {/* {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => ( */}
             {this.props.participants.map((participant) => (
               <Col xs={6} sm={6} md={4} lg={3} xl={2} className='mb-4'>
-                <Card className='participant-item '>
+                <Card className='participant-item'>
+                  <Card.Img alt='Card image' src={participant.profileImgLink} />
                   <Link
                     to={`/denizendesigner/interviews/${participant.id}`}
                     key={participant.id}

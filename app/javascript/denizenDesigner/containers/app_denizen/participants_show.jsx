@@ -48,8 +48,11 @@ export class ParticipantsShow extends Component {
                 className='showImage'
                 fluid
               /> */}
-
-              <div className='participant-show-img'></div>
+              <Image
+                src={this.props.participant.profileImgLink}
+                className='participant-show-img'
+              />
+              {/* <div className='participant-show-img'></div> */}
 
               {/* THE ABOVE LINE IS THE IMAGE THAT NEEDS TO BE EDITED */}
             </Col>

@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
 
 # create_table "users", force: :cascade do |t|
 #   t.string "email", default: "", null: false
@@ -17,6 +18,10 @@
 #   t.index ["email"], name: "index_users_on_email", unique: true
 #   t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 # end
+
+# CLEAN DATABASE
+puts "Cleaning database..."
+Participant.destroy_all
 
 # PARTICIPANT SEEDS
 puts 'Creating Participant Seeds...'
@@ -33,7 +38,9 @@ puts 'Creating Participant Seeds...'
   # linkedin: "",
   # email: "",
   # website: "",
-# })
+  # profileImgLink: "",
+  # interviewed: true
+  # })
 
 Participant.create!({
   first_name: "Andrea",
@@ -47,7 +54,10 @@ Participant.create!({
   linkedin: "",
   email: "andrea@creativeresco.org",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877730/Denizen%20Participant%20Photos/AndreaNgan-Photo_jizsbz.jpg",
+  interviewed: true,
+  })
+
 
 Participant.create!({
   first_name: "Anjanette",
@@ -61,7 +71,9 @@ Participant.create!({
   linkedin: "",
   email: "anjanetteh@harambeecare.org",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877729/Denizen%20Participant%20Photos/Anjanette_Davenport_Hatter_gc11lm.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Bryan",
@@ -75,7 +87,9 @@ Participant.create!({
   linkedin: "",
   email: "bryan@colloqate.org",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877732/Denizen%20Participant%20Photos/Bryan_Lee_Jr_kia6zj.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Cedric",
@@ -89,7 +103,9 @@ Participant.create!({
   linkedin: "",
   email: "cedricdouglasdesign@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877737/Denizen%20Participant%20Photos/Cedric_Douglas_wm6qsh.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Chris",
@@ -103,7 +119,9 @@ Participant.create!({
   linkedin: "",
   email: "crudd2@id.iit.edu",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616883086/Denizen%20Participant%20Photos/Chris_Rudd2_hypelb.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Claudia",
@@ -117,7 +135,9 @@ Participant.create!({
   linkedin: "",
   email: "claudia@studiofuldesign.com",
   website: "https://www.studiofuldesign.com/",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877744/Denizen%20Participant%20Photos/Claudia_Paraschiv_b18oxi.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Denise",
@@ -131,7 +151,9 @@ Participant.create!({
   linkedin: "",
   email: "design@deniseshantebrown.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877712/Denizen%20Participant%20Photos/Denise_Shant%C3%A9_Brown_stf9j7.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Elle",
@@ -145,7 +167,9 @@ Participant.create!({
   linkedin: "",
   email: "elleramel@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877706/Denizen%20Participant%20Photos/Elle_Ramel_dw9b1p.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Jenny",
@@ -159,7 +183,9 @@ Participant.create!({
   linkedin: "",
   email: "jenny@winjoy.design",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877707/Denizen%20Participant%20Photos/Jenny_Lin_kbuoxh.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Ezra",
@@ -173,7 +199,9 @@ Participant.create!({
   linkedin: "",
   email: "ezra@reflexdc.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877752/Denizen%20Participant%20Photos/Ezra_Kong_mwkkk8.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Katanya",
@@ -187,7 +215,9 @@ Participant.create!({
   linkedin: "",
   email: "urbandreamsofmine@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877710/Denizen%20Participant%20Photos/Katanya_Raby_k32ufg.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Lorin ",
@@ -201,7 +231,9 @@ Participant.create!({
   linkedin: "",
   email: "lorin@reinnoireco.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877712/Denizen%20Participant%20Photos/Lorin_Jackson_yyzjbp.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "N'Deye",
@@ -215,7 +247,9 @@ Participant.create!({
   linkedin: "",
   email: "ndiakhate93@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877717/Denizen%20Participant%20Photos/N_Deye_Diakhate_h1zntn.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Nour",
@@ -229,7 +263,9 @@ Participant.create!({
   linkedin: "",
   email: "nour.arafat@protonmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877721/Denizen%20Participant%20Photos/Nour_Arafat_e3or0a.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Olivia",
@@ -243,7 +279,9 @@ Participant.create!({
   linkedin: "https://www.linkedin.com/in/olivianava/",
   email: "olivia.nava@gobeegroup.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877717/Denizen%20Participant%20Photos/Olivia_Nava_mzjl1b.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Sabiha",
@@ -257,7 +295,9 @@ Participant.create!({
   linkedin: "",
   email: "sabiha@designaction.org",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877721/Denizen%20Participant%20Photos/Sabiha_Basrai_ob6ioj.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Stephanie",
@@ -271,7 +311,9 @@ Participant.create!({
   linkedin: "",
   email: "me@stephanieariburrell.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877729/Denizen%20Participant%20Photos/Stephanie_Burrell_m7bmjf.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Taylor",
@@ -289,7 +331,9 @@ Participant.create!({
   linkedin: "",
   email: "hello@yayforpda.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877723/Denizen%20Participant%20Photos/Taylor_Holloway_phyovs.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Tonika",
@@ -303,7 +347,9 @@ Participant.create!({
   linkedin: "",
   email: "tonika.johnson@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877726/Denizen%20Participant%20Photos/Tonika_Johnson_d9zrnn.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Victoria",
@@ -317,7 +363,9 @@ Participant.create!({
   linkedin: "",
   email: "veegs42@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877728/Denizen%20Participant%20Photos/Victoria_Barnett_ftzodx.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Folayemi",
@@ -331,7 +379,9 @@ Participant.create!({
   linkedin: "",
   email: "fo@blkhausstudios.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877708/Denizen%20Participant%20Photos/Folayemi_Wilson_biyicm.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Michele",
@@ -345,7 +395,9 @@ Participant.create!({
   linkedin: "https://www.linkedin.com/in/michelewashington/",
   email: "michele@washingtondesign.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616883340/Denizen%20Participant%20Photos/Michele_Washington_-_v2_ipgedy.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Anushka",
@@ -363,7 +415,9 @@ Participant.create!({
   linkedin: "",
   email: "anushkajajodia@gmail.com",
   website: "https://anushkajajodia.com/",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877740/Denizen%20Participant%20Photos/Anushka_Jajodia_h6d9fs.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "Navjot",
@@ -377,7 +431,9 @@ Participant.create!({
   linkedin: "",
   email: "navheer29@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877719/Denizen%20Participant%20Photos/Navjot_Heer_ijv1zo.jpg",
+  interviewed: true
+  })
 
 Participant.create!({
   first_name: "De",
@@ -391,4 +447,6 @@ Participant.create!({
   linkedin: "",
   email: "deandrean@gmail.com",
   website: "",
-})
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877713/Denizen%20Participant%20Photos/De_Nichols_r9we2d.jpg",
+  interviewed: true
+  })

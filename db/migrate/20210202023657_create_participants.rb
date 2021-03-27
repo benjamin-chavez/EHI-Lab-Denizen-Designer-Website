@@ -12,6 +12,8 @@ class CreateParticipants < ActiveRecord::Migration[6.0]
       t.string :linkedin
       t.string :email
       t.string :website
+      t.string :profileImgLink
+      t.boolean :interviewed, default: false
 
       t.timestamps
     end
