@@ -21,7 +21,8 @@ class DesignersIndex extends Component {
           <Row className='designer-database'>
             {this.props.participants.map((participant) => {
               return participant.location_city == this.props.city ||
-                this.props.city == 'designerdatabase' ? (
+                this.props.city == 'designerdatabase' ||
+                this.props.city == 'All Cities' ? (
                 <Col xs={12} sm={12} md={4} lg={3} xl={3} className=''>
                   <Row>
                     <span className='participant-name pl-1 pr-3 mb-2'>

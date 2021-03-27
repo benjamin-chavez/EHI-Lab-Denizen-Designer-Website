@@ -42,6 +42,7 @@ class DesignerDatabase extends Component {
   render() {
     const city = location.pathname.split('/').pop().replace('%20', ' ');
     let uniqueCities = [];
+    let uniqueCitiestemp = ['All Cities'];
 
     function getUniqueCities(participantsyaya) {
       participantsyaya.map((participant) => {
@@ -49,7 +50,11 @@ class DesignerDatabase extends Component {
           uniqueCities.push(participant.location_city);
         }
       });
-      uniqueCities.sort();
+      uniqueCities = uniqueCities.sort();
+      for (let i = 0; i < uniqueCities.length; i++) {
+        uniqueCitiestemp.push(uniqueCities[i]);
+      }
+      uniqueCities = uniqueCitiestemp;
     }
 
     getUniqueCities(this.props.participants);
@@ -75,7 +80,9 @@ class DesignerDatabase extends Component {
                   id='dropdown-basic'
                   className='dropdownButon'
                 >
-                  {city == 'designerdatabase' ? 'Cities' : city}
+                  {city == 'designerdatabase' || city == 'All Cities'
+                    ? 'Cities'
+                    : city}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
