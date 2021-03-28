@@ -58,10 +58,14 @@ ActiveRecord::Schema.define(version: 2021_03_27_195952) do
     t.text "quote_body"
     t.string "first_name"
     t.string "last_name"
-    t.integer "category"
+    t.string "category"
+    t.integer "category_int"
+    t.bigint "participant_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["participant_id"], name: "index_quotes_on_participant_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "quotes", "participants"
 end

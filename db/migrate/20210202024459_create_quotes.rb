@@ -4,9 +4,13 @@ class CreateQuotes < ActiveRecord::Migration[6.0]
       t.text :quote_body
       t.string :first_name
       t.string :last_name
-      t.integer :category
+      t.string :category
+      t.integer :category_int
+      t.references :participant, null: false, foreign_key: true
 
       t.timestamps
     end
   end
 end
+
+
