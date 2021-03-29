@@ -5,6 +5,7 @@
 }
 
 .quote-filter-menu > li {
+  text-decoration: none;
   margin: 10px;
   text-align: center;
   display: inline-block;
@@ -18,7 +19,22 @@
   cursor: pointer;
 }
 
-.quote-filter-item.selected {
+.quote-filter-menu > li a {
+  text-decoration: none;
+  // margin: 10px;
+  // text-align: center;
+  // display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153.4%;
+  align-items: center;
+  color: #6b7390;
+  cursor: pointer;
+}
+
+.quote-filter-item a.active {
   color: #f0f0f0;
   padding: 6px 18px;
   background-color: #475ca7;

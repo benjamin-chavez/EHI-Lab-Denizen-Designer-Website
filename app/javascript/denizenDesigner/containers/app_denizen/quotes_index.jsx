@@ -106,6 +106,7 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
                       handleShow();
                     }}
                   >
+                    {/* <p>{quoteCategoryPath}</p> */}
                     <div className='denizen-quote-body'>
                       "{quote.quote_body}"
                       <div className='denizen-quote-author'>

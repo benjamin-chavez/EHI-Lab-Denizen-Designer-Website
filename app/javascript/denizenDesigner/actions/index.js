@@ -39,6 +39,7 @@ export function selectDenizenTab(denizenTab) {
     payload: denizenTab,
   };
 }
+
 export function selectHopdTab(hopdTab) {
   return {
     type: HOPD_TAB_SELECTED,

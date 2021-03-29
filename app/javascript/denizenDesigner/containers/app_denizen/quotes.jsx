@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import QuotesIndex from './quotes_index';
 import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import { selectQuoteCategory } from '../../actions';
 
 class Quotes extends Component {
+  handleClick = (quoteCategory) => {
+    this.props.selectQuoteCategory(quoteCategory);
+  };
+
   render() {
     let quoteCategories = [
       'Community Building',
@@ -30,21 +37,20 @@ class Quotes extends Component {
     return (
       <div>
         <div>
-          <p>{quoteCategoryPath}</p>
-          {/* <ul className='quote-filter-menu'>
-            <li className='quote-filter-item selected'>
-              Made data meaningful for individuals
-            </li>
-            <li className='quote-filter-item'>Opportunity to advance</li>
-            <li className='quote-filter-item'>Co-design</li>
-          </ul> */}
           <ul className='quote-filter-menu'>
-            <li className='quote-filter-item selected'>
-              Made data meaningful for individuals
+            <li className='quote-filter-item'>
+              <NavLink to={`/denizendesigner/quotes/quotes`}>
+                All Quotes
+              </NavLink>
             </li>
             {quoteCategories.map((quoteCategory) => {
               return (
-                <li className='quote-filter-item'>
+                <li
+                  className='quote-filter-item'
+                  key={quoteCategory}
+                  onClick={() => this.handleClick(quoteCategory)}
+                  role='presentation'
+                >
                   <NavLink to={`/denizendesigner/quotes/${quoteCategory}`}>
                     {quoteCategory}
                   </NavLink>
@@ -59,4 +65,22 @@ class Quotes extends Component {
   }
 }
 
-export default Quotes;
+// export default Quotes;
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {
+      // setNavSecondary: setNavSecondary
+      selectQuoteCategory,
+    },
+    dispatch
+  );
+}
+
+function mapReduxStateToProps(reduxState) {
+  return {
+    selectQuoteCategory: reduxState.selectedQuoteCategory,
+  };
+}
+
+export default connect(mapReduxStateToProps, mapDispatchToProps)(Quotes);

@@ -11,6 +11,7 @@ import selectedDenizenTabReducer from './reducers/selected_denizen_tab_reducer';
 import selectedhopdTabReducer from './reducers/selected_hopd_tab_reducer';
 import quoteReducer from './reducers/quote_reducer';
 import cityReducer from './reducers/quote_reducer';
+import selectedQuoteCategoryReducer from './reducers/selected_quote_category_reducer';
 
 const identityReducer = (state = null) => state;
 
@@ -27,6 +28,7 @@ const initialState = {
   ],
   hopdTabs: ['Timeline', 'Data Visualization', 'Repository of Papers'],
   selectedDenizenTab: 'home',
+  selectedQuoteCategory: 'power',
   cities: [],
 };
 
@@ -38,6 +40,7 @@ const reducers = combineReducers({
   hopdTabs: identityReducer,
   selectedhopdTab: selectedhopdTabReducer,
   quotes: quoteReducer,
+  selectedQuoteCategory: selectedQuoteCategoryReducer,
   cities: cityReducer,
 });
 

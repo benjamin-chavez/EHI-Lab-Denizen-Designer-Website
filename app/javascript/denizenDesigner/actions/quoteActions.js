@@ -3,6 +3,7 @@ import axios from 'axios';
 export const FETCH_QUOTES_REQUEST = 'FETCH_QUOTES_REQUEST';
 export const FETCH_QUOTES_SUCCESS = 'FETCH_QUOTES_SUCCESS';
 export const FETCH_QUOTES_FAILURE = 'FETCH_QUOTES_FAILURE';
+export const QUOTE_CATEGORY_SELECTED = 'QUOTE_CATEGORY_SELECTED';
 
 export const fetchQuotesRequest = () => {
   return {
@@ -53,3 +54,10 @@ export const fetchQuotes = () => {
       });
   };
 };
+
+export function selectQuoteCategory(quoteCategory) {
+  return {
+    type: QUOTE_CATEGORY_SELECTED,
+    payload: quoteCategory,
+  };
+}
