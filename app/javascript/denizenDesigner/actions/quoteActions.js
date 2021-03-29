@@ -40,7 +40,8 @@ export const fetchQuotes = () => {
     dispatch(fetchQuotesRequest);
     axios
       .get(
-        'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
+        // 'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
+        '/api/v1/quotes'
       )
       .then((response) => {
         const quotes = shuffleArray(response.data);

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import QuotesIndex from './quotes_index';
+import { useLocation } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 class Quotes extends Component {
   render() {
@@ -19,10 +21,16 @@ class Quotes extends Component {
       'Adaptation',
       'Design',
     ];
+    const quoteCategoryPath = location.pathname
+      .split('/')
+      .pop()
+      .replace('%20', '_')
+      .toLowerCase();
 
     return (
       <div>
         <div>
+          <p>{quoteCategoryPath}</p>
           {/* <ul className='quote-filter-menu'>
             <li className='quote-filter-item selected'>
               Made data meaningful for individuals
@@ -35,10 +43,16 @@ class Quotes extends Component {
               Made data meaningful for individuals
             </li>
             {quoteCategories.map((quoteCategory) => {
-              return <li className='quote-filter-item'>{quoteCategory}</li>;
+              return (
+                <li className='quote-filter-item'>
+                  <NavLink to={`/denizendesigner/quotes/${quoteCategory}`}>
+                    {quoteCategory}
+                  </NavLink>
+                </li>
+              );
             })}
           </ul>
-          <QuotesIndex />
+          <QuotesIndex quoteCategoryPath={quoteCategoryPath} />
         </div>
       </div>
     );

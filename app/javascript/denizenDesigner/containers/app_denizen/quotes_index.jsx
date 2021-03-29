@@ -11,7 +11,7 @@ import MasonryLayout from 'react-masonry-layout';
 // import QuotesModal from './QuotesModal';
 import { fetchQuotes } from '../../actions';
 
-function QuotesIndex({ quoteData, fetchQuotes }) {
+function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
   useEffect(() => {
     fetchQuotes();
   }, []);
@@ -87,32 +87,39 @@ function QuotesIndex({ quoteData, fetchQuotes }) {
         >
           {quoteData &&
             quoteData.quotes &&
-            quoteData.quotes.map((quote) => (
-              <div
-                className=''
-                style={{
-                  width: '340px',
-                  justifyContent: 'space-around',
-                }}
-              >
+            quoteData.quotes.map((quote) =>
+              quoteCategoryPath == 'quotes' ||
+              quoteCategoryPath == quote.category_int ? (
                 <div
-                  className='denizen-quote-card'
-                  onClick={() => {
-                    setCurQuote(quote.quote_body);
-                    setQuoteOwner(quote.participant_id);
-                    setOwnerRole('Designer Type');
-                    handleShow();
+                  className=''
+                  style={{
+                    width: '340px',
+                    justifyContent: 'space-around',
                   }}
                 >
-                  <div className='denizen-quote-body'>
-                    "{quote.quote_body}"
-                    <div className='denizen-quote-author'>
-                      {quote.participant_id}
+                  <div
+                    className='denizen-quote-card'
+                    onClick={() => {
+                      setCurQuote(quote.quote_body);
+                      setQuoteOwner(quote.participant_id);
+                      setOwnerRole('Designer Type');
+                      handleShow();
+                    }}
+                  >
+                    <div className='denizen-quote-body'>
+                      "{quote.quote_body}"
+                      <div className='denizen-quote-author'>
+                        {quote.first_name}
+                        {` `}
+                        {quote.last_name}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ) : (
+                ''
+              )
+            )}
         </Masonry>
       </div>
     </div>

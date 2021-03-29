@@ -31,7 +31,7 @@ const AppDenizen = (props) => {
         path='/denizendesigner/designerdatabase'
         component={DesignerDatabase}
       />
-      <Route exact path='/denizendesigner/quotes' component={Quotes} />
+      <Route path='/denizendesigner/quotes' component={Quotes} />
       <Route exact path='/denizendesigner/resources' component={Resources} />
       <Route
         path='/denizendesigner/interviews/:id'
