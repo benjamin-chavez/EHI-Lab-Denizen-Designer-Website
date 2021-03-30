@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get "/denizendesigner/designerdatabase/:city", to: 'pages#home'    # update this to be #city once you link navigation to the navbar
   get "/denizendesigner/quotes", to: 'pages#home' 
   get "/denizendesigner/quotes/:quoteCategory", to: 'pages#home' 
+  get "/denizendesigner/quotes/quotes", to: 'pages#home' 
   get "/denizendesigner/resources", to: 'pages#home' 
 
   # API

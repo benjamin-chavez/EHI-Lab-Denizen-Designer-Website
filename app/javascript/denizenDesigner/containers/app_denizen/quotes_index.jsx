@@ -88,7 +88,7 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
           {quoteData &&
             quoteData.quotes &&
             quoteData.quotes.map((quote) =>
-              quoteCategoryPath == 'quotes' ||
+              quoteCategoryPath == 'all_quotes' ||
               quoteCategoryPath == quote.category_int ? (
                 <div
                   className=''

@@ -26,12 +26,12 @@ export function setParticipants() {
     });
 }
 
-export function setNavSecondary() {
-  return {
-    type: SET_NAV_SECONDARY,
-    payload: '???',
-  };
-}
+// export function setNavSecondary() {
+//   return {
+//     type: SET_NAV_SECONDARY,
+//     payload: '???',
+//   };
+// }
 
 export function selectDenizenTab(denizenTab) {
   return {

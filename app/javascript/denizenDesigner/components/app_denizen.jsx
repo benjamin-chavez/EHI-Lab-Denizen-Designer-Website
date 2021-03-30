@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
 // import { createHistory as history } from "history";
 
 import NavPrimary from '../containers/app_denizen/nav_primary';
@@ -32,6 +37,7 @@ const AppDenizen = (props) => {
         component={DesignerDatabase}
       />
       <Route path='/denizendesigner/quotes' component={Quotes} />
+
       <Route exact path='/denizendesigner/resources' component={Resources} />
       <Route
         path='/denizendesigner/interviews/:id'

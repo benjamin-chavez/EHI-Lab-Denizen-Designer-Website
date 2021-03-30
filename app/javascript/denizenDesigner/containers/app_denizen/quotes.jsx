@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import QuotesIndex from './quotes_index';
@@ -6,28 +6,19 @@ import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { selectQuoteCategory } from '../../actions';
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
+
 class Quotes extends Component {
   handleClick = (quoteCategory) => {
     this.props.selectQuoteCategory(quoteCategory);
   };
 
   render() {
-    let quoteCategories = [
-      'Community Building',
-      'Trust',
-      'Power',
-      'Space Making',
-      'Increasing access',
-      'Knowledge Building',
-      'Responsibility',
-      'Mutual Learning',
-      'Change Making',
-      'Rewards/Upsides/Positives (Need new name)',
-      'Community Empowerment',
-      'Future Implications',
-      'Adaptation',
-      'Design',
-    ];
     const quoteCategoryPath = location.pathname
       .split('/')
       .pop()
@@ -36,14 +27,20 @@ class Quotes extends Component {
 
     return (
       <div>
+        <Switch>
+          <Redirect
+            exact
+            from='/denizendesigner/quotes'
+            exact
+            to='/denizendesigner/quotes/All%20Quotes'
+          />
+        </Switch>
         <div>
           <ul className='quote-filter-menu'>
-            <li className='quote-filter-item'>
-              <NavLink to={`/denizendesigner/quotes/quotes`}>
-                All Quotes
-              </NavLink>
-            </li>
-            {quoteCategories.map((quoteCategory) => {
+            {/* <li className='quote-filter-item'>
+              <NavLink to={`/denizendesigner/quotes/all`}>All Quotes</NavLink>
+            </li> */}
+            {this.props.quoteCategories.map((quoteCategory) => {
               return (
                 <li
                   className='quote-filter-item'
@@ -79,7 +76,9 @@ function mapDispatchToProps(dispatch) {
 
 function mapReduxStateToProps(reduxState) {
   return {
-    selectQuoteCategory: reduxState.selectedQuoteCategory,
+    // selectQuoteCategory: reduxState.selectedQuoteCategory,
+    selectedQuoteCategories: reduxState.selectedQuoteCategories,
+    quoteCategories: reduxState.quoteCategories,
   };
 }
 

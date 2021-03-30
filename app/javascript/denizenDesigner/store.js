@@ -28,7 +28,24 @@ const initialState = {
   ],
   hopdTabs: ['Timeline', 'Data Visualization', 'Repository of Papers'],
   selectedDenizenTab: 'home',
-  selectedQuoteCategory: 'power',
+  quoteCategories: [
+    'All Quotes',
+    'Community Building',
+    'Trust',
+    'Power',
+    'Space Making',
+    'Increasing access',
+    'Knowledge Building',
+    'Responsibility',
+    'Mutual Learning',
+    'Change Making',
+    'Rewards/Upsides/Positives (Need new name)',
+    'Community Empowerment',
+    'Future Implications',
+    'Adaptation',
+    'Design',
+  ],
+  selectedQuoteCategory: 'Power',
   cities: [],
 };
 
@@ -40,6 +57,7 @@ const reducers = combineReducers({
   hopdTabs: identityReducer,
   selectedhopdTab: selectedhopdTabReducer,
   quotes: quoteReducer,
+  quoteCategories: identityReducer,
   selectedQuoteCategory: selectedQuoteCategoryReducer,
   cities: cityReducer,
 });
