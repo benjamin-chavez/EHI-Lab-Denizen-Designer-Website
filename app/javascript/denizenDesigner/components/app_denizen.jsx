@@ -43,6 +43,10 @@ const AppDenizen = (props) => {
         path='/denizendesigner/interviews/:id'
         component={ParticipantsShow}
       />
+
+      <Switch>
+        <Redirect exact from='/denizendesigner' to='/denizendesigner/home' />
+      </Switch>
     </div>
   );
 };

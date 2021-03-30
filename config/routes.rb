@@ -3,10 +3,14 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+  get "/historyofparticipatorydesign", to: 'pages#home'
+  get "/historyofparticipatorydesign/", to: 'pages#home'
   get "/historyofparticipatorydesign/timeline", to: 'pages#home'
-  get "/historyofparticipatorydesign/timeline", to: 'pages#home'
-  get "/historyofparticipatorydesign/timeline", to: 'pages#home'
+  get "/historyofparticipatorydesign/datavisualization", to: 'pages#home'
+  get "/historyofparticipatorydesign/repositoryofpapers", to: 'pages#home'
 
+  get "/denizendesigner", to: 'pages#home' 
+  get "/denizendesigner/", to: 'pages#home' 
   get "/denizendesigner/home", to: 'pages#home' 
   get "/denizendesigner/interviews", to: 'pages#home' 
   get "/denizendesigner/interviews/:id", to: 'pages#home' 

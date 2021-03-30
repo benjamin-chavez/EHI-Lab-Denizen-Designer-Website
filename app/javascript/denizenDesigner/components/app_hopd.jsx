@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from 'react-router-dom';
 // import { createHistory as history } from "history";
 
 import NavPrimary from '../containers/app_denizen/nav_primary';
@@ -31,6 +36,13 @@ const AppHopd = (props) => {
         path='/historyofparticipatorydesign/repositoryofpapers'
         component={HopdPapers}
       />
+      <Switch>
+        <Redirect
+          exact
+          from='/historyofparticipatorydesign'
+          to='/historyofparticipatorydesign/timeline'
+        />
+      </Switch>
     </div>
   );
 };

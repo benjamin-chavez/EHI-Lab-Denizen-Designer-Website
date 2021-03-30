@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { bindActionCreators } from "redux";
 // import { connect } from "react-redux";
 // import { selectDenizenTab, setNavSecondaryz } from "../../actions";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -51,23 +51,23 @@ class NavPrimary extends Component {
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'></Nav>
               <Nav>
-                <Nav.Link
-                  as={Link}
-                  href='/historyofparticipatorydesign/timeline'
-                  to='/historyofparticipatorydesign/timeline'
+                <NavLink
+                  // as={Link}
+                  // href='/historyofparticipatorydesign'
+                  to='/historyofparticipatorydesign'
                   className='nav-primary-text'
                 >
                   History of Participatory Design
-                </Nav.Link>
-                <Nav.Link
-                  as={Link}
-                  eventKey={2}
-                  href='/denizendesigner/home'
-                  to='/denizendesigner/home'
+                </NavLink>
+                <NavLink
+                  // as={Link}
+                  // eventKey={2}
+                  // href='/denizendesigner/'
+                  to='/denizendesigner'
                   className='nav-primary-text'
                 >
                   Denizen Designer
-                </Nav.Link>
+                </NavLink>
               </Nav>
             </Navbar.Collapse>
           </Container>

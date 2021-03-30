@@ -27,7 +27,7 @@ const initialState = {
     'Resources',
   ],
   hopdTabs: ['Timeline', 'Data Visualization', 'Repository of Papers'],
-  selectedDenizenTab: 'home',
+  // selectedDenizenTab: 'home',
   quoteCategories: [
     'All Quotes',
     'Community Building',
@@ -45,7 +45,7 @@ const initialState = {
     'Adaptation',
     'Design',
   ],
-  selectedQuoteCategory: 'Power',
+  // selectedQuoteCategory: 'Power',
   cities: [],
 };
 
@@ -53,12 +53,12 @@ const reducers = combineReducers({
   navSecondary: navSecondaryReducer,
   participants: participantReducer,
   denizenTabs: identityReducer,
-  selectedDenizenTab: selectedDenizenTabReducer,
+  // selectedDenizenTab: selectedDenizenTabReducer,
   hopdTabs: identityReducer,
-  selectedhopdTab: selectedhopdTabReducer,
+  // selectedhopdTab: selectedhopdTabReducer,
   quotes: quoteReducer,
   quoteCategories: identityReducer,
-  selectedQuoteCategory: selectedQuoteCategoryReducer,
+  // selectedQuoteCategory: selectedQuoteCategoryReducer,
   cities: cityReducer,
 });
 
