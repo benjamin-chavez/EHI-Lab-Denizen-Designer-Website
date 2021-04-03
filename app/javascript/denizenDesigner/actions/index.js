@@ -8,6 +8,9 @@ export const DENIZEN_TAB_SELECTED = 'DENIZEN_TAB_SELECTED';
 export const HOPD_TAB_SELECTED = 'HOPD_TAB_SELECTED';
 export const FETCH_PARTICIPANTS = 'FETCH_PARTICIPANTS';
 export const FETCH_PARTICIPANT = 'FETCH_PARTICIPANT';
+export const PARTICIPANT_CREATED = 'PARTICIPANT_CREATED';
+export const DELETE_PARTICIPANT = 'DELETE_PARTICIPANT';
+export const PARTICIPANT_UPDATED = 'PARTICIPANT_UPDATED';
 
 // QUOTE TYPES
 // export const FETCH_QUOTES = 'FETCH_QUOTES';
@@ -25,13 +28,6 @@ export function setParticipants() {
       };
     });
 }
-
-// export function setNavSecondary() {
-//   return {
-//     type: SET_NAV_SECONDARY,
-//     payload: '???',
-//   };
-// }
 
 export function selectDenizenTab(denizenTab) {
   return {
@@ -64,13 +60,53 @@ export function fetchParticipants() {
   };
 }
 
-// QUOTES
-// export async function fetchQuotes() {
-//   const promise = await fetch(
-//     'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
-//   ).then((response) => response.json());
-//   return {
-//     type: FETCH_QUOTES,
-//     payload: promise,
-//   };
-// }
+export function createParticipant(body, callback) {
+  const request = fetch(`${ROOT_URL}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify(body),
+  })
+    .then((response) => response.json())
+    .then(callback);
+
+  return {
+    type: PARTICIPANT_CREATED,
+    payload: request,
+  };
+}
+
+export function updateParticipant(id, body, callback) {
+  const request = fetch(`${ROOT_URL}/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify(body),
+  })
+    .then((response) => response.json())
+    .then(callback);
+
+  return {
+    type: PARTICIPANT_UPDATED,
+    payload: request,
+  };
+}
+
+export function deleteParticipant(id) {
+  const promise = fetch(`${ROOT_URL}/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+  });
+
+  return {
+    type: DELETE_PARTICIPANT,
+    payload: promise,
+  };
+}

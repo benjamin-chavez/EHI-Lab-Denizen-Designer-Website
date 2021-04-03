@@ -2,7 +2,9 @@ import {
   SET_PARTICIPANTS,
   FETCH_PARTICIPANTS,
   FETCH_PARTICIPANT,
-} from "../actions";
+  PARTICIPANT_CREATED,
+  DELETE_PARTICIPANT,
+} from '../actions';
 
 const participantReducer = (state, action) => {
   // Compute and returen the new state
@@ -10,7 +12,7 @@ const participantReducer = (state, action) => {
     return [];
   }
 
-  // TODO: handle actions
+  // Handle Actions
   switch (action.type) {
     case SET_PARTICIPANTS:
       return action.payload;
@@ -18,7 +20,12 @@ const participantReducer = (state, action) => {
       return action.payload;
     case FETCH_PARTICIPANT:
       return action.payload;
-    // return [ action.payload ];
+    // case PARTICIPANT_CREATED:
+    // // TODO: push it to the array of participants
+    //   return state;
+    case DELETE_PARTICIPANT:
+      // return action.payload;
+      return state.filter((participant) => participant.id !== action.id);
     default:
       return state;
   }

@@ -12,6 +12,7 @@ import selectedhopdTabReducer from './reducers/selected_hopd_tab_reducer';
 import quoteReducer from './reducers/quote_reducer';
 import cityReducer from './reducers/quote_reducer';
 import selectedQuoteCategoryReducer from './reducers/selected_quote_category_reducer';
+import { reducer as formReducer } from 'redux-form';
 
 const identityReducer = (state = null) => state;
 
@@ -60,6 +61,7 @@ const reducers = combineReducers({
   quoteCategories: identityReducer,
   // selectedQuoteCategory: selectedQuoteCategoryReducer,
   cities: cityReducer,
+  form: formReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

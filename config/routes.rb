@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'pages/home'
   root to: 'pages#home'
   # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # get 'dashboard', to: 'pages#dashboard'
+
+  get 'dashboard', to: 'pages#home'
+  get 'dashboard/newparticipant', to: 'pages#home'
+  get 'dashboard/editparticipant/:id', to: 'pages#home'
+  
 
   get "/historyofparticipatorydesign", to: 'pages#home'
   get "/historyofparticipatorydesign/", to: 'pages#home'
@@ -26,8 +33,9 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       # TODO
-      resources :participants, only: [ :index, :show ]
+      resources :participants, only: [ :index, :show, :update, :create, :destroy ]
       resources :quotes, only: [ :index, :show ]
+      resources :sessions, only: [ :create, :destroy ]
     end
   end
 end

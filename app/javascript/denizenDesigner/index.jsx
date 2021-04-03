@@ -11,29 +11,18 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
+import { reducer as formReducer } from 'redux-form';
 
 import Container from 'react-bootstrap/Container';
 
 // Internal modules
-// import AppDenizen from './components/app_denizen';
-import ParticipantsIndex from './containers/app_denizen/participants_index';
-import ParticipantsShow from './containers/app_denizen/participants_show';
-// import DenizenHome from "./components/app_denizen/denizen_home";
-// import ParticipantsShow from "./containers/app_denizen/participants_show";
-
 import '../assets/stylesheets/application.scss';
-// import LandingPage from './components/landing_page';
-
-// Internal Modules | History of Participatory Design
 import AppHopd from './components/app_hopd';
-
-// const root = document.getElementById("root");
-// if (root) {
-//   ReactDOM.render(<App />, root);
-// }
-
 import AppDenizen from './components/app_denizen';
 import LandingPage from './components/landing_page';
+import Dashboard from './containers/app_denizen/dashboard';
+import EditParticipant from './containers/app_denizen/edit_participant';
+import NewParticipant from './containers/app_denizen/new_participant';
 
 class HelloWorld extends React.Component {
   render() {
@@ -63,6 +52,17 @@ class HelloWorld extends React.Component {
                 />
                 <Route path='/denizendesigner' component={AppDenizen} />
                 <Route exact path='/' component={LandingPage} />
+                <Route exact path='/dashboard' component={Dashboard} />
+                <Route
+                  exact
+                  path='/dashboard/newparticipant'
+                  component={NewParticipant}
+                />
+                <Route
+                  exact
+                  path='/dashboard/editparticipant/:id'
+                  component={EditParticipant}
+                />
                 {/* <Redirect exact from='/' to='/denizendesigner/home' /> */}
               </Switch>
             </Container>
