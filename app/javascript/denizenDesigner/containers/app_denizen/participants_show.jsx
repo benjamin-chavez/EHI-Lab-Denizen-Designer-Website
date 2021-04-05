@@ -29,7 +29,10 @@ export class ParticipantsShow extends Component {
               <Link to='/denizendesigner/interviews'>
                 <Button className='back-btn' variant='light'>
                   {' '}
-                  <i className='fa fa-chevron-left back-btn-text'> Back</i>
+                  <i className='fa fa-chevron-left'>
+                    {' '}
+                    <span className='back-btn-text'>Back</span>
+                  </i>
                 </Button>
               </Link>
             </Col>
