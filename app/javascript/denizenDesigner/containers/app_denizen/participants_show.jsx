@@ -69,8 +69,8 @@ export class ParticipantsShow extends Component {
               </p>
               <p className='bio'>{this.props.participant.bio}</p>
 
-              <Card className='mb-3'>
-                <Card.Body className='quoteCard'>
+              <Card className='mb-3 quoteCard'>
+                <Card.Body className=''>
                   <span>
                     “The public is more familiar with bad design than good
                     design. It is, in effect, conditioned to prefer bad design,
@@ -79,8 +79,8 @@ export class ParticipantsShow extends Component {
                   </span>
                 </Card.Body>
               </Card>
-              <Card className='mb-3'>
-                <Card.Body className='quoteCard'>
+              <Card className='mb-3 quoteCard'>
+                <Card.Body className=''>
                   <span>
                     “The public is more familiar with bad design than good
                     design. It is, in effect, conditioned to prefer bad design,
