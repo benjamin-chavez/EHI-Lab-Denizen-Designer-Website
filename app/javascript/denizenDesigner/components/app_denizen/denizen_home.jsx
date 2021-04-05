@@ -14,7 +14,7 @@ class DenizenHome extends Component {
           </Col>
         </Row>
 
-        <Row className='center  mb-3'>
+        <Row className='center mb-3'>
           <Col>
             <p className='textBody'>
               The Denizen Designer Project documents the insights and
@@ -32,7 +32,7 @@ class DenizenHome extends Component {
           </Col>
         </Row>
         <Row className='center justify-content-sm-center pb-5'>
-          <Col sm={12} md={3}>
+          <Col sm={12} md={5} lg={3}>
             <Link className='denizen-link' to='/denizendesigner/interviews'>
               <Button
                 className='homeBtn p-3'
