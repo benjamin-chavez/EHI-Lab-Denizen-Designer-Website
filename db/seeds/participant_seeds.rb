@@ -295,7 +295,7 @@ Participant.create!({
   linkedin: "",
   email: "sabiha@designaction.org",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877721/Denizen%20Participant%20Photos/Sabiha_Basrai_ob6ioj.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Stephanie_Burrell_gyn4kf.jpg",
   interviewed: true
   })
 
@@ -311,7 +311,7 @@ Participant.create!({
   linkedin: "",
   email: "me@stephanieariburrell.com",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877729/Denizen%20Participant%20Photos/Stephanie_Burrell_m7bmjf.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Stephanie_Burrell_gyn4kf.jpg",
   interviewed: true
   })
 
@@ -347,7 +347,7 @@ Participant.create!({
   linkedin: "",
   email: "tonika.johnson@gmail.com",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877726/Denizen%20Participant%20Photos/Tonika_Johnson_d9zrnn.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Tonika_Johnson_bqwdv0.jpg",
   interviewed: true
   })
 
@@ -379,7 +379,7 @@ Participant.create!({
   linkedin: "",
   email: "fo@blkhausstudios.com",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877708/Denizen%20Participant%20Photos/Folayemi_Wilson_biyicm.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Folayemi_Wilson_cslnjo.jpg",
   interviewed: true
   })
 
@@ -395,7 +395,7 @@ Participant.create!({
   linkedin: "https://www.linkedin.com/in/michelewashington/",
   email: "michele@washingtondesign.com",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616883340/Denizen%20Participant%20Photos/Michele_Washington_-_v2_ipgedy.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Michele_Washington_ub44bi.jpg",
   interviewed: true
   })
 
@@ -431,7 +431,7 @@ Participant.create!({
   linkedin: "",
   email: "navheer29@gmail.com",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877719/Denizen%20Participant%20Photos/Navjot_Heer_ijv1zo.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Navjot_Heer_svfdon.jpg",
   interviewed: true
   })
 
