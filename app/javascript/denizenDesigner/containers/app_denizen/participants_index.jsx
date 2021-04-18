@@ -12,44 +12,43 @@ class ParticipantsIndex extends Component {
     this.props.fetchParticipants();
   }
 
-  renderParticipants() {
-    return this.props.participants.map((participant) => {
-      return (
-        <Col
-          xs='4'
-          // sm={6}
-          // md={6}
-          // lg={4}
-          className='mb-4 '
-          style={{
-            maxWidth: '15.241rem',
-            // maxHeight: '8.938rem',
-            // justifyContent: 'space-between',
-          }}
-        >
-          <Card style={{ maxWidth: '15.241rem', maxHeight: '8.938rem' }}>
-            <Link>
-              <Card.Img src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg' />
-              {/* <Card.Img src={participant.profileImgLink} /> */}
-              <Card.Body>
-                <Card.ImgOverlay>
-                  <Card.Title> Card Title</Card.Title>
-                  <Card.Text>Testing123</Card.Text>
-                </Card.ImgOverlay>
-              </Card.Body>
-            </Link>
-          </Card>
-        </Col>
-      );
-    });
-  }
+  // renderParticipants() {
+  //   return this.props.participants.map((participant) => {
+  //     return (
+  //       <Col
+  //         xs='4'
+  //         // sm={6}
+  //         // md={6}
+  //         // lg={4}
+  //         className='mb-4 '
+  //         style={{
+  //           maxWidth: '15.241rem',
+  //           // maxHeight: '8.938rem',
+  //           // justifyContent: 'space-between',
+  //         }}
+  //       >
+  //         <Card style={{ maxWidth: '15.241rem', maxHeight: '8.938rem' }}>
+  //           <Link>
+  //             <Card.Img src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg' />
+  //             {/* <Card.Img src={participant.profileImgLink} /> */}
+  //             <Card.Body>
+  //               <Card.ImgOverlay>
+  //                 <Card.Title> Card Title</Card.Title>
+  //                 <Card.Text>Testing123</Card.Text>
+  //               </Card.ImgOverlay>
+  //             </Card.Body>
+  //           </Link>
+  //         </Card>
+  //       </Col>
+  //     );
+  //   });
+  // }
 
   render() {
     return (
       <div>
         <Container fluid>
           <Row>
-            {/* {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => ( */}
             {this.props.participants.map((participant) =>
               participant.interviewed ? (
                 <Col xs={12} sm={12} md={4} lg={3} xl={3} className='mb-4'>
@@ -63,28 +62,23 @@ class ParticipantsIndex extends Component {
                       to={`/denizendesigner/interviews/${participant.id}`}
                       key={participant.id}
                     >
-                      {/* <Card.Body className='cardBodyInterview'> */}
                       <Card.ImgOverlay className='cardImageOverlay'>
-                        <Card.Body className='cardBodyInterview p-2'>
-                          <Row className='align-text-bottom'>
-                            <Col md='auto'>
-                              <span className='participant-item-name'>
+                        <Card.Body className='cardBodyInterview p-0'>
+                          <Row className='card-row'>
+                            <Col md={12} className='pl-4 mb-0'>
+                              <div className='participant-item-name'>
                                 {participant.first_name} {participant.last_name}
-                              </span>
+                              </div>
                             </Col>
-                          </Row>
-
-                          <Row className='align-text-bottom'>
-                            <Col md='auto'>
-                              <span className='participant-item-designer'>
+                            <Col md={12} className='pl-4 mb-2'>
+                              <div className='participant-item-designer'>
                                 {participant.designer_type}
-                              </span>
+                              </div>
                             </Col>
                           </Row>
                         </Card.Body>
                       </Card.ImgOverlay>
                     </Link>
-                    {/* <span class='align-text-bottom'>text-bottom</span> */}
                   </Card>
                 </Col>
               ) : (

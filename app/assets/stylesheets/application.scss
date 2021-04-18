@@ -208,113 +208,31 @@ body,
   // justify-content: space-around;
 }
 
-.participant-item {
-  flex: 50% 0 0;
-  color: white;
-  cursor: pointer;
-  max-width: 15.241rem;
-  min-height: 8.938rem;
-  // padding: 10px;
-  border-radius: 6px;
-  // background: linear-gradient(179.91deg, #475ca7 0.08%, #113f83 69.55%),
-  //   url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg');
-  // background-blend-mode: screen;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  vertical-align: text-bottom;
 
-  border: 4px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 6px;
-  text-align: bottom;
-  position: relative;
-}
 
-.participant-item-img-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  // display: none;
-  flex: 50% 0 0;
-  color: white;
-  cursor: pointer;
-  max-width: 15.241rem;
-  min-height: 8.938rem;
-  // padding: 10px;
-  border-radius: 6px;
-  background: linear-gradient(
-    transparent,
-    179.91deg,
-    #475ca7 0.08%,
-    #113f83 69.55%
-  ) !important;
-  // url('https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg');
-  background-blend-mode: screen;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  // vertical-align: text-bottom;
 
-  // border: 4px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 6px;
-  // opacity: 0.8;
 
-  // text-align: bottom;
-  object-fit: cover;
-  object-position: center center;
-}
 
-.participant-item.card {
-  position: relative;
-  // margin: 10px;
-}
 
-.participant-item-img {
-  position: absolute;
-  bottom: 5%;
-  left: 4.03;
-}
+// .participant-item-img {
+//   position: absolute;
+//   bottom: 5%;
+//   left: 4.03;
+// }
 
-.cardBodyInterview.card-body {
-  height: 100%;
-  // padding: 10rem;
-  // vertical-align: text-bottom;
-}
+// // .cardBodyInterview.card-body {
+// //   height: 100%;
+// // }
 
-.participant-item-img1 {
-  // maxWidth: '15.241rem', maxHeight: '8.938rem'
-  background-blend-mode: screen;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+// .participant-item-img1 {
+//   // maxWidth: '15.241rem', maxHeight: '8.938rem'
+//   background-blend-mode: screen;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
-.participant-item-name {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-}
-.participant-item-designer {
-  // color: salmon;
-  vertical-align: text-bottom;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-}
+
 
 .participant-show-img {
   min-width: 303.06px;

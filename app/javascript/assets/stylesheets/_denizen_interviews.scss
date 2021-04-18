@@ -1,51 +1,142 @@
-.interviewsBanner {
-  background: linear-gradient(0deg, rgba(69, 85, 142, 0), rgba(69, 85, 142, 0)),
-    url('https://res.cloudinary.com/dyy8g76av/image/upload/v1612139634/Denizen%20Designer%20%28Temp%29/interviews-banner-background_ew68gg.png');
-  // background: linear-gradient(0deg, rgba(69, 85, 142, 0.95), rgba(69, 85, 142, 0.95)), url('https://res.cloudinary.com/dyy8g76av/image/upload/v1612139634/Denizen%20Designer%20%28Temp%29/interviews-banner-background_ew68gg.png');
+// .interviewsBanner {
+//   background: linear-gradient(0deg, rgba(69, 85, 142, 0), rgba(69, 85, 142, 0)),
+//     url('https://res.cloudinary.com/dyy8g76av/image/upload/v1612139634/Denizen%20Designer%20%28Temp%29/interviews-banner-background_ew68gg.png');
+//   // background: linear-gradient(0deg, rgba(69, 85, 142, 0.95), rgba(69, 85, 142, 0.95)), url('https://res.cloudinary.com/dyy8g76av/image/upload/v1612139634/Denizen%20Designer%20%28Temp%29/interviews-banner-background_ew68gg.png');
+//   border-radius: 6px;
+//   // width: 1284px;
+//   min-height: 11.75rem;
+// }
+
+// .interviewsBanner h2 {
+//   font-family: Montserrat;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 2.75rem;
+//   line-height: 106.4%;
+//   // padding-top: 23px;
+//   // padding-left: 81px;
+//   max-width: 19.438rem;
+
+//   /* or 47px */
+
+//   text-transform: uppercase;
+
+//   /* Gray 5 */
+
+//   color: #ffffff;
+// }
+
+// .interviewsBanner span {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 1rem !important;
+//   line-height: 159%;
+//   // padding-top: 31px;
+//   // flex-wrap: wrap;
+//   word-wrap: break-word;
+//   // font-size: 2.5vw;
+
+//   letter-spacing: 0.02em;
+
+//   /* background */
+
+//   color: #f1f3f8;
+// }
+.participant-item {
+  flex: 50% 0 0;
+  color: white;
+  color: red;
+  cursor: pointer;
+  min-width: 15.241rem;
+  min-height: 8.938rem;
+  
   border-radius: 6px;
-  // width: 1284px;
-  min-height: 11.75rem;
+  // vertical-align: text-bottom;
+  box-sizing: border-box;
+  border-radius: 6px;
+  // text-align: bottom;
+  position: relative;
 }
 
-.interviewsBanner h2 {
-  font-family: Montserrat;
+.participant-item.card {
+  border: none !important;
+}
+
+.participant-item .card-row {
+  width: 100%;
+  
+}
+
+.card-body {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+// .cardBodyInterview {
+//   width: 100% !important;
+//   height: 100% !important;
+//   background-color: red !important;
+// }
+
+
+.participant-item-img-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex: 50% 0 0;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  background-blend-mode: screen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.card-img-overlay{
+  background:linear-gradient(179.91deg, rgba(78, 89, 128, 0.4),rgba(17, 63, 131,0.5));
+  border-radius: 6px;
+  border: 4px solid #ffffff;
+  padding: 0px;
+}
+
+.participant-item-name {
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 2.75rem;
-  line-height: 106.4%;
-  // padding-top: 23px;
-  // padding-left: 81px;
-  max-width: 19.438rem;
-
-  /* or 47px */
-
-  text-transform: uppercase;
-
-  /* Gray 5 */
-
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.participant-item-designer {
+  vertical-align: text-bottom;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
   color: #ffffff;
 }
 
-.interviewsBanner span {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem !important;
-  line-height: 159%;
-  // padding-top: 31px;
-  // flex-wrap: wrap;
-  word-wrap: break-word;
-  // font-size: 2.5vw;
 
-  letter-spacing: 0.02em;
+@media (max-width: 768px) {
+  .participant-item { 
+    min-height: 13rem;
+  }
 
-  /* background */
-
-  color: #f1f3f8;
-}
-
-.cardImageOverlay{
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  .participant-item-img-background {
+    object-position: center 20%;
+  }
 }
