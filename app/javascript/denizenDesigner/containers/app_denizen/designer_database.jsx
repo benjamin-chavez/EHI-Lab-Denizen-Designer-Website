@@ -60,61 +60,56 @@ class DesignerDatabase extends Component {
     getUniqueCities(this.props.participants);
 
     return (
-      <div className=''>
-        <Container fluid>
-          <Row>
-            <NavLink className='participate-btn' to='#'>
-              <div>
-                {'  '}
-                <Image src={DocumentIcon} alt='Document Icon' fluid />
-                {'  '}
-              </div>
-              <span className='pl-1 participate-btn-text'> Participate</span>
-            </NavLink>
-          </Row>
-          <Row className='designer-city-banner my-2'>
-            <Col>
-              <Dropdown>
-                <Dropdown.Toggle
-                  variant='outline-light'
-                  id='dropdown-basic'
-                  className='dropdownButon'
-                >
-                  {city == 'designerdatabase' || city == 'All Cities'
-                    ? 'Cities'
-                    : city}
-                </Dropdown.Toggle>
+      <Container fluid>
+        <Row>
+          <NavLink className='participate-btn' to='#'>
+            <div>
+              {'  '}
+              <Image src={DocumentIcon} alt='Document Icon' fluid />
+              {'  '}
+            </div>
+            <span className='pl-1 participate-btn-text'> Participate</span>
+          </NavLink>
+        </Row>
+        <Row className='designer-city-banner my-2'>
+          <Col>
+            <Dropdown>
+              <Dropdown.Toggle
+                variant='outline-light'
+                id='dropdown-basic'
+                className='dropdownButon'
+              >
+                {city == 'designerdatabase' || city == 'All Cities'
+                  ? 'Cities'
+                  : city}
+              </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  {uniqueCities.map((participant) => {
-                    return (
-                      <div>
-                        <Dropdown.Item>
-                          <NavLink
-                            to={`/denizendesigner/designerdatabase/${participant}`}
-                          >
-                            {participant}
-                          </NavLink>
-                        </Dropdown.Item>
-                      </div>
-                    );
-                  })}
-                </Dropdown.Menu>
-              </Dropdown>
-            </Col>
-            <Col xs={8} className='cities-banner-graphic'>
-              <div className='cities-banner-graphic-img'>
-                {' '}
-                <Image src={CitiesBannerGraphic} alt='Cities Graphic' fluid />
-              </div>
-            </Col>
-          </Row>
-          <div className='mt-3'>
-            {this.renderDesignersIndex(city)}
-            {/* <ParticipantList /> */}
-          </div>
-        </Container>
-      </div>
+              <Dropdown.Menu>
+                {uniqueCities.map((participant) => {
+                  return (
+                    <div>
+                      <Dropdown.Item>
+                        <NavLink
+                          to={`/denizendesigner/designerdatabase/${participant}`}
+                        >
+                          {participant}
+                        </NavLink>
+                      </Dropdown.Item>
+                    </div>
+                  );
+                })}
+              </Dropdown.Menu>
+            </Dropdown>
+          </Col>
+          <Col xs={8} className='cities-banner-graphic'>
+            <div className='cities-banner-graphic-img'>
+              {' '}
+              <Image src={CitiesBannerGraphic} alt='Cities Graphic' fluid />
+            </div>
+          </Col>
+        </Row>
+        <div className='mt-3'>{this.renderDesignersIndex(city)}</div>
+      </Container>
     );
   }
 }

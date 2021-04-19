@@ -16,7 +16,7 @@ class ParticipantsIndex extends Component {
     return (
       <div>
         <Container fluid className='p-0'>
-          <Row className='testttt'>
+          <Row className=''>
             {this.props.participants.map((participant) =>
               participant.interviewed ? (
                 <Col xs={12} sm={12} md={4} lg={3} xl={3} className='mb-4'>

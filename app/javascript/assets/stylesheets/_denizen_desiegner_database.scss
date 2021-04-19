@@ -1,6 +1,12 @@
-.database-card {
-  border-radius: 2px;
-  min-height: 39px;
+.designer-database {
+  
+}
+
+.designer-database .card {
+  // background-color: salmon !important;
+  // width: 100% !important;
+  border: none;
+  background: rgba(0,0,0,0);
 }
 
 .designer-database a {
@@ -61,35 +67,35 @@
   color: #2a2e33;
 }
 
-.database-card .card-name {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500 !important;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
+// .database-card .card-name {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: 500 !important;
+//   font-size: 16px;
+//   line-height: 19px;
+//   /* identical to box height */
 
-  display: flex;
-  align-items: center;
+//   display: flex;
+//   align-items: center;
 
-  /* black */
+//   /* black */
 
-  color: #2a2e33;
-}
+//   color: #2a2e33;
+// }
 
-.database-card .card-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+// .database-card .card-text {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 16px;
+//   line-height: 19px;
 
-  display: flex;
-  align-items: center;
+//   display: flex;
+//   align-items: center;
 
-  /* black */
-  color: #2a2e33;
-}
+//   /* black */
+//   color: #2a2e33;
+// }
 
 @media (max-width: 768px) {
   .designer-database .data-list > li {

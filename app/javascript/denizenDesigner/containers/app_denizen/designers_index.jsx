@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Card, Row, Col, Image } from 'react-bootstrap';
+import { Container, Card, Row, Col, Image } from 'react-bootstrap';
 import igIcon from '../../../../assets/images/igIcon.svg';
 import twitterIcon from '../../../../assets/images/twitterIcon.svg';
 import mailIcon from '../../../../assets/images/mailIcon.svg';
@@ -16,27 +16,28 @@ class DesignersIndex extends Component {
 
   renderParticipants() {
     return (
-      <div className=''>
-        <div>
-          <Row className='designer-database'>
-            {this.props.participants.map((participant) => {
-              return participant.location_city == this.props.city ||
-                this.props.city == 'designerdatabase' ||
-                this.props.city == 'All Cities' ? (
-                <Col xs={12} sm={12} md={4} lg={3} xl={3} className=''>
-                  <Row>
-                    <span className='participant-name pl-1 pr-3 mb-2'>
+      <div>
+        <Row className='designer-database '>
+          {this.props.participants.map((participant) => {
+            return participant.location_city == this.props.city ||
+              this.props.city == 'designerdatabase' ||
+              this.props.city == 'All Cities' ? (
+              <Col xs={12} sm={12} md={4} lg={3} xl={3} className='p-0'>
+                <Card className=''>
+                  {/* <Card.Body className='p-0'> */}
+                  <Row className='ml-0 mr-0'>
+                    <div className='participant-name pl-1 pr-3 mb-2'>
                       {participant.first_name}
                       {` `}
                       {participant.last_name}
-                    </span>
+                    </div>
                   </Row>
-                  <Row>
+                  <Row className='ml-0 mr-0'>
                     <span className='role pl-1 mb-1'>
                       {participant.designer_type}
                     </span>
                   </Row>
-                  <Row>
+                  <Row className='ml-0 mr-0'>
                     <ul className='data-list pl-1'>
                       {participant.twitter != '' ? (
                         <li className='mb-2 mr-3'>
@@ -111,22 +112,23 @@ class DesignersIndex extends Component {
                       )}
                     </ul>
                   </Row>
-                </Col>
-              ) : (
-                ''
-              );
-            })}
-          </Row>
-        </div>
+                  {/* </Card.Body> */}
+                </Card>
+              </Col>
+            ) : (
+              ''
+            );
+          })}
+        </Row>
       </div>
     );
   }
 
   render() {
     return (
-      <div>
-        <div className=''>{this.renderParticipants()}</div>
-      </div>
+      // <Container fluid>
+      <div className=''>{this.renderParticipants()}</div>
+      // </Container>
     );
   }
 }
