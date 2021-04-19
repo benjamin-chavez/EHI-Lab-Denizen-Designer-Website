@@ -15,7 +15,7 @@ class ParticipantsIndex extends Component {
   render() {
     return (
       <div>
-        <Container fluid className='p-0'>
+        <div>
           <Row className=''>
             {this.props.participants.map((participant) =>
               participant.interviewed ? (
@@ -54,7 +54,7 @@ class ParticipantsIndex extends Component {
               )
             )}
           </Row>
-        </Container>
+        </div>
       </div>
     );
   }
