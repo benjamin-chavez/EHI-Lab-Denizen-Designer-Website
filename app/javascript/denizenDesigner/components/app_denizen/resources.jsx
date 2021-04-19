@@ -102,7 +102,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -128,7 +128,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -154,7 +154,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -180,7 +180,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -206,7 +206,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -232,7 +232,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -258,7 +258,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -284,7 +284,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -310,7 +310,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -324,31 +324,10 @@ class Resources extends Component {
               </Card>
             </Col>
             <Col
-              xs={12}
-              sm={12}
-              md={6}
+              md={0}
               lg={4}
-              className='resource-ext-link mb-3'
-            >
-              {/* <Card className='resource-ext-card'>
-                <Card.Body>
-                  <Row>
-                    <Col xs={3} className='redred'>
-                      <Image src={ResourcesThumbnail}></Image>
-                    </Col>
-                    <Col xs={9} className='greengreen '>
-                      <a
-                        className=''
-                        target='_blank'
-                        href='https://www.kounkuey.org/ '
-                      >
-                        Kounkuey Design Initiative
-                      </a>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card> */}
-            </Col>
+              className='resource-ext-link mb-3 empty-card'
+            ></Col>
             <Col
               xs={12}
               sm={12}
@@ -362,7 +341,7 @@ class Resources extends Component {
                     <Col xs={3} className='redred'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='greengreen '>
+                    <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'

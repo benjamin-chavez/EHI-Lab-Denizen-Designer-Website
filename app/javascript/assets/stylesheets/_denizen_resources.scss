@@ -69,6 +69,12 @@
   color: #f3cb02;
 }
 
+// .resource-card-row {
+//   display: flex;
+//   justify-content: center; /* align horizontal */
+//   align-items: center; /* align vertical */
+// }
+
 .resource-ext-link {
   border-radius: 8px;
   font-family: Montserrat;
@@ -85,15 +91,14 @@
   /* Primary */
 
   color: #475ca7;
-  // justify-content: space-between;
-  // background-color: #ffffff;
+  // display: flex;
+  // justify-content: center; /* align horizontal */
 }
 
 .resource-ext-link a {
   color: #475ca7;
   cursor: pointer;
   display: flex;
-  // justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
 }
 
@@ -102,190 +107,42 @@
 }
 
 .resource-ext-card {
-  // background-color: #ffffff;
-  // min-width: 19.063rem;
-
   min-width: 340px;
-  max-width: 340px;
+  // max-width: 340px;
   min-height: 4.25rem;
   border: none !important;
   border-radius: 8px !important;
 }
 
-.redred {
-  // background-color: blue;
-  // background-color: #ffffff;
-}
-.greengreen {
-  // background-color: red;
-  // background-color: #ffffff;
+
+.card-resource-text {
   display: flex;
   align-items: center; /* align vertical */
   width: 100%;
 }
 
+.empty-card {
+
+  background-color: red;
+}
+
 @media (max-width: 768px) {
   .resourceCard .title {
-    // display: inline-block;
+
     max-width: 14.813rem;
-    // max-width: 10px;
     word-wrap: break-word;
+  }
+
+  .resource-ext-card {
+    min-width: 0px;
   }
 }
 
-// .resources-headers {
-//   font-family: Roboto;
-//   font-style: normal;s
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 19px;
-//   display: flex;
-//   align-items: center;
-//   color: #2a2e33;
-//   margin-left: 10px;
-//   margin-top: 30px;
-// }
-
-// .resource-btm-border {
-//   opacity: 0.33;
-//   border-bottom: 1px solid #5a6795;
-// }
-
-// .article-card {
-//   width: 250px;
-//   height: 225px;
-//   // margin: 28px 0px;
-//   // background-color: red;
-//   border-radius: 8px 8px 8px 8px;
-//   position: relative;
-// }
-
-// .article-card-img {
-//   // background-image: url("../images/report-img-1.svg");
-//   // background: url("../images/report-img-1.svg");
-//   width: 100%;
-//   height: 100%;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
-
-// .article-card-body {
-//   border-radius: 0px 0px 8px 8px;
-//   background-color: #ffffff;
-//   position: absolute;
-
-//   bottom: 0;
-//   left: 0;
-//   height: 67px;
-//   width: 100%;
-// }
-
-// .article-card-title {
-//   position: absolute;
-//   top: 7px;
-//   left: 14px;
-//   font-family: Montserrat;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 20px;
-//   display: flex;
-//   align-items: center;
-//   color: #2a2e33;
-// }
-
-// .article-link-icon {
-//   position: absolute;
-//   right: 74%;
-//   top: 9.27%;
-// }
-
-// .article-card-author {
-//   position: absolute;
-//   left: 14px;
-//   bottom: 6.85%;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 12px;
-//   line-height: 14px;
-//   display: flex;
-//   align-items: center;
-//   text-transform: uppercase;
-
-//   /* secondary */
-
-//   color: #5a6795;
-// }
-
-// .publication-card {
-//   width: 298px;
-//   height: 150px;
-//   background: #ffffff;
-//   border-radius: 8px;
-//   margin: 29px 0px;
-// }
-// .publication-card-body {
-//   // background-color: salmon;
-//   height: 100%;
-//   width: 100%;
-//   border-radius: 8px;
-//   // padding: 10px 50px;
-//   position: relative;
-// }
-
-// .publication-card-title-row {
-//   // background-color: red;
-//   width: 100%;
-//   margin: 0 auto;
-//   position: absolute;
-//   top: 32%;
-//   left: 0;
-// }
-// .publication-card-title {
-//   // background-color: pink;
-//   // height: 100%;
-//   // width: 100%;
-//   font-family: Montserrat;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 22px;
-//   /* or 157% */
-
-//   /* black */
-
-//   color: #2a2e33;
-// }
-// .publication-card-auth-row {
-//   // background-color: red;
-//   // width: 100%;
-//   padding-left: 13px;
-//   margin: 0 auto;
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-// }
-// .publication-card-author {
-//   // background-color: green;
-//   // height: 100%;
-//   // width: 100%;
-//   background: #f1f3f8;
-//   border-radius: 4px;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 12px;
-//   line-height: 14px;
-//   /* identical to box height */
-//   padding: 6px;
-//   display: flex;
-//   align-items: center;
-//   text-transform: uppercase;
-//   margin-right: 13px;
-
-//   /* secondary */
-
-//   color: #5a6795;
-// }
+@media (max-width: 992px) {
+  .empty-card {
+    width: 0px !important;
+    height: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+}
