@@ -295,7 +295,7 @@ Participant.create!({
   linkedin: "",
   email: "sabiha@designaction.org",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Stephanie_Burrell_gyn4kf.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1618786286/Denizen%20Participant%20Photos/Sabiha_Basrai_hzdbl5.jpg",
   interviewed: true
   })
 
