@@ -99,7 +99,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -125,7 +125,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -151,14 +151,14 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
-                        href='https://www.communitydesign.org  '
+                        href='https://www.communitydesign.org'
                       >
                         Association For Community Design
                       </a>
@@ -167,6 +167,7 @@ class Resources extends Component {
                 </Card.Body>
               </Card>
             </Col>
+
             <Col
               xs={12}
               sm={12}
@@ -177,7 +178,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -203,7 +204,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -229,7 +230,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -255,7 +256,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -281,7 +282,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -307,7 +308,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
@@ -338,7 +339,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row>
-                    <Col xs={3} className='redred'>
+                    <Col xs={3} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={9} className='card-resource-text '>
