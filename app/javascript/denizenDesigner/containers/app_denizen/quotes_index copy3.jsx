@@ -2,15 +2,7 @@ import React, { useEffect, useState, Component } from 'react';
 import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect, useSelector } from 'react-redux';
-import {
-  Row,
-  Col,
-  Card,
-  CardColumns,
-  Container,
-  Modal,
-  Button,
-} from 'react-bootstrap';
+import { Row, Col, Card, Container, Modal, Button } from 'react-bootstrap';
 // delete: yarn add masonry-layout
 // react-masonry-css
 import Masonry from 'react-masonry-css';
@@ -84,28 +76,28 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
           </Modal.Body>
         </Modal>
       </div>
-
+      {/* <QuotesModal /> */}
+      {/* <div className='quote-list'> */}
       <div className=''>
-        {/* <Masonry
+        <Masonry
           breakpointCols={breakpointColumnsObj}
           // breakpointCols={4}
           className='my-masonry-grid'
           columnClassName='my-masonry-grid_column'
-        > */}
-        <CardColumns>
+        >
           {quoteData &&
             quoteData.quotes &&
             quoteData.quotes.map((quote) =>
               quoteCategoryPath == 'all_quotes' ||
               quoteCategoryPath == quote.category_int ? (
                 <div
-                // className=''
-                // style={{
-                //   width: '340px',
-                //   justifyContent: 'space-around',
-                // }}
+                  className=''
+                  style={{
+                    width: '340px',
+                    justifyContent: 'space-around',
+                  }}
                 >
-                  {/* <div
+                  <div
                     className='denizen-quote-card'
                     onClick={() => {
                       setCurQuote(quote.quote_body);
@@ -114,6 +106,7 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
                       handleShow();
                     }}
                   >
+                    {/* <p>{quoteCategoryPath}</p> */}
                     <div className='denizen-quote-body'>
                       "{quote.quote_body}"
                       <div className='denizen-quote-author'>
@@ -122,40 +115,13 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
                         {quote.last_name}
                       </div>
                     </div>
-                  </div> */}
-                  <Card
-                    className='denizen-quote-card'
-                    onClick={() => {
-                      setCurQuote(quote.quote_body);
-                      setQuoteOwner(quote.participant_id);
-                      setOwnerRole('Designer Type');
-                      handleShow();
-                    }}
-                  >
-                    <Card.Body className='denizen-quote-body'>
-                      <Row>
-                        <Col sm={12}>
-                          <Card.Text>"{quote.quote_body}"</Card.Text>
-                        </Col>
-
-                        <Col sm={12}>
-                          {' '}
-                          <Card.Text className='denizen-quote-author ml-0'>
-                            {quote.first_name}
-                            {` `}
-                            {quote.last_name}
-                          </Card.Text>
-                        </Col>
-                      </Row>
-                    </Card.Body>
-                  </Card>
+                  </div>
                 </div>
               ) : (
                 ''
               )
             )}
-        </CardColumns>
-        {/* </Masonry> */}
+        </Masonry>
       </div>
     </div>
   );

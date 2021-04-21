@@ -73,7 +73,7 @@ Quote.create!({
   participant_id: 1,
   first_name: "Andrea",
   last_name: "Ngan",
-  quote_body: "“These community relationships that you're building, you have to make sure that folks know that it's about the relationships at the core, not simply about the projects and the things that you're trying to do. I acknowledge that collaborators and co-designers are often arriving with different lived experiences. How do we prioritize accepting people as their whole self?”",
+  quote_body: "These community relationships that you're building, you have to make sure that folks know that it's about the relationships at the core, not simply about the projects and the things that you're trying to do. I acknowledge that collaborators and co-designers are often arriving with different lived experiences. How do we prioritize accepting people as their whole self?",
   category: "community_empowerment",
   category_int: 10,
 })
