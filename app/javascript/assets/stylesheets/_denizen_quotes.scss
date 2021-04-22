@@ -2,11 +2,13 @@
   list-style: none;
   padding: 0;
   display: inline-block;
+  // justify-content: space-between;
 }
 
 .quote-filter-menu > li {
   text-decoration: none;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
+  padding-right: 35px;
   text-align: center;
   display: inline-block;
   font-family: Roboto;
@@ -32,6 +34,7 @@
   align-items: center;
   color: #6b7390;
   cursor: pointer;
+  
 }
 
 .quote-filter-item a.active {
@@ -40,6 +43,22 @@
   background-color: #475ca7;
   border-radius: 20px;
 }
+
+.quotes-expand-btn{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 153.4%;
+  /* or 21px */
+
+  display: flex;
+  align-items: center;
+
+  /* Primary */
+
+  color: #475CA7;
+  }
 
 .quote-list {
   display: flex;
@@ -51,7 +70,8 @@
 .denizen-quote-card {
   // width: 340px;
   cursor: pointer;
-  // margin: 10px;
+  margin-bottom: 25px !important;
+  // margin-left: 25px !important;
   border: none;
   border-radius: 6px !important;
 }

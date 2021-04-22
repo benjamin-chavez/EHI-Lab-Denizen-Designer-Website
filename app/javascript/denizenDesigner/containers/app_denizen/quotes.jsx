@@ -5,6 +5,7 @@ import QuotesIndex from './quotes_index';
 import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { selectQuoteCategory } from '../../actions';
+import { Row, Col } from 'react-bootstrap';
 
 import {
   BrowserRouter as Router,
@@ -55,6 +56,9 @@ class Quotes extends Component {
               );
             })}
           </ul>
+          <Row>
+            <Col className='quotes-expand-btn'>Expand</Col>
+          </Row>
           <QuotesIndex quoteCategoryPath={quoteCategoryPath} />
         </div>
       </div>

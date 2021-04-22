@@ -123,6 +123,7 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
                       </div>
                     </div>
                   </div> */}
+
                   <Card
                     className='denizen-quote-card'
                     onClick={() => {
