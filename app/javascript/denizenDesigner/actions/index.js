@@ -12,10 +12,15 @@ export const PARTICIPANT_CREATED = 'PARTICIPANT_CREATED';
 export const DELETE_PARTICIPANT = 'DELETE_PARTICIPANT';
 export const PARTICIPANT_UPDATED = 'PARTICIPANT_UPDATED';
 
+export const FETCH_PARTICIPANTS_REQUEST = 'FETCH_PARTICIPANTS_REQUEST';
+export const FETCH_PARTICIPANTS_SUCCESS = 'FETCH_PARTICIPANTS_SUCCESS';
+export const FETCH_PARTICIPANTS_FAILURE = 'FETCH_PARTICIPANTS_FAILURE';
+
 // QUOTE TYPES
 // export const FETCH_QUOTES = 'FETCH_QUOTES';
 export * from './quoteActions';
 export * from './cityActions';
+export * from './participantActions';
 
 export function setParticipants() {
   // switch this url to local route once in rails

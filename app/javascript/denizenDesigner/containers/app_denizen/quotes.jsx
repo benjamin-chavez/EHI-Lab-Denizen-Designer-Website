@@ -1,11 +1,11 @@
-import React, { useEffect, Component } from 'react';
+import React, { useEffect, useState, Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import QuotesIndex from './quotes_index';
 import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { selectQuoteCategory } from '../../actions';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button, Collapse, Accordion, Card } from 'react-bootstrap';
 
 import {
   BrowserRouter as Router,
@@ -26,6 +26,12 @@ class Quotes extends Component {
       .replace('%20', '_')
       .toLowerCase();
 
+    let quoteCategoriesTopRow = this.props.quoteCategories.slice(0, 7);
+    let quoteCategoriesBtmRows = this.props.quoteCategories.slice(
+      7,
+      this.props.quoteCategories.length
+    );
+
     return (
       <div>
         <Switch>
@@ -37,28 +43,55 @@ class Quotes extends Component {
           />
         </Switch>
         <div>
-          <ul className='quote-filter-menu'>
-            {/* <li className='quote-filter-item'>
-              <NavLink to={`/denizendesigner/quotes/all`}>All Quotes</NavLink>
-            </li> */}
-            {this.props.quoteCategories.map((quoteCategory) => {
-              return (
-                <li
-                  className='quote-filter-item'
-                  key={quoteCategory}
-                  onClick={() => this.handleClick(quoteCategory)}
-                  role='presentation'
-                >
-                  <NavLink to={`/denizendesigner/quotes/${quoteCategory}`}>
-                    {quoteCategory}
-                  </NavLink>
-                </li>
-              );
-            })}
-          </ul>
-          <Row>
-            <Col className='quotes-expand-btn'>Expand</Col>
-          </Row>
+          <Accordion defaultActiveKey='0'>
+            <ul className='quote-filter-menu mb-0'>
+              {quoteCategoriesTopRow.map((quoteCategory) => {
+                return (
+                  <li
+                    className='quote-filter-item'
+                    key={quoteCategory}
+                    onClick={() => this.handleClick(quoteCategory)}
+                    role='presentation'
+                  >
+                    <NavLink to={`/denizendesigner/quotes/${quoteCategory}`}>
+                      {quoteCategory}
+                    </NavLink>
+                  </li>
+                );
+              })}
+              <Accordion.Collapse eventKey='1'>
+                <ul className='quote-filter-menu'>
+                  {quoteCategoriesBtmRows.map((quoteCategory) => {
+                    return (
+                      <li
+                        className='quote-filter-item'
+                        key={quoteCategory}
+                        onClick={() => this.handleClick(quoteCategory)}
+                        role='presentation'
+                      >
+                        <NavLink
+                          to={`/denizendesigner/quotes/${quoteCategory}`}
+                        >
+                          {quoteCategory}
+                        </NavLink>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </Accordion.Collapse>
+            </ul>
+
+            <Accordion.Toggle
+              className='quotes-expand-btn pl-0 mb-3'
+              as={Button}
+              variant='link'
+              eventKey='1'
+              onMouseDown={(e) => e.preventDefault()}
+              block
+            >
+              Expand
+            </Accordion.Toggle>
+          </Accordion>
           <QuotesIndex quoteCategoryPath={quoteCategoryPath} />
         </div>
       </div>

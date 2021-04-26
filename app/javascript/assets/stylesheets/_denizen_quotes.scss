@@ -2,7 +2,6 @@
   list-style: none;
   padding: 0;
   display: inline-block;
-  // justify-content: space-between;
 }
 
 .quote-filter-menu > li {
@@ -53,11 +52,16 @@
   /* or 21px */
 
   display: flex;
-  align-items: center;
+  // align-items: center;
 
   /* Primary */
 
   color: #475CA7;
+  }
+
+  .quotes-expand-btn:hover {
+    text-decoration: none !important;  
+    color: #475CA7;
   }
 
 .quote-list {

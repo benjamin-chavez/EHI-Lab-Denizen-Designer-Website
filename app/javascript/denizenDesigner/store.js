@@ -10,6 +10,7 @@ import participantReducer from './reducers/participant_reducer';
 import selectedDenizenTabReducer from './reducers/selected_denizen_tab_reducer';
 import selectedhopdTabReducer from './reducers/selected_hopd_tab_reducer';
 import quoteReducer from './reducers/quote_reducer';
+import participantsReducer1 from './reducers/participants1reducer';
 import cityReducer from './reducers/quote_reducer';
 import selectedQuoteCategoryReducer from './reducers/selected_quote_category_reducer';
 import { reducer as formReducer } from 'redux-form';
@@ -18,6 +19,7 @@ const identityReducer = (state = null) => state;
 
 const initialState = {
   participants: [],
+  participants1: [],
   quotes: [],
   denizenTabs: [
     'Home',
@@ -53,6 +55,7 @@ const initialState = {
 const reducers = combineReducers({
   navSecondary: navSecondaryReducer,
   participants: participantReducer,
+  participants1: participantsReducer1,
   denizenTabs: identityReducer,
   // selectedDenizenTab: selectedDenizenTabReducer,
   hopdTabs: identityReducer,

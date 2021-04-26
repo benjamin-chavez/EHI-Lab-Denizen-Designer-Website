@@ -19,9 +19,21 @@ import MasonryLayout from 'react-masonry-layout';
 // import QuotesModal from './QuotesModal';
 import { fetchQuotes } from '../../actions';
 
-function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
+import { fetchParticipants1 } from '../../actions';
+
+function QuotesIndex({
+  quoteData,
+  fetchQuotes,
+  fetchParticipants1,
+  quoteCategoryPath,
+  participantsData,
+}) {
   useEffect(() => {
     fetchQuotes();
+  }, []);
+
+  useEffect(() => {
+    fetchParticipants1();
   }, []);
 
   const [show, setShow] = useState(false);
@@ -32,18 +44,27 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
   const [quoteOwner, setQuoteOwner] = useState('');
   const [ownerRole, setOwnerRole] = useState('');
 
-  const breakpointColumnsObj = {
-    default: 3,
-    1200: 3,
-    992: 3,
-    768: 2,
-    576: 1,
+  // const findParticipant = (idToSearch) => {
+  //   return quoteData.quotes.filter((participant) => {
+  //     return participant.id === idToSearch;
+  //   });
+  // };
 
-    // default: 4,
-    // 1100: 3,
-    // 700: 2,
-    // 500: 1,
+  const lala = () => {
+    return participantsData.loading
+      ? console.log(
+          // participantsData.participants1.find((item) => item.id === 1).first_name
+          'nooooooooooooooooooooo'
+        )
+      : console.log(
+          participantsData.participants1.find((item) => item.id === 1)
+            .first_name
+        );
   };
+
+  // console.log('testing');
+  // console.log(lala);
+  // lala;
 
   return quoteData.loading ? (
     <h2>Loading...</h2>
@@ -84,53 +105,39 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
           </Modal.Body>
         </Modal>
       </div>
-
       <div className=''>
-        {/* <Masonry
-          breakpointCols={breakpointColumnsObj}
-          // breakpointCols={4}
-          className='my-masonry-grid'
-          columnClassName='my-masonry-grid_column'
-        > */}
+        {/* <p>{quote.first}</p> */}
+
         <CardColumns>
           {quoteData &&
             quoteData.quotes &&
             quoteData.quotes.map((quote) =>
               quoteCategoryPath == 'all_quotes' ||
               quoteCategoryPath == quote.category_int ? (
-                <div
-                // className=''
-                // style={{
-                //   width: '340px',
-                //   justifyContent: 'space-around',
-                // }}
-                >
-                  {/* <div
-                    className='denizen-quote-card'
-                    onClick={() => {
-                      setCurQuote(quote.quote_body);
-                      setQuoteOwner(quote.participant_id);
-                      setOwnerRole('Designer Type');
-                      handleShow();
-                    }}
-                  >
-                    <div className='denizen-quote-body'>
-                      "{quote.quote_body}"
-                      <div className='denizen-quote-author'>
-                        {quote.first_name}
-                        {` `}
-                        {quote.last_name}
-                      </div>
-                    </div>
-                  </div> */}
-
+                <div key={quote.id}>
                   <Card
                     className='denizen-quote-card'
                     onClick={() => {
                       setCurQuote(quote.quote_body);
-                      setQuoteOwner(quote.participant_id);
-                      setOwnerRole('Designer Type');
+                      setQuoteOwner(
+                        `${
+                          participantsData.participants1.find(
+                            (item) => item.partipant_id === quote.partipant_id
+                          ).first_name
+                        } ${
+                          participantsData.participants1.find(
+                            (item) => item.partipant_id === quote.partipant_id
+                          ).last_name
+                        }`
+                      );
+                      // setOwnerRole('Designer Type');
+                      setOwnerRole(
+                        participantsData.participants1.find(
+                          (item) => item.partipant_id === quote.partipant_id
+                        ).designer_type
+                      );
                       handleShow();
+                      lala();
                     }}
                   >
                     <Card.Body className='denizen-quote-body'>
@@ -156,7 +163,6 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
               )
             )}
         </CardColumns>
-        {/* </Masonry> */}
       </div>
     </div>
   );
@@ -165,12 +171,14 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
 const mapStateToProps = (state) => {
   return {
     quoteData: state.quotes,
+    participantsData: state.participants1,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     fetchQuotes: () => dispatch(fetchQuotes()),
+    fetchParticipants1: () => dispatch(fetchParticipants1()),
   };
 };
 
