@@ -87,6 +87,7 @@ Quote.create!({
   category_int: 11,
 })
 
+puts 'Creating Quotes for Anjanette Davenport Hatter...'
 Quote.create!({
   participant_id: 2,
   first_name: "Anjanette",
@@ -399,7 +400,7 @@ Quote.create!({
   participant_id: 4,
   first_name: "Cedric",
   last_name: "Douglas",
-  quote_body: "And I just said, "Let me just try to beautify this space that no one really cares about." So, it really made me look at that public space in a way that... In a completely different way. So I saw that there was some power in that.",
+  quote_body: "And I just said, \"Let me just try to beautify this space that no one really cares about.\" So, it really made me look at that public space in a way that... In a completely different way. So I saw that there was some power in that.",
   category: "power",
   category_int: 2,
 })
