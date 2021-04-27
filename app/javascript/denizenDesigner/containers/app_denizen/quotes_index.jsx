@@ -122,18 +122,18 @@ function QuotesIndex({
                       setQuoteOwner(
                         `${
                           participantsData.participants1.find(
-                            (item) => item.partipant_id === quote.partipant_id
+                            (item) => item.id === quote.participant_id
                           ).first_name
                         } ${
                           participantsData.participants1.find(
-                            (item) => item.partipant_id === quote.partipant_id
+                            (item) => item.id === quote.participant_id
                           ).last_name
                         }`
                       );
                       // setOwnerRole('Designer Type');
                       setOwnerRole(
                         participantsData.participants1.find(
-                          (item) => item.partipant_id === quote.partipant_id
+                          (item) => item.id === quote.participant_id
                         ).designer_type
                       );
                       handleShow();
