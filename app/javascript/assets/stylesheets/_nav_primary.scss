@@ -48,9 +48,8 @@
 .navbar-toggler.collapsed,
 .navbar-toggler.collapsed:focus,
 .navbar-toggler {
-  // background-color: red ;
   border: none !important;
-  // padding: 0px 0px 0px 3px;
+
   outline: none !important;;
   box-shadow: none !important;;  
 }
@@ -59,16 +58,17 @@
   display: none !important;
 }
 
-// button.navbar-togler:focus {
-//   outline: none;
-//   outline: none -webkit-focus-ring-color;
-// }
-
 
 @media (max-width: 992px) {
   .nav-primary-text {
     margin-left: 0px;
   }
+  .nav-primary .active.nav-primary-text.mobile-nav {
+    display: block;
+  }
+
+
+  
 }
 
 @media (max-width: 576px) {
@@ -87,10 +87,6 @@
   
   .nav-primary-text {
     padding: 7px 6px;
-  }
-
-  .nav-primary .active.nav-primary-text.mobile-nav {
-    display: block;
   }
 
   .nav-brand-mobile{
