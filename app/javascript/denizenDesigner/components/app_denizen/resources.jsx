@@ -29,7 +29,14 @@ class Resources extends Component {
                       is and how it can be used in order to encourage people to
                       consider the relevance of design in community projects.
                     </span>
-                    <Link className='cardLink mt-2'>Download</Link>
+                    <Link
+                      className='cardLink mt-2'
+                      to='/files/Denizen Designer Zine.pdf'
+                      target='_blank'
+                      download
+                    >
+                      Download
+                    </Link>
                   </Col>
                   <Col sm={12} md={5} className='mb-4'>
                     <p className='title mb-2'>
