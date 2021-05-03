@@ -3,32 +3,25 @@ import React, { Component } from 'react';
 // import { connect } from "react-redux";
 // import { selectDenizenTab, setNavSecondaryz } from "../../actions";
 import { Link, NavLink } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
+import {
+  Container,
+  Row,
+  Col,
+  Nav,
+  Navbar,
+  NavDropdown,
+  Image,
+} from 'react-bootstrap';
+
 import { useLocation } from 'react-router';
 
 // import test from "../../../assets/images/dd-logo-nav";
 import Media from 'react-bootstrap/Media';
 import NavLogo from '../../../../assets/images/dd-logo-nav.svg';
+import NavLogoMobile from '../../../../assets/images/dd-logo-nav-mobile.svg';
 
 class NavPrimary extends Component {
-  // location = () => {
-  //   useLocation();
-  // };
-
-  // renderDesignersIndex() {
-  //   const city = location.pathname.split('/').pop();
-  //   return (
-  //     <div>
-  //       <div>sdf{city}</div>
-  //     </div>
-  //   );
-  // }
-
   render() {
     return (
       <div className='nav-primary px-0'>
@@ -42,10 +35,14 @@ class NavPrimary extends Component {
           <Container fluid>
             <Navbar.Brand as={Link} to='/' href='/'>
               <img
-                src={NavLogo}
+                // src={NavLogo}
+                src={NavLogoMobile}
                 className='d-inline-block align-top'
                 alt='Denizen Designer Logo'
               />
+              {/* <Container fluid>
+                <Image src={NavLogo} alt='Denizen Designer Logo' fluid />
+              </Container> */}
             </Navbar.Brand>
             <Nav className='mr-auto rr'></Nav>
             <div className='pr-3'>
@@ -53,11 +50,11 @@ class NavPrimary extends Component {
                 // as={Link}
                 // href='/historyofparticipatorydesign'
                 to='/historyofparticipatorydesign'
-                className='nav-primary-text mobile-nav mr-auto'
+                className='nav-primary-text mobile-nav'
               >
                 History of Participatory Design
               </NavLink>
-              <Nav className='mr-auto'></Nav>
+              {/* <Nav className='mr-auto'></Nav> */}
               <NavLink
                 // as={Link}
                 // eventKey={2}

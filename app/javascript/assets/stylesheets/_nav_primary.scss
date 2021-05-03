@@ -62,6 +62,13 @@
   .nav-primary .active.nav-primary-text.mobile-nav {
     display: block;
   }
+  .nav-primary-text {
+    // color: #8593a8 !important;
+    // padding: 12px 10px;
+    // align-items: center;
+    // margin: 14px 0px;
+    margin-left: 0px;
+  }
 }
 
 @media (mi-width: 992px) {
