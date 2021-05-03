@@ -43,6 +43,7 @@ function QuotesIndex({
   const [curQuote, setCurQuote] = useState('');
   const [quoteOwner, setQuoteOwner] = useState('');
   const [ownerRole, setOwnerRole] = useState('');
+  const [ownerID, setOwnerID] = useState('');
 
   // const findParticipant = (idToSearch) => {
   //   return quoteData.quotes.filter((participant) => {
@@ -97,7 +98,9 @@ function QuotesIndex({
               </Col>
             </Row>
             <Row className='justify-content-center pb-2'>
-              <span className='modal-name px-3'>{quoteOwner}</span>
+              <Link to={`/denizendesigner/interviews/${ownerID}`}>
+                <span className='modal-name px-3'>{quoteOwner}</span>
+              </Link>
             </Row>
             <Row className='justify-content-center pb-1'>
               <span className='modal-role'>{ownerRole}</span>
@@ -136,6 +139,7 @@ function QuotesIndex({
                           (item) => item.id === quote.participant_id
                         ).designer_type
                       );
+                      setOwnerID(quote.participant_id);
                       handleShow();
                       lala();
                     }}
@@ -148,11 +152,15 @@ function QuotesIndex({
 
                         <Col sm={12}>
                           {' '}
-                          <Card.Text className='denizen-quote-author ml-0'>
-                            {quote.first_name}
-                            {` `}
-                            {quote.last_name}
-                          </Card.Text>
+                          <Link
+                            to={`/denizendesigner/interviews/${quote.participant_id}`}
+                          >
+                            <Card.Text className='denizen-quote-author ml-0'>
+                              {quote.first_name}
+                              {` `}
+                              {quote.last_name}
+                            </Card.Text>
+                          </Link>
                         </Col>
                       </Row>
                     </Card.Body>
