@@ -98,11 +98,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -124,11 +124,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -150,11 +150,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -177,11 +177,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -203,11 +203,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -229,11 +229,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text'>
                       <a
                         className=''
                         target='_blank'
@@ -255,11 +255,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -281,11 +281,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -307,11 +307,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
@@ -338,11 +338,11 @@ class Resources extends Component {
             >
               <Card className='resource-ext-card'>
                 <Card.Body>
-                  <Row>
-                    <Col xs={3} className=''>
+                  <Row className='resource-card-row'>
+                    <Col xs={2} className=''>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
-                    <Col xs={9} className='card-resource-text '>
+                    <Col xs={10} className='card-resource-text '>
                       <a
                         className=''
                         target='_blank'
