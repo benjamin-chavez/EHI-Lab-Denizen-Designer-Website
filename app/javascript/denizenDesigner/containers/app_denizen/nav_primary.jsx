@@ -32,17 +32,32 @@ class NavPrimary extends Component {
           collapseOnSelect
           expand='lg'
         >
-          <Container fluid>
-            <Navbar.Brand as={Link} to='/' href='/'>
+          <Container fluid className='pl-0'>
+            <Navbar.Brand
+              as={Link}
+              to='/'
+              href='/'
+              className='nav-brand-mobile'
+            >
               <img
                 // src={NavLogo}
                 src={NavLogoMobile}
-                className='d-inline-block align-top'
+                className='d-inline-block align-top nav-brand-mobile'
                 alt='Denizen Designer Logo'
               />
-              {/* <Container fluid>
-                <Image src={NavLogo} alt='Denizen Designer Logo' fluid />
-              </Container> */}
+            </Navbar.Brand>
+            <Navbar.Brand
+              as={Link}
+              to='/'
+              href='/'
+              clasName='nav-brand-desktop'
+            >
+              <img
+                // src={NavLogo}
+                src={NavLogo}
+                className='d-inline-block align-top nav-brand-desktop'
+                alt='Denizen Designer Logo'
+              />
             </Navbar.Brand>
             <Nav className='mr-auto rr'></Nav>
             <div className='pr-0'>
