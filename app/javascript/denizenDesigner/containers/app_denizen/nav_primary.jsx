@@ -45,7 +45,7 @@ class NavPrimary extends Component {
               </Container> */}
             </Navbar.Brand>
             <Nav className='mr-auto rr'></Nav>
-            <div className='pr-3'>
+            <div className='pr-0'>
               <NavLink
                 // as={Link}
                 // href='/historyofparticipatorydesign'
