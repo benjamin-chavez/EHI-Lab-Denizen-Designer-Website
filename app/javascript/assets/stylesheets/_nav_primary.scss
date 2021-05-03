@@ -49,8 +49,8 @@
 .navbar-toggler.collapsed:focus,
 .navbar-toggler {
   // background-color: red ;
-  border: none !important;;
-  // padding: 0px 0px 0px 0px;
+  border: none !important;
+  padding: 0px 0px 0px 3px;
   outline: none !important;;
   box-shadow: none !important;;
 
@@ -70,7 +70,7 @@
     // width: 139px;
     // height: 42px;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 9px;
     line-height: 15px;
     border-radius: 4px;
     color: #475CA7 !important;
@@ -85,6 +85,11 @@
     // align-items: center;
     // margin: 14px 0px;
     margin-left: 0px;
+  }
+  .nav-primary-text {
+
+    padding: 7px 6px;
+
   }
 }
 

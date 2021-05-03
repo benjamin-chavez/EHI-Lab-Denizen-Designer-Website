@@ -65,7 +65,10 @@ class NavPrimary extends Component {
                 Denizen Designer
               </NavLink>
             </div>
-            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+            <Navbar.Toggle
+              aria-controls='responsive-navbar-nav'
+              className='pr-0'
+            />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'></Nav>
               <Nav>
