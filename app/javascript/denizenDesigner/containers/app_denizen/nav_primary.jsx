@@ -47,6 +47,27 @@ class NavPrimary extends Component {
                 alt='Denizen Designer Logo'
               />
             </Navbar.Brand>
+            <Nav className='mr-auto rr'></Nav>
+            <div className='pr-3'>
+              <NavLink
+                // as={Link}
+                // href='/historyofparticipatorydesign'
+                to='/historyofparticipatorydesign'
+                className='nav-primary-text mobile-nav mr-auto'
+              >
+                History of Participatory Design
+              </NavLink>
+              <Nav className='mr-auto'></Nav>
+              <NavLink
+                // as={Link}
+                // eventKey={2}
+                // href='/denizendesigner/'
+                to='/denizendesigner'
+                className='nav-primary-text mobile-nav'
+              >
+                Denizen Designer
+              </NavLink>
+            </div>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'></Nav>
@@ -55,7 +76,7 @@ class NavPrimary extends Component {
                   // as={Link}
                   // href='/historyofparticipatorydesign'
                   to='/historyofparticipatorydesign'
-                  className='nav-primary-text'
+                  className='nav-primary-text desktop-nav'
                 >
                   History of Participatory Design
                 </NavLink>
@@ -64,7 +85,7 @@ class NavPrimary extends Component {
                   // eventKey={2}
                   // href='/denizendesigner/'
                   to='/denizendesigner'
-                  className='nav-primary-text'
+                  className='nav-primary-text desktop-nav'
                 >
                   Denizen Designer
                 </NavLink>
