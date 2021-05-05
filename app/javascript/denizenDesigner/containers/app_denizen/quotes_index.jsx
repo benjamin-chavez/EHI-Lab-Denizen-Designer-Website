@@ -116,7 +116,7 @@ function QuotesIndex({
             quoteData.quotes &&
             quoteData.quotes.map((quote) =>
               quoteCategoryPath == 'all_quotes' ||
-              quoteCategoryPath == quote.category_int ? (
+              quote.categories.includes(quoteCategoryPath) ? (
                 <div key={quote.id}>
                   <Card
                     className='denizen-quote-card'
