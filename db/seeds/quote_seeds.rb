@@ -384,3 +384,77 @@ Quote.create!({
   quote_body: "...elevating some of this scrappy creativity that you need to use sometimes, because I think that a lot of times people don't realize how special that is especially in communities where there isn't that much wealth.",
   categories: ["community_empowerment"],
 })
+
+puts 'Creating Quotes for Denise Shanté Brown...'
+Quote.create!({
+  participant_id: 7,
+  first_name: "Denise",
+  last_name: "Shanté Brown",
+  quote_body: "I think the value is knowing we’re creating spaces where Black womxn’s dreams for health and healing are affirmed. Their creativity has a place to be expressed in ways that it hasn’t before, especially for those who don’t identify as designers. Together, we’re exploring the spectrum of what design is and can be when Black womxn are the ones reimagining the design process to bring more flourishing futures into existence.",
+  categories: ["space_making", "increasing_access"],
+})
+
+Quote.create!({
+  participant_id: 7,
+  first_name: "Denise",
+  last_name: "Shanté Brown",
+  quote_body: "I am not a therapist. But the experiences that we facilitate can be very therapeutic. With that distinction, we’re genuinely holding space for everyone’s truths to be creatively expressed, inviting their lived experiences to be shared in safe and sacred ways, and providing local and online resources to Black womxn healing practitioners who can continue supporting their journeys.",
+  categories: ["space_making"],
+})
+
+Quote.create!({
+  participant_id: 7,
+  first_name: "Denise",
+  last_name: "Shanté Brown",
+  quote_body: "So much of this work started off with me making a commitment to not just do extractive research in the city of Baltimore and leave, but to make genuine, life-giving connections with Black womxn and BIPOC who were also calling Baltimore home.",
+  categories: ["responsibility"],
+})
+
+puts 'Creating Quotes for Elle Ramel...'
+Quote.create!({
+  participant_id: 8,
+  first_name: "Elle",
+  last_name: "Ramel",
+  quote_body: "I think, unfortunately a lot of communities get designed for, or designed and like steamrolled over.",
+  categories: ["power"],
+})
+
+Quote.create!({
+  participant_id: 8,
+  first_name: "Elle",
+  last_name: "Ramel",
+  quote_body: "So I think the collaboration and the empathy between these fields, helps you think little differently, is very helpful. And then I think also the fact that it's something that we're not charging. We can be really, really honest and almost capacity build those communities. A lot of times they're just asking for things with the wrong words.",
+  categories: ["space_making", "knowledge_building"],
+})
+
+Quote.create!({
+  participant_id: 8,
+  first_name: "Elle",
+  last_name: "Ramel",
+  quote_body: "They shouldn’t have to know the principles in a book. I think that the space has to be welcoming and acknowledge that you don't have to know a lot to contribute your feedback.",
+  categories: ["increasing_access", "community_empowerment"],
+})
+
+Quote.create!({
+  participant_id: 8,
+  first_name: "Elle",
+  last_name: "Ramel",
+  quote_body: "And I think another thing is,I think the word \"community\" has become this condescending word for a person in power. It'd be like, \"We'll check on the community.\" And if you were gonna really do design, it would be full stakeholder engagement. It would be the business owners, it would be the people who live there, people who work there, and sometimes it's lipstick on a pig, where everyone's like, \"Well, we'll just do a community workshop.\" Well, you'll do this one workshop and then you'll say you did it and then you'll pat yourself on the back and then you're done. And so we have to battle that, because if I wanna do anything more than that, it's seen as expensive.",
+  categories: ["change_making", "future_implications"],
+})
+
+Quote.create!({
+  participant_id: 8,
+  first_name: "Elle",
+  last_name: "Ramel",
+  quote_body: "How can we leave the community with the principles and the skills to do it without me? I think that's really exciting because, man, if I could leave everyone and be like, \"They're totally capable.\" They see an empty lot and they can concept it themselves, I would be so excited.",
+  categories: ["future_implications"],
+})
+
+# Quote.create!({
+#   participant_id: 8,
+#   first_name: "Elle",
+#   last_name: "Ramel",
+#   quote_body: "",
+#   categories: [],
+# })
