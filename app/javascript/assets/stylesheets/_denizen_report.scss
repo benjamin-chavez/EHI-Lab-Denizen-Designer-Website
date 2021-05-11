@@ -35,7 +35,17 @@
   border-radius: 4px;
   padding: 12px 24px !important;
   align-items: center !important;
+  position: relative;
+  // height: 65vh;
+  height: 400px;
+  overflow: scroll;
+  margin-bottom: 100px;
 }
+::-webkit-scrollbar.report-container {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 
 .report-container h2 {
   font-family: Roboto;

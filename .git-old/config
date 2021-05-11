@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:bmchavez/EHI-Lab-Denizen-Designer-Website.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "heroku"]
+	url = https://git.heroku.com/denizen-designer-website.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*

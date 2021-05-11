@@ -1,0 +1,149 @@
+0000000000000000000000000000000000000000 97d5a54c9475a75e0c3196cf143c18bf51ca1c80 Ben Chavez <ben.m.chavez@gmail.com> 1606763079 -0600	commit (initial): Initial commit with minimal template from https://github.com/lewagon/rails-templates
+97d5a54c9475a75e0c3196cf143c18bf51ca1c80 bb869ce34feac48e3d9028dad24a972f36e8e1f6 Ben Chavez <ben.m.chavez@gmail.com> 1606763310 -0600	commit: new repo
+bb869ce34feac48e3d9028dad24a972f36e8e1f6 434f44a6909d709425e0ea6c11238440e6d3d09f Ben Chavez <ben.m.chavez@gmail.com> 1606764103 -0600	commit: yarn packages
+434f44a6909d709425e0ea6c11238440e6d3d09f 33a1ff3b63a2e33edafdf2a742309a7b299121d4 Ben Chavez <ben.m.chavez@gmail.com> 1606766088 -0600	commit: react injection
+33a1ff3b63a2e33edafdf2a742309a7b299121d4 c9f158d22a4bb3a5df4ee3bbf6dd459a1d5d375a Ben Chavez <ben.m.chavez@gmail.com> 1606767076 -0600	commit: actions components and reducers
+c9f158d22a4bb3a5df4ee3bbf6dd459a1d5d375a f6b6d08d7d399a977c8ddb7c26eec78214c00a9a Ben Chavez <ben.m.chavez@gmail.com> 1606767494 -0600	commit: remove history
+f6b6d08d7d399a977c8ddb7c26eec78214c00a9a a6ea23bb9911a1d588d4358d71bfa4a48ca7ec5a Ben Chavez <ben.m.chavez@gmail.com> 1606767801 -0600	commit: css file move
+a6ea23bb9911a1d588d4358d71bfa4a48ca7ec5a 6003aa2804b059583641c55e63a41736dc6dbd45 Ben Chavez <ben.m.chavez@gmail.com> 1606768522 -0600	commit: fixed routing'
+6003aa2804b059583641c55e63a41736dc6dbd45 0a434a63e8963cc5bd368a4f9f54314b37ed521b Ben Chavez <ben.m.chavez@gmail.com> 1606769731 -0600	commit: boostrap container
+0a434a63e8963cc5bd368a4f9f54314b37ed521b 097edc7edce1d672095f6f89f7b4465b1faa4bd4 Ben Chavez <ben.m.chavez@gmail.com> 1607489554 -0600	commit: styling updates and quotes
+097edc7edce1d672095f6f89f7b4465b1faa4bd4 7ef78e6e9eeb5c4666b987fec1392bd842b7388d Ben Chavez <ben.m.chavez@gmail.com> 1607489975 -0600	commit: moved styling
+7ef78e6e9eeb5c4666b987fec1392bd842b7388d c105423ba5bb847c935f450a83750c0e415c53af Ben Chavez <ben.m.chavez@gmail.com> 1607490114 -0600	commit: moved styling
+c105423ba5bb847c935f450a83750c0e415c53af b3a08f2fc519b63344c7b27486833f087097bd43 Ben Chavez <ben.m.chavez@gmail.com> 1607490374 -0600	commit: styling files
+b3a08f2fc519b63344c7b27486833f087097bd43 b922f9ed9015748e9fa323461b4ba95548e7eda9 Ben Chavez <ben.m.chavez@gmail.com> 1608083424 -0600	commit: weekly update from react only repo
+b922f9ed9015748e9fa323461b4ba95548e7eda9 5dbdc13f3d4ab9472382fa845bd0d5e0566339ea Ben Chavez <ben.m.chavez@gmail.com> 1608083578 -0600	commit: weekly update from react only repo
+5dbdc13f3d4ab9472382fa845bd0d5e0566339ea 0196bab7b622d5ad09cc1d1541660fe3daba1045 Ben Chavez <ben.m.chavez@gmail.com> 1611543324 -0600	commit: moved react app into rails app
+0196bab7b622d5ad09cc1d1541660fe3daba1045 cd81be09df2042c41badb1b4c59523926b348e62 Ben Chavez <ben.m.chavez@gmail.com> 1611544319 -0600	commit: link application.scss2
+cd81be09df2042c41badb1b4c59523926b348e62 152b0727e5d0f33dda4f732857d7535ce46eff96 Ben Chavez <ben.m.chavez@gmail.com> 1611546359 -0600	commit: added tmp images to cloudinary to get them to pull through the css
+152b0727e5d0f33dda4f732857d7535ce46eff96 1cfb1f5614835bdd94eb0437505cee214ea4f3fd Ben Chavez <ben.m.chavez@gmail.com> 1611630796 -0600	commit: Added HOTT RELOOOOD:
+1cfb1f5614835bdd94eb0437505cee214ea4f3fd 152b0727e5d0f33dda4f732857d7535ce46eff96 Ben Chavez <ben.m.chavez@gmail.com> 1611631013 -0600	reset: moving to HEAD~1
+152b0727e5d0f33dda4f732857d7535ce46eff96 27c4cfda6aad28b9e828773bd27329de926356e3 Ben Chavez <ben.m.chavez@gmail.com> 1611631031 -0600	commit: reset
+27c4cfda6aad28b9e828773bd27329de926356e3 a851e9705c936e67e37a18e8ba62121a3035cf89 Ben Chavez <ben.m.chavez@gmail.com> 1611632632 -0600	pull origin master: Merge made by the 'recursive' strategy.
+a851e9705c936e67e37a18e8ba62121a3035cf89 e077e0296829c64d5e24aa9c36ccc670831c09df Ben Chavez <ben.m.chavez@gmail.com> 1611813895 -0600	commit: babel config
+e077e0296829c64d5e24aa9c36ccc670831c09df 7660d7ec178a00cbf76c60bb66ec1499e6e71095 Ben Chavez <ben.m.chavez@gmail.com> 1612160553 -0600	commit: styling updates
+7660d7ec178a00cbf76c60bb66ec1499e6e71095 11e43699a897fb08c51d8a52d31d3de078b34efd Ben Chavez <ben.m.chavez@gmail.com> 1612199603 -0600	commit: nav secondary wrap
+11e43699a897fb08c51d8a52d31d3de078b34efd 2048dcc23770c1daed7d23de5cc3bbec8c9b0892 Ben Chavez <ben.m.chavez@gmail.com> 1612225979 -0600	commit: landing page image fluid
+2048dcc23770c1daed7d23de5cc3bbec8c9b0892 c22e5f44072d2f0366fde711630e81e0481bb3d5 Ben Chavez <ben.m.chavez@gmail.com> 1612231055 -0600	commit: designer database styling
+c22e5f44072d2f0366fde711630e81e0481bb3d5 f38d26865099b491f3ee14e25a0b9b6d8ee508bc Ben Chavez <ben.m.chavez@gmail.com> 1612242190 -0600	commit: backend re-implementation
+f38d26865099b491f3ee14e25a0b9b6d8ee508bc 17e4feccf68eb26bd56f42d3df3fbb0d36a1f3fe Ben Chavez <ben.m.chavez@gmail.com> 1612670154 -0600	commit: removed primary navbar from the landing page:
+17e4feccf68eb26bd56f42d3df3fbb0d36a1f3fe 591ff34757d4174d4a7e7c2c7f7a4ac11ea91da8 Ben Chavez <ben.m.chavez@gmail.com> 1612671208 -0600	commit: centered participant cards on participants index page
+591ff34757d4174d4a7e7c2c7f7a4ac11ea91da8 7ff2941152f39cc8e23811eb33f75ccf6aeea1f3 Ben Chavez <ben.m.chavez@gmail.com> 1612714253 -0600	commit: heroku cofig
+7ff2941152f39cc8e23811eb33f75ccf6aeea1f3 3036067bb4733f343db06179188253dd0a515e01 Ben Chavez <ben.m.chavez@gmail.com> 1612714894 -0600	commit: heroku config
+3036067bb4733f343db06179188253dd0a515e01 9c050d559cd839e8bd223ee6cffc1a7c9e88ca7d Ben Chavez <ben.m.chavez@gmail.com> 1612721615 -0600	commit: landing page styling and responsiveness push 1
+9c050d559cd839e8bd223ee6cffc1a7c9e88ca7d e6ae67bd0979bbf2d2300324a03154503468e4f6 Ben Chavez <ben.m.chavez@gmail.com> 1612724782 -0600	commit: landing page styling
+e6ae67bd0979bbf2d2300324a03154503468e4f6 16c7d13ad7cc339b88cc49c7bad96a8f8403c664 Ben Chavez <ben.m.chavez@gmail.com> 1612726807 -0600	commit: landing page styling
+16c7d13ad7cc339b88cc49c7bad96a8f8403c664 391138134624a9f43ce19d4ca96fc366af0f7e19 Ben Chavez <ben.m.chavez@gmail.com> 1612728824 -0600	commit: landing page styling
+391138134624a9f43ce19d4ca96fc366af0f7e19 5e76f497c5935d5258a943ba69d94caed54820a0 Ben Chavez <ben.m.chavez@gmail.com> 1612729177 -0600	commit: landing page styling
+5e76f497c5935d5258a943ba69d94caed54820a0 0be285964f1121385c50d3949a57cc41da04d481 Ben Chavez <ben.m.chavez@gmail.com> 1612729709 -0600	commit: landing page code cleanup
+0be285964f1121385c50d3949a57cc41da04d481 a3a31b45e064e89c0f0eb7c3dc3b54fbbdfad0c0 Ben Chavez <ben.m.chavez@gmail.com> 1612751547 -0600	commit: contianer width & navbar width
+a3a31b45e064e89c0f0eb7c3dc3b54fbbdfad0c0 80916f88409026e52bdb82b4f16185bc30ba70fb Ben Chavez <ben.m.chavez@gmail.com> 1612752543 -0600	commit: styling changes
+80916f88409026e52bdb82b4f16185bc30ba70fb 8b03e05d98fa717c29802f058c1c77a1007ed20c Ben Chavez <ben.m.chavez@gmail.com> 1612753111 -0600	commit: interviews show page mobile responsive
+8b03e05d98fa717c29802f058c1c77a1007ed20c 223e9f3150a3460c5b83a683b081ea8f14fe5ac4 Ben Chavez <ben.m.chavez@gmail.com> 1612753548 -0600	commit: interviews show page mobile responsive
+223e9f3150a3460c5b83a683b081ea8f14fe5ac4 657913bab1947459ac5e22ef0d1945684da4019c Ben Chavez <ben.m.chavez@gmail.com> 1612761725 -0600	commit: nav and secondary nav spacing
+657913bab1947459ac5e22ef0d1945684da4019c 21bc108ffc3b933f1e8606dd4892161a0979aae2 Ben Chavez <ben.m.chavez@gmail.com> 1612762295 -0600	commit: interviews index styling
+21bc108ffc3b933f1e8606dd4892161a0979aae2 6895a2e987a49566b63396d492c43f05c62df3c3 Ben Chavez <ben.m.chavez@gmail.com> 1612763099 -0600	commit: interviews index styling
+6895a2e987a49566b63396d492c43f05c62df3c3 0e3b2746c3afb679219a566a7c75d1d3c465b32b Ben Chavez <ben.m.chavez@gmail.com> 1613021784 -0600	commit: interviews index card responsiveness
+0e3b2746c3afb679219a566a7c75d1d3c465b32b 5bb066ea2af6b5edf7db42ce16b9ad3fff2a73af Ben Chavez <ben.m.chavez@gmail.com> 1613023270 -0600	commit: interviews index card responsiveness
+5bb066ea2af6b5edf7db42ce16b9ad3fff2a73af 97891aaa2a2eea584324e88fab500356ed328388 Ben Chavez <ben.m.chavez@gmail.com> 1613101563 -0600	commit: interviews card styling
+97891aaa2a2eea584324e88fab500356ed328388 cc9308bc2c2ab05d00c3c2d673606496ae143fd8 Ben Chavez <ben.m.chavez@gmail.com> 1613102159 -0600	commit: interviews card styling
+cc9308bc2c2ab05d00c3c2d673606496ae143fd8 b3b3e83e24581cf1ebe2417628895c451be612ed Ben Chavez <ben.m.chavez@gmail.com> 1613425363 -0600	commit: designer database responsive cards
+b3b3e83e24581cf1ebe2417628895c451be612ed 536ec43ddbd5157ec7511632ad51c81978188a64 Ben Chavez <ben.m.chavez@gmail.com> 1613427154 -0600	commit: filtering added back
+536ec43ddbd5157ec7511632ad51c81978188a64 0ddf3db87294f4f8f3a6b73641d3ce56c2031969 Ben Chavez <ben.m.chavez@gmail.com> 1613437840 -0600	commit: Designer database - new cards
+0ddf3db87294f4f8f3a6b73641d3ce56c2031969 c30fc66d6a1c1bcc3515672e4cb3638fff54710c Ben Chavez <ben.m.chavez@gmail.com> 1613438047 -0600	commit: Designer database - new cards
+c30fc66d6a1c1bcc3515672e4cb3638fff54710c ad98d280d1c745b991aa9489253d3eba6c8587a7 Ben Chavez <ben.m.chavez@gmail.com> 1613441305 -0600	commit: designer database media query
+ad98d280d1c745b991aa9489253d3eba6c8587a7 331bc18b83a0de25cb41ede074c5e086abde4e67 Ben Chavez <ben.m.chavez@gmail.com> 1613441780 -0600	commit: designer database media query
+331bc18b83a0de25cb41ede074c5e086abde4e67 1a463deb8aa9b36f930c37dbbd2d9db6bb6adb86 Ben Chavez <ben.m.chavez@gmail.com> 1613445673 -0600	commit: Resources Tab
+1a463deb8aa9b36f930c37dbbd2d9db6bb6adb86 8cfc39d6879ceadf9fc51271efdb347dd5959589 Ben Chavez <ben.m.chavez@gmail.com> 1613446848 -0600	commit: Resources Tab
+8cfc39d6879ceadf9fc51271efdb347dd5959589 e38ba90925607914cf4724293ac3da0723e2421c Ben Chavez <ben.m.chavez@gmail.com> 1613448016 -0600	commit: home screen mobile styling
+e38ba90925607914cf4724293ac3da0723e2421c 8d03be434226bcb08c054e3825dc87b1957632dc Ben Chavez <ben.m.chavez@gmail.com> 1613450326 -0600	commit: home screen styling
+8d03be434226bcb08c054e3825dc87b1957632dc 518e91f7e88556777bc5da8bbcb879312a6876ad Ben Chavez <ben.m.chavez@gmail.com> 1613451102 -0600	commit: scroll to top
+518e91f7e88556777bc5da8bbcb879312a6876ad 5a9019abca3d0d917b85036392de47b79c0c60c5 Ben Chavez <ben.m.chavez@gmail.com> 1613453955 -0600	commit: interviews show page styling
+5a9019abca3d0d917b85036392de47b79c0c60c5 7a8431fbd227669eb6c8243ccbc030517b114678 Ben Chavez <ben.m.chavez@gmail.com> 1613454852 -0600	commit: interview show styling
+7a8431fbd227669eb6c8243ccbc030517b114678 25bf70db97e9e9ea353491e5d74aed30ba2b269a Ben Chavez <ben.m.chavez@gmail.com> 1613455433 -0600	commit: final save
+25bf70db97e9e9ea353491e5d74aed30ba2b269a 322c51fb4719644202e535ecf325b45895bd866b Ben Chavez <ben.m.chavez@gmail.com> 1615172725 -0600	commit: modal functionality
+322c51fb4719644202e535ecf325b45895bd866b b7b8c5cc2cff4efe60558ef9779210c151e0e7cd Ben Chavez <ben.m.chavez@gmail.com> 1615179967 -0600	commit: modal design
+b7b8c5cc2cff4efe60558ef9779210c151e0e7cd 81e2db5b68588544c63f7887b1377ee209a7c7d2 Ben Chavez <ben.m.chavez@gmail.com> 1615217312 -0600	commit: modal edits
+81e2db5b68588544c63f7887b1377ee209a7c7d2 3cc9e5733fe800ecd295b1ef596905e25d178a56 Ben Chavez <ben.m.chavez@gmail.com> 1615250326 -0600	commit: landing page design and button updates
+3cc9e5733fe800ecd295b1ef596905e25d178a56 8e3371983c23209f0a2179f27149cdc80227b6b4 Ben Chavez <ben.m.chavez@gmail.com> 1615260033 -0600	commit: resources link cards
+8e3371983c23209f0a2179f27149cdc80227b6b4 1b106ccbf123b8b8366397714cefd7bb7477618c Ben Chavez <ben.m.chavez@gmail.com> 1615270631 -0600	commit: resources cards
+1b106ccbf123b8b8366397714cefd7bb7477618c ccc9181be3475eec4c8c2eea1a330f8cc72d6e96 Ben Chavez <ben.m.chavez@gmail.com> 1615272144 -0600	commit: resource cards design
+ccc9181be3475eec4c8c2eea1a330f8cc72d6e96 4a7a6ec3ca3113d2db0f2dbed4bcca41773968d4 Ben Chavez <ben.m.chavez@gmail.com> 1615272590 -0600	commit: resource card font color
+4a7a6ec3ca3113d2db0f2dbed4bcca41773968d4 7c9dabbf07eafd1ede869d178dad228403e1b47b Ben Chavez <ben.m.chavez@gmail.com> 1615783151 -0500	commit: small styling tweaks
+7c9dabbf07eafd1ede869d178dad228403e1b47b 42b940b9148ebcdfc9ae3ab4c709afc9f53ea007 Ben Chavez <ben.m.chavez@gmail.com> 1615785899 -0500	commit: fixed primary nav
+42b940b9148ebcdfc9ae3ab4c709afc9f53ea007 7e55740b0a1000a77abf7462edb9812b16407725 Ben Chavez <ben.m.chavez@gmail.com> 1615787789 -0500	commit: fixed navbar tweaks
+7e55740b0a1000a77abf7462edb9812b16407725 d150c551eb6717eee57735e662ac2e00bd196d90 Ben Chavez <ben.m.chavez@gmail.com> 1615789223 -0500	commit: background line repeat
+d150c551eb6717eee57735e662ac2e00bd196d90 778d4cf6f6d05f2dea454ebe106c1adb4ea0e0c3 Ben Chavez <ben.m.chavez@gmail.com> 1615826991 -0500	commit: background pattern updated with lighter color
+778d4cf6f6d05f2dea454ebe106c1adb4ea0e0c3 be58865ef83bbcdac990c9d0543b045b5e926df1 Ben Chavez <ben.m.chavez@gmail.com> 1615853674 -0500	commit: fixed loading issue on quotes page by adding axios and redux-thunk. Re-implemented the modal too
+be58865ef83bbcdac990c9d0543b045b5e926df1 da0919bd4d29c754e7d85546c72f39a9bea7d509 Ben Chavez <ben.m.chavez@gmail.com> 1615854197 -0500	commit: quote cards back in list view
+da0919bd4d29c754e7d85546c72f39a9bea7d509 470f0b19e1f0236883c34da53c92271fcf032317 Ben Chavez <ben.m.chavez@gmail.com> 1615862629 -0500	commit: new masonry layout
+470f0b19e1f0236883c34da53c92271fcf032317 f0df6e2525456958dc3005b27b6c27660bec0c36 Ben Chavez <ben.m.chavez@gmail.com> 1615901908 -0500	commit: new hero image on home screen
+f0df6e2525456958dc3005b27b6c27660bec0c36 e7a2adb4e2c3536da18a0445542353ca3d7e4487 Ben Chavez <ben.m.chavez@gmail.com> 1615903391 -0500	commit: ladning page subtitle
+e7a2adb4e2c3536da18a0445542353ca3d7e4487 f2a6b9054d0de9c408ddb0e2fa5b33f988c6a4d5 Ben Chavez <ben.m.chavez@gmail.com> 1615903813 -0500	commit: landing page sub title
+f2a6b9054d0de9c408ddb0e2fa5b33f988c6a4d5 59876cf67f208dd0567916cd59bc1d2cab5754a5 Ben Chavez <ben.m.chavez@gmail.com> 1615904808 -0500	commit: landing page button underline padding
+59876cf67f208dd0567916cd59bc1d2cab5754a5 b50b85cfcf4ee78eed9051ae3ec1495ca3a4cdb5 Ben Chavez <ben.m.chavez@gmail.com> 1615906464 -0500	commit: quote modal - mobile text size
+b50b85cfcf4ee78eed9051ae3ec1495ca3a4cdb5 abb53104e68b0a97c201e36cb16195ef5f63a198 Ben Chavez <ben.m.chavez@gmail.com> 1615908013 -0500	commit: quote modal - mobile text size
+abb53104e68b0a97c201e36cb16195ef5f63a198 5f3d1d8cc5aa31396b846d153f5212a65b5255f1 Ben Chavez <ben.m.chavez@gmail.com> 1615912717 -0500	commit: landing page styling
+5f3d1d8cc5aa31396b846d153f5212a65b5255f1 52f3a29c685c329c79cad7be513ad3b2aae8b9d6 Ben Chavez <ben.m.chavez@gmail.com> 1615943632 -0500	commit: centered subtitle
+52f3a29c685c329c79cad7be513ad3b2aae8b9d6 c225bb031a3224af2d8b6bb157dd9623e15a0221 Ben Chavez <ben.m.chavez@gmail.com> 1615946538 -0500	commit: landing page styling
+c225bb031a3224af2d8b6bb157dd9623e15a0221 ebe088fb7acba1ab045618298a0ab91272f0792b Ben Chavez <ben.m.chavez@gmail.com> 1615947451 -0500	commit: testing landing page
+ebe088fb7acba1ab045618298a0ab91272f0792b cf2d38360ec2481ce0b510e2335a8b7e9fd0332a Ben Chavez <ben.m.chavez@gmail.com> 1615947512 -0500	commit: testing landing page
+cf2d38360ec2481ce0b510e2335a8b7e9fd0332a d61f185bae9e77939d80609c36c693bcae812f79 Ben Chavez <ben.m.chavez@gmail.com> 1615948067 -0500	commit: heroku error
+d61f185bae9e77939d80609c36c693bcae812f79 ab7cdb5959a7becf560a613bf07372dc0c04e08e Ben Chavez <ben.m.chavez@gmail.com> 1616459052 -0500	commit: meeting with ighodalo
+ab7cdb5959a7becf560a613bf07372dc0c04e08e 2d3133ea6d4ba6953c19d46f306343abc8c1d3a1 Ben Chavez <ben.m.chavez@gmail.com> 1616463490 -0500	commit: designer database rendering onle once
+2d3133ea6d4ba6953c19d46f306343abc8c1d3a1 cfa532d29025f50f4211677e20d0d24124f6638b Ben Chavez <ben.m.chavez@gmail.com> 1616474490 -0500	commit: db updated with particpants. react actions pointing to live api
+cfa532d29025f50f4211677e20d0d24124f6638b 95722838cbf54d97ba45090680c50b1a83efde9f Ben Chavez <ben.m.chavez@gmail.com> 1616474714 -0500	commit: repointed api call to json file
+95722838cbf54d97ba45090680c50b1a83efde9f 51e39ab97451c5e3635499156d261386a6e62b1f Ben Chavez <ben.m.chavez@gmail.com> 1616540728 -0500	commit: live api
+51e39ab97451c5e3635499156d261386a6e62b1f 11367be0ee165dd34b1c8abe25550468f8707257 Ben Chavez <ben.m.chavez@gmail.com> 1616544549 -0500	commit: designer database links live
+11367be0ee165dd34b1c8abe25550468f8707257 7080c64236f9fc1afe765d9f7eff7b1ff9d61d9a Ben Chavez <ben.m.chavez@gmail.com> 1616546171 -0500	commit: participant show page social links
+7080c64236f9fc1afe765d9f7eff7b1ff9d61d9a 7d80f992bc43786da41cc4b00a0e7a2f21f79a15 Ben Chavez <ben.m.chavez@gmail.com> 1616692059 -0500	commit: designer database city filter basic functionality
+7d80f992bc43786da41cc4b00a0e7a2f21f79a15 8037c0d587300a665ac77c58297b3777e3fbba9e Ben Chavez <ben.m.chavez@gmail.com> 1616692242 -0500	commit: designer database city filter updated functionality
+8037c0d587300a665ac77c58297b3777e3fbba9e 70fcbe40bc3e165b181cdfb26f10db01df9c5e52 Ben Chavez <ben.m.chavez@gmail.com> 1616694687 -0500	commit: test
+70fcbe40bc3e165b181cdfb26f10db01df9c5e52 b66bd49f395cbef6a11a9d347b7065efa78eb5fd Ben Chavez <ben.m.chavez@gmail.com> 1616694892 -0500	commit: sorted the database city filter
+b66bd49f395cbef6a11a9d347b7065efa78eb5fd cceab790b1289ba45f08232b8aab9ffb629da16a Ben Chavez <ben.m.chavez@gmail.com> 1616870855 -0500	commit: designer database relaod redirect fix to go to the selected city
+cceab790b1289ba45f08232b8aab9ffb629da16a 8bebfab7731ff11a63e92f766dee6e4260e9bd02 Ben Chavez <ben.m.chavez@gmail.com> 1616872030 -0500	commit: designer database all cities filter option added
+8bebfab7731ff11a63e92f766dee6e4260e9bd02 89f2e5eb77f613fbc97aa46dfb043c074645b50c Ben Chavez <ben.m.chavez@gmail.com> 1616874697 -0500	commit: Add dotenv - Protect my secret data in .env file
+89f2e5eb77f613fbc97aa46dfb043c074645b50c e5fb11ee4978756976d8822fabec9dd252642798 Ben Chavez <ben.m.chavez@gmail.com> 1616883795 -0500	commit: database updates with participant images
+e5fb11ee4978756976d8822fabec9dd252642798 cd49e3443bbf271262e49500be89a2e88e9e1ad9 Ben Chavez <ben.m.chavez@gmail.com> 1616886098 -0500	commit: interviews tab logix to only render participants that have been interviewed
+cd49e3443bbf271262e49500be89a2e88e9e1ad9 e0d2d03867fcdcab6b40c288d3f049f45f0476ac Ben Chavez <ben.m.chavez@gmail.com> 1616887031 -0500	commit: added quote categories
+e0d2d03867fcdcab6b40c288d3f049f45f0476ac 0ec196abf97fa3624c240841f1a6496b9971659a Ben Chavez <ben.m.chavez@gmail.com> 1616888940 -0500	commit: image sizing for participant index and show
+0ec196abf97fa3624c240841f1a6496b9971659a c51d246ed11e38dfb662eae288f2c7c4315fd1f1 Ben Chavez <ben.m.chavez@gmail.com> 1616968870 -0500	commit: quotes seeds and database updates
+c51d246ed11e38dfb662eae288f2c7c4315fd1f1 4adf131da8566c39ab62e97392adf6abe8f06743 Ben Chavez <ben.m.chavez@gmail.com> 1616978895 -0500	commit: quotes filter functionality
+4adf131da8566c39ab62e97392adf6abe8f06743 95e44c378895bb75485caaf72b3d75066906d7e4 Ben Chavez <ben.m.chavez@gmail.com> 1616982633 -0500	commit: quotes filter select on click
+95e44c378895bb75485caaf72b3d75066906d7e4 8685381b181c63dea3fc80a975f3120d4000d2de Ben Chavez <ben.m.chavez@gmail.com> 1617125676 -0500	commit: quotes filter shows selected quote category on initial load AND persists current category through reload
+8685381b181c63dea3fc80a975f3120d4000d2de 3aa12decc353abc72e3aad554fc0e77202bda0f5 Ben Chavez <ben.m.chavez@gmail.com> 1617130502 -0500	commit: navbar tab selection stays active
+3aa12decc353abc72e3aad554fc0e77202bda0f5 13fda82167ad20846b189d8ddc688b877ecf823b Ben Chavez <ben.m.chavez@gmail.com> 1617472741 -0500	commit: login + Participant CRUD
+13fda82167ad20846b189d8ddc688b877ecf823b b2895d8da8ceb8112f7c7482907c3a6d621e8bfa Ben Chavez <ben.m.chavez@gmail.com> 1617587375 -0500	commit: intervierws index down to 1 participant on mobile
+b2895d8da8ceb8112f7c7482907c3a6d621e8bfa 54319d156311236acd4d7ad217658f8f81d27cb0 Ben Chavez <ben.m.chavez@gmail.com> 1617587972 -0500	commit: interview show page back button font
+54319d156311236acd4d7ad217658f8f81d27cb0 2c571353a3e1109fe05a914e14b58eba3cb40a39 Ben Chavez <ben.m.chavez@gmail.com> 1617588453 -0500	commit: remove border from quote card on participant show page
+2c571353a3e1109fe05a914e14b58eba3cb40a39 82c78e75f3f1a9e7d93ddc8cfb338a37b521532f Ben Chavez <ben.m.chavez@gmail.com> 1617598727 -0500	commit: denizen home screen button styling
+82c78e75f3f1a9e7d93ddc8cfb338a37b521532f 854c17f84855ad9ba4b3025277b772b30048deb5 Ben Chavez <ben.m.chavez@gmail.com> 1618779400 -0500	commit: interviews card design
+854c17f84855ad9ba4b3025277b772b30048deb5 dd5b368d56e9c7027443a2bac78a17685f4cbbbc Ben Chavez <ben.m.chavez@gmail.com> 1618781488 -0500	commit: fixed width of margin on interviews index page
+dd5b368d56e9c7027443a2bac78a17685f4cbbbc 37d6b8734d5b02aa510e2ee8d4ec6c3a02bdd4f0 Ben Chavez <ben.m.chavez@gmail.com> 1618781795 -0500	commit: spacing tweak
+37d6b8734d5b02aa510e2ee8d4ec6c3a02bdd4f0 3ae416430e804bd9e8e1d71810c4d62977df62b8 Ben Chavez <ben.m.chavez@gmail.com> 1618786550 -0500	commit: updated participant seeds with new photos from ighodalo
+3ae416430e804bd9e8e1d71810c4d62977df62b8 160e1a8cfaf37ded0c89cc0e5108909f5bd0b93f Ben Chavez <ben.m.chavez@gmail.com> 1618791296 -0500	commit: spacing of designer database
+160e1a8cfaf37ded0c89cc0e5108909f5bd0b93f 04ef4a0ecf4f73fb48514ed368f63d356990ddd2 Ben Chavez <ben.m.chavez@gmail.com> 1618792065 -0500	commit: participant seeds wrong photo url for sabiha
+04ef4a0ecf4f73fb48514ed368f63d356990ddd2 e69a2c15dc9d65c263bf7a7e179ef79eb4fb752f Ben Chavez <ben.m.chavez@gmail.com> 1618793315 -0500	commit: interview show page - image sizing - fixed column overflow
+e69a2c15dc9d65c263bf7a7e179ef79eb4fb752f 4475b21220f08b334e79e313fb5d5655f98adcad Ben Chavez <ben.m.chavez@gmail.com> 1618794804 -0500	commit: navbar styling tweaks
+4475b21220f08b334e79e313fb5d5655f98adcad 4718308acce0d6bb1e7a74e5d7c81e4252169c13 Ben Chavez <ben.m.chavez@gmail.com> 1618794887 -0500	commit: interview card gradient
+4718308acce0d6bb1e7a74e5d7c81e4252169c13 df1333d151398eff9cb8b4854ece0a45d47fb89f Ben Chavez <ben.m.chavez@gmail.com> 1618798455 -0500	commit: resource page styling:
+df1333d151398eff9cb8b4854ece0a45d47fb89f 081e849cb6b4d8edf90af7cea756c1daedb209d1 Ben Chavez <ben.m.chavez@gmail.com> 1618799179 -0500	commit: resources page cleanup
+081e849cb6b4d8edf90af7cea756c1daedb209d1 e3a1ec93e9ceb12d20e2d1e6b3754e3dc9cd7a35 Ben Chavez <ben.m.chavez@gmail.com> 1619010658 -0500	commit: bootstrap's masonry layout
+e3a1ec93e9ceb12d20e2d1e6b3754e3dc9cd7a35 2208007c0916180e2cc4f4b9c7e3db44a5f1133d Ben Chavez <ben.m.chavez@gmail.com> 1619062828 -0500	commit: quote category expand
+2208007c0916180e2cc4f4b9c7e3db44a5f1133d 4f6965e6900549a0f53ebe520f12db00d4b14a44 Ben Chavez <ben.m.chavez@gmail.com> 1619417866 -0500	commit: quotes expand quote categories And link quote modal to backend
+4f6965e6900549a0f53ebe520f12db00d4b14a44 929733f44eed99b5e929f0e74bc7ba2785fbac9e Ben Chavez <ben.m.chavez@gmail.com> 1619494272 -0500	commit: quotes database update
+929733f44eed99b5e929f0e74bc7ba2785fbac9e 5ecdac9d44345c9352b5c14730702e8d16c31793 Ben Chavez <ben.m.chavez@gmail.com> 1619494703 -0500	commit: quotes db update
+5ecdac9d44345c9352b5c14730702e8d16c31793 3b4a00c680e7b957c3e4cbe052f0818db78b0297 Ben Chavez <ben.m.chavez@gmail.com> 1620004328 -0500	commit: create linkon the quote owner's names to link back to the respective interview show page
+3b4a00c680e7b957c3e4cbe052f0818db78b0297 90eafb5d95f39536c4f123840765cd3369f5ae5d Ben Chavez <ben.m.chavez@gmail.com> 1620007533 -0500	commit: mobile navbar update
+90eafb5d95f39536c4f123840765cd3369f5ae5d 39760848d665c1f4e169a3ceeede0915514354b2 Ben Chavez <ben.m.chavez@gmail.com> 1620007952 -0500	commit: mobile nave update size of button text
+39760848d665c1f4e169a3ceeede0915514354b2 1ceb6b14107d616cad868788e00db8ee9e3fb34c Ben Chavez <ben.m.chavez@gmail.com> 1620009352 -0500	commit: mobile nav logo
+1ceb6b14107d616cad868788e00db8ee9e3fb34c a63695f7df7eb27f98b181aa264e4816e6f21dac Ben Chavez <ben.m.chavez@gmail.com> 1620012435 -0500	commit: mobile navbar fit
+a63695f7df7eb27f98b181aa264e4816e6f21dac d80f73205c0089e49fd20d6543f4872e5f10b819 Ben Chavez <ben.m.chavez@gmail.com> 1620013196 -0500	commit: navbar mobile update
+d80f73205c0089e49fd20d6543f4872e5f10b819 b9a73dddab287fcc5c8d9cd2b871d8b20fee742e Ben Chavez <ben.m.chavez@gmail.com> 1620017617 -0500	commit: navbar mobile
+b9a73dddab287fcc5c8d9cd2b871d8b20fee742e 636705b0c0df851c6088d19ed75771bc2058da1b Ben Chavez <ben.m.chavez@gmail.com> 1620017970 -0500	commit: navbar mobile
+636705b0c0df851c6088d19ed75771bc2058da1b 5035419b747d88100954261c92cac6d95c258536 Ben Chavez <ben.m.chavez@gmail.com> 1620018632 -0500	commit: resource card spacing issue fixed
+5035419b747d88100954261c92cac6d95c258536 892f466d23510f685886e7439774015f876f946c Ben Chavez <ben.m.chavez@gmail.com> 1620019505 -0500	commit: zine download link
+892f466d23510f685886e7439774015f876f946c b14476225db7c71955af0c033209e02dc5792612 Ben Chavez <ben.m.chavez@gmail.com> 1620177815 -0500	commit: start coding session
+b14476225db7c71955af0c033209e02dc5792612 78ccf6fbcbde8310b711470c8e25f9054717f097 Ben Chavez <ben.m.chavez@gmail.com> 1620183654 -0500	commit: quotes database schema updated, quotes seeds updated, and quotes index.jsx updated so that quotes can belong to multiple categories without being duplicated in the database or on the all quotes page
+78ccf6fbcbde8310b711470c8e25f9054717f097 eebb6abaf7119d5a9279829cc897b031a8a5d0b2 Ben Chavez <ben.m.chavez@gmail.com> 1620185798 -0500	commit: quotes seeds updated
+                                                                                                                                                           
