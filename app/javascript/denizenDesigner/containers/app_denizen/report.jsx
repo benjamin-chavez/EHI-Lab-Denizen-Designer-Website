@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 // import * as Scroll from 'react-scroll';
+import Bibliography from './reportScreen/bibliography';
+import Introduction from './reportScreen/introduction';
 import reportImage from '../../../../assets/images/report-img-1.svg';
 import ArrowDown from '../../../../assets/images/ArrowDown.svg';
 
@@ -40,13 +42,14 @@ class Report extends Component {
 
   render() {
     return (
-      <Row>
-        <Col sm={2} className='mr-2'>
+      <Row className=''>
+        <Col sm={2} className=''>
+          {/* <Col sm={3} className='mr-2'> */}
           <ul className='test123'>
             <li className='selected'>
               <Link
                 activeClass='active'
-                to='firstInsideContainer'
+                to='executiveSummary'
                 spy={true}
                 smooth={true}
                 duration={500}
@@ -58,8 +61,17 @@ class Report extends Component {
               </Link>
             </li>
             <li>
-              Introduction
-              <Image src={ArrowDown} className='pl-2' />
+              <Link
+                activeClass='active'
+                to='introduction'
+                spy={true}
+                smooth={true}
+                duration={500}
+                containerId='containerElement'
+              >
+                Introduction
+                <Image src={ArrowDown} className='pl-2' />
+              </Link>
             </li>
             <li>
               I. Header
@@ -82,8 +94,17 @@ class Report extends Component {
               <Image src={ArrowDown} className='pl-2' />
             </li>
             <li>
-              Bibliography
-              <Image src={ArrowDown} className='pl-2' />
+              <Link
+                activeClass='active'
+                to='bibliography'
+                spy={true}
+                smooth={true}
+                duration={500}
+                containerId='containerElement'
+              >
+                Bibliography
+                <Image src={ArrowDown} className='pl-2' />
+              </Link>
             </li>
           </ul>
         </Col>
@@ -102,21 +123,27 @@ class Report extends Component {
               // marginBottom: '100px',
             }}
           >
-            <h2> Executive Summary</h2>
-
-            <Element name='firstInsideContainer'>
-              <h3>Overview</h3>
+            <Element name='executiveSummary'>
+              <h2>Executive Summary</h2>
             </Element>
+
+            <h3>Overview: The Denizen Designer Project</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-              vitae adipiscing augue mauris diam porta. Aenean nisi, erat vel
-              ante fringilla semper libero aliquet laoreet. Eget pulvinar eu est
-              vel. Faucibus egestas euismod feugiat sapien integer luctus odio.
-              Interdum elit, diam eget nunc egestas. Augue felis magna tellus
-              enim sed molestie enim mi. Sociis arcu etiam urna fermentum erat
-              sodales libero. Sollicitudin purus pretium semper integer leo
-              sollicitudin arcu sed. Ultrices ullamcorper nunc donec ac
-              ullamcorper interdum proin sit.
+              Participatory Design is positioned to be a democratized approach
+              to design which centers and amplifies community voices that may
+              otherwise be neglected. Researchers, scholars, and practitioners
+              alike have begun to look to this approach as a way to solve
+              societal problems alongside the communities that are impacted. The
+              Denizen Designer Project is an ethnographic exploration of best
+              practices and use cases of participatory design as a
+              methodological framework. This project featured individuals who
+              leverage design as a practice or framework to work towards change
+              in marginalized communities. Using ethnographic interviews, we
+              collected over 100 accounts of local community members who are
+              engaging in participatory design work. The Denizen Designer
+              Project highlighted this design work in local communities and
+              identified perspectives on design’s access and reach for those
+              outside of academia.
             </p>
             <div className='report-img'>
               {' '}
@@ -124,74 +151,6 @@ class Report extends Component {
             </div>
 
             <p>
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-              ************************************************
-            </p>
-            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
               vitae adipiscing augue mauris diam porta. Aenean nisi, erat vel
               ante fringilla semper libero aliquet laoreet. Eget pulvinar eu est
@@ -202,8 +161,15 @@ class Report extends Component {
               sollicitudin arcu sed. Ultrices ullamcorper nunc donec ac
               ullamcorper interdum proin sit.
             </p>
+
+            <Introduction />
+
+            <Bibliography />
           </Element>
           {/* </Container> */}
+          {/* <Element name='introduction'>
+            <p>**********************************</p>
+          </Element> */}
         </Col>
       </Row>
     );
