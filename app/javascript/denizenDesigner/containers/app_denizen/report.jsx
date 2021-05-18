@@ -10,6 +10,7 @@ import {
   TabPane,
   Nav,
   Tabs,
+  Card,
 } from 'react-bootstrap';
 
 // import * as Scroll from 'react-scroll';
@@ -210,6 +211,44 @@ class Report extends Component {
                   </Nav>
                 </Col>
               </Row>
+              <Tab.Content>
+                <Tab.Pane eventKey='first'>
+                  <Card className='my-4 report-chart-card'>
+                    <Card.Body>
+                      <Row className='report-chart-text'>
+                        <Col>
+                          <Card.Title className='title'>Race</Card.Title>
+                          <Card.Text className='text-body'>
+                            The racial demographics of the Denizen Designers was
+                            just as diverse with 41.2% identifying as
+                            Black/African American, 29.4% Asian, 28.4% White,
+                            8.4% Hispanic, 2.9% Middle Eastern/Arab, 2.9%
+                            American Indian/Alaskan origin and 2% Caribbean or
+                            West Indian. This dramatic increase in the amount of
+                            diversity, in both race and gender identity, allowed
+                            for the Denizen Designer Project to learn more about
+                            the perspectives and challenges that generally
+                            underrepresented people have identified or seen
+                            within the design field.{' '}
+                          </Card.Text>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Tab.Pane>
+                <Tab.Pane eventKey='second'>
+                  <Card className='my-4 report-chart-card'>
+                    <Card.Body>
+                      <Row className='report-chart-text'>
+                        <Col>
+                          <Card.Title className='title'>Gender</Card.Title>
+                          <Card.Text className='text-body'>Text Body</Card.Text>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Tab.Pane>
+              </Tab.Content>
             </Tab.Container>
             {/* END OF MOVEABLE SECTION! */}
             <Introduction />

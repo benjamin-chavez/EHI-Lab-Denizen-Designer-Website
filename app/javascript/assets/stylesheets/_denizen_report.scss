@@ -145,6 +145,49 @@
 .report-chart-category a.nav-link.active{
   background: rgba(0, 0, 0, 0);
   color: #08439A;
-  border: 1px solid #08439A;
+  border: 1px solid #08439A;  
+}
+
+.report-chart-category:first-child{
+  margin-left:0;
+}
+
+.report-chart-card{
+  background: rgba(133, 147, 168, 0.06);
+  border: 0;
+  // min-height: 202px;
   
+}
+.report-chart-text{
+  // background: rgba(133, 147, 168, 0.06);
+
+  // vertical-align: text-top;
+  min-height: 202px;
+}
+
+.report-chart-text .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+
+  /* black */
+  color: #2A2E33;
+}
+
+.report-chart-text .text-body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 141.69%;
+
+  /* or 20px */
+  letter-spacing: 0.01em;
+
+  /* black */
+  color: #2A2E33 !important;
 }
