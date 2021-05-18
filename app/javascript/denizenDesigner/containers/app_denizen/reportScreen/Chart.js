@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Doughnut, Line, Pie } from 'react-chartjs-2';
+import { Container } from 'react-bootstrap';
 
 class Chart extends Component {
   constructor(props) {
@@ -40,37 +41,46 @@ class Chart extends Component {
   static defaultProps = {
     displayTitle: true,
     displayLegend: true,
-    legendPosition: 'right',
+    legendPosition: 'top',
   };
 
   render() {
     return (
-      <div>
-        <div className='chart'>
-          <Doughnut
-            data={this.state.chartData}
-            // width={100}
-            // height={50}
-            // options={{ maintainAspectRatio: false }}
-            options={{
-              plugins: {
-                title: {
-                  // display: true,
-                  // text: 'Largest Cities In Massachusetts',
-                  // fontSize: 25,
-                  display: this.props.displayTitle,
-                  text: 'Demographics of the Denizen Designers',
-                  fontSize: 25,
+      <div className='chart-styling-outer-div'>
+        <div className='chart-styling'>
+          <article className=''>
+            <Doughnut
+              className='canvas-container'
+              data={this.state.chartData}
+              // width={80}
+              // height={50}
+              // options={{ maintainAspectRatio: false }}
+              // width={'100%'}
+              // options={{ maintainAspectRatio: false }}
+              options={{
+                // responsive: true,
+                // maintainAspectRatio: false,
+                plugins: {
+                  align: 'center',
+                  title: {
+                    // display: true,
+                    // text: 'Largest Cities In Massachusetts',
+                    // fontSize: 25,
+                    display: this.props.displayTitle,
+                    text: 'Demographics of the Denizen Designers',
+                    fontSize: 25,
+                  },
+                  legend: {
+                    // display: true,
+                    position: 'right',
+                    display: this.props.displayLegend,
+                    position: 'bottom',
+                  },
+                  // width: 60,
                 },
-                legend: {
-                  // display: true,
-                  // position: 'right',
-                  display: this.props.displayLegend,
-                  position: this.props.legendPosition,
-                },
-              },
-            }}
-          />
+              }}
+            />
+          </article>
         </div>
       </div>
     );
