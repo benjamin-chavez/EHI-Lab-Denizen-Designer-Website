@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  Tab,
+  TabContainer,
+  TabContent,
+  TabPane,
+  Nav,
+  Tabs,
+} from 'react-bootstrap';
+
 // import * as Scroll from 'react-scroll';
 import Bibliography from './reportScreen/bibliography';
 import Introduction from './reportScreen/introduction';
@@ -164,7 +176,42 @@ class Report extends Component {
               ullamcorper interdum proin sit.
             </p>
             {/* <Chart /> */}
-            <Chart legendPosition='bottom' />
+            {/* YOU WILL BE ABLE TO MOVE THE FOLLOWING SECTION OF CODE INTO ANOTHER FILE ONCE YOU HAVE THE REST OF THE REPORT FUNCTIONING */}
+            {/* <Chart legendPosition='bottom' /> */}
+            {/* <ul className='report-chart-category-list'>
+              <li>Race</li>
+              <li>Gender</li>
+              <li>Education</li>
+              <li>Environment & Sectors</li>
+              <li>Geographic Spread</li>
+              <li>Issues Addressed</li>
+              <li>Roles and Designing Background</li>
+              <li>Design Employment</li>
+            </ul> */}
+
+            <Tab.Container id='' defaultActiveKey='first'>
+              <Tab.Content>
+                <Tab.Pane eventKey='first'>
+                  <Chart legendPosition='bottom' />
+                </Tab.Pane>
+                <Tab.Pane eventKey='second'>
+                  <p className='fillerTab'>Gender Data</p>
+                </Tab.Pane>
+              </Tab.Content>
+              <Row>
+                <Col>
+                  <Nav variant='pills' className='list-inline'>
+                    <Nav.Item className='report-chart-category'>
+                      <Nav.Link eventKey='first'>Race</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item className='report-chart-category'>
+                      <Nav.Link eventKey='second'>Gender</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                </Col>
+              </Row>
+            </Tab.Container>
+            {/* END OF MOVEABLE SECTION! */}
             <Introduction />
 
             <Bibliography />
