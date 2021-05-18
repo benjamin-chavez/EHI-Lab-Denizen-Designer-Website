@@ -6,6 +6,8 @@ import Introduction from './reportScreen/introduction';
 import reportImage from '../../../../assets/images/report-img-1.svg';
 import ArrowDown from '../../../../assets/images/ArrowDown.svg';
 
+import Chart from './reportScreen/Chart';
+
 import Scroll from 'react-scroll';
 
 var Link = Scroll.Link;
@@ -161,7 +163,8 @@ class Report extends Component {
               sollicitudin arcu sed. Ultrices ullamcorper nunc donec ac
               ullamcorper interdum proin sit.
             </p>
-
+            {/* <Chart /> */}
+            <Chart legendPosition='bottom' />
             <Introduction />
 
             <Bibliography />

@@ -50,7 +50,7 @@ class NavPrimary extends Component {
               as={Link}
               to='/'
               href='/'
-              clasName='nav-brand-desktop'
+              className='nav-brand-desktop'
             >
               <img
                 // src={NavLogo}
