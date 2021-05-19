@@ -667,10 +667,68 @@ Quote.create!({
   categories: ['design'],
 })
 
+puts "Creating Quotes for Olivia Nava..."
+Quote.create!({
+  participant_id: 15,
+  first_name: "Olivia",
+  last_name: "Nava",
+  quote_body: "I think that a lot of the community building is just taking as humble of an approach as you can despite the fact that you're often facilitating the process.",
+  categories: ['community_building', 'power'],
+})
+
+Quote.create!({
+  participant_id: 15,
+  first_name: "Olivia",
+  last_name: "Nava",
+  quote_body: "I think our role really is facilitation and recognition of the power that we hold in facilitation, and constantly trying to diffuse the power and remind people that they're the expert of their own life experience in their own community, and their perspectives are highly valued [in the process we are facilitating].",
+  categories: ['trust', 'space_making'],
+})
+
+Quote.create!({
+  participant_id: 15,
+  first_name: "Olivia",
+  last_name: "Nava",
+  quote_body: "I guess for me, it's really about creating processes, products, services and experiences that put people's needs (as defined by them) at the center. And, create something with them that is able to meet one of those needs through an experience, product, or service or other intervention.",
+  categories: ['community_empowerment', 'design'],
+})
+ 
+Quote.create!({
+  participant_id: 15,
+  first_name: "Olivia",
+  last_name: "Nava",
+  quote_body: "For me, the key to all design is being useful to whoever has invited you into it.",
+  categories: ['design'],
+})
+
+puts "Creating Quotes for Sabiha Basrai..."
+Quote.create!({
+  participant_id: 16,
+  first_name: "Sabiha",
+  last_name: "Basrai",
+  quote_body: "The projects that have been most successful are ones where trust building has happened.",
+  categories: ['community_building', 'trust'],
+})
+
+Quote.create!({
+  participant_id: 16,
+  first_name: "Sabiha",
+  last_name: "Basrai",
+  quote_body: "....it's not on us to create this cool new app or new tool. It's on us to listen to the people who are most impacted by the issues, and find out what they've already been doing to struggle and to fight and figure out where we're useful to them.",
+  categories: ['community_building', 'mutual_learning', 'community_empowerment'],
+})
+
+Quote.create!({
+  participant_id: 16,
+  first_name: "Sabiha",
+  last_name: "Basrai",
+  quote_body: "I think there's a lot of hubris in design when we're like, "This is really cool. I think this looks cool. This is gonna be an awesome portfolio piece," but it's not really listening to the people that we're making it for or we say we're making it for.",
+  categories: ['power', 'responsibility', 'change_making', 'design'],
+})
+
 # Quote.create!({
-#   participant_id: 14,
-#   first_name: "Nour",
-#   last_name: "Arafat",
+#   participant_id: 16,
+#   first_name: "Sabiha",
+#   last_name: "Basrai",
 #   quote_body: "",
 #   categories: [''],
 # })
