@@ -526,12 +526,37 @@ Quote.create!({
   quote_body: "And so, especially people who are specifically oppressed and are limited in their access to resources have tapped on an immense amount of creative power as a survival mechanism.",
   categories: ['power', 'change_making', 'community_empowerment'],
 })
- 
+
+puts 'Creating Quotes for Katanya Raby...'
+Quote.create!({
+  participant_id: 11,
+  first_name: "Katanya",
+  last_name: "Raby",
+  quote_body: "And it was so cool because [the community], they at the end of the day, they knew what it was they wanted to see. They just needed to understand how to get there. We developed a road map for them to do it.",
+  categories: ['community_building', 'increasing_access', 'community_empowerment'],
+})
+
+Quote.create!({
+  participant_id: 11,
+  first_name: "Katanya",
+  last_name: "Raby",
+  quote_body: "Because we had to take ownership of our communities, we can't wait for somebody to come scoop us up and save us. We have to be the ones that are going to take the reins and say 'hey this is the direction our community wants to go with.",
+  categories: ['community_building', 'power', 'change_making', 'future_implications'],
+})
+
+Quote.create!({
+  participant_id: 11,
+  first_name: "Katanya",
+  last_name: "Raby",
+  quote_body: "I mean it's hard to find the right, like not just the right people, but like the people who deserve, like who should be there.",
+  categories: ['change_making', 'increasing_access', 'community_empowerment'],
+})
+
 # Quote.create!({
-#   participant_id: 10,
-#   first_name: "Ezra",
-#   last_name: "Kong",
+#   participant_id: 11,
+#   first_name: "Katanya",
+#   last_name: "Raby",
 #   quote_body: "",
-#   categories: [],
+#   categories: [''],
 # })
  
