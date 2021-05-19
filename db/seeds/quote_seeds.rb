@@ -552,10 +552,35 @@ Quote.create!({
   categories: ['change_making', 'increasing_access', 'community_empowerment'],
 })
 
+puts 'Creating Quotes for Lorin Jackson...'
+Quote.create!({
+  participant_id: 12,
+  first_name: "Lorin",
+  last_name: "Jackson",
+  quote_body: "I think design is everywhere without it being called that. There's always a need that someone went through a process to meet, or modified a process, object, language, or situation to make something else better.",
+  categories: ['community_building', 'increasing_access', 'community_empowerment', 'design'],
+})
+
+Quote.create!({
+  participant_id: 12,
+  first_name: "Lorin",
+  last_name: "Jackson",
+  quote_body: "Larger organizations do socially good work, but I feel it's still in a cute little box. It's very clean, it's profitable in some way. If it's not marketing, metrics, or press collateral, it's just feel-good stuff. Interventions are necessary, but it's long overdue for us to more aggressively address deeper, root causes.",
+  categories: ['power', 'change_making', 'future_implications'],
+})
+
+Quote.create!({
+  participant_id: 12,
+  first_name: "Lorin",
+  last_name: "Jackson",
+  quote_body: "Or you know, just bringing it down to people's experience, not like this you know more, god-complex kind of perspective.",
+  categories: ['knowledge_building'],
+})
+
 # Quote.create!({
-#   participant_id: 11,
-#   first_name: "Katanya",
-#   last_name: "Raby",
+#   participant_id: 12,
+#   first_name: "Lorin",
+#   last_name: "Jackson",
 #   quote_body: "",
 #   categories: [''],
 # })
