@@ -577,10 +577,100 @@ Quote.create!({
   categories: ['knowledge_building'],
 })
 
+puts "Creating Quotes for N'Deye Diakhate..."
+Quote.create!({
+  participant_id: 13,
+  first_name: "N'Deye",
+  last_name: "Diakhate",
+  quote_body: "...creating safer, accountable, honest and vulnerable spaces that focus on relationship building, I think, is how you can integrate design or make design accessible is by focusing on the people first.",
+  categories: ['community_building'],
+})
+
+Quote.create!({
+  participant_id: 13,
+  first_name: "N'Deye",
+  last_name: "Diakhate",
+  quote_body: "...our job is to be translators and to communicate and then translate what we learn. So I guess that's it, relationship building, we have to build relationships first and create spaces for that relationship, building that up.",
+  categories: ['trust', 'space_making', 'knowledge_building', 'responsibility'],
+})
+
+Quote.create!({
+  participant_id: 13,
+  first_name: "N'Deye",
+  last_name: "Diakhate",
+  quote_body: "...creating safer, accountable, honest and vulnerable spaces that focus on relationship building, I think, is how you can integrate design or make design accessible is by focusing on the people first.",
+  categories: ['space_making', 'increasing_access'],
+})
+ 
+Quote.create!({
+  participant_id: 13,
+  first_name: "N'Deye",
+  last_name: "Diakhate",
+  quote_body: "Everyone in some way relates to design even if they don't acknowledge it as being design.",
+  categories: ['increasing_access', 'knowledge_building'],
+})
+ 
+Quote.create!({
+  participant_id: 13,
+  first_name: "N'Deye",
+  last_name: "Diakhate",
+  quote_body: "And so I think designers have a very important role of providing the alternatives that people are already pondering about or thinking about. How do we make it legible, how do we make it visual, how do we make it understood on an internal level that like, ‘Oh well, this could work.",
+  categories: ['responsibility'],
+})
+ 
+Quote.create!({
+  participant_id: 13,
+  first_name: "N'Deye",
+  last_name: "Diakhate",
+  quote_body: "There’s this quote by Janine Benyus on biomimicry, I learned about it from Billy Almon at Black in Design 2019 about ‘Life creates conditions conducive to life' and I thought that it was so simple and perfect and I think that design needs to do the same thing, it needs to create conditions conducive to life.",
+  categories: ['change_making', 'design'],
+})
+ 
+Quote.create!({
+  participant_id: 13,
+  first_name: "N'Deye",
+  last_name: "Diakhate",
+  quote_body: "[Balti Gurls] wanted to create spaces where it could actually help women of color in the Baltimore art scene. And if it's like, "Oh okay, you were in one or two shows," then curators feel more comfortable adding more artists of color that are starting out into the wider arts community. And so when we say, "Developing platforms," it was really about centering our narratives, creating spaces that centered our narratives...",
+  categories: ['future_implications'],
+})
+
+puts "Creating Quotes for Nour Arafat..."
+Quote.create!({
+  participant_id: 14,
+  first_name: "Nour",
+  last_name: "Arafat",
+  quote_body: "I think the first thing is always just building a relationship, not even considering this goal of, how can we impart these design tools on them, but it's the trust building.",
+  categories: ['community_building', 'trust'],
+})
+
+Quote.create!({
+  participant_id: 14,
+  first_name: "Nour",
+  last_name: "Arafat",
+  quote_body: "And I think with design, it's really important instead to do more of mutual learning frameworks because people are already designing. So telling them, "We're gonna teach you design," it's like, "Well, maybe we can teach you different ways to approach design or different ways to whatever, but you're already designing.",
+  categories: ['knowledge_building', 'mutual_learning'],
+})
+
+Quote.create!({
+  participant_id: 14,
+  first_name: "Nour",
+  last_name: "Arafat",
+  quote_body: "...socially engaged frameworks, I think, involve a sense of mutual learning and empowerment which you're passing on those tools and also passing on the role of designer and placing it back in the hands of the community…",
+  categories: ['mutual_learning', 'community_empowerment'],
+})
+
+Quote.create!({
+  participant_id: 14,
+  first_name: "Nour",
+  last_name: "Arafat",
+  quote_body: "A lot of people tend to relate design to like, ‘Okay, you must be really great with graphics, designing a room’ and rather bringing it back to addressing problems and getting people to think more about the strategy with which we meet our needs.",
+  categories: ['design'],
+})
+
 # Quote.create!({
-#   participant_id: 12,
-#   first_name: "Lorin",
-#   last_name: "Jackson",
+#   participant_id: 14,
+#   first_name: "Nour",
+#   last_name: "Arafat",
 #   quote_body: "",
 #   categories: [''],
 # })
