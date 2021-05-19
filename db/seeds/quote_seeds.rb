@@ -353,6 +353,7 @@ Quote.create!({
   categories: ["community_building"],
 })
 
+puts 'Creating Quotes for Claudia Paraschiv...'
 Quote.create!({
   participant_id: 6,
   first_name: "Claudia",
@@ -419,6 +420,7 @@ Quote.create!({
   categories: ["power"],
 })
 
+puts 'Creating Quotes for Elle Ramel...'
 Quote.create!({
   participant_id: 8,
   first_name: "Elle",
@@ -451,10 +453,59 @@ Quote.create!({
   categories: ["future_implications"],
 })
 
+Quote.create!({
+  participant_id: 9,
+  first_name: "Jenny",
+  last_name: "Lin",
+  quote_body: "But in terms of how it helps our actual organizing, you just have to be there. You have to show up and you have to talk to people. You can't just organize from a distance or what they call armchair revolutionary.",
+  categories: ['community_building', 'increasing_access', 'knowledge_building', 'responsibility'],
+})
+
+puts 'Creating Quotes for Jenny Lin...'
+Quote.create!({
+  participant_id: 9,
+  first_name: "Jenny",
+  last_name: "Lin",
+  quote_body: "When you go and you talk with someone, you don't prescribe them their problem. Design thinking is all about realizing you come with a set of assumptions, and you challenge those assumptions, and you actually let the other person tell you what's happening.",
+  categories: ['space_making', 'mutual_learning', 'community_empowerment'],
+})
+ 
+Quote.create!({
+  participant_id: 9,
+  first_name: "Jenny",
+  last_name: "Lin",
+  quote_body: "Everyone practices design. Design Thinking is just a fancy facilitation of the whole process. We all benefit from it 'cause we're all different learners, and we're all different participators. And so I think it makes long lengthy meetings, possibly academic discussions, just more accessible to people.",
+  categories: ['increasing_access'],
+})
+ 
+Quote.create!({
+  participant_id: 9,
+  first_name: "Jenny",
+  last_name: "Lin",
+  quote_body: "I think it's really feeling a shift in energy when you do it right.",
+  categories: ['change_making'],
+})
+ 
+Quote.create!({
+  participant_id: 9,
+  first_name: "Jenny",
+  last_name: "Lin",
+  quote_body: "Design is just doing something with intention, and that's why I think we're all designers.I don't believe in designer as a title.",
+  categories: ['community_empowerment', 'design'],
+})
+ 
+Quote.create!({
+  participant_id: 9,
+  first_name: "Jenny",
+  last_name: "Lin",
+  quote_body: "Design thinking comes into play when people can't decide or don't understand what to do with each other's feedback or thoughts.",
+  categories: ['design'],
+})
+ 
 # Quote.create!({
-#   participant_id: 8,
-#   first_name: "Elle",
-#   last_name: "Ramel",
+#   participant_id: 9,
+#   first_name: "Jenny",
+#   last_name: "Lin",
 #   quote_body: "",
 #   categories: [],
 # })
