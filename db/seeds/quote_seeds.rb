@@ -501,11 +501,36 @@ Quote.create!({
   quote_body: "Design thinking comes into play when people can't decide or don't understand what to do with each other's feedback or thoughts.",
   categories: ['design'],
 })
+
+puts 'Creating Quotes for Ezra Kong...'
+Quote.create!({
+  participant_id: 10,
+  first_name: "Ezra",
+  last_name: "Kong",
+  quote_body: "... it's not just about having a seat at the table, it's about redesigning the table because access is a huge thing.",
+  categories: ['community_building', 'power', 'space_making', 'increasing_access'],
+})
+
+Quote.create!({
+  participant_id: 10,
+  first_name: "Ezra",
+  last_name: "Kong",
+  quote_body: "...who gets to make it look cool. Who gets to be a professional about it. Who gets to have access to that kind of decision making power, and it's, it's not the people who should.",
+  categories: ['power'],
+})
+
+Quote.create!({
+  participant_id: 10,
+  first_name: "Ezra",
+  last_name: "Kong",
+  quote_body: "And so, especially people who are specifically oppressed and are limited in their access to resources have tapped on an immense amount of creative power as a survival mechanism.",
+  categories: ['power', 'change_making', 'community_empowerment'],
+})
  
 # Quote.create!({
-#   participant_id: 9,
-#   first_name: "Jenny",
-#   last_name: "Lin",
+#   participant_id: 10,
+#   first_name: "Ezra",
+#   last_name: "Kong",
 #   quote_body: "",
 #   categories: [],
 # })
