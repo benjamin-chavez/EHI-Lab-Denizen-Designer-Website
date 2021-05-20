@@ -725,10 +725,51 @@ Quote.create!({
   categories: ['power', 'responsibility', 'change_making', 'design'],
 })
 
+puts "Creating Quotes for Stephanie Burrell..."
+Quote.create!({
+  participant_id: 17,
+  first_name: "Stephanie",
+  last_name: "Burrell",
+  quote_body: "Go into the community, ask the community, don't speak for the community, don't be afraid to go in there and ask. That's really it, just go in and listen.",
+  categories: ['community_building', 'space_making', 'knowledge_building',  ],
+})
+ 
+Quote.create!({
+  participant_id: 17,
+  first_name: "Stephanie",
+  last_name: "Burrell",
+  quote_body: "I think that's where the inequity comes in. Yeah, I think just having more people knowing the power of it, and that it can change people's hearts, minds, spirits.",
+  categories: ['power', 'change_making'],
+})
+ 
+Quote.create!({
+  participant_id: 17,
+  first_name: "Stephanie",
+  last_name: "Burrell",
+  quote_body: "I mean it does force you, then you have to validate yourself. You have to see your self-worth and keep pushing. But I think that every industry deals with that.",
+  categories: ['increasing_access'],
+})
+
+Quote.create!({
+  participant_id: 17,
+  first_name: "Stephanie",
+  last_name: "Burrell",
+  quote_body: "And then, always, I want people to feel empowered, so what can I teach you too, so that you can go ahead and do it yourself?",
+  categories: ['community_empowerment'],
+})
+
+Quote.create!({
+  participant_id: 17,
+  first_name: "Stephanie",
+  last_name: "Burrell",
+  quote_body: "But I fell in love with design. Like, for me, it was a spiritual process. The more I learn about design, the more I learn about myself. It's like, you go in with these expectations. It takes you in its own journey. Every project. So I enjoy that about it and I'm grateful for it. Design has made me a better person.",
+  categories: ['design'],
+})
+
 # Quote.create!({
-#   participant_id: 16,
-#   first_name: "Sabiha",
-#   last_name: "Basrai",
+#   participant_id: 17,
+#   first_name: "Stephanie",
+#   last_name: "Burrell",
 #   quote_body: "",
 #   categories: [''],
 # })
