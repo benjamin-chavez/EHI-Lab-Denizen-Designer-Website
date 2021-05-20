@@ -790,11 +790,20 @@ Quote.create!({
   quote_body: "But the definition of design is so broad that people who might be designing might not even know they're being designers, but calling yourself an artist versus calling yourself a designer is so subjective and up to each person.",
   categories: ['design'],
 })
- 
+
+puts "Creating Quotes for Tonika Johnson..."
+Quote.create!({
+  participant_id: 18,
+  first_name: "Tonika",
+  last_name: "Johnson",
+  quote_body: "So, I think it's critical to helping one get out of their own lived experience and include their voice, but understand there’s other voices in this community and they might not be the same as yours, but they’re just as valuable. They might just be another version of your reality.",
+  categories: ['space_making', 'mutual_learning'],
+})
+
 # Quote.create!({
 #   participant_id: 18,
-#   first_name: "Taylor",
-#   last_name: "Holloway",
+#   first_name: "Tonika",
+#   last_name: "Johnson",
 #   quote_body: "",
 #   categories: [''],
 # })
