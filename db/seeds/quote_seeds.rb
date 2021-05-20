@@ -766,10 +766,35 @@ Quote.create!({
   categories: ['design'],
 })
 
+puts "Creating Quotes for Taylor Holloway..."
+Quote.create!({
+  participant_id: 18,
+  first_name: "Taylor",
+  last_name: "Holloway",
+  quote_body: "A bunch of murals can be done in a week, in a month, whatever, but systemic change in the built environment takes years, takes generations.",
+  categories: ['power', 'change_making'],
+})
+
+Quote.create!({
+  participant_id: 18,
+  first_name: "Taylor",
+  last_name: "Holloway",
+  quote_body: "If we're trying to work toward a more just society and a more equitable society, the backdrop or landscape within this work is happening is incredibly important, because that is the blank page on which we're painting this picture of this different future.",
+  categories: ['change_making', 'future_implications', ],
+})
+
+Quote.create!({
+  participant_id: 18,
+  first_name: "Taylor",
+  last_name: "Holloway",
+  quote_body: "But the definition of design is so broad that people who might be designing might not even know they're being designers, but calling yourself an artist versus calling yourself a designer is so subjective and up to each person.",
+  categories: ['design'],
+})
+ 
 # Quote.create!({
-#   participant_id: 17,
-#   first_name: "Stephanie",
-#   last_name: "Burrell",
+#   participant_id: 18,
+#   first_name: "Taylor",
+#   last_name: "Holloway",
 #   quote_body: "",
 #   categories: [''],
 # })
