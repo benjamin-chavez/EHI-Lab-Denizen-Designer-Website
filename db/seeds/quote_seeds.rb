@@ -793,17 +793,26 @@ Quote.create!({
 
 puts "Creating Quotes for Tonika Johnson..."
 Quote.create!({
-  participant_id: 18,
+  participant_id: 19,
   first_name: "Tonika",
   last_name: "Johnson",
   quote_body: "So, I think it's critical to helping one get out of their own lived experience and include their voice, but understand there’s other voices in this community and they might not be the same as yours, but they’re just as valuable. They might just be another version of your reality.",
   categories: ['space_making', 'mutual_learning'],
 })
 
+puts "Creating Quotes for Tonika Johnson..."
+Quote.create!({
+  participant_id: 20,
+  first_name: "Victoria",
+  last_name: "Barnnett",
+  quote_body: "Sometimes you need to change who you're prioritizing to make sure you are meeting the needs of the folks that actually need that thing you're doing.",
+  categories: [''],
+})
+
 # Quote.create!({
-#   participant_id: 18,
-#   first_name: "Tonika",
-#   last_name: "Johnson",
+#   participant_id: 20,
+#   first_name: "Victoria",
+#   last_name: "Barnnett",
 #   quote_body: "",
 #   categories: [''],
 # })

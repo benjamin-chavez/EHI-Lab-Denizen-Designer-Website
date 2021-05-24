@@ -12,6 +12,7 @@ class Introduction extends Component {
         <Element name='introduction'>
           <h2>Introduction</h2>
         </Element>
+
         <p>
           Participatory design can be traced back to the ‘70s, where it was
           coined in Scandinavia after the rise of workplace democracy and
@@ -49,16 +50,38 @@ class Introduction extends Component {
           rebuild lost or broken community trust through participatory design.
         </p>
 
+        <h3>Why the Denizen Designer Project </h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam vitae
-          adipiscing augue mauris diam porta. Aenean nisi, erat vel ante
-          fringilla semper libero aliquet laoreet. Eget pulvinar eu est vel.
-          Faucibus egestas euismod feugiat sapien integer luctus odio. Interdum
-          elit, diam eget nunc egestas. Augue felis magna tellus enim sed
-          molestie enim mi. Sociis arcu etiam urna fermentum erat sodales
-          libero. Sollicitudin purus pretium semper integer leo sollicitudin
-          arcu sed. Ultrices ullamcorper nunc donec ac ullamcorper interdum
-          proin sit.
+          The Denizen Designer Project was particularly inspired by Dr.
+          Harrington’s work with African American Elders in Chicago. During that
+          research project, participatory design influenced and informed the
+          approaches for the research process. Due to the versatility of
+          participatory design (PD) and community-based participatory design
+          (CBPD), it became apparent that there was a need to showcase other
+          Designers’ work to encourage more PD community work to be done.
+          Participatory design can be used alongside existing community-building
+          strategies as a method to empower and support work already happening
+          in those communities with the collaborative efforts of researchers and
+          designers. Lastly and most importantly, one of the goals of the
+          Denizen Designer Project intends to build up a sense of a community
+          and a network of practitioners who use participatory design. Creating
+          this network would allow Designers to learn from each other and feel
+          supported by a network of like-minded individuals improving their
+          communities through design. Finally, the creation of a variety of
+          resources in a several mediums would allow others, whether they are
+          community members or academics, to learn about participatory design
+          and how to effectively use it as a tool.{' '}
+        </p>
+        <h3>What is a Denizen Designer? </h3>
+        <p>
+          According to Merriam-Webster, a denizen is an “inhabitant” or “one
+          that frequents a place”. In the Denizen Designer Project, we wanted to
+          spotlight those engaging in social and participatory design in their
+          own communities. Thus, a Denizen Designer is one who leverages design
+          as a social practice, or as a catalyst to address social challenges in
+          their local environments. While the word ‘citizen’ is a tempting
+          alternative, we recognized documentation status within a country does
+          not dictate one’s ability to affect change in their community.{' '}
         </p>
       </div>
       // </Element>

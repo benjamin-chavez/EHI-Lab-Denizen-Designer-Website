@@ -188,3 +188,34 @@
   /* black */
   color: #2A2E33 !important;
 }
+.nested li {
+  display: block;
+  position: relative;
+}
+
+
+.nested {
+  margin-bottom: 0;
+  counter-reset: number;
+}
+
+
+.parent .nested {
+  counter-reset: letter;
+}
+
+.parent .nested li::before {
+  content: counter(number) "." counter(letter, lower-alpha);
+  counter-increment: letter;
+  background: lightblue
+}
+
+
+.nested li::before {
+  content: counter(number) ".";
+  counter-increment: number;
+  position: absolute;
+  margin-right: 100%;
+  right: 10px;
+  background: lightgreen
+}

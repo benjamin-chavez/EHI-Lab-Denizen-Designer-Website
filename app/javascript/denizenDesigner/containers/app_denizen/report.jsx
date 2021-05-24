@@ -15,7 +15,14 @@ import {
 
 // import * as Scroll from 'react-scroll';
 import Bibliography from './reportScreen/bibliography';
+import ExecutiveSummary from './reportScreen/executiveSummary';
 import Introduction from './reportScreen/introduction';
+import Overview from './reportScreen/overview';
+import ResearchProcess from './reportScreen/researchProcess';
+import Demographics from './reportScreen/demographics';
+import Summary from './reportScreen/summary';
+import Conclusions from './reportScreen/conclusions';
+
 import reportImage from '../../../../assets/images/report-img-1.svg';
 import ArrowDown from '../../../../assets/images/ArrowDown.svg';
 
@@ -78,6 +85,19 @@ class Report extends Component {
             <li>
               <Link
                 activeClass='active'
+                to='overview'
+                spy={true}
+                smooth={true}
+                duration={500}
+                containerId='containerElement'
+              >
+                Overview
+                <Image src={ArrowDown} className='pl-2' />
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass='active'
                 to='introduction'
                 spy={true}
                 smooth={true}
@@ -89,38 +109,58 @@ class Report extends Component {
               </Link>
             </li>
             <li>
-              I. Header
-              <Image src={ArrowDown} className='pl-2' />
-            </li>
-            <li>
-              II. Header
-              <Image src={ArrowDown} className='pl-2' />
-            </li>
-            <li>
-              III. Header
-              <Image src={ArrowDown} className='pl-2' />
-            </li>
-            <li>
-              IV. Header
-              <Image src={ArrowDown} className='pl-2' />
-            </li>
-            <li>
-              Conclusion & Key Recommendations
-              <Image src={ArrowDown} className='pl-2' />
-            </li>
-            <li>
               <Link
                 activeClass='active'
-                to='bibliography'
+                to='researchProcess'
                 spy={true}
                 smooth={true}
                 duration={500}
                 containerId='containerElement'
               >
-                Bibliography
+                Research Process
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
+            <li>
+              <Link
+                activeClass='active'
+                to='demographics'
+                spy={true}
+                smooth={true}
+                duration={500}
+                containerId='containerElement'
+              >
+                Demographics
+                <Image src={ArrowDown} className='pl-2' />
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass='active'
+                to='summary'
+                spy={true}
+                smooth={true}
+                duration={500}
+                containerId='containerElement'
+              >
+                Summary and Key Findings
+                <Image src={ArrowDown} className='pl-2' />
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass='active'
+                to='conclusions'
+                spy={true}
+                smooth={true}
+                duration={500}
+                containerId='containerElement'
+              >
+                Conclusions and Key Recommendations
+                <Image src={ArrowDown} className='pl-2' />
+              </Link>
+            </li>
+            {/* ****************************************************** */}
           </ul>
         </Col>
 
@@ -138,57 +178,8 @@ class Report extends Component {
               // marginBottom: '100px',
             }}
           >
-            <Element name='executiveSummary'>
-              <h2>Executive Summary</h2>
-            </Element>
-
-            <h3>Overview: The Denizen Designer Project</h3>
-            <p>
-              Participatory Design is positioned to be a democratized approach
-              to design which centers and amplifies community voices that may
-              otherwise be neglected. Researchers, scholars, and practitioners
-              alike have begun to look to this approach as a way to solve
-              societal problems alongside the communities that are impacted. The
-              Denizen Designer Project is an ethnographic exploration of best
-              practices and use cases of participatory design as a
-              methodological framework. This project featured individuals who
-              leverage design as a practice or framework to work towards change
-              in marginalized communities. Using ethnographic interviews, we
-              collected over 100 accounts of local community members who are
-              engaging in participatory design work. The Denizen Designer
-              Project highlighted this design work in local communities and
-              identified perspectives on design’s access and reach for those
-              outside of academia.
-            </p>
-            <div className='report-img'>
-              {' '}
-              <Image src={reportImage} alt='Denizen Designer Logo' fluid />
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-              vitae adipiscing augue mauris diam porta. Aenean nisi, erat vel
-              ante fringilla semper libero aliquet laoreet. Eget pulvinar eu est
-              vel. Faucibus egestas euismod feugiat sapien integer luctus odio.
-              Interdum elit, diam eget nunc egestas. Augue felis magna tellus
-              enim sed molestie enim mi. Sociis arcu etiam urna fermentum erat
-              sodales libero. Sollicitudin purus pretium semper integer leo
-              sollicitudin arcu sed. Ultrices ullamcorper nunc donec ac
-              ullamcorper interdum proin sit.
-            </p>
-            {/* <Chart /> */}
-            {/* YOU WILL BE ABLE TO MOVE THE FOLLOWING SECTION OF CODE INTO ANOTHER FILE ONCE YOU HAVE THE REST OF THE REPORT FUNCTIONING */}
-            {/* <Chart legendPosition='bottom' /> */}
-            {/* <ul className='report-chart-category-list'>
-              <li>Race</li>
-              <li>Gender</li>
-              <li>Education</li>
-              <li>Environment & Sectors</li>
-              <li>Geographic Spread</li>
-              <li>Issues Addressed</li>
-              <li>Roles and Designing Background</li>
-              <li>Design Employment</li>
-            </ul> */}
+            <ExecutiveSummary />
+            <Overview />
 
             <Tab.Container id='' defaultActiveKey='first'>
               <Tab.Content>
@@ -251,14 +242,13 @@ class Report extends Component {
               </Tab.Content>
             </Tab.Container>
             {/* END OF MOVEABLE SECTION! */}
-            <Introduction />
 
-            <Bibliography />
+            <Introduction />
+            <ResearchProcess />
+            <Demographics />
+            <Summary />
+            <Conclusions />
           </Element>
-          {/* </Container> */}
-          {/* <Element name='introduction'>
-            <p>**********************************</p>
-          </Element> */}
         </Col>
       </Row>
     );
