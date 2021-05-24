@@ -800,19 +800,36 @@ Quote.create!({
   categories: ['space_making', 'mutual_learning'],
 })
 
-puts "Creating Quotes for Tonika Johnson..."
+puts "Creating Quotes for Victoria Barnnett..."
 Quote.create!({
   participant_id: 20,
   first_name: "Victoria",
   last_name: "Barnnett",
   quote_body: "Sometimes you need to change who you're prioritizing to make sure you are meeting the needs of the folks that actually need that thing you're doing.",
+  categories: ['community_building', 'space_making', 'responsibility', 'adaptation'],
+})
+
+Quote.create!({
+  participant_id: 20,
+  first_name: "Victoria",
+  last_name: "Barnnett",
+  quote_body: "Design is the way that systems are set up, it's the way that we are able to access or move through spaces because those spaces are designed in a particular way.",
+  categories: ['power', 'design'],
+})
+
+puts "Creating Quotes for Folayemi Wilson..."
+Quote.create!({
+  participant_id: 21,
+  first_name: "Folayemi",
+  last_name: "Wilson",
+  quote_body: "",
   categories: [''],
 })
 
 # Quote.create!({
-#   participant_id: 20,
-#   first_name: "Victoria",
-#   last_name: "Barnnett",
+#   participant_id: 21,
+#   first_name: "Folayemi",
+#   last_name: "Wilson",
 #   quote_body: "",
 #   categories: [''],
 # })
