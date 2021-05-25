@@ -17,6 +17,7 @@ import Report from '../containers/app_denizen/report';
 import DesignerDatabase from '../containers/app_denizen/designer_database';
 import Quotes from '../containers/app_denizen/quotes';
 import Resources from '../components/app_denizen/resources';
+import Footer from './footer';
 
 import { Container } from 'react-bootstrap';
 
@@ -47,6 +48,7 @@ const AppDenizen = (props) => {
       <Switch>
         <Redirect exact from='/denizendesigner' to='/denizendesigner/home' />
       </Switch>
+      <Footer />
     </div>
   );
 };

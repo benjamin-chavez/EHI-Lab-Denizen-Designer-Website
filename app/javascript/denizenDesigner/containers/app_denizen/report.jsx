@@ -64,17 +64,12 @@ class Report extends Component {
 
   render() {
     return (
-      <Row className=''>
+      <Row className='mb-3'>
         <Col sm={2} className=''>
           {/* <Col sm={3} className='mr-2'> */}
           <ul className='test123'>
             <li className='reportDownloadButton'>
-              <Link
-                className=''
-                // to='/files/Denizen Designer Zine.pdf'
-                target='_blank'
-                download
-              >
+              <Link className='' target='_blank' download>
                 Download
               </Link>
             </li>
@@ -174,7 +169,7 @@ class Report extends Component {
           </ul>
         </Col>
 
-        <Col sm={9}>
+        <Col sm={9} className=''>
           {/* <Container className='report-container'> */}
           <Element
             name='test7'

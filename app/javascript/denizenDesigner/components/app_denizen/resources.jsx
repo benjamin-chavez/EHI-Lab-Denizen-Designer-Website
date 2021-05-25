@@ -87,7 +87,13 @@ class Resources extends Component {
                       ableism, settler colonialism, and other forms of
                       structural inequality.{' '}
                     </span>
-                    <Link className='cardLink mt-2'>Visit</Link>
+                    <a
+                      className='cardLink mt-2'
+                      href='https://www.dropbox.com/s/m975ykjhi8x92dl/DESIGN%2BJUSTICE%2BZINE_ISS'
+                      target='_blank'
+                    >
+                      Visit
+                    </a>
                   </Col>
                 </Row>
               </Card.Body>
