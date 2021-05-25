@@ -522,7 +522,7 @@ Quote.create!({
   participant_id: 13,
   first_name: "N'Deye",
   last_name: "Diakhate",
-  quote_body: "[Balti Gurls] wanted to create spaces where it could actually help women of color in the Baltimore art scene. And if it's like, "Oh okay, you were in one or two shows," then curators feel more comfortable adding more artists of color that are starting out into the wider arts community. And so when we say, "Developing platforms," it was really about centering our narratives, creating spaces that centered our narratives...",
+  quote_body: "[Balti Gurls] wanted to create spaces where it could actually help women of color in the Baltimore art scene. And if it's like, \"Oh okay, you were in one or two shows,\" then curators feel more comfortable adding more artists of color that are starting out into the wider arts community. And so when we say, \"Developing platforms,\" it was really about centering our narratives, creating spaces that centered our narratives...",
   categories: ['future_implications'],
 })
 
@@ -539,7 +539,7 @@ Quote.create!({
   participant_id: 14,
   first_name: "Nour",
   last_name: "Arafat",
-  quote_body: "And I think with design, it's really important instead to do more of mutual learning frameworks because people are already designing. So telling them, "We're gonna teach you design," it's like, "Well, maybe we can teach you different ways to approach design or different ways to whatever, but you're already designing.",
+  quote_body: "And I think with design, it's really important instead to do more of mutual learning frameworks because people are already designing. So telling them, \"We're gonna teach you design,\" it's like, \"Well, maybe we can teach you different ways to approach design or different ways to whatever, but you're already designing.",
   categories: ['knowledge_building', 'mutual_learning'],
 })
 
@@ -613,7 +613,7 @@ Quote.create!({
   participant_id: 16,
   first_name: "Sabiha",
   last_name: "Basrai",
-  quote_body: "I think there's a lot of hubris in design when we're like, "This is really cool. I think this looks cool. This is gonna be an awesome portfolio piece," but it's not really listening to the people that we're making it for or we say we're making it for.",
+  quote_body: "I think there's a lot of hubris in design when we're like, \"This is really cool. I think this looks cool. This is gonna be an awesome portfolio piece,\" but it's not really listening to the people that we're making it for or we say we're making it for.",
   categories: ['power', 'responsibility', 'change_making', 'design'],
 })
 
@@ -714,8 +714,32 @@ Quote.create!({
   participant_id: 21,
   first_name: "Folayemi",
   last_name: "Wilson",
-  quote_body: "",
-  categories: [''],
+  quote_body: "Well, the best outcome is if a community likes an idea or project, decides to own it, and then takes it forward even without us.",
+  categories: ['community_building', 'community_empowerment' ],
+})
+
+Quote.create!({
+  participant_id: 21,
+  first_name: "Folayemi",
+  last_name: "Wilson",
+  quote_body: "I'm hoping that social design will start to be more porous and involve communities at the beginning and not at the end of the process as it moves forward. Usually, communities are invited in at the end of the process and presented with someone else’s ideas, as opposed to being invited to collaborate as authors from the very beginning.",
+  categories: ['increasing_access', 'mutual_learning', 'future_implications' ],
+})
+
+Quote.create!({
+  participant_id: 21,
+  first_name: "Folayemi",
+  last_name: "Wilson",
+  quote_body: "If academic and educational institutions could see themselves as a part of communities, get to know communities, and not take advantage of communities and exploit the community's resources for their own individual benefit, that would be more responsible citizenship.",
+  categories: ['responsibility' ],
+})
+
+Quote.create!({
+  participant_id: 21,
+  first_name: "Folayemi",
+  last_name: "Wilson",
+  quote_body: "Any problem in a community is a design problem, so we can apply our design skills and methodologies to any problem, to any issue, to come up with solutions, health or otherwise.",
+  categories: ['design'],
 })
 
 puts "Creating Quotes for Michele Washington..."
