@@ -12,7 +12,7 @@
   font-size: 12px;
   line-height: 15px;
   color: #2a2e33;
-  text-decoration-line: underline;
+  // text-decoration-line: underline;
 }
 
 .test123 > li {
@@ -21,11 +21,49 @@
   cursor: pointer;
   // display: flex;
   // align-items: center;
+  
 }
 
 .test123 .selected {
   cursor: pointer;
   color: #475ca7;
+}
+
+.report-li {
+  text-decoration-line: underline;
+}
+
+.reportDownloadButton a{
+  border: 1px solid #08439A;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* infographic primary */
+
+  color: #08439A;
+  // color: red;
+
+  text-transform: uppercase;
+  text-decoration-line: none;
+}
+
+.reportDownloadButton a {
+ 
 }
 
 .report-container {

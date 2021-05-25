@@ -68,7 +68,17 @@ class Report extends Component {
         <Col sm={2} className=''>
           {/* <Col sm={3} className='mr-2'> */}
           <ul className='test123'>
-            <li className='selected'>
+            <li className='reportDownloadButton'>
+              <Link
+                className=''
+                // to='/files/Denizen Designer Zine.pdf'
+                target='_blank'
+                download
+              >
+                Download
+              </Link>
+            </li>
+            <li className='selected report-li'>
               <Link
                 activeClass='active'
                 to='executiveSummary'
@@ -82,7 +92,7 @@ class Report extends Component {
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
-            <li>
+            <li className='report-li'>
               <Link
                 activeClass='active'
                 to='overview'
@@ -95,7 +105,7 @@ class Report extends Component {
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
-            <li>
+            <li className='report-li'>
               <Link
                 activeClass='active'
                 to='introduction'
@@ -108,7 +118,7 @@ class Report extends Component {
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
-            <li>
+            <li className='report-li'>
               <Link
                 activeClass='active'
                 to='researchProcess'
@@ -121,7 +131,7 @@ class Report extends Component {
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
-            <li>
+            <li className='report-li'>
               <Link
                 activeClass='active'
                 to='demographics'
@@ -134,7 +144,7 @@ class Report extends Component {
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
-            <li>
+            <li className='report-li'>
               <Link
                 activeClass='active'
                 to='summary'
@@ -143,11 +153,11 @@ class Report extends Component {
                 duration={500}
                 containerId='containerElement'
               >
-                Summary and Key Findings
+                Summary & Key Findings
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
-            <li>
+            <li className='report-li'>
               <Link
                 activeClass='active'
                 to='conclusions'
@@ -156,7 +166,7 @@ class Report extends Component {
                 duration={500}
                 containerId='containerElement'
               >
-                Conclusions and Key Recommendations
+                Conclusions & Key Recommendations
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
