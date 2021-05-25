@@ -478,8 +478,8 @@ Participant.create!({
   instagram: "reflexdesignc",
   linkedin: "",
   email: "brooke@reflexdc.com",
-  website: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621909935/Denizen%20Participant%20Photos/Brooke_Staton_qkzjzc.jpg",
-  profileImgLink: "",
+  website: "",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877734/Denizen%20Participant%20Photos/Brooke_Staton_rbhcsz.jpg",
   interviewed: true
   })
   
@@ -515,7 +515,7 @@ Participant.create!({
   linkedin: "",
   email: "helloshanelle@gmail.com ",
   website: "https://helloshanelle.com/",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621910164/Denizen%20Participant%20Photos/ShanelleMatthews_gzqlq3.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621911385/Denizen%20Participant%20Photos/ShanelleMatthews_p41jgj.jpg",
   interviewed: true
   })
 
@@ -547,7 +547,7 @@ Participant.create!({
   linkedin: "",
   email: "gabriel.granat@gmail.com",
   website: "",
-  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877741/Denizen%20Participant%20Photos/Gabe_Moreno_kxetqu.jpg",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621910480/Denizen%20Participant%20Photos/Gabe_Moreno_xf1e8i.jpg",
   interviewed: true
   })
   
