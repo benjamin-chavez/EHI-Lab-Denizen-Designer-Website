@@ -1054,12 +1054,69 @@ Quote.create!({
   categories: ['adaptation'],
 })
 
+puts "Creating Quotes for Gabe Moreno..."
 Quote.create!({
-  participant_id: 30,
-  first_name: "Sloan",
-  last_name: "Leo",
-  quote_body: "",
-  categories: [''],
+  participant_id: 31,
+  first_name: "Gabe",
+  last_name: "Moreno",
+  quote_body: "...I think there's a lot of really thorny language around working for the community and it taps into old ideas of charity that I'm not interested in at all.",
+  categories: ['power'],
 })
+
+Quote.create!({
+  participant_id: 31,
+  first_name: "Gabe",
+  last_name: "Moreno",
+  quote_body: "...as a person of color, no matter your race, you're kind of always having to work double to learn the history of white people plus the history of your own people and being intentional about how you speak of history. I think it is a part of this anti-racism work.",
+  categories: ['power'],
+})
+
+Quote.create!({
+  participant_id: 31,
+  first_name: "Gabe",
+  last_name: "Moreno",
+  quote_body: "...we're always doing [design], but whether or not we call it design matters [in order] for people to be able to participate in the conversation around design.",
+  categories: ['increasing_access', 'design'],
+})
+
+Quote.create!({
+  participant_id: 31,
+  first_name: "Gabe",
+  last_name: "Moreno",
+  quote_body: "And I think participatory design for me is a process of a group of people looking at themselves and asking ‘who are we and are we actually doing what we think we're doing?",
+  categories: ['responsibility'],
+})
+
+Quote.create!({
+  participant_id: 31,
+  first_name: "Gabe",
+  last_name: "Moreno",
+  quote_body: "...what are the ways in which we design intelligently so that public life is enhanced?",
+  categories: ['change_making', 'future_implications'],
+})
+
+Quote.create!({
+  participant_id: 31,
+  first_name: "Gabe",
+  last_name: "Moreno",
+  quote_body: "...design is just another form of organizing intelligence, so I think in that way design is a lot of things at once. I think it's always at play.",
+  categories: ['design'],
+})
+
+Quote.create!({
+  participant_id: 31,
+  first_name: "Gabe",
+  last_name: "Moreno",
+  quote_body: "...design has offered really concrete languages for talking about process, in a way that's really important for me. Most of the time my ideas are amorphous, unwieldy, unbounded but exciting, and the design process helps me to start focusing and synthesizing those things.",
+  categories: ['design'],
+})
+
+# Quote.create!({
+#   participant_id: 31,
+#   first_name: "Gabe",
+#   last_name: "Moreno",
+#   quote_body: "",
+#   categories: [''],
+# })
 
 

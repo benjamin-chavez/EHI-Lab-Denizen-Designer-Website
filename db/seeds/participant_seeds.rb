@@ -463,7 +463,7 @@ Participant.create!({
   linkedin: "",
   email: "katherine@latentdesign.net",
   website: "",
-  profileImgLink: "",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621910053/Denizen%20Participant%20Photos/KatherineDarnstadt_lpzuzu.jpg",
   interviewed: true
   })
 
@@ -478,7 +478,7 @@ Participant.create!({
   instagram: "reflexdesignc",
   linkedin: "",
   email: "brooke@reflexdc.com",
-  website: "",
+  website: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621909935/Denizen%20Participant%20Photos/Brooke_Staton_qkzjzc.jpg",
   profileImgLink: "",
   interviewed: true
   })
@@ -495,7 +495,7 @@ Participant.create!({
   linkedin: "",
   email: "keesha.gaskins@gmail.com",
   website: "",
-  profileImgLink: "",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877709/Denizen%20Participant%20Photos/Keesha_Gaskins-Nathan_kaaesq.jpg",
   interviewed: true
   })
 
@@ -515,7 +515,7 @@ Participant.create!({
   linkedin: "",
   email: "helloshanelle@gmail.com ",
   website: "https://helloshanelle.com/",
-  profileImgLink: "",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621910164/Denizen%20Participant%20Photos/ShanelleMatthews_gzqlq3.jpg",
   interviewed: true
   })
 
@@ -531,7 +531,7 @@ Participant.create!({
   linkedin: "",
   email: "therealsloanleo@gmail.com",
   website: "",
-  profileImgLink: "",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877748/Denizen%20Participant%20Photos/Sloan_Leo_ig7qxq.jpg",
   interviewed: true
   })
 
@@ -547,7 +547,7 @@ Participant.create!({
   linkedin: "",
   email: "gabriel.granat@gmail.com",
   website: "",
-  profileImgLink: "",
+  profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877741/Denizen%20Participant%20Photos/Gabe_Moreno_kxetqu.jpg",
   interviewed: true
   })
   
