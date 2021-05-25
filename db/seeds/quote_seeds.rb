@@ -980,10 +980,35 @@ Quote.create!({
   categories: ['power', 'change_making', 'future_implications'],
 })
 
-# Quote.create!({
-#   participant_id: 28,
-#   first_name: "Keesha",
-#   last_name: "Gaskins-Nathan",
-#   quote_body: "",
-#   categories: [''],
-# })
+puts "Creating Quotes for Shanelle Matthews..."
+Quote.create!({
+  participant_id: 29,
+  first_name: "Shanelle",
+  last_name: "Matthews",
+  quote_body: "Ultimately, the professionalization (which has its roots in white supremacy) of the field creates barriers to inclusion. The roots of design thinking could be likely be traced to ideas borne of people who have lived primarily under conditions of domination and exclusion and to frameworks of Black feminism. When we increase the qualifications to participate in a particular activity or otherwise make the conditions harder for some than others, we eliminate opportunities for many people.",
+  categories: ['power', 'increasing_access'],
+})
+
+Quote.create!({
+  participant_id: 29,
+  first_name: "Shanelle",
+  last_name: "Matthews",
+  quote_body: "We need to start at the root and make higher education more accessible for more people who want it, and we need to incorporate design and design thinking into vocational programs and discontinue instituting a hierarchy of knowledge.",
+  categories: ['space_making', 'change_making', 'future_implications'],
+})
+
+Quote.create!({
+  participant_id: 29,
+  first_name: "Shanelle",
+  last_name: "Matthews",
+  quote_body: "In my opinion, it doesn’t matter what field you’re in, if you’re human your responsibility is to iterate until you can figure out how to make the world more just and morally dignified for more people.",
+  categories: ['responsibility'],
+})
+
+Quote.create!({
+  participant_id: 29,
+  first_name: "Shanelle",
+  last_name: "Matthews",
+  quote_body: "",
+  categories: [''],
+})
