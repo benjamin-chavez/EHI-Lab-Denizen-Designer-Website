@@ -26,7 +26,7 @@ import Conclusions from './reportScreen/conclusions';
 import reportImage from '../../../../assets/images/report-img-1.svg';
 import ArrowDown from '../../../../assets/images/ArrowDown.svg';
 
-import Chart from './reportScreen/Chart';
+import Chart from './reportScreen/raceChart';
 
 import Scroll from 'react-scroll';
 
@@ -180,69 +180,6 @@ class Report extends Component {
           >
             <ExecutiveSummary />
             <Overview />
-
-            <Tab.Container id='' defaultActiveKey='first'>
-              <Tab.Content>
-                <Tab.Pane eventKey='first'>
-                  <Chart legendPosition='bottom' />
-                </Tab.Pane>
-                <Tab.Pane eventKey='second'>
-                  <p className='fillerTab'>Gender Data</p>
-                </Tab.Pane>
-              </Tab.Content>
-              <Row>
-                <Col>
-                  <Nav variant='pills' className='list-inline'>
-                    <Nav.Item className='report-chart-category'>
-                      <Nav.Link eventKey='first'>Race</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item className='report-chart-category'>
-                      <Nav.Link eventKey='second'>Gender</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                </Col>
-              </Row>
-              <Tab.Content>
-                <Tab.Pane eventKey='first'>
-                  <Card className='my-4 report-chart-card'>
-                    <Card.Body>
-                      <Row className='report-chart-text'>
-                        <Col>
-                          <Card.Title className='title'>Race</Card.Title>
-                          <Card.Text className='text-body'>
-                            The racial demographics of the Denizen Designers was
-                            just as diverse with 41.2% identifying as
-                            Black/African American, 29.4% Asian, 28.4% White,
-                            8.4% Hispanic, 2.9% Middle Eastern/Arab, 2.9%
-                            American Indian/Alaskan origin and 2% Caribbean or
-                            West Indian. This dramatic increase in the amount of
-                            diversity, in both race and gender identity, allowed
-                            for the Denizen Designer Project to learn more about
-                            the perspectives and challenges that generally
-                            underrepresented people have identified or seen
-                            within the design field.{' '}
-                          </Card.Text>
-                        </Col>
-                      </Row>
-                    </Card.Body>
-                  </Card>
-                </Tab.Pane>
-                <Tab.Pane eventKey='second'>
-                  <Card className='my-4 report-chart-card'>
-                    <Card.Body>
-                      <Row className='report-chart-text'>
-                        <Col>
-                          <Card.Title className='title'>Gender</Card.Title>
-                          <Card.Text className='text-body'>Text Body</Card.Text>
-                        </Col>
-                      </Row>
-                    </Card.Body>
-                  </Card>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
-            {/* END OF MOVEABLE SECTION! */}
-
             <Introduction />
             <ResearchProcess />
             <Demographics />

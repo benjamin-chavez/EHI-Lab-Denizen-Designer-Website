@@ -1,7 +1,24 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  Tab,
+  TabContainer,
+  TabContent,
+  TabPane,
+  Nav,
+  Tabs,
+  Card,
+} from 'react-bootstrap';
 
+import RaceChart from './raceChart';
+import GenderChart from './genderChart';
 import Scroll from 'react-scroll';
+
+import educationImg from '../../../../../assets/images/reportAssets/charts/education.svg';
+import geographicImg from '../../../../../assets/images/reportAssets/charts/GEOGRAPHICSPREAD.svg';
 
 var Element = Scroll.Element;
 
@@ -36,85 +53,297 @@ class Demographics extends Component {
           the perspectives and challenges that generally underrepresented people
           have identified or seen within the design field.{' '}
         </p>
-        <h3>Education</h3>
-        <p>
-          The majority of our Designers completed some form of formal education;
-          over half had completed a Master’s degree and 60% (63 designers) held
-          degrees from design or architecture schools. Only 8.6% of Designers
-          did not have a formal design education. These findings indicate that
-          while Denizen Designers come from many places, their academic
-          backgrounds are often rooted in formal design education.
-        </p>
-        <h3>Environment And Sectors</h3>
-        <p>
-          The majority of the Denizen Designers favored urban work settings. Of
-          the 105 Designers surveyed, 79 of them (75.2%) work in urban settings,
-          22 Designers (21%) work in both urban and rural settings, which
-          indicates that Denizen Designers position themselves in workspaces
-          whose goals align with their own values and concerns. Our Denizen
-          Designers work in a variety of settings, the largest being the
-          non-profit sector (58.1%). Here we saw overlaps between sectors where
-          Designers worked, underscoring the versatility of Denizen Designers’
-          work. While the non-profit sector has been historically one of the
-          best places to support participatory design work, the almost equal
-          percentages of Designers working in for-profit/industry,
-          academic/university and independent consulting are suggestive of
-          participatory design’s increased adaptability in various settings.{' '}
-        </p>
-        <h3>Geographic Spread</h3>
-        <p>
-          The Denizen Designer Project survey was primarily sent to Designers
-          who live in the United States, with some respondents coming from other
-          parts of the world. All geographic parts of the United States were
-          represented, with the Midwest containing the largest concentration of
-          Designers (34 Designers), followed by 21 Designers from the Mid-
-          Atlantic region. This strong presence of Midwestern Designers provides
-          an interesting preceptive given that there are generally larger
-          concentrations of designers on the West and East coasts. With the
-          increase of technology hubs outside of coastal cities, these results
-          suggest the importance of designers in all regions utilizing
-          participatory design methods. While the Denizen Designer Project is
-          primarily focused on North America, the inclusion of the 3 Designers
-          (2.9%) from other parts of the world demonstrates how participatory
-          design is not a method solely limited to North America.
-        </p>
-        <h3>Issues Addressed</h3>
-        <p>
-          Our Designers work in a variety of settings addressing a wide variety
-          of social, political, socio-economic, and cultural issues. There is
-          often overlap in the types of issues that the Designers work to
-          address, and the largest category was racial equity, with 74.8% of
-          Designers working to address it. This was followed by civic engagement
-          and education with 50.8% and 49.5% of Designers working in these
-          areas, respectively. This overlap in work topics is because many of
-          these social, political, socio-economic, and cultural issues are
-          deeply interrelated. This interrelatedness highlights the importance
-          and adaptability of design thinking and participatory design when
-          addressing a variety of challenges.{' '}
-        </p>
-        <h3>Roles And Background In Design</h3>
-        <p>
-          Although most survey respondents considered themselves designers
-          (83%), many respondents also felt that their roles overlapped with one
-          or more titles. The second largest role was facilitator (62.7%)
-          followed by researcher (50%). These results highlight the difficulty
-          of identifying or describing one’s work as a single category,
-          especially given that design work often requires a person to wear
-          multiple hats and adapt to diverse needs. Additionally, many of the
-          Designers became exposed to design work and classes in college or
-          through a design fellowship, indicating that education is a prevalent
-          barrier to design knowledge. 
-        </p>
-        <h3>Design Employment</h3>
-        <p>
-          The majority (92.4%) of the Denizen Designers have been formally
-          employed for design work, with 76.2% of Designers being currently
-          employed for design work. The most common type of design work was
-          consulting and freelancing (63.9%) followed by non- profit/community
-          organization (42.3%). These findings indicate that while designers
-          worked in a variety of settings, the most common settings for design
-          work were places that are typically people-facing.{' '}
-        </p>
+
+        <Tab.Container id='' defaultActiveKey='race'>
+          <Tab.Content>
+            <Tab.Pane eventKey='race'>
+              <RaceChart legendPosition='bottom' />
+            </Tab.Pane>
+            <Tab.Pane eventKey='second'>
+              <GenderChart legendPosition='bottom' />
+            </Tab.Pane>
+            <Tab.Pane eventKey='education'>
+              <img
+                // src={NavLogo}
+                src={educationImg}
+                className='fillerTab'
+                alt='Education Graphic'
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey='envisec'>
+              <p className='fillerTab'>Environment And Sectors Data</p>
+            </Tab.Pane>
+            <Tab.Pane eventKey='geography'>
+              <img
+                // src={NavLogo}
+                src={geographicImg}
+                className='fillerTab'
+                alt='Education Graphic'
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey='issues'>
+              <p className='fillerTab'>Issues Addressed</p>
+            </Tab.Pane>
+            <Tab.Pane eventKey='roles'>
+              <p className='fillerTab'>Roles And Background In Design</p>
+            </Tab.Pane>
+            <Tab.Pane eventKey='designEmp'>
+              <p className='fillerTab'>Design Employment</p>
+            </Tab.Pane>
+          </Tab.Content>
+          <Row>
+            <Col>
+              <Nav variant='pills' className='list-inline '>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='race'>Race</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='second'>Gender</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='education'>Education</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='envisec'>Environment & Sectors</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='geography'>Geographic Spread</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='issues'>Issues Addressed</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='roles'>
+                    Roles and Design Background
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item className='report-chart-category mb-2'>
+                  <Nav.Link eventKey='designEmp'>Design Employment</Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Col>
+          </Row>
+          <Tab.Content>
+            <Tab.Pane eventKey='race'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>Race</Card.Title>
+                      <Card.Text className='text-body'>
+                        The racial demographics of the Denizen Designers was
+                        just as diverse with 41.2% identifying as Black/African
+                        American, 29.4% Asian, 28.4% White, 8.4% Hispanic, 2.9%
+                        Middle Eastern/Arab, 2.9% American Indian/Alaskan origin
+                        and 2% Caribbean or West Indian. This dramatic increase
+                        in the amount of diversity, in both race and gender
+                        identity, allowed for the Denizen Designer Project to
+                        learn more about the perspectives and challenges that
+                        generally underrepresented people have identified or
+                        seen within the design field.{' '}
+                      </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+            <Tab.Pane eventKey='second'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>Gender</Card.Title>
+                      <Card.Text className='text-body'>Text Body</Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+
+            {/* EDUCATION PANE */}
+            <Tab.Pane eventKey='education'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>Education</Card.Title>
+                      <Card.Text className='text-body'>
+                        The majority of our Designers completed some form of
+                        formal education; over half had completed a Master’s
+                        degree and 60% (63 designers) held degrees from design
+                        or architecture schools. Only 8.6% of Designers did not
+                        have a formal design education. These findings indicate
+                        that while Denizen Designers come from many places,
+                        their academic backgrounds are often rooted in formal
+                        design education.
+                      </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+
+            {/* ENVIRONMENT AND SECTORS PANE */}
+            <Tab.Pane eventKey='envisec'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>
+                        Environment And Sectors
+                      </Card.Title>
+                      <Card.Text className='text-body'>
+                        The majority of the Denizen Designers favored urban work
+                        settings. Of the 105 Designers surveyed, 79 of them
+                        (75.2%) work in urban settings, 22 Designers (21%) work
+                        in both urban and rural settings, which indicates that
+                        Denizen Designers position themselves in workspaces
+                        whose goals align with their own values and concerns.
+                        Our Denizen Designers work in a variety of settings, the
+                        largest being the non-profit sector (58.1%). Here we saw
+                        overlaps between sectors where Designers worked,
+                        underscoring the versatility of Denizen Designers’ work.
+                        While the non-profit sector has been historically one of
+                        the best places to support participatory design work,
+                        the almost equal percentages of Designers working in
+                        for-profit/industry, academic/university and independent
+                        consulting are suggestive of participatory design’s
+                        increased adaptability in various settings.
+                      </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+
+            {/*GEOGRAPHIC SPREAD  PANE */}
+            <Tab.Pane eventKey='geography'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>
+                        Geographic Spread
+                      </Card.Title>
+                      <Card.Text className='text-body'>
+                        {' '}
+                        The Denizen Designer Project survey was primarily sent
+                        to Designers who live in the United States, with some
+                        respondents coming from other parts of the world. All
+                        geographic parts of the United States were represented,
+                        with the Midwest containing the largest concentration of
+                        Designers (34 Designers), followed by 21 Designers from
+                        the Mid- Atlantic region. This strong presence of
+                        Midwestern Designers provides an interesting preceptive
+                        given that there are generally larger concentrations of
+                        designers on the West and East coasts. With the increase
+                        of technology hubs outside of coastal cities, these
+                        results suggest the importance of designers in all
+                        regions utilizing participatory design methods. While
+                        the Denizen Designer Project is primarily focused on
+                        North America, the inclusion of the 3 Designers (2.9%)
+                        from other parts of the world demonstrates how
+                        participatory design is not a method solely limited to
+                        North America.
+                      </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+
+            {/*ISSUES ADDRESSED  PANE */}
+            <Tab.Pane eventKey='issues'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>
+                        Issues Addressed
+                      </Card.Title>
+                      <Card.Text className='text-body'>
+                        {' '}
+                        Our Designers work in a variety of settings addressing a
+                        wide variety of social, political, socio-economic, and
+                        cultural issues. There is often overlap in the types of
+                        issues that the Designers work to address, and the
+                        largest category was racial equity, with 74.8% of
+                        Designers working to address it. This was followed by
+                        civic engagement and education with 50.8% and 49.5% of
+                        Designers working in these areas, respectively. This
+                        overlap in work topics is because many of these social,
+                        political, socio-economic, and cultural issues are
+                        deeply interrelated. This interrelatedness highlights
+                        the importance and adaptability of design thinking and
+                        participatory design when addressing a variety of
+                        challenges.
+                      </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+
+            {/*ROLES & BACKGROUN IN DESIGN  PANE */}
+            <Tab.Pane eventKey='roles'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>
+                        Roles And Background In Design
+                      </Card.Title>
+                      <Card.Text className='text-body'>
+                        {' '}
+                        Although most survey respondents considered themselves
+                        designers (83%), many respondents also felt that their
+                        roles overlapped with one or more titles. The second
+                        largest role was facilitator (62.7%) followed by
+                        researcher (50%). These results highlight the difficulty
+                        of identifying or describing one’s work as a single
+                        category, especially given that design work often
+                        requires a person to wear multiple hats and adapt to
+                        diverse needs. Additionally, many of the Designers
+                        became exposed to design work and classes in college or
+                        through a design fellowship, indicating that education
+                        is a prevalent barrier to design knowledge. 
+                      </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+
+            {/*  PANE */}
+            <Tab.Pane eventKey='designEmp'>
+              <Card className='my-4 report-chart-card'>
+                <Card.Body>
+                  <Row className='report-chart-text'>
+                    <Col>
+                      <Card.Title className='title'>
+                        Design Employment
+                      </Card.Title>
+                      <Card.Text className='text-body'>
+                        {' '}
+                        The majority (92.4%) of the Denizen Designers have been
+                        formally employed for design work, with 76.2% of
+                        Designers being currently employed for design work. The
+                        most common type of design work was consulting and
+                        freelancing (63.9%) followed by non- profit/community
+                        organization (42.3%). These findings indicate that while
+                        designers worked in a variety of settings, the most
+                        common settings for design work were places that are
+                        typically people-facing.
+                      </Card.Text>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Tab.Pane>
+          </Tab.Content>
+        </Tab.Container>
+
+        {/* ********************************************************** */}
         <h3>Influence and access of design</h3>
         <p>
           One of the main research goals of the Denizen Designer Project was to
@@ -130,7 +359,7 @@ class Demographics extends Component {
           the Designers mentioned that they learned more about what
           participatory design is and how to conduct it from other designers in
           the field already using PD methods, than from schools (unless they
-          were at one of the design-for-social-good focused schools).{' '}
+          were at one of the design-for-social-good focused schools).
         </p>
         <p>
           Despite the limited amount academic programs focusing on

@@ -3,25 +3,25 @@ import React, { Component } from 'react';
 import { Doughnut, Line, Pie } from 'react-chartjs-2';
 import { Container } from 'react-bootstrap';
 
-class Chart extends Component {
+class GenderChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
       chartData: {
         labels: [
-          'White/Caucasion',
-          'Asian',
-          'Latina/Latina/Latinx/Hispanic',
-          'Bi-/Multi-racial',
-          'Black/African American',
-          'Prefer not to say',
-          'Native/Hawaiian',
-          'Native American/FirstNations/First People',
+          'Man',
+          'Women',
+          'Transgender Man',
+          'Transgender Women',
+          'Gender variant / nonconforming',
+          'Nonbinary',
+          'Prefer not to answer',
+          'Other',
         ],
         datasets: [
           {
             label: 'Population',
-            data: [71, 36, 8, 5, 3, 3, 1, 1],
+            data: [26, 63, 1, 0, 4, 7, 0, 3],
             backgroundColor: [
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',
@@ -52,31 +52,19 @@ class Chart extends Component {
             <Doughnut
               className='canvas-container'
               data={this.state.chartData}
-              // width={80}
-              // height={50}
-              // options={{ maintainAspectRatio: false }}
-              // width={'100%'}
-              // options={{ maintainAspectRatio: false }}
               options={{
-                // responsive: true,
-                // maintainAspectRatio: false,
                 plugins: {
                   align: 'center',
                   title: {
-                    // display: true,
-                    // text: 'Largest Cities In Massachusetts',
-                    // fontSize: 25,
                     display: this.props.displayTitle,
                     text: 'Demographics of the Denizen Designers',
                     fontSize: 25,
                   },
                   legend: {
-                    // display: true,
                     position: 'right',
                     display: this.props.displayLegend,
                     position: 'bottom',
                   },
-                  // width: 60,
                 },
               }}
             />
@@ -87,4 +75,4 @@ class Chart extends Component {
   }
 }
 
-export default Chart;
+export default GenderChart;
