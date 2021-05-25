@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 import Scroll from 'react-scroll';
+import SummaryGraphic from '../../../../../assets/images/reportAssets/themes.png';
+import BarriersGraphic from '../../../../../assets/images/reportAssets/barriers.jpg';
+import PerceptionsGraphic from '../../../../../assets/images/reportAssets/PerceptionsOfDesign.jpg';
+import AcademiaGraphic from '../../../../../assets/images/reportAssets/WorkingWithAcademia.jpg';
 
 var Element = Scroll.Element;
 
@@ -56,6 +60,12 @@ class Influence extends Component {
             <li>Creating lasting change</li>
           </ul>
         </ol>
+
+        <div className='report-img'>
+          {' '}
+          <Image src={SummaryGraphic} alt='Summary Graphic' fluid />
+        </div>
+
         <p>Frequency of terms appearing in interviews. </p>
         <p>
           These themes revealed a lot about the way that Denizen Designers
@@ -435,6 +445,26 @@ class Influence extends Component {
           learning or doing design” and 98 designers also feel that “classism is
           a barrier for many interested in learning or doing design.”{' '}
         </p>
+        <div className='report-img'>
+          {' '}
+          <Image src={BarriersGraphic} alt='Barriers To Design Graphic' fluid />
+        </div>
+        <div className='report-img'>
+          {' '}
+          <Image
+            src={PerceptionsGraphic}
+            alt='Perceptions of Design Graphic'
+            fluid
+          />
+        </div>
+        <div className='report-img'>
+          {' '}
+          <Image
+            src={AcademiaGraphic}
+            alt='Working with Academia Graphic'
+            fluid
+          />
+        </div>
       </div>
     );
   }

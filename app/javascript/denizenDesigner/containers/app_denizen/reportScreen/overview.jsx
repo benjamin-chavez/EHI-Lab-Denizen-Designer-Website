@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 import Scroll from 'react-scroll';
+import OverviewGraphic from '../../../../../assets/images/reportAssets/SurveyOVERVIEW.png';
 
 var Element = Scroll.Element;
 
@@ -28,6 +29,10 @@ class Overview extends Component {
           identified perspectives on design’s access and reach for those outside
           of academia.{' '}
         </p>
+        <div className='report-img'>
+          {' '}
+          <Image src={OverviewGraphic} alt='Education Graphic' fluid />
+        </div>
       </div>
     );
   }

@@ -78,7 +78,7 @@ class Demographics extends Component {
                 // src={NavLogo}
                 src={geographicImg}
                 className='fillerTab'
-                alt='Education Graphic'
+                alt='Geographic Graphic'
               />
             </Tab.Pane>
             <Tab.Pane eventKey='issues'>

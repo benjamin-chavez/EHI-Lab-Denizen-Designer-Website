@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 import Scroll from 'react-scroll';
+import ProcessGraphic from '../../../../../assets/images/reportAssets/process.png';
 
 var Element = Scroll.Element;
 
@@ -12,6 +13,10 @@ class ResearchProcess extends Component {
         <Element name='researchProcess'>
           <h2>Research Process</h2>
         </Element>
+        <div className='report-img'>
+          {' '}
+          <Image src={ProcessGraphic} alt='Process Graphic' fluid />
+        </div>
         <p>
           The Denizen Designer Project Survey was sent out to over 100 people
           who identify as using design to engage with various types of
