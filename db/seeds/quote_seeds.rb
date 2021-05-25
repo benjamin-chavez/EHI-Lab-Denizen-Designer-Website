@@ -826,11 +826,127 @@ Quote.create!({
   categories: [''],
 })
 
-# Quote.create!({
-#   participant_id: 21,
-#   first_name: "Folayemi",
-#   last_name: "Wilson",
-#   quote_body: "",
-#   categories: [''],
-# })
+puts "Creating Quotes for Michele Washington..."
+Quote.create!({
+  participant_id: 22,
+  first_name: "Michele",
+  last_name: "Washington",
+  quote_body: "Instead of me doing the work, how am I going to have the people that I'm servicing, or supposedly servicing, how am I going to get them to do the work? And should it be that I am just the facilitator, and they are the ones that are building out the actionable plans and the actionable steps and taking the lead?",
+  categories: ['community_building', 'knowledge_building', 'change_making'],
+})
+
+Quote.create!({
+  participant_id: 22,
+  first_name: "Michele",
+  last_name: "Washington",
+  quote_body: "You don't have to be an expert, but you can be respectful. And if you don't understand something, defer to someone else.",
+  categories: ['power', 'community_empowerment'],
+})
+
+Quote.create!({
+  participant_id: 22,
+  first_name: "Michele",
+  last_name: "Washington",
+  quote_body: "...design is a social activity because you interact with so many different people and spaces on various levels…",
+  categories: ['design'],
+})
+Quote.create!({
+  participant_id: 22,
+  first_name: "Michele",
+  last_name: "Washington",
+  quote_body: "I think that people have always been exposed to design, even if they don't know that they've been exposed to design because of television, movies, books, magazines, clothes that you buy, the chair that you sit in, the food that you eat, like the packaging. You're buying that food, because you could be attracted to the packaging, I think but one thing is that thinking of getting people to make things.",
+  categories: ['design'],
+})
+
+puts "Creating Quotes for Anushka Jajodia..."
+Quote.create!({
+  participant_id: 23,
+  first_name: "Anushka",
+  last_name: "Jajodia",
+  quote_body: "...being able to support their voice, their space, and how you can encourage them to self-manage, and you can encourage them to be active collaborators in research projects that really even excite them…",
+  categories: ['community_building', 'power', 'space_making', 'mutual_learning', 'community_empowerment'],
+})
+
+Quote.create!({
+  participant_id: 23,
+  first_name: "Anushka",
+  last_name: "Jajodia",
+  quote_body: "[participatory design] can be an anti-oppressive way to hold space for individuals with lived experiences, so that they are able to share their feelings about their truth.",
+  categories: ['trust', 'change_making', 'design'],
+})
+
+Quote.create!({
+  participant_id: 23,
+  first_name: "Anushka",
+  last_name: "Jajodia",
+  quote_body: "But I think, for them to merge, they have to understand that there's a point they cannot really merge. They need to know when to step back and that's the truth, which they need to understand, because they are coming in from that institution and that power.",
+  categories: ['power', 'responsibility', 'future_implications'],
+})
+
+puts "Creating Quotes for Navjot Heer..."
+Quote.create!({
+  participant_id: 24,
+  first_name: "Navjot",
+  last_name: "Heer",
+  quote_body: "...ultimately, the goal is to shift the power to the communities who are gonna be impacted by what is being proposed. And oftentimes, the stakeholders that we engage with are the ones who are already comfortable with the existing power structures or they seem to benefit by keeping these power structures intact, versus really letting go of that and being comfortable with the shifting or changing power dynamics in the room.",
+  categories: ['power', 'space_making', 'change_making', 'community_empowerment'],
+})
+ 
+Quote.create!({
+  participant_id: 24,
+  first_name: "Navjot",
+  last_name: "Heer",
+  quote_body: "...using [specialization] to exclude people or keep people out of the conversation is a huge disservice to the communities that we are designing with because they have just as much knowledge as we have. They have more, because they have that experiential first-hand lived experience versus designers sitting in an office, or right now, in our houses, designing ‘for them’.",
+  categories: ['space_making'],
+})
+
+puts "Creating Quotes for De Nichols..."
+Quote.create!({
+  participant_id: 25,
+  first_name: "De",
+  last_name: "Nichols",
+  quote_body: "We have to move at the speed of trust. Don't just try to impose a design or an idea onto people. Listen before you design.",
+  categories: ['community_building', 'trust'],
+})
+
+Quote.create!({
+  participant_id: 25,
+  first_name: "De",
+  last_name: "Nichols",
+  quote_body: "[Folks] don't always need or desire for you to come in with your big bold idea, and sometimes what they're seeking is your support to move along what they've already been working on. So, I would encourage designers to have a “low ego,high impact” mindset when it comes to working with communities.",
+  categories: ['power'],
+})
+ 
+Quote.create!({
+  participant_id: 25,
+  first_name: "De",
+  last_name: "Nichols",
+  quote_body: "The biggest role that we can play right now is about holding ourselves accountable for undoing, unraveling, and dismantling the damage that has already been done, and as we're collectively moving forward, we have to be sure we are not repeating a lot of the same toxic practices.",
+  categories: ['responsibility', 'change_making'],
+})
+
+Quote.create!({
+  participant_id: 25,
+  first_name: "De",
+  last_name: "Nichols",
+  quote_body: "When a community is driving design, when the people have been a part of the whole process, and when they're like, \"We don't even need you all any more. We got this,\" that's so good.",
+  categories: ['community_empowerment'],
+})
+ 
+Quote.create!({
+  participant_id: 25,
+  first_name: "De",
+  last_name: "Nichols",
+  quote_body: "But I also think that there are limitations that we should be putting on ourselves to not be so arrogant to say that—just because we are designers—we can change and solve everything. I think owning those gaps and our vulnerabilities is what allows us the space to see the value in other folks and their approach and their ways of being and doing.",
+  categories: ['design'],
+})
+
+puts "Creating Quotes for De Nichols..."
+Quote.create!({
+  participant_id: 25,
+  first_name: "De",
+  last_name: "Nichols",
+  quote_body: "",
+  categories: [''],
+})
  
