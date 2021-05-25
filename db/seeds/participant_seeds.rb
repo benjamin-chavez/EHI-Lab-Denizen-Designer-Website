@@ -350,7 +350,7 @@ Participant.create!({
   profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1621930254/Denizen%20Participant%20Photos/2Tonika_Johnson_se4bbb.jpg",
   interviewed: true
   })
-
+ 
 Participant.create!({
   first_name: "Victoria",
   last_name: "Barnnett",
