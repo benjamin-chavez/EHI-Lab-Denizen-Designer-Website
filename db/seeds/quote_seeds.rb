@@ -955,10 +955,35 @@ Quote.create!({
   categories: ['adaptation', 'design'],
 })
 
+puts "Creating Quotes for Keesha Gaskins-Nathan..."
+Quote.create!({
+  participant_id: 28,
+  first_name: "Keesha",
+  last_name: "Gaskins-Nathan",
+  quote_body: "People aren't stupid, and people understand these things, people inherently get the idea of being used as part of a process to maintain power versus being meaningfully considered, and engaged with, as part of a process that actually arrives at a conclusion, that considers their needs. People inherently understand that distinction.",
+  categories: ['trust', 'power', 'increasing_access'],
+})
+
+Quote.create!({
+  participant_id: 28,
+  first_name: "Keesha",
+  last_name: "Gaskins-Nathan",
+  quote_body: "Because, solutions that present themselves immediately and can be implemented immediately means that, people who can implement solutions immediately are likely people already in power, which means they're going to jump at the solutions that are going to mean the least amount of change.",
+  categories: ['power', 'change_making'],
+})
+
+Quote.create!({
+  participant_id: 28,
+  first_name: "Keesha",
+  last_name: "Gaskins-Nathan",
+  quote_body: "Obviously, the critique is necessary, because we can't identify the problems if we don't have a critique. But then you're stuck with this challenge of using the system to change the system, and that is exceedingly problematic because then you're dependent on people with power in the system to change the system, and that's where you run into problems.",
+  categories: ['power', 'change_making', 'future_implications'],
+})
+
 # Quote.create!({
-#   participant_id: 27,
-#   first_name: "Brooke",
-#   last_name: "Staton",
+#   participant_id: 28,
+#   first_name: "Keesha",
+#   last_name: "Gaskins-Nathan",
 #   quote_body: "",
 #   categories: [''],
 # })
