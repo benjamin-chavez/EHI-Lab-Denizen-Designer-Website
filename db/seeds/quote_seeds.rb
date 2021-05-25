@@ -95,114 +95,6 @@ Quote.create!({
   quote_body: "Helping us understand and reinforce the value that we had and the impact we had on the communities. And that we had the power to be seen, to be heard, and to help uplift and save our own community.",
   categories: ["increasing_access"],
 })
-# *****************************************************************************************last one^ look at name
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "We think about trust when we do relationship building, and so first of all it's meeting people where they are and listening before we talk.",
-#   category: "trust",
-#   category_int: 1,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "Cause if we don't examine and question and call out and intervene in systems of oppression we're not gonna be doing anything new, we're just gonna be perpetuating the same old stuff, even if we have a shiny new gadget to attach to it.",
-#   category: "power",
-#   category_int: 2,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...it's glaringly obvious that there's a top-down paradigm that people with good intentions are trying to follow, that's very technocratic and very focused on a narrow set of expertise, that's credentialed by a narrow set of privileged institutions that does not recognize the expertise that is lived experience and all sorts of other things.",
-#   category: "power",
-#   category_int: 2,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...there are certain types of expertise in design work that are afforded resources and credibility and decision-making power that other people don't get.",
-#   category: "power",
-#   category_int: 2,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...the whole community is invisible to you, because you don't see these people as experts.",
-#   category: "space_making",
-#   category_int: 3,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...it's glaringly obvious that there's a top-down paradigm that people with good intentions are trying to follow, that's very technocratic and very focused on a narrow set of expertise, that's credentialed by a narrow set of privileged institutions that does not recognize the expertise that is lived experience and all sorts of other things.",
-#   category: "increasing_access",
-#   category_int: 4,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...the whole community is invisible to you, because you don't see these people as experts.",
-#   category: "increasing_access",
-#   category_int: 4,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "Cause if we don't examine and question and call out and intervene in systems of oppression we're not gonna be doing anything new, we're just gonna be perpetuating the same old stuff, even if we have a shiny new gadget to attach to it.",
-#   category: "responsibility",
-#   category_int: 6,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "Cause if we don't examine and question and call out and intervene in systems of oppression we're not gonna be doing anything new, we're just gonna be perpetuating the same old stuff, even if we have a shiny new gadget to attach to it.",
-#   category: "change_making",
-#   category_int: 8,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...there are certain types of expertise in design work that are afforded resources and credibility and decision-making power that other people don't get.",
-#   category: "future_implications",
-#   category_int: 11,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...if you're living in systems that are designed to harm you, exploit you, and not serve you, you're innovating all the time just to make your way through the world.",
-#   category: "adaptation",
-#   category_int: 12,
-# })
-
-# Quote.create!({
-#   participant_id: 3,
-#   first_name: "Brooke",
-#   last_name: "Staton",
-#   quote_body: "...if you're living in systems that are designed to harm you, exploit you, and not serve you, you're innovating all the time just to make your way through the world.",
-#   category: "design",
-#   category_int: 13,
-# })
 
 puts 'Creating Quotes for Bryan Lee Jr...'
 
@@ -941,12 +833,120 @@ Quote.create!({
   categories: ['design'],
 })
 
-puts "Creating Quotes for De Nichols..."
-Quote.create!({
-  participant_id: 25,
-  first_name: "De",
-  last_name: "Nichols",
-  quote_body: "",
-  categories: [''],
-})
- 
+# puts "Creating Quotes for De Nichols..."
+# Quote.create!({
+#   participant_id: 26,
+#   first_name: "De",
+#   last_name: "Nichols",
+#   quote_body: "",
+#   categories: [''],
+# })
+
+ # *****************************************************************************************last one^ look at name
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "We think about trust when we do relationship building, and so first of all it's meeting people where they are and listening before we talk.",
+#   category: "trust",
+#   category_int: 1,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "Cause if we don't examine and question and call out and intervene in systems of oppression we're not gonna be doing anything new, we're just gonna be perpetuating the same old stuff, even if we have a shiny new gadget to attach to it.",
+#   category: "power",
+#   category_int: 2,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...it's glaringly obvious that there's a top-down paradigm that people with good intentions are trying to follow, that's very technocratic and very focused on a narrow set of expertise, that's credentialed by a narrow set of privileged institutions that does not recognize the expertise that is lived experience and all sorts of other things.",
+#   category: "power",
+#   category_int: 2,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...there are certain types of expertise in design work that are afforded resources and credibility and decision-making power that other people don't get.",
+#   category: "power",
+#   category_int: 2,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...the whole community is invisible to you, because you don't see these people as experts.",
+#   category: "space_making",
+#   category_int: 3,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...it's glaringly obvious that there's a top-down paradigm that people with good intentions are trying to follow, that's very technocratic and very focused on a narrow set of expertise, that's credentialed by a narrow set of privileged institutions that does not recognize the expertise that is lived experience and all sorts of other things.",
+#   category: "increasing_access",
+#   category_int: 4,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...the whole community is invisible to you, because you don't see these people as experts.",
+#   category: "increasing_access",
+#   category_int: 4,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "Cause if we don't examine and question and call out and intervene in systems of oppression we're not gonna be doing anything new, we're just gonna be perpetuating the same old stuff, even if we have a shiny new gadget to attach to it.",
+#   category: "responsibility",
+#   category_int: 6,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "Cause if we don't examine and question and call out and intervene in systems of oppression we're not gonna be doing anything new, we're just gonna be perpetuating the same old stuff, even if we have a shiny new gadget to attach to it.",
+#   category: "change_making",
+#   category_int: 8,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...there are certain types of expertise in design work that are afforded resources and credibility and decision-making power that other people don't get.",
+#   category: "future_implications",
+#   category_int: 11,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...if you're living in systems that are designed to harm you, exploit you, and not serve you, you're innovating all the time just to make your way through the world.",
+#   category: "adaptation",
+#   category_int: 12,
+# })
+
+# Quote.create!({
+#   participant_id: 3,
+#   first_name: "Brooke",
+#   last_name: "Staton",
+#   quote_body: "...if you're living in systems that are designed to harm you, exploit you, and not serve you, you're innovating all the time just to make your way through the world.",
+#   category: "design",
+#   category_int: 13,
+# })

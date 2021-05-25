@@ -450,3 +450,119 @@ Participant.create!({
   profileImgLink: "https://res.cloudinary.com/dbmev2ofj/image/upload/v1616877713/Denizen%20Participant%20Photos/De_Nichols_r9we2d.jpg",
   interviewed: true
   })
+
+Participant.create!({
+  first_name: "Katherine",
+  last_name: "Darnstadt",
+  designer_type: "Architect and Urban Designer",
+  location_state: "IL",
+  location_city: "Chicago",
+  bio: "Katherine is an architect, educator and founder of Latent Design, a practice at the intersection of architecture and community development creating social, economic and environmental impact beyond the building. Leveraging design as a tool to make the invisible forces impacting a project visible through architecture, the firm’s collaborations range from small-scale tactical interventions, new construction community buildings, adaptive reuse, neighborhood master plans and design speculations.",
+  twitter: "latent_design",
+  instagram: "latent_design",
+  linkedin: "",
+  email: "katherine@latentdesign.net",
+  website: "",
+  profileImgLink: "",
+  interviewed: true
+  })
+
+  Participant.create!({
+  first_name: "Brooke",
+  last_name: "Staton",
+  designer_type: "Equity Design Facilitator",
+  location_state: "CA",
+  location_city: "Oakland",
+  bio: "Brooke Staton is a co-founder and managing partner at Reflex Design Collective. She is an equity design innovator and facilitator who draws on her background in city planning, public health, and participatory research to devise community-driven approaches to creative problem solving.",
+  twitter: "reflexdesignc",
+  instagram: "reflexdesignc",
+  linkedin: "",
+  email: "brooke@reflexdc.com",
+  website: "",
+  profileImgLink: "",
+  interviewed: true
+  })
+  
+Participant.create!({
+  first_name: "Keesha",
+  last_name: "Gaskins-Nathan",
+  designer_type: "Philanthropic Strategist",
+  location_state: "NY",
+  location_city: "New York City",
+  bio: "Keesha Gaskins-Nathan is the director for the Democratic Practice–United States program at the Rockefeller Brothers Fund. She is a philanthropic strategist and grantmaker, attorney, adjunct professor, and writer focused on transforming large scale systems within the U.S. political economy to realize racial and economic justice for all U.S. residents.",
+  twitter: "keeshagaskins",
+  instagram: "",
+  linkedin: "",
+  email: "keesha.gaskins@gmail.com",
+  website: "",
+  profileImgLink: "",
+  interviewed: true
+  })
+
+Participant.create!({
+  first_name: "Shanelle",
+  last_name: "Matthews",
+  designer_type: "Communications Director",
+  location_state: "NY",
+  location_city: "Brooklyn",
+  bio: "Shanelle Matthews partners with social justice activists, organizations, and campaigns to inspire action through strategic communications and narrative power. From Sierra Club and ACLU to the Black Lives Matter Global Network and Aspen Institute, she has collaborated with different influencers and changemakers to transform complex ideas into persuasive political messaging.
+
+  Today, she is the Communications Director for the Movement for Black Lives, an ecosystem of 150 organizations creating a broad political home for Black people to learn, organize, and take action. In 2016, Shanelle founded the Radical Communicators Network (RadComms) to strengthen the field of strategic communications, as well as Channel Black, a program that prepares progressive spokespeople to make critical, real-time interventions through the media. In 2017, Shanelle joined The New School as its inaugural Activist-in-Residence, and is currently faculty and teaches critical theory and social justice with an emphasis on Black resistance.
+  
+  She holds a degree in Journalism and New and Online Media from the Manship School of Mass Communications at Louisiana State University and is co-authoring Building Narrative Power for 21st Century Social Movements, an anthology slated for print in 2022.",
+  twitter: "",
+  instagram: "hello_shanelle",
+  linkedin: "",
+  email: "helloshanelle@gmail.com ",
+  website: "https://helloshanelle.com/",
+  profileImgLink: "",
+  interviewed: true
+  })
+
+Participant.create!({
+  first_name: "Sloan",
+  last_name: "Leo",
+  designer_type: "Community Designer",
+  location_state: "NY",
+  location_city: "Brooklyn",
+  bio: "Sloan Leo (they/them) is an artist and the Founder/CEO of FLOX Studio Inc. FLOX Studio is a community design and strategy studio that works with curious optimists who are committed to getting things done. FLOX is on a mission to increase the community design capacity of mission-driven enterprises so that the entire ecosystem is more brave, creative and resilient. Prior to founding FLOX Studio, Sloan Leo spent 15 years leading non-profit staff and volunteer teams at the Environmental Defense Fund, The Trust for Public Land, and other organizations at the intersection of community, justice, and design.",
+  twitter: "",
+  instagram: "therealsloanleo",
+  linkedin: "",
+  email: "therealsloanleo@gmail.com",
+  website: "",
+  profileImgLink: "",
+  interviewed: true
+  })
+
+Participant.create!({
+  first_name: "Gabe",
+  last_name: "Moreno",
+  designer_type: "Artist",
+  location_state: "IL",
+  location_city: "Chicago",
+  bio: "Gabe Moreno is an artist, educator and the manager of Design Programs Arts + Public Life at the University of Chicago.",
+  twitter: "",
+  instagram: "ga_beh",
+  linkedin: "",
+  email: "gabriel.granat@gmail.com",
+  website: "",
+  profileImgLink: "",
+  interviewed: true
+  })
+  
+  # Participant.create!({
+  # first_name: "",
+  # last_name: "",
+  # designer_type: "",
+  # location_state: "",
+  # location_city: "",
+  # bio: "",
+  # twitter: "",
+  # instagram: "",
+  # linkedin: "",
+  # email: "",
+  # website: "",
+  # profileImgLink: "",
+  # interviewed: true
+  # })
