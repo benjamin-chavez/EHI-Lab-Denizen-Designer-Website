@@ -1005,10 +1005,61 @@ Quote.create!({
   categories: ['responsibility'],
 })
 
+puts "Creating Quotes for Sloan Leo..."
 Quote.create!({
-  participant_id: 29,
-  first_name: "Shanelle",
-  last_name: "Matthews",
+  participant_id: 30,
+  first_name: "Sloan",
+  last_name: "Leo",
+  quote_body: "Facilitation is about building communities, so we actually have to look at it as a core competency for designers now.",
+  categories: ['community_building', 'increasing_access', 'space_making', 'change_making'],
+})
+
+Quote.create!({
+  participant_id: 30,
+  first_name: "Sloan",
+  last_name: "Leo",
+  quote_body: "The process of deconstruction and dismantling is design. So why can't we use design as a tool for transformation, liberation, and justice, if it's literally a Systems Design question?",
+  categories: ['power'],
+})
+
+Quote.create!({
+  participant_id: 30,
+  first_name: "Sloan",
+  last_name: "Leo",
+  quote_body: "We're designing for show and show doesn't build capacity.",
+  categories: ['space_making', 'change_making', 'future_implications', 'design'],
+})
+
+Quote.create!({
+  participant_id: 30,
+  first_name: "Sloan",
+  last_name: "Leo",
+  quote_body: "I feel like the more you are emergent, grappling, and futurist or speculative, the more you're dealing with the actual issues people are pained with now. I think we accidentally can be in places of reflecting on what was hard instead of saying what is hard now. And I wanna solve things that are hard today, as much as I care about what was hard yesterday. I think we can deal in real-time.",
+  categories: ['increasing_access', 'knowledge_building'],
+})
+
+Quote.create!({
+  participant_id: 30,
+  first_name: "Sloan",
+  last_name: "Leo",
+  quote_body: "I think about [design] as both a collective problem-seeking approach, that allows you to create something of value for more people.",
+  categories: ['mutual_learning', 'design'],
+})
+
+Quote.create!({
+  participant_id: 30,
+  first_name: "Sloan",
+  last_name: "Leo",
+  quote_body: "I think a lot of institutions right now are like, ‘Let me teach you design.’ Instead of, ‘Let me understand your problems, so I can help you understand where design might be an intervention worth exploring.",
+  categories: ['adaptation'],
+})
+
+Quote.create!({
+  participant_id: 30,
+  first_name: "Sloan",
+  last_name: "Leo",
   quote_body: "",
   categories: [''],
 })
+
+
