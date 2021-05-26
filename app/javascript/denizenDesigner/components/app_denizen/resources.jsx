@@ -42,7 +42,7 @@ class Resources extends Component {
                     <p className='title mb-2'>
                       Design for social good in higher education
                     </p>
-                    <span className='bodyText '>
+                    <span className='bodyText'>
                       Although there are 406 “design schools” in the United
                       States, there are only 6 universities that offer programs
                       with a focus on design-for-social-good/participatory

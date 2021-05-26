@@ -169,7 +169,7 @@ class Report extends Component {
           </ul>
         </Col>
 
-        <Col sm={9} className=''>
+        <Col sm={9} className='tr**********'>
           {/* <Container className='report-container'> */}
           <Element
             name='test7'

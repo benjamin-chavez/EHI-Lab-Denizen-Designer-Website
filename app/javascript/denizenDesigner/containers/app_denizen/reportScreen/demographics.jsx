@@ -63,23 +63,28 @@ class Demographics extends Component {
               <GenderChart legendPosition='bottom' />
             </Tab.Pane>
             <Tab.Pane eventKey='education'>
-              <img
-                // src={NavLogo}
-                src={educationImg}
-                className='fillerTab'
-                alt='Education Graphic'
-              />
+              <div className='report-img'>
+                <Image
+                  // src={NavLogo}
+                  src={educationImg}
+                  className='fillerTab'
+                  alt='Education Graphic'
+                  fluid
+                />
+              </div>
             </Tab.Pane>
             <Tab.Pane eventKey='envisec'>
               <p className='fillerTab'>Environment And Sectors Data</p>
             </Tab.Pane>
             <Tab.Pane eventKey='geography'>
-              <img
-                // src={NavLogo}
-                src={geographicImg}
-                className='fillerTab'
-                alt='Geographic Graphic'
-              />
+              <div className='report-img'>
+                <Image
+                  src={geographicImg}
+                  className='fillerTab'
+                  alt='Geographic Graphic'
+                  fluid
+                />
+              </div>
             </Tab.Pane>
             <Tab.Pane eventKey='issues'>
               <p className='fillerTab'>Issues Addressed</p>

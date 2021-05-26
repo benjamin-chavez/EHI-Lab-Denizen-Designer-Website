@@ -12,7 +12,7 @@ class ExecutiveSummary extends Component {
         <Element name='executiveSummary'>
           <h2>Executive Summary</h2>
         </Element>
-        <p>Dr. Harrington will write this..</p>
+        {/* <p>Dr. Harrington will write this..</p> */}
       </div>
     );
   }

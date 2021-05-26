@@ -249,7 +249,7 @@ class Influence extends Component {
           and up to each person.” - Taylor H., New Orleans{' '}
         </p>
         <h3>Understanding Power - The Problem </h3>
-        <p className='rr'>**Introduction to why this is important</p>
+        <p className=''>Introduction to why this is important</p>
         <p>
           Power was mentioned 55 times (6 interviewees mentioned power
           dynamics/power structures). Nearly 80% of Designers surveyed (81)
