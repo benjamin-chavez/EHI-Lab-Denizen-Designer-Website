@@ -42,7 +42,6 @@ const initialState = {
     'Responsibility',
     'Mutual Learning',
     'Change Making',
-    'Rewards/Upsides/Positives (Need new name)',
     'Community Empowerment',
     'Future Implications',
     'Adaptation',

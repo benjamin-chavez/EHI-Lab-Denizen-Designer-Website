@@ -31,7 +31,8 @@ class LandingPage extends Component {
             </Col>
           </Row>
           <Row className='justify-content-sm-center mt-5'>
-            <Col lg={4} md={6} sm={12} xs={12} className='mb-4'>
+            {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
+            {/* <Col lg={4} md={6} sm={12} xs={12} className='mb-4'>
               <Link to={`/historyofparticipatorydesign/timeline`}>
                 <Button
                   className='landing-btn'
@@ -45,7 +46,7 @@ class LandingPage extends Component {
                   </span>
                 </Button>
               </Link>
-            </Col>
+            </Col> */}
             <Col lg={4} md={6} sm={12} xs={12}>
               <Link to={`/denizendesigner/home`}>
                 <Button

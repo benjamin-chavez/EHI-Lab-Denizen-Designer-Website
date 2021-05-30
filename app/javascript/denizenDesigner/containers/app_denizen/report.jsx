@@ -65,7 +65,7 @@ class Report extends Component {
   render() {
     return (
       <Row className='mb-3'>
-        <Col sm={2} className=''>
+        <Col sm={2} className='report-col-2'>
           {/* <Col sm={3} className='mr-2'> */}
           <ul className='test123'>
             <li className='reportDownloadButton'>
@@ -152,7 +152,7 @@ class Report extends Component {
                 <Image src={ArrowDown} className='pl-2' />
               </Link>
             </li>
-            <li className='report-li'>
+            <li className='report-li '>
               <Link
                 activeClass='active'
                 to='conclusions'
@@ -162,14 +162,14 @@ class Report extends Component {
                 containerId='containerElement'
               >
                 Conclusions & Key Recommendations
-                <Image src={ArrowDown} className='pl-2' />
+                <Image src={ArrowDown} className='pl-2 ' />
               </Link>
             </li>
             {/* ****************************************************** */}
           </ul>
         </Col>
 
-        <Col sm={9} className='tr**********'>
+        <Col sm={9} className='report-col-9'>
           {/* <Container className='report-container'> */}
           <Element
             name='test7'

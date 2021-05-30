@@ -61,15 +61,13 @@ class NavPrimary extends Component {
             </Navbar.Brand>
             <Nav className='mr-auto rr'></Nav>
             <div className='pr-0'>
-              <NavLink
-                // as={Link}
-                // href='/historyofparticipatorydesign'
+              {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
+              {/* <NavLink
                 to='/historyofparticipatorydesign'
                 className='nav-primary-text mobile-nav'
               >
                 History of Participatory Design
-              </NavLink>
-              {/* <Nav className='mr-auto'></Nav> */}
+              </NavLink> */}
               <NavLink
                 // as={Link}
                 // eventKey={2}
@@ -87,14 +85,13 @@ class NavPrimary extends Component {
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='mr-auto'></Nav>
               <Nav>
-                <NavLink
-                  // as={Link}
-                  // href='/historyofparticipatorydesign'
+                {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
+                {/* <NavLink
                   to='/historyofparticipatorydesign'
                   className='nav-primary-text desktop-nav'
                 >
                   History of Participatory Design
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   // as={Link}
                   // eventKey={2}

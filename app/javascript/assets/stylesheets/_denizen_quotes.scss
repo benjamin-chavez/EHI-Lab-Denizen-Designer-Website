@@ -7,7 +7,7 @@
 .quote-filter-menu > li {
   text-decoration: none;
   margin: 10px 0px 10px 0px;
-  padding-right: 35px;
+  // padding-right: 35px;
   text-align: center;
   display: inline-block;
   font-family: Roboto;
@@ -20,11 +20,9 @@
   cursor: pointer;
 }
 
-.quote-filter-menu > li a {
+// .quote-filter-menu > li a {
+.quote-filter-menu a {
   text-decoration: none;
-  // margin: 10px;
-  // text-align: center;
-  // display: inline-block;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -33,7 +31,10 @@
   align-items: center;
   color: #6b7390;
   cursor: pointer;
-  
+  // background-color: red;
+
+  padding: 6px 18px;
+  border-radius: 20px;
 }
 
 .quote-filter-item a.active {
