@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 
 import Scroll from 'react-scroll';
 import SummaryGraphic from '../../../../../assets/images/reportAssets/themes.png';
@@ -110,12 +110,23 @@ class Influence extends Component {
           shift power imbalances by openly sharing knowledge and empowering
           communities to continuously design long after the designer has left.{' '}
         </p>
-        <p>
-          “I can’t tell you what you need. I can’t tell a community, I can have
-          an idea on what it is, but when you have the voice, and you go through
-          those steps of the framework, it becomes bigger than you.” - Anjanette
-          D.H., Detroit{' '}
-        </p>
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “I can’t tell you what you need. I can’t tell a community, I can
+                have an idea on what it is, but when you have the voice, and you
+                go through those steps of the framework, it becomes bigger than
+                you.”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                Anjanette D.H., Detroit{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <p>
           It is through this active effort to make space for community members
           in design decisions, that will allow Denizen Designers to successfully
@@ -194,10 +205,22 @@ class Influence extends Component {
           beyond the limitations of our current moment and escape into the
           potential of the next moment.”{' '}
         </p>
-        <p>
-          “...social design is a method that produces methods to solve problems”
-          - Kenneth B., Chicago{' '}
-        </p>
+
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “...social design is a method that produces methods to solve
+                problems”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                Kenneth B., Chicago{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <p>
           The interviews produced a wealth of information as discussed above and
           overall, really emphasized the importance of designers being mindfully
@@ -242,12 +265,24 @@ class Influence extends Component {
           were broken into 6 major themes.{' '}
         </p>
         <h3>Everyone Designs</h3>
-        <p>
-          “The definition of design is so broad that people who might be
-          designing might not even know they’re being designers, but calling
-          yourself an artist versus calling yourself a designer is so subjective
-          and up to each person.” - Taylor H., New Orleans{' '}
-        </p>
+
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “The definition of design is so broad that people who might be
+                designing might not even know they’re being designers, but
+                calling yourself an artist versus calling yourself a designer is
+                so subjective and up to each person.”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                Taylor H., New Orleans{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <h3>Understanding Power - The Problem </h3>
         <p className=''>Introduction to why this is important</p>
         <p>
@@ -274,11 +309,23 @@ class Influence extends Component {
           involve communities at every phase and find a balance between being a
           facilitator and part of a collective.
         </p>
-        <p>
-          “Who gets to be a professional about it? Who gets to have access to
-          that kind of decision-making power, and it’s not the people who
-          should.” - Ezra K., Oakland{' '}
-        </p>
+
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “Who gets to be a professional about it? Who gets to have access
+                to that kind of decision-making power, and it’s not the people
+                who should.”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                Ezra K., Oakland{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <h3>Space Making - The Solution</h3>
         <p>
           Community was mentioned 223 times in the interviews which stressed
@@ -304,11 +351,23 @@ class Influence extends Component {
           power in their own skills and ideas and to use them as a resource to
           implement change.{' '}
         </p>
-        <p>
-          “Design thinking is all about realizing you come with a set of
-          assumptions, and you challenge those assumptions, and you actually let
-          the other person tell you what’s happening.” -Jenny L, Los Angeles{' '}
-        </p>
+
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “Design thinking is all about realizing you come with a set of
+                assumptions, and you challenge those assumptions, and you
+                actually let the other person tell you what’s happening.”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                Jenny L, Los Angeles{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <h3>Personal Investment - The Process </h3>
         <p>
           Effective community work cannot happen without first having a
@@ -337,12 +396,24 @@ class Influence extends Component {
           impact of art and design can be used to spread messages and increase
           the visibility of voices that aren’t being heard.
         </p>
-        <p>
-          “...being able to support their voice, their space, and how you can
-          encourage them to self-manage, and you can encourage them to be active
-          collaborators in research projects that really even excite them...” -
-          Anushka J., Baltimore{' '}
-        </p>
+
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “...being able to support their voice, their space, and how you
+                can encourage them to self-manage, and you can encourage them to
+                be active collaborators in research projects that really even
+                excite them...”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                Anushka J., Baltimore{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <h3>Increasing access/Knowledge sharing – The Process </h3>
         <p>
           Access is mentioned 30 times, and designers repeatedly emphasized a
@@ -382,11 +453,23 @@ class Influence extends Component {
           designer can learn more about their needs while sharing their own
           processes for implementing design to problem-solve.{' '}
         </p>
-        <p>
-          “Our job is to be translators and to communicate and then translate
-          what we learn. We have to build relationships first and create spaces
-          for that relationship, building that up.” - N’Deye D., Baltimore{' '}
-        </p>
+
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “Our job is to be translators and to communicate and then
+                translate what we learn. We have to build relationships first
+                and create spaces for that relationship, building that up.”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                N’Deye D., Baltimore{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <h3>Change Making - The Outcome </h3>
         <p>
           Design is more than money. Design work takes money and funding, but it
@@ -419,12 +502,24 @@ class Influence extends Component {
           go a long way towards ensuring solutions are comprehensive and
           designed to make systemic changes.{' '}
         </p>
-        <p>
-          “I think that’s what design offers us over and over and over again,
-          the opportunities to see beyond the limitations of our current moment
-          and escape into the potential of the next moment.” - Bryan L. Jr., New
-          Orleans{' '}
-        </p>
+
+        <Card className='report-quote mb-3 '>
+          <Card.Body>
+            <blockquote className='blockquote mb-0'>
+              <p className='quote-text'>
+                {' '}
+                “I think that’s what design offers us over and over and over
+                again, the opportunities to see beyond the limitations of our
+                current moment and escape into the potential of the next
+                moment.”{' '}
+              </p>
+              <footer className='blockquote-footer quote-author'>
+                Bryan L. Jr., New Orleans{' '}
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
+
         <h3>Survey Responses</h3>
         <p>
           The survey questions and responses were instrumental in creating the

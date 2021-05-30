@@ -283,3 +283,44 @@
   right: 10px;
   background: lightgreen
 }
+
+.report-quote{
+  background: rgba(241, 243, 248, 0.35);
+  border: none !important;
+}
+
+.report-quote .quote-text{
+  // color: red;
+  font-family: Montserrat !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  font-size: 16px !important;
+  line-height: 214.7% !important;
+  /* or 34px */
+
+  letter-spacing: 0.01em !important;
+
+  /* infographic primary */
+
+  color: #08439A !important;
+  margin: 0px 10px;
+}
+
+.report-quote .quote-author{
+  font-family: Montserrat !important;
+  font-style: normal !important;
+  font-weight: normal;
+  font-size: 12px !important;
+  line-height: 214.7% !important;
+  /* or 34px */
+
+  letter-spacing: 0.01em !important;
+
+  /* infographic primary */
+
+  color: #08439A !important;
+  margin: 0px 10px;
+}
+
+
+// .” -
