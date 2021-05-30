@@ -88,12 +88,11 @@ class DesignerDatabase extends Component {
                 {uniqueCities.map((participant) => {
                   return (
                     <div>
-                      <Dropdown.Item>
-                        <NavLink
-                          to={`/denizendesigner/designerdatabase/${participant}`}
-                        >
-                          {participant}
-                        </NavLink>
+                      <Dropdown.Item
+                        as={Link}
+                        to={`/denizendesigner/designerdatabase/${participant}`}
+                      >
+                        {participant}
                       </Dropdown.Item>
                     </div>
                   );
