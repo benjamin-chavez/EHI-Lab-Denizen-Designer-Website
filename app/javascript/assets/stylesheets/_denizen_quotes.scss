@@ -215,6 +215,12 @@
   margin-bottom: 30px;
 }
 
+.pagination-nav {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+
 
 
 @media (max-width: 576px) {
