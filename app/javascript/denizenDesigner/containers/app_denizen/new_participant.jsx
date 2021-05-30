@@ -44,7 +44,8 @@ export class NewParticipant extends Component {
                 name='first_name'
                 type='text'
                 component={this.renderField}
-              />
+              />{' '}
+              l
               <Field
                 label='Last Name'
                 name='last_name'
