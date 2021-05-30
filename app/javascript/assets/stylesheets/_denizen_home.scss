@@ -1,13 +1,27 @@
+.homeScreenWrapper {
+
+}
+
 .homeScreen {
   background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1615901813/Denizen%20Designer%20%28Temp%29/home-backgroundv2_chgolp.png');
   background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 42px;
+  background-position: center;      /* center the image */
+  background-size: cover;
+  overflow-x: visible;
   overflow: visible;
+  background-size: auto 100%;
+  min-height: 786px;
+  margin-top: -16px;
+  // background-repeat: no-repeat;
+  background-position: left top;
+  // background-color: red;
+  // height: 100vh;
+ 
   // should expand with the div and not clip
 }
 
 .homeScreen .title {
+  margin-top: 42px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
