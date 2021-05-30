@@ -84,7 +84,7 @@ class Report extends Component {
                 // style={{ display: 'inline-block', margin: '20px' }}
               >
                 Executive Summary
-                <Image src={ArrowDown} className='pl-2' />
+                {/* <Image src={ArrowDown} className='pl-2' /> */}
               </Link>
             </li>
             <li className='report-li'>
@@ -97,7 +97,7 @@ class Report extends Component {
                 containerId='containerElement'
               >
                 Overview
-                <Image src={ArrowDown} className='pl-2' />
+                {/* <Image src={ArrowDown} className='pl-2' /> */}
               </Link>
             </li>
             <li className='report-li'>
@@ -110,7 +110,7 @@ class Report extends Component {
                 containerId='containerElement'
               >
                 Introduction
-                <Image src={ArrowDown} className='pl-2' />
+                {/* <Image src={ArrowDown} className='pl-2' /> */}
               </Link>
             </li>
             <li className='report-li'>
@@ -123,7 +123,7 @@ class Report extends Component {
                 containerId='containerElement'
               >
                 Research Process
-                <Image src={ArrowDown} className='pl-2' />
+                {/* <Image src={ArrowDown} className='pl-2' /> */}
               </Link>
             </li>
             <li className='report-li'>
@@ -136,7 +136,7 @@ class Report extends Component {
                 containerId='containerElement'
               >
                 Demographics
-                <Image src={ArrowDown} className='pl-2' />
+                {/* <Image src={ArrowDown} className='pl-2' /> */}
               </Link>
             </li>
             <li className='report-li'>
@@ -149,7 +149,7 @@ class Report extends Component {
                 containerId='containerElement'
               >
                 Summary & Key Findings
-                <Image src={ArrowDown} className='pl-2' />
+                {/* <Image src={ArrowDown} className='pl-2' /> */}
               </Link>
             </li>
             <li className='report-li '>

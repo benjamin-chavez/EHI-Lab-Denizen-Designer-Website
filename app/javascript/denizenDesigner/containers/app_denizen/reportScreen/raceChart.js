@@ -9,19 +9,20 @@ class RaceChart extends Component {
     this.state = {
       chartData: {
         labels: [
-          'White/Caucasion',
+          'Black or African American',
           'Asian',
-          'Latina/Latina/Latinx/Hispanic',
-          'Bi-/Multi-racial',
-          'Black/African American',
-          'Prefer not to say',
-          'Native/Hawaiian',
-          'Native American/FirstNations/First People',
+          'White',
+          'Hispanic or Latino',
+          'Middle Eastern or Arab',
+          'American Indian or Alaskan Native',
+          'Carribean or West Indian',
+          'Pacific Islander',
+          'Other',
         ],
         datasets: [
           {
             label: 'Population',
-            data: [71, 36, 8, 5, 3, 3, 1, 1],
+            data: [39, 29, 38, 9, 3, 2, 2, 0, 7],
             backgroundColor: [
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',
@@ -31,6 +32,7 @@ class RaceChart extends Component {
               'rgba(255, 159, 64, 0.6)',
               'rgba(252, 2, 40, 0.8)',
               'rgba(21, 0, 255, 0.9)',
+              'rgba(50, 0, 150, 0.9)',
             ],
           },
         ],

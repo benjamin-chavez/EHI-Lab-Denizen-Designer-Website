@@ -15,10 +15,13 @@ import {
 
 import RaceChart from './raceChart';
 import GenderChart from './genderChart';
+import EnviSectChart from './enviSectChart';
 import Scroll from 'react-scroll';
 
 import educationImg from '../../../../../assets/images/reportAssets/charts/education.svg';
 import geographicImg from '../../../../../assets/images/reportAssets/charts/GEOGRAPHICSPREAD.svg';
+import issuesImg from '../../../../../assets/images/reportAssets/charts/ISSUESADDRESSED.svg';
+import rolesImg from '../../../../../assets/images/reportAssets/charts/Roles&DesignBackground.svg';
 
 var Element = Scroll.Element;
 
@@ -30,11 +33,11 @@ class Demographics extends Component {
           <h2>Demographics of the Denizen Designers</h2>
         </Element>
         <Tab.Container id='' defaultActiveKey='race'>
-          <Tab.Content>
+          <Tab.Content className='reportChartGraphModule report-img'>
             <Tab.Pane eventKey='race'>
               <RaceChart legendPosition='bottom' />
             </Tab.Pane>
-            <Tab.Pane eventKey='second'>
+            <Tab.Pane eventKey='gender'>
               <GenderChart legendPosition='bottom' />
             </Tab.Pane>
             <Tab.Pane eventKey='education'>
@@ -49,7 +52,7 @@ class Demographics extends Component {
               </div>
             </Tab.Pane>
             <Tab.Pane eventKey='envisec'>
-              <p className='fillerTab'>Environment And Sectors Data</p>
+              <EnviSectChart legendPosition='bottom' />
             </Tab.Pane>
             <Tab.Pane eventKey='geography'>
               <div className='report-img'>
@@ -62,10 +65,27 @@ class Demographics extends Component {
               </div>
             </Tab.Pane>
             <Tab.Pane eventKey='issues'>
-              <p className='fillerTab'>Issues Addressed</p>
+              <div className='report-img'>
+                <Image
+                  // src={NavLogo}
+                  src={issuesImg}
+                  className='fillerTab'
+                  alt='Education Graphic'
+                  fluid
+                />
+              </div>
             </Tab.Pane>
             <Tab.Pane eventKey='roles'>
-              <p className='fillerTab'>Roles And Background In Design</p>
+              {/* <p className='fillerTab'>Roles And Background In Design</p> */}
+              <div className='report-img'>
+                <Image
+                  // src={NavLogo}
+                  src={rolesImg}
+                  className='fillerTab'
+                  alt='Education Graphic'
+                  fluid
+                />
+              </div>
             </Tab.Pane>
             <Tab.Pane eventKey='designEmp'>
               <p className='fillerTab'>Design Employment</p>
@@ -78,7 +98,7 @@ class Demographics extends Component {
                   <Nav.Link eventKey='race'>Race</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='report-chart-category mb-2'>
-                  <Nav.Link eventKey='second'>Gender</Nav.Link>
+                  <Nav.Link eventKey='gender'>Gender</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='report-chart-category mb-2'>
                   <Nav.Link eventKey='education'>Education</Nav.Link>
@@ -144,7 +164,7 @@ class Demographics extends Component {
                 </Card.Body>
               </Card>
             </Tab.Pane>
-            <Tab.Pane eventKey='second'>
+            <Tab.Pane eventKey='gender'>
               <Card className='my-4 report-chart-card'>
                 <Card.Body>
                   <Row className='report-chart-text'>
