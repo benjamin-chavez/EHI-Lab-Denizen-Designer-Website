@@ -85,14 +85,18 @@
 
 
 .report-container h2 {
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
+  font-weight: bold;
+  font-size: 18px;
   line-height: 141.69%;
+  /* identical to box height, or 26px */
+  
   letter-spacing: 0.01em;
-  color: #2a2e33;
-  margin-bottom: 11px;
+  
+  /* Primary */
+  
+  color: #475CA7;
 }
 
 .report-container h3 {
@@ -101,8 +105,17 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #2a2e33;
-  margin-bottom: 10px;
+  /* identical to box height */
+  
+  
+  /* Primary */
+  
+  color: #475CA7;
+  margin-bottom: 15px;
+}
+
+.trElement{
+  padding-bottom: 44px;
 }
 
 .report-container p {

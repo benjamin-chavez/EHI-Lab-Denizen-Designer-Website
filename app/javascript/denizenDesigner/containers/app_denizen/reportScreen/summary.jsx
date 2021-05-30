@@ -12,8 +12,8 @@ var Element = Scroll.Element;
 class Influence extends Component {
   render() {
     return (
-      <div className=''>
-        <Element name='summary'>
+      <div className='trElement'>
+        <Element name='summary' className='pt-3'>
           <h2>Summary and Key Findings </h2>
         </Element>
         <p>

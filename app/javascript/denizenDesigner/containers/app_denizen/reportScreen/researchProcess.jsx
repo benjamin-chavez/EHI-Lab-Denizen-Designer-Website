@@ -9,8 +9,8 @@ var Element = Scroll.Element;
 class ResearchProcess extends Component {
   render() {
     return (
-      <div className=''>
-        <Element name='researchProcess'>
+      <div className='trElement'>
+        <Element name='researchProcess' className='pt-3'>
           <h2>Research Process</h2>
         </Element>
         <div className='report-img'>

@@ -25,8 +25,8 @@ var Element = Scroll.Element;
 class Demographics extends Component {
   render() {
     return (
-      <div className=''>
-        <Element name='demographics'>
+      <div className='trElement'>
+        <Element name='demographics' className='pt-3'>
           <h2>Demographics of the Denizen Designers</h2>
         </Element>
         <p>

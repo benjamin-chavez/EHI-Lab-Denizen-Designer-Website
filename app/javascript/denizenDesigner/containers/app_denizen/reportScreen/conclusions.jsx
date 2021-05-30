@@ -8,8 +8,8 @@ var Element = Scroll.Element;
 class Conclusions extends Component {
   render() {
     return (
-      <div className=''>
-        <Element name='conclusions'>
+      <div className='trElement'>
+        <Element name='conclusions' className='pt-3'>
           <h2>Conclusions and Key Recommendations </h2>
         </Element>
         <p>

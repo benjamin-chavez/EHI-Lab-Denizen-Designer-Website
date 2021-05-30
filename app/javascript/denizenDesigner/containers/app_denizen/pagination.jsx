@@ -2,12 +2,19 @@ import React from 'react';
 
 const Pagination = ({ quotesPerPage, totalQuotes, paginate }) => {
   const pageNumbers = [];
+  let active = 1;
 
   for (let i = 1; i <= Math.ceil(totalQuotes / quotesPerPage); i++) {
     pageNumbers.push(i);
   }
 
-  const handleClick = (number) => {
+  const setActive = () => {
+    active = 2;
+  };
+
+  const handleClick = (number, e) => {
+    e.target.parentElement.className = 'page-item active';
+    console.log(e.target.parentElement);
     paginate(number);
     scrollToTop();
   };
@@ -21,7 +28,7 @@ const Pagination = ({ quotesPerPage, totalQuotes, paginate }) => {
       <ul className='pagination'>
         {pageNumbers.map((number) => (
           <li key={number} className='page-item'>
-            <a onClick={() => handleClick(number)} className='page-link'>
+            <a onClick={(e) => handleClick(number, e)} className='page-link'>
               {' '}
               {number}
             </a>

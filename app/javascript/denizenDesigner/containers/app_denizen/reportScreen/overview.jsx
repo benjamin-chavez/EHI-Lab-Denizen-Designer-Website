@@ -9,8 +9,8 @@ var Element = Scroll.Element;
 class Overview extends Component {
   render() {
     return (
-      <div className=''>
-        <Element name='overview'>
+      <div className='trElement'>
+        <Element name='overview' className='pt-3'>
           <h2>Overview: The Denizen Designer Project </h2>
         </Element>
         <p>
