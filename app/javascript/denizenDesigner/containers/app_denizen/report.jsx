@@ -4,7 +4,7 @@ import {
   Row,
   Col,
   Image,
-  // Tab,
+  Tab,
   TabContainer,
   TabContent,
   TabPane,
