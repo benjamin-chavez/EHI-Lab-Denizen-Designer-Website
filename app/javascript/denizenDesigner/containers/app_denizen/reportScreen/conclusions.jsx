@@ -100,10 +100,10 @@ class Conclusions extends Component {
           Participatory Design Conference: Research Papers- Volume 1 (pp. 1-10).
           ACM.{' '}
         </p>
-        <p>
+        <p className='wordwrapBiBi'>
           Sanders, E.-N., & Stappers, P. (2008). Co-creation and the new
-          landscapes of design. CoDesign, 4(1), 5–18. https://doi-
-          org.ezproxy.depaul.edu/10.1080/15710880701875068{' '}
+          landscapes of design. CoDesign, 4(1), 5–18.
+          https://doi-org.ezproxy.depaul.edu/10.1080/15710880701875068{' '}
         </p>
         <p>
           Smith, S. E., Willms, D. G., & Johnson, N. A. (1997). Nurtured by
