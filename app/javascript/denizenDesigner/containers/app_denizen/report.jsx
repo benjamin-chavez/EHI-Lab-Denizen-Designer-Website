@@ -162,7 +162,7 @@ class Report extends Component {
                 containerId='containerElement'
               >
                 Conclusions & Key Recommendations
-                <Image src={ArrowDown} className='pl-2 ' />
+                {/* <Image src={ArrowDown} className='pl-2 ' /> */}
               </Link>
             </li>
             {/* ****************************************************** */}
