@@ -101,7 +101,7 @@ class DesignerDatabase extends Component {
               </Dropdown.Menu>
             </Dropdown>
           </Col>
-          <Col xs={7} className='cities-banner-graphic'>
+          <Col className='cities-banner-graphic'>
             <div className='cities-banner-graphic-img'>
               {' '}
               <Image src={CitiesBannerGraphic} alt='Cities Graphic' fluid />
