@@ -101,7 +101,7 @@ class Resources extends Component {
           </Col>
         </Row>
         <Container fluid>
-          <Row className=''>
+          <Row>
             <Col
               xs={12}
               sm={12}
@@ -117,7 +117,6 @@ class Resources extends Component {
                     </Col>
                     <Col xs={10} className='card-resource-text '>
                       <a
-                        className=''
                         target='_blank'
                         href='https://floxstudio.com/resources'
                       >
@@ -138,12 +137,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
                       <a
-                        className=''
                         target='_blank'
                         href='https://www.aiga.org/designforgood-get-involved '
                       >
@@ -164,15 +162,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
-                      <a
-                        className=''
-                        target='_blank'
-                        href='https://www.communitydesign.org'
-                      >
+                      <a target='_blank' href='https://www.communitydesign.org'>
                         Association For Community Design
                       </a>
                     </Col>
@@ -191,12 +185,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
                       <a
-                        className=''
                         target='_blank'
                         href='https://www.publicinterestdesign.com/   '
                       >
@@ -217,12 +210,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
                       <a
-                        className=''
                         target='_blank'
                         href='https://www.creativereactionlab.com   '
                       >
@@ -243,15 +235,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text'>
-                      <a
-                        className=''
-                        target='_blank'
-                        href='https://colloqate.org/'
-                      >
+                      <a target='_blank' href='https://colloqate.org/'>
                         Colloqate
                       </a>
                     </Col>
@@ -269,15 +257,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
-                      <a
-                        className=''
-                        target='_blank'
-                        href='https://www.arts.gov/'
-                      >
+                      <a target='_blank' href='https://www.arts.gov/'>
                         National Endowment For The Arts
                       </a>
                     </Col>
@@ -295,12 +279,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
                       <a
-                        className=''
                         target='_blank'
                         href='https://lbodre.ideo.com/about.html'
                       >
@@ -321,15 +304,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
-                      <a
-                        className=''
-                        target='_blank'
-                        href='https://www.kounkuey.org/ '
-                      >
+                      <a target='_blank' href='https://www.kounkuey.org/ '>
                         Kounkuey Design Initiative
                       </a>
                     </Col>
@@ -352,15 +331,11 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
-                      <a
-                        className=''
-                        target='_blank'
-                        href='https://www.blackspace.org/'
-                      >
+                      <a target='_blank' href='https://www.blackspace.org/'>
                         Blackspace
                       </a>
                     </Col>
