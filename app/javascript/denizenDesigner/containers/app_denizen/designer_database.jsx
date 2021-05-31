@@ -17,11 +17,23 @@ import {
 } from 'react-bootstrap';
 
 import CitiesBannerGraphic from '../../../../assets/images/citiesBannerGraphic.svg';
+
+import CitiesBannerGraphicSM from '../../../../assets/images/citiesBannerGraphicSM.svg';
 import DocumentIcon from '../../../../assets/images/documentIcon.svg';
 
 import { fetchParticipants } from '../../actions';
 
 class DesignerDatabase extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { matches: window.matchMedia('(min-width: 768px)').matches };
+  }
+
+  componentDidMount() {
+    const handler = (e) => this.setState({ matches: e.matches });
+    window.matchMedia('(min-width: 768px)').addListener(handler);
+  }
+
   componentwillMount() {
     this.props.fetchParticipants();
   }
@@ -102,9 +114,23 @@ class DesignerDatabase extends Component {
             </Dropdown>
           </Col>
           <Col className='cities-banner-graphic'>
-            <div className='cities-banner-graphic-img'>
-              {' '}
-              <Image src={CitiesBannerGraphic} alt='Cities Graphic' fluid />
+            <div>
+              {this.state.matches && (
+                <div className='cities-banner-graphic-img'>
+                  {' '}
+                  <Image src={CitiesBannerGraphic} alt='Cities Graphic' fluid />
+                </div>
+              )}
+              {!this.state.matches && (
+                <div className='cities-banner-graphic-img'>
+                  {' '}
+                  <Image
+                    src={CitiesBannerGraphicSM}
+                    alt='Cities Graphic'
+                    fluid
+                  />
+                </div>
+              )}
             </div>
           </Col>
         </Row>
