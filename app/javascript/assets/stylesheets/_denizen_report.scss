@@ -62,8 +62,10 @@
   text-decoration-line: none;
 }
 
-.reportDownloadButton a {
- 
+.reportDownloadButton .btn-primary {
+//  background-color: red !important;
+ background: rgba(0,0,0,0);
+ border:none;
 }
 
 

@@ -11,6 +11,7 @@ import {
   Nav,
   Tabs,
   Card,
+  Button,
 } from 'react-bootstrap';
 
 // import * as Scroll from 'react-scroll';
@@ -69,9 +70,11 @@ class Report extends Component {
           {/* <Col sm={3} className='mr-2'> */}
           <ul className='test123'>
             <li className='reportDownloadButton'>
-              <Link className='' target='_blank' download>
-                Download
-              </Link>
+              <Button className='pl-0 reportDownloadBtn'>
+                <Link className='' target='_blank' download>
+                  Download
+                </Link>
+              </Button>
             </li>
             <li className='selected report-li'>
               <Link
