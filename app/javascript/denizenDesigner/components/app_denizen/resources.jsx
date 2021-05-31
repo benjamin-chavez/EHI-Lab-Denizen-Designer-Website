@@ -112,7 +112,7 @@ class Resources extends Component {
               <Card className='resource-ext-card'>
                 <Card.Body>
                   <Row className='resource-card-row'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='resource-card-col2'>
                       <Image src={ResourcesThumbnail}></Image>
                     </Col>
                     <Col xs={10} className='card-resource-text '>
