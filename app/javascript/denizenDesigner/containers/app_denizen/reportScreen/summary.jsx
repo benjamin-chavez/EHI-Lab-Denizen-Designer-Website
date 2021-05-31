@@ -28,37 +28,39 @@ class Influence extends Component {
         </p>
         <p>Insights Identified</p>
         <ol>
-          <li>Everyone designs </li>
-          <li>Understanding power</li>
-          <ul>
-            <li>
-              Current design practice and institutions can create significant
-              barriers{' '}
-            </li>
-            <li>Academic’s responsibilities</li>
-          </ul>
-          <li>Space making</li>
-          <ul>
-            <li>Community exposure is essential for designers</li>
-            <li>Being humble and putting community needs first</li>
-            <li>Empowering the community</li>
-          </ul>
-          <li>Personal investment</li>
-          <ul>
-            <li>Building trust </li>
-            <li>Creating emotional/personal connections to the work</li>
-          </ul>
-          <li>Increasing access/Knowledge sharing</li>
-          <ul>
-            <li>Democratizing access to design </li>
-            <li>Mutual learning</li>
-          </ul>
-          <li>Change-making</li>
-          <ul>
-            <li>Design is more than profit</li>
-            <li>Design as a catalyst for change</li>
-            <li>Creating lasting change</li>
-          </ul>
+          <p>
+            <li>Everyone designs </li>
+            <li>Understanding power</li>
+            <ul>
+              <li>
+                Current design practice and institutions can create significant
+                barriers{' '}
+              </li>
+              <li>Academic’s responsibilities</li>
+            </ul>
+            <li>Space making</li>
+            <ul>
+              <li>Community exposure is essential for designers</li>
+              <li>Being humble and putting community needs first</li>
+              <li>Empowering the community</li>
+            </ul>
+            <li>Personal investment</li>
+            <ul>
+              <li>Building trust </li>
+              <li>Creating emotional/personal connections to the work</li>
+            </ul>
+            <li>Increasing access/Knowledge sharing</li>
+            <ul>
+              <li>Democratizing access to design </li>
+              <li>Mutual learning</li>
+            </ul>
+            <li>Change-making</li>
+            <ul>
+              <li>Design is more than profit</li>
+              <li>Design as a catalyst for change</li>
+              <li>Creating lasting change</li>
+            </ul>
+          </p>
         </ol>
 
         <div className='report-img'>
@@ -237,20 +239,22 @@ class Influence extends Component {
           principles were produced:{' '}
         </p>
         <ol>
-          <li>Establish trust and be honest </li>
-          <li>Listen to the community and value their lived experiences.</li>
-          <li>Be patient and empathic with community members </li>
-          <li>
-            Be accountable to the community and clear about project
-            goals/outcomes{' '}
-          </li>
-          <li>
-            Be willing to adapt/be flexible and challenge any assumptions you
-            might have had coming in{' '}
-          </li>
-          <li>Design with and not for communities </li>
-          <li>Be inclusive in all aspects of the design process </li>
-          <li>Design is not just a career, but also a lens </li>
+          <p>
+            <li>Establish trust and be honest </li>
+            <li>Listen to the community and value their lived experiences.</li>
+            <li>Be patient and empathic with community members </li>
+            <li>
+              Be accountable to the community and clear about project
+              goals/outcomes{' '}
+            </li>
+            <li>
+              Be willing to adapt/be flexible and challenge any assumptions you
+              might have had coming in{' '}
+            </li>
+            <li>Design with and not for communities </li>
+            <li>Be inclusive in all aspects of the design process </li>
+            <li>Design is not just a career, but also a lens </li>
+          </p>
         </ol>
         <p>
           These principles closely echo the themes and sentiments that the

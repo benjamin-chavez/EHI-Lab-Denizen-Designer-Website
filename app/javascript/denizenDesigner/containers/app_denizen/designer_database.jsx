@@ -77,7 +77,7 @@ class DesignerDatabase extends Component {
               <Dropdown.Toggle
                 variant='outline-light'
                 id='dropdown-basic'
-                className='dropdownButon'
+                // className='dropdownButon'
               >
                 {city == 'designerdatabase' || city == 'All Cities'
                   ? 'Cities'
@@ -89,6 +89,7 @@ class DesignerDatabase extends Component {
                   return (
                     <div>
                       <Dropdown.Item
+                        className='cityDropDownItem'
                         as={Link}
                         to={`/denizendesigner/designerdatabase/${participant}`}
                       >
@@ -100,7 +101,7 @@ class DesignerDatabase extends Component {
               </Dropdown.Menu>
             </Dropdown>
           </Col>
-          <Col xs={8} className='cities-banner-graphic'>
+          <Col xs={7} className='cities-banner-graphic'>
             <div className='cities-banner-graphic-img'>
               {' '}
               <Image src={CitiesBannerGraphic} alt='Cities Graphic' fluid />

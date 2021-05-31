@@ -471,8 +471,13 @@ body,
 
 .designer-city-item > a.active {
   background-color: #6b7390;
-  color: white;
+  color: white; 
 }
+
+.cityDropDownItem:active{
+  background-color: #475ca7 ;
+}
+
 
 @import '../../javascript/assets/stylesheets/nav_secondary';
 @import '../../javascript/assets/stylesheets/nav_primary';
