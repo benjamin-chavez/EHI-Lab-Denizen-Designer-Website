@@ -195,6 +195,7 @@
   margin-left: 10px;
   // height: 42px;
   /* Gray 4 */
+  
 
   // border: 1px solid #BDBDBD;
   // box-sizing: border-box;
@@ -336,6 +337,13 @@
 
 
 
+@media (max-width: 768px) {
+  .report-chart-category{
+    font-size: 14px !important;
+  }
+}
+ 
+// }
 // @media (max-width: 768px) {
 //   .report-container {
 //     padding: 25px !important;

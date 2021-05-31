@@ -171,7 +171,7 @@ class Report extends Component {
             {/* ****************************************************** */}
           </ul>
         </Col>
-
+        {/* <div className='mr-4'></div> */}
         <Col sm={9} className='report-col-9'>
           {/* <Container className='report-container'> */}
           <Element
