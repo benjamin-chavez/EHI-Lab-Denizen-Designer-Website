@@ -12,12 +12,6 @@ import {
   Button,
 } from 'react-bootstrap';
 import Pagination from './pagination';
-// delete: yarn add masonry-layout
-// react-masonry-css
-import Masonry from 'react-masonry-css';
-// yarn add react-masonry-layout
-import MasonryLayout from 'react-masonry-layout';
-// import QuotesModal from './QuotesModal';
 import { fetchQuotes } from '../../actions';
 
 import { fetchParticipants1 } from '../../actions';
