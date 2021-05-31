@@ -91,7 +91,7 @@ class EnviSectChart extends Component {
                     position: 'bottom',
                   },
                 },
-                responsive: true
+                responsive: true,
                 scales: {
                   x: {
                     stacked: true,
