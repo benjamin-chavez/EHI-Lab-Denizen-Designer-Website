@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col, Jumbotron, Button, Card, Container } from 'react-bootstrap';
 
-// import ParticipantsIndex from '../../containers/app_denizen/participants_index';
-
 class DenizenHome extends Component {
   render() {
     return (
