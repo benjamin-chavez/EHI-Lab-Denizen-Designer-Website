@@ -128,7 +128,11 @@
   // background-color: green;
 }
 
-
+.resourceCard .card-body {
+  // background-color: red;
+  // padding-left: 48px;
+  // padding-right: 48px;
+}
 
 @media (max-width: 768px) {
   .resourceCard .title {
@@ -143,6 +147,12 @@
 
   .resource-card-col2{
     padding-left: 8px;
+  }
+
+  .resourceCard .card-body {
+    background-color: red;
+    // padding-left: 48px;
+    // padding-right: 48px;
   }
 
 }
