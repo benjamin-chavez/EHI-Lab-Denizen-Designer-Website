@@ -32,7 +32,7 @@ const initialState = {
   hopdTabs: ['Timeline', 'Data Visualization', 'Repository of Papers'],
   // selectedDenizenTab: 'home',
   quoteCategories: [
-    'All Quotes',
+    // 'All Quotes',
     'Community Building',
     'Trust',
     'Power',

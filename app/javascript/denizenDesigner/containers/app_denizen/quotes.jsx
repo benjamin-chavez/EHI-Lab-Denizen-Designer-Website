@@ -39,7 +39,7 @@ class Quotes extends Component {
             exact
             from='/denizendesigner/quotes'
             exact
-            to='/denizendesigner/quotes/All%20Quotes'
+            to='/denizendesigner/quotes/Community%20Building'
           />
         </Switch>
         <div>

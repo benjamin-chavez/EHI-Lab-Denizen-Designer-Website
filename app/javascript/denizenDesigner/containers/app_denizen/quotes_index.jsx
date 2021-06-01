@@ -11,7 +11,7 @@ import {
   Modal,
   Button,
 } from 'react-bootstrap';
-import Pagination from './pagination';
+// import Pagination from './pagination';
 import { fetchQuotes } from '../../actions';
 
 import { fetchParticipants1 } from '../../actions';
@@ -41,16 +41,16 @@ function QuotesIndex({
   const [ownerRole, setOwnerRole] = useState('');
   const [ownerID, setOwnerID] = useState('');
 
-  // PAGINATION STATE
-  const [currentPage, setCurrentPage] = useState(1);
-  const [quotesPerPage] = useState(15);
+  // // PAGINATION STATE
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [quotesPerPage] = useState(15);
 
-  // Get current posts
-  const indexOfLastQuote = currentPage * quotesPerPage;
-  const indexOfFirstQuote = indexOfLastQuote - quotesPerPage;
+  // // Get current posts
+  // const indexOfLastQuote = currentPage * quotesPerPage;
+  // const indexOfFirstQuote = indexOfLastQuote - quotesPerPage;
 
-  // Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  // // Change page
+  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   // const findParticipant = (idToSearch) => {
   //   return quoteData.quotes.filter((participant) => {
@@ -179,11 +179,11 @@ function QuotesIndex({
               )
             )}
         </CardColumns>
-        <Pagination
+        {/* <Pagination
           quotesPerPage={quotesPerPage}
           totalQuotes={134}
           paginate={paginate}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -24,26 +24,9 @@ function participants_indexFC({ fetchParticipants }) {
   }, []);
 
   const participants = useSelector((state) => state.participants);
-  // const dispatch = useDispatch();
 
   return (
     <div>
-      {/* <h1>Test</h1>
-      <div data-aos='fade-up' className='grids'>
-        <div data-aos='fade-up' className='boxes'>
-          1
-        </div>
-        <div data-aos='fade-up' className='boxes'>
-          2
-        </div>
-        <div className='boxes'>3</div>
-        <div data-aos='fade-up' className='boxes'>
-          4
-        </div>
-        <div data-aos='fade-up' className='boxes'>
-          5
-        </div>
-      </div> */}
       <div>
         <Row className=''>
           {participants.map((participant) =>
