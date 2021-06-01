@@ -4,18 +4,19 @@ import { bindActionCreators } from 'redux';
 import { connect, useDispatch, useSelector } from 'react-redux';
 import { Container, Row, Col, Card, Footer } from 'react-bootstrap';
 import ParticipantImage from '../../../../assets/images/participant.jpeg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+import Fade from 'react-reveal/Fade';
 
 import { fetchParticipants } from '../../actions';
 
 function participants_indexFC({ fetchParticipants }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      offset: 40,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 2000,
+  //     offset: 40,
+  //   });
+  // }, []);
 
   useEffect(() => {
     fetchParticipants();
@@ -30,34 +31,36 @@ function participants_indexFC({ fetchParticipants }) {
           {participants.map((participant) =>
             participant.interviewed ? (
               <Col xs={12} sm={12} md={4} lg={3} xl={3} className='mb-4'>
-                <Card data-aos='fade-up' className='participant-item'>
-                  <Card.Img
-                    alt='Card image'
-                    src={participant.profileImgLink}
-                    className='participant-item-img-background'
-                  />
-                  <Link
-                    to={`/denizendesigner/interviews/${participant.id}`}
-                    key={participant.id}
-                  >
-                    <Card.ImgOverlay className='cardImageOverlay'>
-                      <Card.Body className='cardBodyInterview p-0'>
-                        <Row className='card-row'>
-                          <Col md={12} className='pl-4 mb-0'>
-                            <div className='participant-item-name'>
-                              {participant.first_name} {participant.last_name}
-                            </div>
-                          </Col>
-                          <Col md={12} className='pl-4 mb-2'>
-                            <div className='participant-item-designer'>
-                              {participant.designer_type}
-                            </div>
-                          </Col>
-                        </Row>
-                      </Card.Body>
-                    </Card.ImgOverlay>
-                  </Link>
-                </Card>
+                <Fade bottom duration={1500}>
+                  <Card className='participant-item'>
+                    <Card.Img
+                      alt='Card image'
+                      src={participant.profileImgLink}
+                      className='participant-item-img-background'
+                    />
+                    <Link
+                      to={`/denizendesigner/interviews/${participant.id}`}
+                      key={participant.id}
+                    >
+                      <Card.ImgOverlay className='cardImageOverlay'>
+                        <Card.Body className='cardBodyInterview p-0'>
+                          <Row className='card-row'>
+                            <Col md={12} className='pl-4 mb-0'>
+                              <div className='participant-item-name'>
+                                {participant.first_name} {participant.last_name}
+                              </div>
+                            </Col>
+                            <Col md={12} className='pl-4 mb-2'>
+                              <div className='participant-item-designer'>
+                                {participant.designer_type}
+                              </div>
+                            </Col>
+                          </Row>
+                        </Card.Body>
+                      </Card.ImgOverlay>
+                    </Link>
+                  </Card>
+                </Fade>
               </Col>
             ) : (
               ''
