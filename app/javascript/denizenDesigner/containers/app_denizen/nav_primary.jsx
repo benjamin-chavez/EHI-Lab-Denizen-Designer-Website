@@ -92,7 +92,7 @@ class NavPrimary extends Component {
                 >
                   History of Participatory Design
                 </NavLink> */}
-                <NavLink
+                {/* <NavLink
                   // as={Link}
                   // eventKey={2}
                   // href='/denizendesigner/'
@@ -100,7 +100,7 @@ class NavPrimary extends Component {
                   className='nav-primary-text desktop-nav'
                 >
                   Denizen Designer
-                </NavLink>
+                </NavLink> */}
               </Nav>
             </Navbar.Collapse>
           </Container>
