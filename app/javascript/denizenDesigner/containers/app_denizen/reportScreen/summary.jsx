@@ -68,7 +68,9 @@ class Influence extends Component {
           <Image src={SummaryGraphic} alt='Summary Graphic' fluid />
         </div>
 
-        <p>Frequency of terms appearing in interviews. </p>
+        <p className='report-image-title'>
+          Frequency of terms appearing in interviews.{' '}
+        </p>
         <p>
           These themes revealed a lot about the way that Denizen Designers
           approach their work with communities and their perspectives on how to
