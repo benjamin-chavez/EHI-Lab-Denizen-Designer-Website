@@ -22,6 +22,7 @@ import educationImg from '../../../../../assets/images/reportAssets/charts/educa
 import geographicImg from '../../../../../assets/images/reportAssets/charts/GEOGRAPHICSPREAD.svg';
 import issuesImg from '../../../../../assets/images/reportAssets/charts/ISSUESADDRESSED.svg';
 import rolesImg from '../../../../../assets/images/reportAssets/charts/Roles&DesignBackground.svg';
+import designEmployment from '../../../../../assets/images/reportAssets/charts/DesignEmployment.svg';
 
 var Element = Scroll.Element;
 
@@ -88,7 +89,17 @@ class Demographics extends Component {
               </div>
             </Tab.Pane>
             <Tab.Pane eventKey='designEmp'>
-              <p className='fillerTab'>Design Employment</p>
+              {/* <p className='fillerTab'>Design Employment</p> */}
+
+              <div className='report-img'>
+                <Image
+                  // src={NavLogo}
+                  src={designEmployment}
+                  className='fillerTab'
+                  alt='Education Graphic'
+                  fluid
+                />
+              </div>
             </Tab.Pane>
           </Tab.Content>
           <Row>

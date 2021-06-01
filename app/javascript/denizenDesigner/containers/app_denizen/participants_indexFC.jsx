@@ -13,8 +13,6 @@ function participants_indexFC({ fetchParticipants }) {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      // startEvent: 'load',
-      // once: 'true',
       offset: 40,
     });
   }, []);
@@ -27,7 +25,6 @@ function participants_indexFC({ fetchParticipants }) {
 
   return (
     <div>
-      <p>test</p>
       <div>
         <Row className=''>
           {participants.map((participant) =>
