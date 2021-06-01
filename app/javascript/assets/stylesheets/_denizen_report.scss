@@ -24,9 +24,10 @@
   
 }
 
-.test123 .selected {
+.test123 .active {
   cursor: pointer;
   color: #475ca7;
+  // background-color: red;
 }
 
 .report-li {
@@ -73,7 +74,7 @@
   background-color: #ffffff;
   box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
   border-radius: 4px;
-  padding: 25px 54px 42px 54px !important;
+  padding: 0px 54px 42px 54px !important;
   align-items: center !important;
   position: relative;
   height: 80vh;
@@ -132,6 +133,10 @@
 
 .trElement{
   padding-bottom: 44px;
+}
+
+.executiveSummaryElement{
+  padding-top: 41px;
 }
 
 .report-container p {
@@ -362,7 +367,7 @@
   }
 
   .report-container {
-    padding: 25px 25px 42px 25px !important;
+    padding: 0px 25px 42px 25px !important;
    
   }
 }

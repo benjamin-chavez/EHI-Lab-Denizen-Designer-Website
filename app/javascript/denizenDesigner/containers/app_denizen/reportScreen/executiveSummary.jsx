@@ -9,7 +9,7 @@ class ExecutiveSummary extends Component {
   render() {
     return (
       <div className='trElement'>
-        <Element name='executiveSummary' className='pt-3'>
+        <Element name='executiveSummary' className='executiveSummaryElement'>
           <h2>Executive Summary</h2>
         </Element>
         {/* <p>Dr. Harrington will write this..</p> */}

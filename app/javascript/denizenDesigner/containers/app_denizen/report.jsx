@@ -55,6 +55,7 @@ class Report extends Component {
 
     scrollSpy.update();
   }
+
   scrollToTop() {
     scroll.scrollToTop();
   }
@@ -76,7 +77,7 @@ class Report extends Component {
                 </Link>
               </Button>
             </li>
-            <li className='selected report-li'>
+            <li className='report-li'>
               <Link
                 activeClass='active'
                 to='executiveSummary'
