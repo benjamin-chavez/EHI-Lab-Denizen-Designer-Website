@@ -4,20 +4,12 @@ import { bindActionCreators } from 'redux';
 import { connect, useDispatch, useSelector } from 'react-redux';
 import { Container, Row, Col, Card, Footer } from 'react-bootstrap';
 import ParticipantImage from '../../../../assets/images/participant.jpeg';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+
 import Fade from 'react-reveal/Fade';
 
 import { fetchParticipants } from '../../actions';
 
 function participants_indexFC({ fetchParticipants }) {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 2000,
-  //     offset: 40,
-  //   });
-  // }, []);
-
   useEffect(() => {
     fetchParticipants();
   }, []);
