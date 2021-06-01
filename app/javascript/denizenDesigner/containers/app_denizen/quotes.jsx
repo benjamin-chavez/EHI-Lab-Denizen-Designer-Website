@@ -15,6 +15,12 @@ import {
 } from 'react-router-dom';
 
 class Quotes extends Component {
+  constructor() {
+    super();
+    // this.state = { filterView: 'Click text' };
+    this.state = { clicked: true };
+  }
+
   handleClick = (quoteCategory) => {
     this.props.selectQuoteCategory(quoteCategory);
   };
@@ -31,6 +37,16 @@ class Quotes extends Component {
       7,
       this.props.quoteCategories.length
     );
+
+    // let filterView = 'Expand';
+
+    const changeFilterView = () => {
+      console.log('changeFilterVIew');
+      // this.setState({ filterView: 'Collapse' });
+      // this.setState({clicked: !this.state.clicked})
+      // this.state.clicked === true ? this.state.clicked =
+      this.setState({ clicked: !this.state.clicked });
+    };
 
     return (
       <div>
@@ -88,8 +104,9 @@ class Quotes extends Component {
               eventKey='1'
               onMouseDown={(e) => e.preventDefault()}
               block
+              onClick={changeFilterView}
             >
-              Expand
+              {this.state.clicked ? 'Expand' : 'Collapse'}
             </Accordion.Toggle>
           </Accordion>
           <QuotesIndex quoteCategoryPath={quoteCategoryPath} />
