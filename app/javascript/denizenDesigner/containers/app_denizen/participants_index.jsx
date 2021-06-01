@@ -5,6 +5,9 @@ import { connect } from 'react-redux';
 import { Container, Row, Col, Card, Footer } from 'react-bootstrap';
 import ParticipantImage from '../../../../assets/images/participant.jpeg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { fetchParticipants } from '../../actions';
 
 class ParticipantsIndex extends Component {

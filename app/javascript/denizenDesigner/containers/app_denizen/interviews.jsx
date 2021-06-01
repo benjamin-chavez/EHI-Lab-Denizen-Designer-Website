@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DesignersIndex from './designers_index';
-import ParticipantsIndex from './participants_index';
+// import ParticipantsIndex from './participants_index';
+import ParticipantsIndex from './participants_indexFC';
 
 import { Row, Col, Jumbotron, Button, Card, Container } from 'react-bootstrap';
 
