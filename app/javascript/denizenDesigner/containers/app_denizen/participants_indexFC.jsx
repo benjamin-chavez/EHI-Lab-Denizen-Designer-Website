@@ -15,6 +15,7 @@ function participants_indexFC({ fetchParticipants }) {
       duration: 2000,
       // startEvent: 'load',
       once: 'true',
+      offset: 40,
     });
   }, []);
 
