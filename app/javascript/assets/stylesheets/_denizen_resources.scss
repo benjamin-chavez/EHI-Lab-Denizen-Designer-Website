@@ -126,12 +126,13 @@
 .resource-card-row {
   width: 100%;
   // background-color: green;
+  // s
 }
 
 .resourceCard .card-body {
   // background-color: red;
-  // padding-left: 48px;
-  // padding-right: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 @media (max-width: 768px) {
@@ -151,8 +152,8 @@
 
   .resourceCard .card-body {
     background-color: red;
-    // padding-left: 48px;
-    // padding-right: 48px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
 }
