@@ -14,7 +14,7 @@ function participants_indexFC({ fetchParticipants }) {
     AOS.init({
       duration: 2000,
       // startEvent: 'load',
-      once: 'true',
+      // once: 'true',
       offset: 40,
     });
   }, []);
@@ -27,6 +27,7 @@ function participants_indexFC({ fetchParticipants }) {
 
   return (
     <div>
+      <p>test</p>
       <div>
         <Row className=''>
           {participants.map((participant) =>
