@@ -18,7 +18,7 @@ class Resources extends Component {
         <Row className='mb-4'>
           <Col sm={12}>
             <Card className='resourceCard card1'>
-              <Card.Body className=' pt-4'>
+              <Card.Body className='pt-4'>
                 <Row>
                   <Col sm={12} md={7} className='mb-4'>
                     <p className='title mb-2'>The Denizen Designer Zine</p>
@@ -61,7 +61,7 @@ class Resources extends Component {
         <Row className='mb-4'>
           <Col sm={12}>
             <Card className='resourceCard card2'>
-              <Card.Body className='px-5 pt-4'>
+              <Card.Body className='pt-4'>
                 <Row>
                   <Col sm={12} md={7} className='mb-4'>
                     <p className='title mb-2'>
