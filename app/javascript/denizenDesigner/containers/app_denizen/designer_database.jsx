@@ -74,14 +74,14 @@ class DesignerDatabase extends Component {
     return (
       <Container fluid>
         <Row>
-          <NavLink className='participate-btn' to='#'>
+          <a className='participate-btn' href='mailto: depaulehilab@gmail.com'>
             <div>
               {'  '}
               <Image src={DocumentIcon} alt='Document Icon' fluid />
               {'  '}
             </div>
             <span className='pl-1 participate-btn-text'> Participate</span>
-          </NavLink>
+          </a>
         </Row>
         <Row className='designer-city-banner my-2'>
           <Col>
