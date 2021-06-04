@@ -3,23 +3,33 @@ import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import LoadSpinner from '../shared/spinner';
 // import reportImage from '../../../../assets/images/report-img-1.svg';
 // <Image src={instagramColorIcon} alt='Denizen Designer Logo' fluid />
 import InstagramColorIcon from '../../../../assets/images/instagramColorIcon.svg';
 import TwitterColorIcon from '../../../../assets/images/twitterColorIcon.svg';
 
 // instagramColorIcon.svg;
-import { fetchParticipant } from '../../actions';
+import { fetchParticipant, fetchQuotes } from '../../actions';
 
 export class ParticipantsShow extends Component {
+  componentDidMount() {
+    this.props.fetchQuotes;
+  }
+
   componentWillMount() {
     if (!this.props.participant) {
       this.props.fetchParticipant(this.props.match.params.id);
     }
   }
+
   render() {
-    if (!this.props.participant) {
-      return <p>Loading...</p>;
+    if (!this.props.participant || !this.props.quotes) {
+      return (
+        <div>
+          <LoadSpinner />
+        </div>
+      );
     }
     return (
       <div className='participant-show participantShow pb-3'>
@@ -165,11 +175,13 @@ export class ParticipantsShow extends Component {
 function mapReduxStateToProps(reduxState, ownProps) {
   const idFromUrl = parseInt(ownProps.match.params.id, 10);
   const participant = reduxState.participants.find((p) => p.id === idFromUrl);
-  return { participant };
+  const quoteData = reduxState.quotes;
+  const quotes1 = quoteData.quotes.find((p) => p.id === idFromUrl);
+  return { participant, quotes1 };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchParticipant }, dispatch);
+  return bindActionCreators({ fetchParticipant, fetchQuotes }, dispatch);
 }
 
 export default connect(

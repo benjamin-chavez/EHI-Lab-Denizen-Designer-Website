@@ -12,6 +12,7 @@ import {
   Button,
 } from 'react-bootstrap';
 // import Pagination from './pagination';
+import Fade from 'react-reveal/Fade';
 import { fetchQuotes } from '../../actions';
 
 import { fetchParticipants1 } from '../../actions';
@@ -40,23 +41,6 @@ function QuotesIndex({
   const [quoteOwner, setQuoteOwner] = useState('');
   const [ownerRole, setOwnerRole] = useState('');
   const [ownerID, setOwnerID] = useState('');
-
-  // // PAGINATION STATE
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [quotesPerPage] = useState(15);
-
-  // // Get current posts
-  // const indexOfLastQuote = currentPage * quotesPerPage;
-  // const indexOfFirstQuote = indexOfLastQuote - quotesPerPage;
-
-  // // Change page
-  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-  // const findParticipant = (idToSearch) => {
-  //   return quoteData.quotes.filter((participant) => {
-  //     return participant.id === idToSearch;
-  //   });
-  // };
 
   const lala = () => {
     return participantsData.loading
@@ -126,53 +110,55 @@ function QuotesIndex({
               quoteCategoryPath == 'all_quotes' ||
               quote.categories.includes(quoteCategoryPath) ? (
                 <div key={quote.id}>
-                  <Card
-                    className='denizen-quote-card'
-                    onClick={() => {
-                      setCurQuote(quote.quote_body);
-                      setQuoteOwner(
-                        `${
+                  <Fade bottom duration={1500}>
+                    <Card
+                      className='denizen-quote-card'
+                      onClick={() => {
+                        setCurQuote(quote.quote_body);
+                        setQuoteOwner(
+                          `${
+                            participantsData.participants1.find(
+                              (item) => item.id === quote.participant_id
+                            ).first_name
+                          } ${
+                            participantsData.participants1.find(
+                              (item) => item.id === quote.participant_id
+                            ).last_name
+                          }`
+                        );
+                        // setOwnerRole('Designer Type');
+                        setOwnerRole(
                           participantsData.participants1.find(
                             (item) => item.id === quote.participant_id
-                          ).first_name
-                        } ${
-                          participantsData.participants1.find(
-                            (item) => item.id === quote.participant_id
-                          ).last_name
-                        }`
-                      );
-                      // setOwnerRole('Designer Type');
-                      setOwnerRole(
-                        participantsData.participants1.find(
-                          (item) => item.id === quote.participant_id
-                        ).designer_type
-                      );
-                      setOwnerID(quote.participant_id);
-                      handleShow();
-                      lala();
-                    }}
-                  >
-                    <Card.Body className='denizen-quote-body'>
-                      <Row>
-                        <Col sm={12}>
-                          <Card.Text>"{quote.quote_body}"</Card.Text>
-                        </Col>
+                          ).designer_type
+                        );
+                        setOwnerID(quote.participant_id);
+                        handleShow();
+                        lala();
+                      }}
+                    >
+                      <Card.Body className='denizen-quote-body'>
+                        <Row>
+                          <Col sm={12}>
+                            <Card.Text>"{quote.quote_body}"</Card.Text>
+                          </Col>
 
-                        <Col sm={12}>
-                          {' '}
-                          <Link
-                            to={`/denizendesigner/interviews/${quote.participant_id}`}
-                          >
-                            <Card.Text className='denizen-quote-author ml-0'>
-                              {quote.first_name}
-                              {` `}
-                              {quote.last_name}
-                            </Card.Text>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Card.Body>
-                  </Card>
+                          <Col sm={12}>
+                            {' '}
+                            <Link
+                              to={`/denizendesigner/interviews/${quote.participant_id}`}
+                            >
+                              <Card.Text className='denizen-quote-author ml-0'>
+                                {quote.first_name}
+                                {` `}
+                                {quote.last_name}
+                              </Card.Text>
+                            </Link>
+                          </Col>
+                        </Row>
+                      </Card.Body>
+                    </Card>
+                  </Fade>
                 </div>
               ) : (
                 ''
