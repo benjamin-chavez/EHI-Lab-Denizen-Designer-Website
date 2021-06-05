@@ -50,7 +50,20 @@ class Resources extends Component {
                       lack of exposure to PD in both higher education and in the
                       work force.{' '}
                     </span>
-                    <Link className='cardLink mt-2'>Visit</Link>
+                    <a
+                      href='https://www.mica.edu/'
+                      target='_blank'
+                      className='cardLink mt-2'
+                    >
+                      Maryland Institute College of Art (MICA)
+                    </a>
+                    <a
+                      href='https://productsofdesign.sva.edu/blog/what-is-design-for-social-impact#:~:text=Design%20for%20social%20impact%20is,disenfranchised%20or%20marginalized%20by%20design'
+                      target='_blank'
+                      className='cardLink mt-2'
+                    >
+                      Design for social impact
+                    </a>
                   </Col>
                 </Row>
               </Card.Body>
@@ -76,7 +89,13 @@ class Resources extends Component {
                       by designers worldwide who take a collaborative approach
                       to design and has shaped various theories.
                     </span>
-                    <Link className='cardLink mt-2'>Visit</Link>
+                    <a
+                      href='http://kateferguson.org/documents/Participatory-Design-Handbook.pdf'
+                      target='_blank'
+                      className='cardLink mt-2'
+                    >
+                      Visit
+                    </a>
                   </Col>
                   <Col sm={12} md={5} className='mb-4'>
                     <p className='title mb-2'>Design Justice</p>
