@@ -15,6 +15,22 @@
   // text-decoration-line: underline;
 }
 
+.accordianBtn {    
+    margin-bottom: 14px;
+    cursor: pointer;
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: #475ca7;
+    font-family: "Montserrat", sans-serif; 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    padding-left: 0px;    
+}
+
 .test123 > li {
   // margin: 14px 0px;  
   margin-bottom: 14px;

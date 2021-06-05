@@ -52,7 +52,7 @@ class DesignerDatabase extends Component {
   }
 
   render() {
-    const city = location.pathname.split('/').pop().replace('%20', ' ');
+    const city = location.pathname.split('/').pop().replaceAll('%20', ' ');
     let uniqueCities = [];
     let uniqueCitiestemp = ['All Cities'];
 
