@@ -31,17 +31,17 @@ class NavSecondary extends Component {
 
   render() {
     return (
-      <div>
-        <Row>
-          <Col>
-            <div className='nav-secondaryy'>
-              <ul className='list-inline-nav-sec'>
-                {this.props.denizenTabs.map(this.renderDenizenTab)}
-              </ul>
-            </div>
-          </Col>
-        </Row>
+      // <div>
+      //   <Row>
+      //     <Col>
+      <div className='nav-secondaryy'>
+        <ul className='list-inline-nav-sec'>
+          {this.props.denizenTabs.map(this.renderDenizenTab)}
+        </ul>
       </div>
+      //     </Col>
+      //   </Row>
+      // </div>
     );
   }
 }

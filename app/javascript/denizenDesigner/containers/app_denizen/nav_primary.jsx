@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import { connect } from "react-redux";
 // import { selectDenizenTab, setNavSecondaryz } from "../../actions";
 import { Link, NavLink } from 'react-router-dom';
+import NavSecondary from './nav_secondary';
 
 import {
   Container,
@@ -33,42 +34,44 @@ class NavPrimary extends Component {
           expand='lg'
         >
           <Container fluid className='pl-0'>
-            <Navbar.Brand
-              as={Link}
-              to='/'
-              href='/'
-              className='nav-brand-mobile'
-            >
-              <img
-                // src={NavLogo}
-                src={NavLogoMobile}
-                className='d-inline-block align-top nav-brand-mobile'
-                alt='Denizen Designer Logo'
-              />
-            </Navbar.Brand>
-            <Navbar.Brand
-              as={Link}
-              to='/'
-              href='/'
-              className='nav-brand-desktop'
-            >
-              <img
-                // src={NavLogo}
-                src={NavLogo}
-                className='d-inline-block align-top nav-brand-desktop'
-                alt='Denizen Designer Logo'
-              />
-            </Navbar.Brand>
-            <Nav className='mr-auto rr'></Nav>
-            <div className='pr-0'>
-              {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
-              {/* <NavLink
+            <Row>
+              <Col md={12} className='pb-2'>
+                <Navbar.Brand
+                  as={Link}
+                  to='/'
+                  href='/'
+                  className='nav-brand-mobile'
+                >
+                  <img
+                    // src={NavLogo}
+                    src={NavLogoMobile}
+                    className='d-inline-block align-top nav-brand-mobile'
+                    alt='Denizen Designer Logo'
+                  />
+                </Navbar.Brand>
+                <Navbar.Brand
+                  as={Link}
+                  to='/'
+                  href='/'
+                  className='nav-brand-desktop'
+                >
+                  <img
+                    // src={NavLogo}
+                    src={NavLogo}
+                    className='d-inline-block align-top nav-brand-desktop'
+                    alt='Denizen Designer Logo'
+                  />
+                </Navbar.Brand>
+                <Nav className='mr-auto rr'></Nav>
+                <div className='pr-0'>
+                  {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
+                  {/* <NavLink
                 to='/historyofparticipatorydesign'
                 className='nav-primary-text mobile-nav'
               >
                 History of Participatory Design
               </NavLink> */}
-              {/* <NavLink
+                  {/* <NavLink
                 // as={Link}
                 // eventKey={2}
                 // href='/denizendesigner/'
@@ -77,22 +80,22 @@ class NavPrimary extends Component {
               >
                 Denizen Designer
               </NavLink> */}
-            </div>
-            {/* <Navbar.Toggle
+                </div>
+                {/* <Navbar.Toggle
               aria-controls='responsive-navbar-nav'
               className='pr-0'
             /> */}
-            <Navbar.Collapse id='responsive-navbar-nav'>
-              <Nav className='mr-auto'></Nav>
-              <Nav>
-                {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
-                {/* <NavLink
+                <Navbar.Collapse id='responsive-navbar-nav'>
+                  <Nav className='mr-auto'></Nav>
+                  <Nav>
+                    {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
+                    {/* <NavLink
                   to='/historyofparticipatorydesign'
                   className='nav-primary-text desktop-nav'
                 >
                   History of Participatory Design
                 </NavLink> */}
-                {/* <NavLink
+                    {/* <NavLink
                   // as={Link}
                   // eventKey={2}
                   // href='/denizendesigner/'
@@ -101,8 +104,13 @@ class NavPrimary extends Component {
                 >
                   Denizen Designer
                 </NavLink> */}
-              </Nav>
-            </Navbar.Collapse>
+                  </Nav>
+                </Navbar.Collapse>
+              </Col>
+              <Col md={12}>
+                <NavSecondary />
+              </Col>
+            </Row>
           </Container>
         </Navbar>
       </div>

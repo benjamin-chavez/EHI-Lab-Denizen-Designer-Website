@@ -29,7 +29,7 @@ const AppDenizen = (props) => {
     <div id='wrapper'>
       <div id='content'>
         <NavPrimary />
-        <NavSecondary />
+        {/* <NavSecondary /> */}
 
         <Route path='/denizendesigner/home' component={DenizenHome} />
         <Route

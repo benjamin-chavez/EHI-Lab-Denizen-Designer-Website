@@ -19,7 +19,7 @@ const AppHopd = (props) => {
   return (
     <div>
       <NavPrimary />
-      <NavSecondary />
+      {/* <NavSecondary /> */}
 
       <Route
         exact
