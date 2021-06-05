@@ -25,6 +25,8 @@ import ResearchProcess from './reportScreen/researchProcess';
 import Demographics from './reportScreen/demographics';
 import Summary from './reportScreen/summary';
 import Conclusions from './reportScreen/conclusions';
+import ReportMobile from './reportScreen/reportMobile';
+import ReportDesktop from './reportScreen/reportDesktop';
 
 import reportImage from '../../../../assets/images/report-img-1.svg';
 import ArrowDown from '../../../../assets/images/ArrowDown.svg';
@@ -46,6 +48,7 @@ class Report extends Component {
     this.scrollToTop = this.scrollToTop.bind(this);
     this.state = { activeSection: 'Executive Summary' };
     this.myRef = React.createRef();
+    this.state = { matches: window.matchMedia('(min-width: 768px)').matches };
   }
 
   componentDidMount() {
@@ -58,6 +61,9 @@ class Report extends Component {
     });
 
     scrollSpy.update();
+
+    const handler = (e) => this.setState({ matches: e.matches });
+    window.matchMedia('(min-width: 768px)').addListener(handler);
   }
 
   scrollToTop() {
@@ -82,162 +88,10 @@ class Report extends Component {
     let activeSection = this.state.activeSection;
 
     return (
-      <Row className='mb-3'>
-        <Col sm={3} className='report-col-2'>
-          <ul className='test123'>
-            <li className='reportDownloadButton'>
-              <Button className='pl-0 reportDownloadBtn'>
-                <Link className='' target='_blank' download>
-                  Download
-                </Link>
-              </Button>
-            </li>
-          </ul>
-          <Accordion defaultActiveKey='0'>
-            <Accordion.Toggle
-              className='accordianBtn'
-              ref={this.myRef}
-              eventKey='0'
-            >
-              <i className='fa fa-chevron-down'> </i>
-              {''}
-              <span className='ml-1'>{activeSection}</span>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey='0'>
-              {/* <Col sm={3} className='mr-2'> */}
-              <ul className='test123'>
-                <li className='report-li'>
-                  <Link
-                    activeClass='active'
-                    to='executiveSummary'
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    containerId='containerElement'
-                    onClick={() => changeActiveSection('Executive Summary')}
-                  >
-                    Executive Summary
-                    {/* <Image src={ArrowDown} className='pl-2' /> */}
-                  </Link>
-                </li>
-                <li className='report-li'>
-                  <Link
-                    activeClass='active'
-                    to='overview'
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    containerId='containerElement'
-                    onClick={() => changeActiveSection('Overview')}
-                  >
-                    Overview
-                    {/* <Image src={ArrowDown} className='pl-2' /> */}
-                  </Link>
-                </li>
-                <li className='report-li'>
-                  <Link
-                    activeClass='active'
-                    to='introduction'
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    containerId='containerElement'
-                    onClick={() => changeActiveSection('Introduction')}
-                  >
-                    Introduction
-                    {/* <Image src={ArrowDown} className='pl-2' /> */}
-                  </Link>
-                </li>
-                <li className='report-li'>
-                  <Link
-                    activeClass='active'
-                    to='researchProcess'
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    containerId='containerElement'
-                    onClick={() => changeActiveSection('Research Process')}
-                  >
-                    Research Process
-                    {/* <Image src={ArrowDown} className='pl-2' /> */}
-                  </Link>
-                </li>
-                <li className='report-li'>
-                  <Link
-                    activeClass='active'
-                    to='demographics'
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    containerId='containerElement'
-                    onClick={() => changeActiveSection('Demographics')}
-                  >
-                    Demographics
-                    {/* <Image src={ArrowDown} className='pl-2' /> */}
-                  </Link>
-                </li>
-                <li className='report-li'>
-                  <Link
-                    activeClass='active'
-                    to='summary'
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    containerId='containerElement'
-                    onClick={() =>
-                      changeActiveSection('Summary & Key Findings')
-                    }
-                  >
-                    Summary & Key Findings
-                    {/* <Image src={ArrowDown} className='pl-2' /> */}
-                  </Link>
-                </li>
-                <li className='report-li '>
-                  <Link
-                    activeClass='active'
-                    to='conclusions'
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    containerId='containerElement'
-                    onClick={() =>
-                      changeActiveSection('Conclusions & Key Recommendations')
-                    }
-                  >
-                    Conclusions & Key Recommendations
-                    {/* <Image src={ArrowDown} className='pl-2 ' /> */}
-                  </Link>
-                </li>
-                {/* ****************************************************** */}
-              </ul>
-            </Accordion.Collapse>
-          </Accordion>
-        </Col>
-        {/* <div className='mr-4'></div> */}
-        <Col sm={9} className='report-col-9'>
-          {/* <Container className='report-container'> */}
-          <Element
-            name='test7'
-            className='report-container'
-            id='containerElement'
-            style={{
-              // position: 'relative',
-              // height: '100%',
-              width: '100%',
-              overflow: 'scroll',
-              // marginBottom: '100px',
-            }}
-          >
-            <ExecutiveSummary />
-            <Overview />
-            <Introduction />
-            <ResearchProcess />
-            <Demographics />
-            <Summary />
-            <Conclusions />
-          </Element>
-        </Col>
-      </Row>
+      <div>
+        {this.state.matches && <ReportDesktop />}
+        {!this.state.matches && <ReportMobile />}
+      </div>
     );
   }
 }
