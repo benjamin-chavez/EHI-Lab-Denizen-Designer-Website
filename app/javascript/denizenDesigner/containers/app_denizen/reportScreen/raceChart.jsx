@@ -60,7 +60,7 @@ class RaceChart extends Component {
               // width={'100%'}
               // options={{ maintainAspectRatio: false }}
               options={{
-                // responsive: true,
+                responsive: true,
                 // maintainAspectRatio: false,
                 plugins: {
                   align: 'center',

@@ -23,6 +23,7 @@ import ResearchProcess from './researchProcess';
 import Demographics from './demographics';
 import Summary from './summary';
 import Conclusions from './conclusions';
+import References from './references';
 
 // import reportImage from '../../../../assets/images/report-img-1.svg';
 // import ArrowDown from '../../../../assets/images/ArrowDown.svg';
@@ -169,6 +170,19 @@ class ReportDesktop extends Component {
                 {/* <Image src={ArrowDown} className='pl-2 ' /> */}
               </Link>
             </li>
+            <li className='report-li '>
+              <Link
+                activeClass='active'
+                to='references'
+                spy={true}
+                smooth={true}
+                duration={500}
+                containerId='containerElement'
+              >
+                References
+                {/* <Image src={ArrowDown} className='pl-2 ' /> */}
+              </Link>
+            </li>
             {/* ****************************************************** */}
           </ul>
         </Col>
@@ -194,6 +208,7 @@ class ReportDesktop extends Component {
             <Demographics />
             <Summary />
             <Conclusions />
+            <References />
           </Element>
         </Col>
       </Row>
