@@ -13,18 +13,12 @@ class EnviSectChart extends Component {
     this.state = {
       chartData: {
         labels: [
-          'January',
-          'February',
-          'March',
-          'April',
-          'May',
-          'June',
-          // 'July',
-          // 'August',
-          // 'September',
-          // 'October',
-          // 'November',
-          // 'December',
+          'Government',
+          'Nonprofit',
+          'Academic/University',
+          'Independent Consulting',
+          'Foundation',
+          'For Profit/Industry',
         ],
         // datasets: [
         //   {
@@ -44,19 +38,34 @@ class EnviSectChart extends Component {
         // ],
         datasets: [
           {
-            label: 'Dataset 1',
-            data: [-100, 100],
+            label: 'Both',
+            data: [13, 30, 13, 13, 15, 18, 0],
             backgroundColor: 'rgba(255, 159, 64, 0.6)',
           },
           {
-            label: 'Dataset 2',
-            data: [-100, 100],
+            label: 'Online',
+            data: [0, 100, 0, 0, 0, 0, 0],
             backgroundColor: 'rgba(75, 192, 192, 0.6)',
           },
           {
-            label: 'Dataset 3',
-            data: [-100, 100],
+            label: 'Rural',
+            data: [50, 0, 50, 0, 0, 0, 0],
+            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+          },
+          {
+            label: 'suburban, college campus outside of major US city',
+            data: [0, 0, 100, 0, 0, 0, 0],
+            backgroundColor: 'rgba(255, 206, 86, 0.6)',
+          },
+          {
+            label: 'Urban',
+            data: [7, 29, 20, 19, 4, 20, 0],
             backgroundColor: 'rgba(54, 162, 235, 0.6)',
+          },
+          {
+            label: 'urban, rural, both domestically and internationally',
+            data: [0, 50, 0, 50, 0, 0, 0],
+            backgroundColor: 'rgba(255, 99, 132, 0.6)',
           },
         ],
       },

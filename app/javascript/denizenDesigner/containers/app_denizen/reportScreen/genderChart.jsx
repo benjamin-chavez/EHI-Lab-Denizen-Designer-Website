@@ -9,19 +9,18 @@ class GenderChart extends Component {
     this.state = {
       chartData: {
         labels: [
-          'Man',
           'Women',
-          'Transgender Man',
-          'Transgender Women',
+          'Man',
+          'Non-Binary',
           'Gender variant / nonconforming',
-          'Nonbinary',
-          'Prefer not to answer',
-          'Other',
+          'Transgender Man',
+          'Gender Queer',
+          '2 Spirited',
         ],
         datasets: [
           {
             label: 'Population',
-            data: [26, 63, 1, 0, 4, 7, 0, 3],
+            data: [66.7, 25.7, 6.7, 3.8, 1, 1, 1],
             backgroundColor: [
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',
@@ -30,7 +29,6 @@ class GenderChart extends Component {
               'rgba(153, 102, 255, 0.6)',
               'rgba(255, 159, 64, 0.6)',
               'rgba(252, 2, 40, 0.8)',
-              'rgba(21, 0, 255, 0.9)',
             ],
           },
         ],
