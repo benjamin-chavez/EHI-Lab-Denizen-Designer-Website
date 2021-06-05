@@ -93,7 +93,7 @@ class ReportMobile extends Component {
               </Button>
             </li>
           </ul>
-          <Accordion defaultActiveKey='0'>
+          <Accordion>
             <Accordion.Toggle
               className='accordianBtn'
               ref={this.myRef}

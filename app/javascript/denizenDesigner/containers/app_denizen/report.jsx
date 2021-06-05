@@ -48,7 +48,7 @@ class Report extends Component {
     this.scrollToTop = this.scrollToTop.bind(this);
     this.state = { activeSection: 'Executive Summary' };
     this.myRef = React.createRef();
-    this.state = { matches: window.matchMedia('(min-width: 768px)').matches };
+    this.state = { matches: window.matchMedia('(min-width: 576px)').matches };
   }
 
   componentDidMount() {
@@ -63,7 +63,7 @@ class Report extends Component {
     scrollSpy.update();
 
     const handler = (e) => this.setState({ matches: e.matches });
-    window.matchMedia('(min-width: 768px)').addListener(handler);
+    window.matchMedia('(min-width: 576px)').addListener(handler);
   }
 
   scrollToTop() {
