@@ -8,6 +8,7 @@ import LoadSpinner from '../shared/spinner';
 // <Image src={instagramColorIcon} alt='Denizen Designer Logo' fluid />
 import InstagramColorIcon from '../../../../assets/images/instagramColorIcon.svg';
 import TwitterColorIcon from '../../../../assets/images/twitterColorIcon.svg';
+import IntShowQuotes from './interviewsScreens/intShowQuotes';
 
 // instagramColorIcon.svg;
 import { fetchParticipant, fetchQuotes } from '../../actions';
@@ -24,7 +25,7 @@ export class ParticipantsShow extends Component {
   }
 
   render() {
-    if (!this.props.participant || !this.props.quotes) {
+    if (!this.props.participant) {
       return (
         <div>
           <LoadSpinner />
@@ -78,6 +79,7 @@ export class ParticipantsShow extends Component {
                 {this.props.participant.designer_type}
               </p>
               <p className='bio'>{this.props.participant.bio}</p>
+              {/* <IntShowQuotes /> */}
 
               <Card className='mb-3 quoteCard'>
                 <Card.Body className=''>
@@ -176,8 +178,8 @@ function mapReduxStateToProps(reduxState, ownProps) {
   const idFromUrl = parseInt(ownProps.match.params.id, 10);
   const participant = reduxState.participants.find((p) => p.id === idFromUrl);
   const quoteData = reduxState.quotes;
-  const quotes1 = quoteData.quotes.find((p) => p.id === idFromUrl);
-  return { participant, quotes1 };
+  // const quotes1 = quoteData.quotes.find((p) => p.id === idFromUrl);
+  return { participant, quoteData };
 }
 
 function mapDispatchToProps(dispatch) {

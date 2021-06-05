@@ -102,7 +102,6 @@ function QuotesIndex({
 
       <div className=''>
         {/* <p>{quote.first}</p> */}
-
         <CardColumns>
           {quoteData &&
             quoteData.quotes &&

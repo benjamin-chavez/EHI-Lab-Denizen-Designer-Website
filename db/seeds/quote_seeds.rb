@@ -283,7 +283,7 @@ Quote.create!({
   participant_id: 7,
   first_name: "Denise",
   last_name: "Shanté Brown",
-  quote_body: "I think the value is knowing we’re creating spaces where Black womxn’s dreams for health and healing are affirmed. Their creativity has a place to be expressed in ways that it hasn’t before, especially for those who don’t identify as designers. Together, we’re exploring the spectrum of what design is and can be when Black womxn are the ones reimagining the design process to bring more flourishing futures into existence.",
+  quote_body: "I think the value is knowing we’re creating spaces where Black women’s dreams for health and healing are affirmed. Their creativity has a place to be expressed in ways that it hasn’t before, especially for those who don’t identify as designers. Together, we’re exploring the spectrum of what design is and can be when Black women are the ones reimagining the design process to bring more flourishing futures into existence.",
   categories: ["space_making", "increasing_access"],
 })
 
@@ -291,7 +291,7 @@ Quote.create!({
   participant_id: 7,
   first_name: "Denise",
   last_name: "Shanté Brown",
-  quote_body: "I am not a therapist. But the experiences that we facilitate can be very therapeutic. With that distinction, we’re genuinely holding space for everyone’s truths to be creatively expressed, inviting their lived experiences to be shared in safe and sacred ways, and providing local and online resources to Black womxn healing practitioners who can continue supporting their journeys.",
+  quote_body: "I am not a therapist. But the experiences that we facilitate can be very therapeutic. With that distinction, we’re genuinely holding space for everyone’s truths to be creatively expressed, inviting their lived experiences to be shared in safe and sacred ways, and providing local and online resources to Black women healing practitioners who can continue supporting their journeys.",
   categories: ["space_making"],
 })
 
@@ -299,7 +299,7 @@ Quote.create!({
   participant_id: 7,
   first_name: "Denise",
   last_name: "Shanté Brown",
-  quote_body: "So much of this work started off with me making a commitment to not just do extractive research in the city of Baltimore and leave, but to make genuine, life-giving connections with Black womxn and BIPOC who were also calling Baltimore home.",
+  quote_body: "So much of this work started off with me making a commitment to not just do extractive research in the city of Baltimore and leave, but to make genuine, life-giving connections with Black women and BIPOC who were also calling Baltimore home.",
   categories: ["responsibility"],
 })
 
