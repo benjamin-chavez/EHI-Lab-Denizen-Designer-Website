@@ -40,6 +40,7 @@ class HelloWorld extends React.Component {
             <ScrollToTop />
             {/* <div className='thin-container'> */}
             {/* <div> */}
+
             <Container fluid>
               <Switch>
                 <Route

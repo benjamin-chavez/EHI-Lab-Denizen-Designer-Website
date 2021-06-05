@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 class Footer extends Component {
   render() {
     return (
-      <div className=''>
+      <div className='footer-container'>
         <Row className='justify-content-sm-center footer'>
           <Col lg={5} md={7} sm={10}>
             <footer className='footer-landing-pg py-2'>

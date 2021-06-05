@@ -26,28 +26,34 @@ import ParticipantsIndex from '../containers/app_denizen/participants_index';
 
 const AppDenizen = (props) => {
   return (
-    <div>
-      <NavPrimary />
-      <NavSecondary />
+    <div id='wrapper'>
+      <div id='content'>
+        <NavPrimary />
+        <NavSecondary />
 
-      <Route path='/denizendesigner/home' component={DenizenHome} />
-      <Route exact path='/denizendesigner/interviews' component={Interviews} />
-      <Route exact path='/denizendesigner/report' component={Report} />
-      <Route
-        path='/denizendesigner/designerdatabase'
-        component={DesignerDatabase}
-      />
-      <Route path='/denizendesigner/quotes' component={Quotes} />
+        <Route path='/denizendesigner/home' component={DenizenHome} />
+        <Route
+          exact
+          path='/denizendesigner/interviews'
+          component={Interviews}
+        />
+        <Route exact path='/denizendesigner/report' component={Report} />
+        <Route
+          path='/denizendesigner/designerdatabase'
+          component={DesignerDatabase}
+        />
+        <Route path='/denizendesigner/quotes' component={Quotes} />
 
-      <Route exact path='/denizendesigner/resources' component={Resources} />
-      <Route
-        path='/denizendesigner/interviews/:id'
-        component={ParticipantsShow}
-      />
+        <Route exact path='/denizendesigner/resources' component={Resources} />
+        <Route
+          path='/denizendesigner/interviews/:id'
+          component={ParticipantsShow}
+        />
 
-      <Switch>
-        <Redirect exact from='/denizendesigner' to='/denizendesigner/home' />
-      </Switch>
+        <Switch>
+          <Redirect exact from='/denizendesigner' to='/denizendesigner/home' />
+        </Switch>
+      </div>
       <Footer />
     </div>
   );
