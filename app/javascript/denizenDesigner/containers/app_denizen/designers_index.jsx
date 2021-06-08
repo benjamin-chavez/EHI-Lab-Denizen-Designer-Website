@@ -23,7 +23,7 @@ class DesignersIndex extends Component {
               this.props.city == 'designerdatabase' ||
               this.props.city == 'All Cities' ? (
               <Col xs={12} sm={12} md={4} lg={3} xl={3} className='p-0'>
-                <Fade bottom duration={1500}>
+                <Fade ssrFadeout={true} bottom duration={1500}>
                   <Card className=''>
                     {/* <Card.Body className='p-0'> */}
                     <Row className='ml-0 mr-0'>

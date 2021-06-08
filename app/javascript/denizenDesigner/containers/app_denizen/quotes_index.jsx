@@ -13,6 +13,7 @@ import {
 } from 'react-bootstrap';
 // import Pagination from './pagination';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import { fetchQuotes } from '../../actions';
 
 import { fetchParticipants1 } from '../../actions';
@@ -33,6 +34,8 @@ function QuotesIndex({
     fetchParticipants1();
   }, []);
 
+  useEffect(() => {}, []);
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -41,6 +44,7 @@ function QuotesIndex({
   const [quoteOwner, setQuoteOwner] = useState('');
   const [ownerRole, setOwnerRole] = useState('');
   const [ownerID, setOwnerID] = useState('');
+  const [fadeState, setfadeState] = useState(true);
 
   const lala = () => {
     return participantsData.loading
@@ -102,6 +106,7 @@ function QuotesIndex({
 
       <div className=''>
         {/* <p>{quote.first}</p> */}
+
         <CardColumns>
           {quoteData &&
             quoteData.quotes &&
