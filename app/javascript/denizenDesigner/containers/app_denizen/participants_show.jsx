@@ -62,9 +62,18 @@ export class ParticipantsShow extends Component {
                 className='showImage'
                 fluid
               /> */}
+              {/* <div className='report-img'>
+                {' '}
+                <Image
+                  src={this.props.participant.profileImgLink}
+                  alt='Education Graphic'
+                  fluid
+                />
+              </div> */}
               <Image
                 src={this.props.participant.profileImgLink}
                 className='participant-show-img'
+                fluid
               />
               {/* <div className='participant-show-img'></div> */}
 
