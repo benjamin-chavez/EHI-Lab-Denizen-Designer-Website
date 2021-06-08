@@ -55,7 +55,7 @@ class GenderChart extends Component {
                   align: 'center',
                   title: {
                     display: this.props.displayTitle,
-                    text: 'Demographics of the Denizen Designers',
+                    // text: 'Demographics of the Denizen Designers',
                     fontSize: 25,
                   },
                   legend: {

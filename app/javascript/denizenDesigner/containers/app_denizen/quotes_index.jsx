@@ -109,7 +109,7 @@ function QuotesIndex({
               quoteCategoryPath == 'all_quotes' ||
               quote.categories.includes(quoteCategoryPath) ? (
                 <div key={quote.id}>
-                  <Fade bottom duration={1500}>
+                  <Fade bottom duration={1500} count={1}>
                     <Card
                       className='denizen-quote-card'
                       onClick={() => {

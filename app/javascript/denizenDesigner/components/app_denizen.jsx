@@ -29,6 +29,7 @@ const AppDenizen = (props) => {
     <div id='wrapper'>
       <div id='content'>
         <NavPrimary />
+
         {/* <NavSecondary /> */}
 
         <Route path='/denizendesigner/home' component={DenizenHome} />
@@ -54,6 +55,7 @@ const AppDenizen = (props) => {
           <Redirect exact from='/denizendesigner' to='/denizendesigner/home' />
         </Switch>
       </div>
+
       <Footer />
     </div>
   );

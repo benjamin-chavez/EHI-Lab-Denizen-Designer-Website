@@ -69,7 +69,7 @@ class RaceChart extends Component {
                     // text: 'Largest Cities In Massachusetts',
                     // fontSize: 25,
                     display: this.props.displayTitle,
-                    text: 'Demographics of the Denizen Designers',
+                    // text: 'Demographics of the Denizen Designers',
                     fontSize: 25,
                   },
                   legend: {

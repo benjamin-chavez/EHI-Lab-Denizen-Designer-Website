@@ -91,7 +91,7 @@ class EnviSectChart extends Component {
                   align: 'center',
                   title: {
                     display: this.props.displayTitle,
-                    text: 'Need New Title',
+                    // text: 'Need New Title',
                     fontSize: 25,
                   },
                   legend: {

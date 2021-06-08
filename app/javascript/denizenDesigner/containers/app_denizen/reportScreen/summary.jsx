@@ -294,7 +294,23 @@ class Influence extends Component {
               </blockquote>
             </Card.Body>
           </Card>
-
+          <p>
+            Perhaps the most important insight is one reiterated throughout both
+            the surveys and the interviews is the acknowledgement that anyone
+            can design. Most people have been naturally designing in some way
+            and don’t know it. While formal training can provide a helpful
+            foundation, knowledge can come from many sources. Often, community
+            members and organizers without official design titles or training
+            have valuable insights into their specific needs and have been
+            adapting their own solutions to meet these needs. While the language
+            and the resources used may be different, the same problem-solving
+            intuition can be found across disciplines and backgrounds. Thus,
+            formally trained designers can help guide the community design
+            process by sharing their own knowledge and decentralizing creative
+            input. By actively engaging community imagination and innovation
+            there is more possibility to design in ways that minimize harm and
+            maximize impact.{' '}
+          </p>
           <h3>Understanding Power - The Problem </h3>
           <p className=''>Introduction to why this is important</p>
           <p>
@@ -305,22 +321,24 @@ class Influence extends Component {
             design work. Additionally, the survey responders indicated that
             racism, sexism, homophobia and/or transphobia and classism were
             barriers to design work by most respondents (92%, 80%, 73% and 93%
-            respectively). Another reoccurring topic that appeared in the
-            interviews was that current design practice and institutions can
-            create significant barriers both to entry and for implementation.
-            Historically, design practice has not considered the most
-            marginalized and often has contributed to inequity. Because
-            designers are often working in profit-focused places rather than
-            community-oriented ones, it can be challenging to implement change
-            within these existing power structures. Traditionally, designers and
-            academics are limited by the institutions they work for and design
-            systems that were not designed to accommodate the most marginalized.
-            Denizen Designers can shift power imbalances by openly sharing
-            knowledge and empowering communities to design for themselves. When
-            they can, they strive to center the conversation on communities.
-            Individual academics strive to involve communities at every phase
-            and find a balance between being a facilitator and part of a
-            collective.
+            respectively).
+          </p>
+          <p>
+            Another reoccurring topic that appeared in the interviews was that
+            current design practice and institutions can create significant
+            barriers both to entry and for implementation. Historically, design
+            practice has not considered the most marginalized and often has
+            contributed to inequity. Because designers are often working in
+            profit-focused places rather than community-oriented ones, it can be
+            challenging to implement change within these existing power
+            structures. Traditionally, designers and academics are limited by
+            the institutions they work for and design systems that were not
+            designed to accommodate the most marginalized. Denizen Designers can
+            shift power imbalances by openly sharing knowledge and empowering
+            communities to design for themselves. When they can, they strive to
+            center the conversation on communities. Individual academics strive
+            to involve communities at every phase and find a balance between
+            being a facilitator and part of a collective.
           </p>
 
           <Card className='report-quote mb-3 '>

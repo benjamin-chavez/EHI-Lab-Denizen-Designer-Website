@@ -34,7 +34,7 @@ class Demographics extends Component {
           <h2>Demographics of the Denizen Designers</h2>
 
           <Tab.Container id='' defaultActiveKey='race'>
-            <Tab.Content className=' report-img'>
+            <Tab.Content className='reportChartGraphModule report-img'>
               <Tab.Pane eventKey='race'>
                 <RaceChart legendPosition='bottom' />
               </Tab.Pane>
@@ -92,21 +92,13 @@ class Demographics extends Component {
                 {/* <p className='fillerTab'>Design Employment</p> */}
 
                 <div className='report-img'>
-                  {/* <Image
+                  <Image
                     // src={NavLogo}
                     src={designEmployment}
-                    
+                    className='fillerTab'
                     alt='Education Graphic'
                     fluid
-                  /> */}
-                  <iframe
-                    width='733'
-                    height='454'
-                    seamless
-                    frameborder='0'
-                    scrolling='no'
-                    src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-c0VL15uZa6dSa-0GXJbfZ7lrmIO3cGpQciUjWJgyX3onnlesVFclucRVKejlctPIFwJtRDxG3Rg/pubchart?oid=1919010831&amp;format=interactive'
-                  ></iframe>
+                  />
                 </div>
               </Tab.Pane>
             </Tab.Content>
