@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Doughnut, Line, Pie } from 'react-chartjs-2';
-import { Container } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 
 class RaceChart extends Component {
   constructor(props) {

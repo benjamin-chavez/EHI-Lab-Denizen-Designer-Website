@@ -34,7 +34,7 @@ class Demographics extends Component {
           <h2>Demographics of the Denizen Designers</h2>
 
           <Tab.Container id='' defaultActiveKey='race'>
-            <Tab.Content className='reportChartGraphModule report-img'>
+            <Tab.Content className=' report-img'>
               <Tab.Pane eventKey='race'>
                 <RaceChart legendPosition='bottom' />
               </Tab.Pane>

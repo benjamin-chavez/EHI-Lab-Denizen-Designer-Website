@@ -371,10 +371,9 @@
 }
 
 .reportChartGraphModule{
-  // background-color: red;
-  // min-height: 350px;
-  height: 356px;
+  max-height: 356px;
 }
+
 .wordwrapBiBi{
   word-wrap:break-word;
 }
