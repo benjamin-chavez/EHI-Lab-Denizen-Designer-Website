@@ -8,7 +8,7 @@ class DenizenHome extends Component {
   render() {
     return (
       <div>
-        <Fade bottom duration={1500} delay={500} count={1}>
+        <Fade duration={1500} delay={500} count={1}>
           <div className='homeScreen pb-3'>
             <Row className='center mb-3 '>
               <Col>
