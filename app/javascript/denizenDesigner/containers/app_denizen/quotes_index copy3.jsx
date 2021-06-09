@@ -59,7 +59,7 @@ function QuotesIndex({ quoteData, fetchQuotes, quoteCategoryPath }) {
                 onMouseDown={(e) => e.preventDefault()}
                 className='close-button'
               >
-                close
+                closes
               </Button>
             </Row>
             <Row className='justify-content-center pb-1'>

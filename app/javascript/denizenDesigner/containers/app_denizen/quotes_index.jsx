@@ -84,7 +84,7 @@ function QuotesIndex({
                 onMouseDown={(e) => e.preventDefault()}
                 className='close-button'
               >
-                close
+                closes
               </Button>
             </Row>
             <Row className='justify-content-center pb-1'>
@@ -93,8 +93,11 @@ function QuotesIndex({
               </Col>
             </Row>
             <Row className='justify-content-center pb-2'>
-              <Link to={`/denizendesigner/interviews/${ownerID}`}>
-                <span className='modal-name px-3'>{quoteOwner}</span>
+              <Link
+                to={`/denizendesigner/interviews/${ownerID}`}
+                className='modal-name px-3'
+              >
+                <span>{quoteOwner}</span>
               </Link>
             </Row>
             <Row className='justify-content-center pb-1'>
@@ -151,8 +154,9 @@ function QuotesIndex({
                             {' '}
                             <Link
                               to={`/denizendesigner/interviews/${quote.participant_id}`}
+                              className='denizen-quote-author ml-0'
                             >
-                              <Card.Text className='denizen-quote-author ml-0'>
+                              <Card.Text>
                                 {quote.first_name}
                                 {` `}
                                 {quote.last_name}

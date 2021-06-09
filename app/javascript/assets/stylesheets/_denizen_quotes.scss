@@ -121,6 +121,11 @@
   margin: 14px 0px 0px 10px;
 }
 
+a.denizen-quote-author:hover {
+  color: #2dba90;
+  text-decoration: none !important;
+}
+
 .quote-item {
 }
 
@@ -183,6 +188,11 @@
   /* infographic primary */
 
   color: #08439a;
+}
+
+a.modal-name:hover {
+  color: #2dba90;
+  text-decoration: none !important;
 }
 
 .quote-modal .modal-role {

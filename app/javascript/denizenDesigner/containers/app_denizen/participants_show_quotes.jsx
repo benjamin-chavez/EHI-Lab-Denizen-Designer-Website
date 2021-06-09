@@ -96,7 +96,7 @@ function ParticipantsShowQuotes({
           <div key={quote.id}>
             <Card className='mb-3 quoteCard'>
               <Card.Body className=''>
-                <span>{quote.quote_body}</span>
+                <span>"{quote.quote_body}"</span>
               </Card.Body>
             </Card>
           </div>
