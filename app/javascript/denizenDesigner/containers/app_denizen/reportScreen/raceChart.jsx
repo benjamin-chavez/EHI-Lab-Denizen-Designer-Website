@@ -10,19 +10,18 @@ class RaceChart extends Component {
       chartData: {
         labels: [
           'Black or African American',
-          'Asian',
           'White',
           'Hispanic or Latino',
-          'Middle Eastern or Arab',
-          'American Indian or Alaskan Native',
+          'Middle Eastern or Arab ',
+          'Asian',
           'Carribean or West Indian',
-          'Pacific Islander',
-          'Other',
+          'others',
+          'American indian/Alaskan',
         ],
         datasets: [
           {
             label: 'Population',
-            data: [39, 29, 38, 9, 3, 2, 2, 0, 7],
+            data: [41, 27.6, 8.6, 2.9, 30.5, 1.9, 8, 2.9],
             backgroundColor: [
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',
@@ -32,7 +31,6 @@ class RaceChart extends Component {
               'rgba(255, 159, 64, 0.6)',
               'rgba(252, 2, 40, 0.8)',
               'rgba(21, 0, 255, 0.9)',
-              'rgba(50, 0, 150, 0.9)',
             ],
           },
         ],
