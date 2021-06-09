@@ -1,100 +1,39 @@
-import React, { useEffect, useState, Component } from 'react';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router';
+import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { connect, useSelector } from 'react-redux';
-import {
-  Row,
-  Col,
-  Card,
-  CardColumns,
-  Container,
-  Modal,
-  Button,
-} from 'react-bootstrap';
-// import { fetchQuotes } from '../../actions';
+import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
+import LoadSpinner from '../shared/spinner';
+// import reportImage from '../../../../assets/images/report-img-1.svg';
+// <Image src={instagramColorIcon} alt='Denizen Designer Logo' fluid />
+import InstagramColorIcon from '../../../../assets/images/instagramColorIcon.svg';
+import TwitterColorIcon from '../../../../assets/images/twitterColorIcon.svg';
+import IntShowQuotes from './interviewsScreens/intShowQuotes';
+import ParticipantsShowQuotes from './participants_show_quotes';
 
-// import { fetchParticipants1 } from '../../actions';
-import {
-  fetchParticipants1,
-  fetchParticipant,
-  fetchQuotes,
-} from '../../actions';
-import quotes from './quotes';
+// instagramColorIcon.svg;
+import { fetchParticipant, fetchQuotes } from '../../actions';
 
-function QuotesIndex({
-  quoteData,
-  fetchQuotes,
-  fetchParticipants1,
-  quoteCategoryPath,
-  participantsData,
-}) {
-  useEffect(() => {
-    fetchQuotes();
-  }, []);
+export class ParticipantsShow extends Component {
+  componentDidMount() {
+    this.props.fetchQuotes;
+  }
 
-  useEffect(() => {
-    fetchParticipants1();
-  }, []);
+  componentWillMount() {
+    if (!this.props.participant) {
+      this.props.fetchParticipant(this.props.match.params.id);
+    }
+  }
 
-  useEffect(() => {
-    fetchParticipant();
-  }, []);
-
-  useEffect(() => {}, []);
-
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  const [curQuote, setCurQuote] = useState('');
-  const [quoteOwner, setQuoteOwner] = useState('');
-  const [ownerRole, setOwnerRole] = useState('');
-  const [ownerID, setOwnerID] = useState('');
-  const [fadeState, setfadeState] = useState(true);
-
-  const lala = () => {
-    return participantsData.loading
-      ? console.log(
-          // participantsData.participants1.find((item) => item.id === 1).first_name
-          'nooooooooooooooooooooo'
-        )
-      : console.log(
-          participantsData.participants1.find((item) => item.id === 1)
-            .first_name
-        );
-  };
-
-  // let currentUserId = location.pathname.split('/').pop();
-
-  const numOfQuotes = 0;
-  let filteredQuotes = [];
-  // filteredQuotes
-  const filteredQuotesFunc = (quotesArray) => {
-    quotesArray.forEach((quote) => {
-      // console.log(quote.participant_id);
-      if (quote.participant_id == location.pathname.split('/').pop()) {
-        filteredQuotes.push(quote);
-      }
-    });
-    filteredQuotes = filteredQuotes.slice(0, 2);
-    console.log(filteredQuotes);
-  };
-
-  let curParticipant1 = '';
-
-  const curParticipantFunc = (participantsArray) => {
-    participantsArray.forEach((participant) => {
-      console.log('hihihihihihihihihihihi');
-    });
-  };
-
-  return quoteData.loading ? (
-    <h2>Loading...</h2>
-  ) : quoteData.error ? (
-    <h2>{quoteData.error}</h2>
-  ) : (
-    <div>
+  render() {
+    if (!this.props.participant) {
+      return (
+        <div>
+          <LoadSpinner />
+        </div>
+      );
+    }
+    return (
       <div className='participant-show participantShow pb-3'>
         <div>
           <Row className='mt-2'>
@@ -110,92 +49,123 @@ function QuotesIndex({
               </Link>
             </Col>
           </Row>
+
+          <Row className='my-4'>
+            <Col xs={12} lg={4} xl={3} className='mb-4'>
+              {/* <Card>
+                <Card.Body>
+                  <Image src={InstagramColorIcon} alt='Instagram Icon' fluid />
+                </Card.Body>
+              </Card> */}
+
+              {/* <Image
+                src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'
+                className='showImage'
+                fluid
+              /> */}
+              {/* <div className='report-img'>
+                {' '}
+                <Image
+                  src={this.props.participant.profileImgLink}
+                  alt='Education Graphic'
+                  fluid
+                />
+              </div> */}
+              <Image
+                src={this.props.participant.profileImgLink}
+                className='participant-show-img'
+                fluid
+              />
+              {/* <div className='participant-show-img'></div> */}
+
+              {/* THE ABOVE LINE IS THE IMAGE THAT NEEDS TO BE EDITED */}
+            </Col>
+            <Col xs={12} lg={8} xl={8}>
+              <h2 className='name'>
+                {this.props.participant.first_name}{' '}
+                {this.props.participant.last_name}
+              </h2>
+              <p className='designer-type'>
+                {this.props.participant.designer_type}
+              </p>
+              <p className='bio'>{this.props.participant.bio}</p>
+              {/* <IntShowQuotes /> */}
+
+              <ParticipantsShowQuotes />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={4} xl={3}></Col>
+            <Col xs={12} lg={8} xl={8}>
+              <ul className='socialLinksList p-0'>
+                {this.props.participant.instagram != '' ? (
+                  <li className='mr-3'>
+                    <a
+                      className='socialLinks'
+                      target='_blank'
+                      href={`https://instagram.com/${this.props.participant.instagram}`}
+                    >
+                      <Button variant='light' className='socialLinksBtn'>
+                        <Image
+                          src={InstagramColorIcon}
+                          alt='Instagram Icon'
+                          fluid
+                        />
+                        <span className='ml-1'>
+                          {' '}
+                          {this.props.participant.instagram}
+                        </span>
+                      </Button>
+                    </a>
+                  </li>
+                ) : (
+                  ''
+                )}
+                {this.props.participant.twitter != '' ? (
+                  <li className='mr-3'>
+                    <a
+                      className='socialLinks'
+                      target='_blank'
+                      href={`https://twitter.com/${this.props.participant.twitter}`}
+                    >
+                      <Button variant='light' className='socialLinksBtn'>
+                        <Image
+                          src={TwitterColorIcon}
+                          alt='Twitter Icon'
+                          fluid
+                        />
+                        <span className='ml-1'>
+                          {' '}
+                          {this.props.participant.twitter}
+                        </span>
+                      </Button>
+                    </a>
+                  </li>
+                ) : (
+                  ''
+                )}
+              </ul>
+            </Col>
+          </Row>
         </div>
       </div>
-
-      <div className=''>
-        <CardColumns>
-          {quoteData &&
-            quoteData.quotes &&
-            filteredQuotesFunc(quoteData.quotes)}
-
-          {filteredQuotes.map((quote, index) => (
-            <div key={quote.id}>
-              <Card
-                className='denizen-quote-card'
-                onClick={() => {
-                  setCurQuote(quote.quote_body);
-                  setQuoteOwner(
-                    `${
-                      participantsData.participants1.find(
-                        (item) => item.id === quote.participant_id
-                      ).bio
-                    } ${
-                      participantsData.participants1.find(
-                        (item) => item.id === quote.participant_id
-                      ).last_name
-                    }`
-                  );
-                  // setOwnerRole('Designer Type');
-                  setOwnerRole(
-                    participantsData.participants1.find(
-                      (item) => item.id === quote.participant_id
-                    ).designer_type
-                  );
-                  setOwnerID(quote.participant_id);
-                  handleShow();
-                  lala();
-                }}
-              >
-                <h2 className='name'>
-                  {quote.first_name} {quote.last_name}
-                </h2>
-                <Card.Body className='denizen-quote-body'>
-                  <Row>
-                    <Col sm={12}>
-                      <Card.Text>"{quote.quote_body}"</Card.Text>
-                    </Col>
-
-                    <Col sm={12}>
-                      {' '}
-                      <Link
-                        to={`/denizendesigner/interviews/${quote.participant_id}`}
-                      >
-                        <Card.Text className='denizen-quote-author ml-0'>
-                          {quote.first_name}
-                          {` `}
-                          {quote.last_name}
-                        </Card.Text>
-                      </Link>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </CardColumns>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
-const mapStateToProps = (state) => {
-  const participant = state.participants.find(
-    (p) => p.id === location.pathname.split('/').pop()
-  );
-  return {
-    quoteData: state.quotes,
-    participantsData: state.participants1,
-    curParticipant: participant,
-  };
-};
+function mapReduxStateToProps(reduxState, ownProps) {
+  const idFromUrl = parseInt(ownProps.match.params.id, 10);
+  const participant = reduxState.participants.find((p) => p.id === idFromUrl);
+  const quoteData = reduxState.quotes;
+  // const quotes1 = quoteData.quotes.find((p) => p.id === idFromUrl);
+  return { participant, quoteData };
+}
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    fetchQuotes: () => dispatch(fetchQuotes()),
-    fetchParticipants1: () => dispatch(fetchParticipants1()),
-    fetchParticipant: () => dispatch(fetchParticipant()),
-  };
-};
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchParticipant, fetchQuotes }, dispatch);
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(QuotesIndex);
+export default connect(
+  mapReduxStateToProps,
+  mapDispatchToProps
+)(ParticipantsShow);
