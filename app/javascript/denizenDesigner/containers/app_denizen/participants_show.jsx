@@ -98,7 +98,7 @@ export class ParticipantsShow extends Component {
               {/* THE ABOVE LINE IS THE IMAGE THAT NEEDS TO BE EDITED */}
             </Col>
             <Col xs={12} lg={8} xl={8}>
-              <Fade bottom duration={1500} delay={1000} count={1}>
+              <Fade bottom duration={1500} delay={500} count={1}>
                 <h2 className='name'>
                   {this.props.participant.first_name}{' '}
                   {this.props.participant.last_name}
@@ -116,7 +116,7 @@ export class ParticipantsShow extends Component {
           <Row>
             <Col xs={12} lg={4} xl={3}></Col>
             <Col xs={12} lg={8} xl={8}>
-              <Fade bottom duration={1500} delay={1700} count={1}>
+              <Fade bottom duration={1500} delay={850} count={1}>
                 <ul className='socialLinksList p-0'>
                   {this.props.participant.instagram != '' ? (
                     <li className='mr-3'>
