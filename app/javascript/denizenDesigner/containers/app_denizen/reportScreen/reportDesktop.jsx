@@ -71,8 +71,8 @@ class ReportDesktop extends Component {
       <Row className='mb-3'>
         <Col sm={3} className='report-col-2'>
           {/* <Col sm={3} className='mr-2'> */}
-          <ul className='test123'>
-            <Fade bottom duration={1500} delay={0} count={1}>
+          <Fade bottom duration={1500} delay={0} count={1}>
+            <ul className='test123'>
               <li className='reportDownloadButton'>
                 <Button className='pl-0 reportDownloadBtn'>
                   <Link className='' target='_blank' download>
@@ -186,13 +186,13 @@ class ReportDesktop extends Component {
                 </Link>
               </li>
               {/* ****************************************************** */}
-            </Fade>
-          </ul>
+            </ul>
+          </Fade>
         </Col>
         {/* <div className='mr-4'></div> */}
         <Col sm={9} className='report-col-9'>
           {/* <Container className='report-container'> */}
-          <Fade duration={1500} delay={500} count={1}>
+          <Fade duration={1500} delay={1000} count={1}>
             <Element
               name='test7'
               className='report-container'
