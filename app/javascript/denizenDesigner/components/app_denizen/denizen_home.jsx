@@ -27,14 +27,14 @@ class DenizenHome extends Component {
                     experiences of individuals and collectives who have engaged
                     design as a way to address social, economic, or political
                     challenges in their local environments. We interviewed
-                    people from this project who come from a variety of
-                    backgrounds ranging from graphic design to architecture and
-                    consulting. Although their backgrounds and interpretations
-                    of design may be different, there is a common theme that
-                    participatory design and community work are fundamental
-                    aspects to ethical and transformative design. We hope these
-                    interviews bring more awareness to this type of work and a
-                    stronger network of Denizen Designers will be formed.{' '}
+                    people who came from a variety of backgrounds ranging from
+                    graphic design to architecture and consulting. Although
+                    their backgrounds and interpretations of design may be
+                    different, there is a common theme that participatory design
+                    and community work are fundamental aspects to ethical and
+                    transformative design. We hope these interviews bring more
+                    awareness to this type of work and a stronger network of
+                    Denizen Designers will be formed.{' '}
                   </p>
                 </Fade>
               </Col>

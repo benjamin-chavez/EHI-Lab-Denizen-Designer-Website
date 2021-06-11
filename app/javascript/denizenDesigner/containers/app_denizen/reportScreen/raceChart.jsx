@@ -21,7 +21,7 @@ class RaceChart extends Component {
         datasets: [
           {
             label: 'Population',
-            data: [41, 27.6, 8.6, 2.9, 30.5, 1.9, 8, 2.9],
+            data: [32.8, 23.7, 6.9, 2.3, 24.4, 1.5, 6.4, 2.3],
             backgroundColor: [
               'rgba(255, 99, 132, 0.6)',
               'rgba(54, 162, 235, 0.6)',

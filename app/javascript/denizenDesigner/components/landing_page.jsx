@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Row, Col, Button, Image } from 'react-bootstrap';
 import Logo from '../../../assets/images/dd-logo2.svg';
+import Fade from 'react-reveal/Fade';
 
 const currentYear = new Date().getFullYear();
 
@@ -13,21 +14,25 @@ class LandingPage extends Component {
         <div className='wrapper py-5 '>
           <Row className='logo-landing-pg justify-content-sm-center pt-5'>
             <Col className='' lg={5} md={7} sm={10} xs={12}>
-              <Image
-                src={Logo}
-                className='d-inline-block align-top'
-                alt='Denizen Designer Logo'
-                fluid
-              />{' '}
+              <Fade duration={1500} delay={0} count={1}>
+                <Image
+                  src={Logo}
+                  className='d-inline-block align-top'
+                  alt='Denizen Designer Logo'
+                  fluid
+                />{' '}
+              </Fade>
             </Col>
           </Row>
           <Row className='justify-content-center mt-4'>
             <Col className='col-center'>
-              <p className='lp-subtitle'>
-                The Denizen Designer Project is an ethnographic exploration of
-                best practices and use cases of participatory design as a
-                methodological framework.
-              </p>
+              <Fade duration={1500} delay={1000} count={1}>
+                <p className='lp-subtitle'>
+                  The Denizen Designer Project is an ethnographic exploration of
+                  best practices and use cases of participatory design as a
+                  methodological framework.
+                </p>
+              </Fade>
             </Col>
           </Row>
           <Row className='justify-content-sm-center mt-5'>
@@ -49,17 +54,19 @@ class LandingPage extends Component {
             </Col> */}
             <Col lg={4} md={6} sm={12} xs={12}>
               <Link to={`/denizendesigner/home`}>
-                <Button
-                  className='landing-btn'
-                  variant='light'
-                  size='lg'
-                  onMouseDown={(e) => e.preventDefault()}
-                  block
-                >
-                  <span className='btn-text '>
-                    The Denizen Designer Project
-                  </span>
-                </Button>
+                <Fade duration={1500} delay={2000} count={1}>
+                  <Button
+                    className='landing-btn'
+                    variant='light'
+                    size='lg'
+                    onMouseDown={(e) => e.preventDefault()}
+                    block
+                  >
+                    <span className='btn-text '>
+                      The Denizen Designer Project
+                    </span>
+                  </Button>
+                </Fade>
               </Link>
             </Col>
           </Row>

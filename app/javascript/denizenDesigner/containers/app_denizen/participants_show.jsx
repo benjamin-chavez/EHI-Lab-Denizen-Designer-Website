@@ -13,6 +13,7 @@ import ParticipantsShowQuotes from './participants_show_quotes';
 
 // instagramColorIcon.svg;
 import { fetchParticipant, fetchQuotes } from '../../actions';
+import Fade from 'react-reveal/Fade';
 
 export class ParticipantsShow extends Component {
   componentDidMount() {
@@ -71,80 +72,86 @@ export class ParticipantsShow extends Component {
                   fluid
                 />
               </div> */}
-              <Image
-                src={this.props.participant.profileImgLink}
-                className='participant-show-img'
-                fluid
-              />
+              <Fade bottom duration={1500} delay={0} count={1}>
+                <Image
+                  src={this.props.participant.profileImgLink}
+                  className='participant-show-img'
+                  fluid
+                />
+              </Fade>
               {/* <div className='participant-show-img'></div> */}
 
               {/* THE ABOVE LINE IS THE IMAGE THAT NEEDS TO BE EDITED */}
             </Col>
             <Col xs={12} lg={8} xl={8}>
-              <h2 className='name'>
-                {this.props.participant.first_name}{' '}
-                {this.props.participant.last_name}
-              </h2>
-              <p className='designer-type'>
-                {this.props.participant.designer_type}
-              </p>
-              <p className='bio'>{this.props.participant.bio}</p>
-              {/* <IntShowQuotes /> */}
+              <Fade bottom duration={1500} delay={1000} count={1}>
+                <h2 className='name'>
+                  {this.props.participant.first_name}{' '}
+                  {this.props.participant.last_name}
+                </h2>
+                <p className='designer-type'>
+                  {this.props.participant.designer_type}
+                </p>
+                <p className='bio'>{this.props.participant.bio}</p>
+                {/* <IntShowQuotes /> */}
 
-              <ParticipantsShowQuotes />
+                <ParticipantsShowQuotes />
+              </Fade>
             </Col>
           </Row>
           <Row>
             <Col xs={12} lg={4} xl={3}></Col>
             <Col xs={12} lg={8} xl={8}>
-              <ul className='socialLinksList p-0'>
-                {this.props.participant.instagram != '' ? (
-                  <li className='mr-3'>
-                    <a
-                      className='socialLinks'
-                      target='_blank'
-                      href={`https://instagram.com/${this.props.participant.instagram}`}
-                    >
-                      <Button variant='light' className='socialLinksBtn'>
-                        <Image
-                          src={InstagramColorIcon}
-                          alt='Instagram Icon'
-                          fluid
-                        />
-                        <span className='ml-1'>
-                          {' '}
-                          {this.props.participant.instagram}
-                        </span>
-                      </Button>
-                    </a>
-                  </li>
-                ) : (
-                  ''
-                )}
-                {this.props.participant.twitter != '' ? (
-                  <li className='mr-3'>
-                    <a
-                      className='socialLinks'
-                      target='_blank'
-                      href={`https://twitter.com/${this.props.participant.twitter}`}
-                    >
-                      <Button variant='light' className='socialLinksBtn'>
-                        <Image
-                          src={TwitterColorIcon}
-                          alt='Twitter Icon'
-                          fluid
-                        />
-                        <span className='ml-1'>
-                          {' '}
-                          {this.props.participant.twitter}
-                        </span>
-                      </Button>
-                    </a>
-                  </li>
-                ) : (
-                  ''
-                )}
-              </ul>
+              <Fade bottom duration={1500} delay={1700} count={1}>
+                <ul className='socialLinksList p-0'>
+                  {this.props.participant.instagram != '' ? (
+                    <li className='mr-3'>
+                      <a
+                        className='socialLinks'
+                        target='_blank'
+                        href={`https://instagram.com/${this.props.participant.instagram}`}
+                      >
+                        <Button variant='light' className='socialLinksBtn'>
+                          <Image
+                            src={InstagramColorIcon}
+                            alt='Instagram Icon'
+                            fluid
+                          />
+                          <span className='ml-1'>
+                            {' '}
+                            {this.props.participant.instagram}
+                          </span>
+                        </Button>
+                      </a>
+                    </li>
+                  ) : (
+                    ''
+                  )}
+                  {this.props.participant.twitter != '' ? (
+                    <li className='mr-3'>
+                      <a
+                        className='socialLinks'
+                        target='_blank'
+                        href={`https://twitter.com/${this.props.participant.twitter}`}
+                      >
+                        <Button variant='light' className='socialLinksBtn'>
+                          <Image
+                            src={TwitterColorIcon}
+                            alt='Twitter Icon'
+                            fluid
+                          />
+                          <span className='ml-1'>
+                            {' '}
+                            {this.props.participant.twitter}
+                          </span>
+                        </Button>
+                      </a>
+                    </li>
+                  ) : (
+                    ''
+                  )}
+                </ul>
+              </Fade>
             </Col>
           </Row>
         </div>
