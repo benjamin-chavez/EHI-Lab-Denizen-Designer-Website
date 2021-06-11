@@ -146,10 +146,16 @@ class Demographics extends Component {
                           Race and Gender
                         </Card.Title>
                         <Card.Text className='text-body'>
-                          According to the Design Census that AIGA (American
-                          Institute of Graphic Arts) and Google conducted in
-                          2019, 61% of designers identify as female, 36% as
-                          male, and 1.4% as non-binary/gender
+                          According to the{' '}
+                          <a
+                            target='_blank'
+                            href='https://designcensus2019.aiga.org/'
+                          >
+                            Design Census
+                          </a>{' '}
+                          that AIGA (American Institute of Graphic Arts) and
+                          Google conducted in 2019, 61% of designers identify as
+                          female, 36% as male, and 1.4% as non-binary/gender
                           nonconforming/genderfluid. While the rather sizable
                           percentage of women in the design field does subvert
                           the general expectations of design being a male
@@ -166,15 +172,15 @@ class Demographics extends Component {
                           non-binary, 3.8% as gender nonconforming, 1% as trans
                           men, 1% as genderqueer and 1% as 2-spirited. The
                           racial demographics of the Denizen Designers was just
-                          as diverse with 41.2% identifying as Black/African
-                          American, 29.4% Asian, 28.4% White, 8.4% Hispanic,
-                          2.9% Middle Eastern/Arab, 2.9% American Indian/Alaskan
-                          origin and 2% Caribbean or West Indian. This dramatic
-                          increase in the amount of diversity, in both race and
-                          gender identity, allowed for the Denizen Designer
-                          Project to learn more about the perspectives and
-                          challenges that generally underrepresented people have
-                          identified or seen within the design field.{' '}
+                          as diverse with 32.8% identifying as Black/African
+                          American, 24.4% Asian, 23.7% White, 6.9% Hispanic,
+                          2.3% Middle Eastern/Arab, 2.3% American Indian/Alaskan
+                          origin and 1.5% Caribbean or West Indian. This
+                          dramatic increase in the amount of diversity, in both
+                          race and gender identity, allowed for the Denizen
+                          Designer Project to learn more about the perspectives
+                          and challenges that generally underrepresented people
+                          have identified or seen within the design field.
                         </Card.Text>
                       </Col>
                     </Row>
@@ -190,10 +196,16 @@ class Demographics extends Component {
                           Race and Gender
                         </Card.Title>
                         <Card.Text className='text-body'>
-                          According to the Design Census that AIGA (American
-                          Institute of Graphic Arts) and Google conducted in
-                          2019, 61% of designers identify as female, 36% as
-                          male, and 1.4% as non-binary/gender
+                          According to the{' '}
+                          <a
+                            target='_blank'
+                            href='https://designcensus2019.aiga.org/'
+                          >
+                            Design Census
+                          </a>{' '}
+                          that AIGA (American Institute of Graphic Arts) and
+                          Google conducted in 2019, 61% of designers identify as
+                          female, 36% as male, and 1.4% as non-binary/gender
                           nonconforming/genderfluid. While the rather sizable
                           percentage of women in the design field does subvert
                           the general expectations of design being a male
@@ -210,15 +222,15 @@ class Demographics extends Component {
                           non-binary, 3.8% as gender nonconforming, 1% as trans
                           men, 1% as genderqueer and 1% as 2-spirited. The
                           racial demographics of the Denizen Designers was just
-                          as diverse with 41.2% identifying as Black/African
-                          American, 29.4% Asian, 28.4% White, 8.4% Hispanic,
-                          2.9% Middle Eastern/Arab, 2.9% American Indian/Alaskan
-                          origin and 2% Caribbean or West Indian. This dramatic
-                          increase in the amount of diversity, in both race and
-                          gender identity, allowed for the Denizen Designer
-                          Project to learn more about the perspectives and
-                          challenges that generally underrepresented people have
-                          identified or seen within the design field.{' '}
+                          as diverse with 32.8% identifying as Black/African
+                          American, 24.4% Asian, 23.7% White, 6.9% Hispanic,
+                          2.3% Middle Eastern/Arab, 2.3% American Indian/Alaskan
+                          origin and 1.5% Caribbean or West Indian. This
+                          dramatic increase in the amount of diversity, in both
+                          race and gender identity, allowed for the Denizen
+                          Designer Project to learn more about the perspectives
+                          and challenges that generally underrepresented people
+                          have identified or seen within the design field.
                         </Card.Text>
                       </Col>
                     </Row>

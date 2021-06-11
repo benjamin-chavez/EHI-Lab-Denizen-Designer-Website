@@ -126,7 +126,7 @@ class Influence extends Component {
                   and you go through those steps of the framework, it becomes
                   bigger than you.”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   Anjanette D.H., Detroit{' '}
                 </footer>
               </blockquote>
@@ -221,7 +221,7 @@ class Influence extends Component {
                   “...social design is a method that produces methods to solve
                   problems”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   Kenneth B., Chicago{' '}
                 </footer>
               </blockquote>
@@ -288,7 +288,7 @@ class Influence extends Component {
                   calling yourself an artist versus calling yourself a designer
                   is so subjective and up to each person.”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   Taylor H., New Orleans{' '}
                 </footer>
               </blockquote>
@@ -350,7 +350,7 @@ class Influence extends Component {
                   access to that kind of decision-making power, and it’s not the
                   people who should.”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   Ezra K., Oakland{' '}
                 </footer>
               </blockquote>
@@ -393,7 +393,7 @@ class Influence extends Component {
                   assumptions, and you challenge those assumptions, and you
                   actually let the other person tell you what’s happening.”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   Jenny L, Los Angeles{' '}
                 </footer>
               </blockquote>
@@ -440,7 +440,7 @@ class Influence extends Component {
                   them to be active collaborators in research projects that
                   really even excite them...”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   Anushka J., Baltimore{' '}
                 </footer>
               </blockquote>
@@ -497,7 +497,7 @@ class Influence extends Component {
                   translate what we learn. We have to build relationships first
                   and create spaces for that relationship, building that up.”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   N’Deye D., Baltimore{' '}
                 </footer>
               </blockquote>
@@ -547,7 +547,7 @@ class Influence extends Component {
                   current moment and escape into the potential of the next
                   moment.”{' '}
                 </p>
-                <footer className='blockquote-footer quote-author'>
+                <footer className='blockquote-footer quote-author text-right'>
                   Bryan L. Jr., New Orleans{' '}
                 </footer>
               </blockquote>
