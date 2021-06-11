@@ -52,7 +52,7 @@ class LandingPage extends Component {
                 </Button>
               </Link>
             </Col> */}
-            <Col lg={4} md={6} sm={12} xs={12}>
+            <Col lg={6} md={8} sm={12} xs={12}>
               <Link to={`/denizendesigner/home`}>
                 <Fade duration={1500} delay={1000} count={1}>
                   <Button
@@ -62,7 +62,7 @@ class LandingPage extends Component {
                     onMouseDown={(e) => e.preventDefault()}
                     block
                   >
-                    <span className='btn-text px-2 '>
+                    <span className='btn-text px-2'>
                       The Denizen Designer Project
                     </span>
                   </Button>

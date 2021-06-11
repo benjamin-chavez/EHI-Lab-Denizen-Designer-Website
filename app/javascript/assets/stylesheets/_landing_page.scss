@@ -86,10 +86,15 @@
   // text-underline-position: under;
 }
 
-.landing-btn .btn-text:hover {
+.landing-btn:hover .btn-text {
 
   border-bottom: 4px solid #2dba90;
 
+}
+
+.width100{
+  width: 100%;
+  height: 10px;
 }
 
 .landing-btn:focus,
@@ -117,5 +122,21 @@
     height: 100%;
     margin-bottom: 100px;
     // background-color: red;
+  }
+
+  
+}
+
+
+@media (max-width: 576px) {
+  .landing-btn:hover {
+  
+    border-bottom: 4px solid #2dba90;
+  }
+
+  .landing-btn:hover .btn-text {
+
+    border-bottom: none;
+  
   }
 }
