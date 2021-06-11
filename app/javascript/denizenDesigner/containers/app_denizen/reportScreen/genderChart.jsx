@@ -37,7 +37,7 @@ class GenderChart extends Component {
   }
 
   static defaultProps = {
-    displayTitle: true,
+    displayTitle: false,
     displayLegend: true,
     legendPosition: 'top',
   };

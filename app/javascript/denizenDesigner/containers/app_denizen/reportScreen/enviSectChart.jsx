@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { Doughnut, Line, Pie, Bar } from 'react-chartjs-2';
 import { Container } from 'react-bootstrap';
+import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 
 class EnviSectChart extends Component {
   constructor(props) {
@@ -39,32 +40,32 @@ class EnviSectChart extends Component {
         datasets: [
           {
             label: 'Both',
-            data: [13, 30, 13, 13, 15, 18, 0],
+            data: [27.7, 19.4, 12.5, 13.2, 46.2, 17.1],
             backgroundColor: 'rgba(255, 159, 64, 0.6)',
           },
           {
             label: 'Online',
-            data: [0, 100, 0, 0, 0, 0, 0],
+            data: [0, 1.6, 0, 0, 0, 0, 0],
             backgroundColor: 'rgba(75, 192, 192, 0.6)',
           },
           {
             label: 'Rural',
-            data: [50, 0, 50, 0, 0, 0, 0],
+            data: [5.6, 0, 2.5, 0, 0, 0, 0],
             backgroundColor: 'rgba(75, 192, 192, 0.6)',
           },
           {
-            label: 'suburban, college campus outside of major US city',
-            data: [0, 0, 100, 0, 0, 0, 0],
+            label: 'Suburban, College Campus Outside of Major US City',
+            data: [0, 0, 2.5, 0, 0, 0, 0],
             backgroundColor: 'rgba(255, 206, 86, 0.6)',
           },
           {
             label: 'Urban',
-            data: [7, 29, 20, 19, 4, 20, 0],
+            data: [66.7, 77.4, 82.5, 84.2, 53.8, 82.9],
             backgroundColor: 'rgba(54, 162, 235, 0.6)',
           },
           {
-            label: 'urban, rural, both domestically and internationally',
-            data: [0, 50, 0, 50, 0, 0, 0],
+            label: 'Urban, Rural, Both Domestically and Internationally',
+            data: [0, 1.6, 0, 2.6, 0, 0, 0],
             backgroundColor: 'rgba(255, 99, 132, 0.6)',
           },
         ],
@@ -73,8 +74,7 @@ class EnviSectChart extends Component {
   }
 
   static defaultProps = {
-    displayTitle: true,
-    displayLegend: true,
+    displayLegend: false,
     legendPosition: 'top',
   };
 
@@ -89,17 +89,13 @@ class EnviSectChart extends Component {
               options={{
                 plugins: {
                   align: 'center',
-                  title: {
-                    display: this.props.displayTitle,
-                    // text: 'Need New Title',
-                    fontSize: 25,
-                  },
+
                   legend: {
-                    position: 'right',
                     display: this.props.displayLegend,
                     position: 'bottom',
                   },
                 },
+
                 responsive: true,
                 scales: {
                   x: {
@@ -112,6 +108,30 @@ class EnviSectChart extends Component {
               }}
             />
           </article>
+          <div id=''>
+            {/* <iframe
+              width='698.1827830188679'
+              height='305.5'
+              seamless
+              frameborder='0'
+              scrolling='no'
+              src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-c0VL15uZa6dSa-0GXJbfZ7lrmIO3cGpQciUjWJgyX3onnlesVFclucRVKejlctPIFwJtRDxG3Rg/pubchart?oid=1200789362&amp;format=interactive'
+            ></iframe> */}
+
+            {/* <iframe
+                class='embed-responsive-item'
+                src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-c0VL15uZa6dSa-0GXJbfZ7lrmIO3cGpQciUjWJgyX3onnlesVFclucRVKejlctPIFwJtRDxG3Rg/pubchart?oid=1200789362&amp;format=interactive'
+              ></iframe>
+             */}
+            {/* <div style={{ width: 'auto', height: 'auto' }}>
+              <ResponsiveEmbed aspectRatio='1by1' bsPrefix='embed-responsive'>
+                <embed
+                  type='image/svg+xml'
+                  src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-c0VL15uZa6dSa-0GXJbfZ7lrmIO3cGpQciUjWJgyX3onnlesVFclucRVKejlctPIFwJtRDxG3Rg/pubchart?oid=1200789362&amp;format=interactive'
+                />
+              </ResponsiveEmbed>
+            </div> */}
+          </div>
         </div>
       </div>
     );

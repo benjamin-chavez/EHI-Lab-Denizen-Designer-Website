@@ -46,7 +46,7 @@ class Demographics extends Component {
                   <Image
                     // src={NavLogo}
                     src={educationImg}
-                    className='fillerTab'
+                    className=''
                     alt='Education Graphic'
                     fluid
                   />
@@ -59,7 +59,7 @@ class Demographics extends Component {
                 <div className='report-img'>
                   <Image
                     src={geographicImg}
-                    className='fillerTab'
+                    className=''
                     alt='Geographic Graphic'
                     fluid
                   />
@@ -70,39 +70,39 @@ class Demographics extends Component {
                   <Image
                     // src={NavLogo}
                     src={issuesImg}
-                    className='fillerTab'
+                    className=''
                     alt='Education Graphic'
                     fluid
                   />
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey='roles'>
-                {/* <p className='fillerTab'>Roles And Background In Design</p> */}
+                {/* <p className=''>Roles And Background In Design</p> */}
                 <div className='report-img'>
                   <Image
                     // src={NavLogo}
                     src={rolesImg}
-                    className='fillerTab'
+                    className=''
                     alt='Education Graphic'
                     fluid
                   />
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey='designEmp'>
-                {/* <p className='fillerTab'>Design Employment</p> */}
+                {/* <p className=''>Design Employment</p> */}
 
                 <div className='report-img'>
                   <Image
                     // src={NavLogo}
                     src={designEmployment}
-                    className='fillerTab'
+                    className=''
                     alt='Education Graphic'
                     fluid
                   />
                 </div>
               </Tab.Pane>
             </Tab.Content>
-            <Row>
+            <Row className=''>
               <Col>
                 <Nav variant='pills' className='list-inline '>
                   <Nav.Item className='report-chart-category mb-2'>
