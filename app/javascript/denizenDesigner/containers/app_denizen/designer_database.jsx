@@ -74,7 +74,12 @@ class DesignerDatabase extends Component {
     return (
       <Container fluid>
         <Row>
-          <a className='participate-btn' href='mailto: depaulehilab@gmail.com'>
+          <a
+            className='participate-btn'
+            target='_blank'
+            rel='noopener noreferrer'
+            href='mailto: depaulehilab@gmail.com'
+          >
             <div>
               {'  '}
               <Image src={DocumentIcon} alt='Document Icon' fluid />
