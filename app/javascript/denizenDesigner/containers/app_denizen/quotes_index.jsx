@@ -84,7 +84,7 @@ function QuotesIndex({
                 onMouseDown={(e) => e.preventDefault()}
                 className='close-button'
               >
-                closes
+                close
               </Button>
             </Row>
             <Row className='justify-content-center pb-1'>

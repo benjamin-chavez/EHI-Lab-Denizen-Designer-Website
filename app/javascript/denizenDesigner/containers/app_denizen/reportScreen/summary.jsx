@@ -271,7 +271,7 @@ class Influence extends Component {
             centering the work and experiences of community members, while also
             being empathic and supportive.{' '}
           </p>
-          <h3>Findings</h3>
+          <h2>Findings</h2>
           <p>
             Our analysis of the interviews provided us with 13 key insights that
             were broken into 6 major themes.{' '}
@@ -312,7 +312,6 @@ class Influence extends Component {
             maximize impact.{' '}
           </p>
           <h3>Understanding Power - The Problem </h3>
-          <p className=''>Introduction to why this is important</p>
           <p>
             Power was mentioned 55 times (6 interviewees mentioned power
             dynamics/power structures). Nearly 80% of Designers surveyed (81)
