@@ -5,7 +5,15 @@ import QuotesIndex from './quotes_index';
 import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { selectQuoteCategory } from '../../actions';
-import { Row, Col, Button, Collapse, Accordion, Card } from 'react-bootstrap';
+import {
+  Row,
+  Col,
+  Button,
+  Collapse,
+  Accordion,
+  Card,
+  Nav,
+} from 'react-bootstrap';
 
 import {
   BrowserRouter as Router,

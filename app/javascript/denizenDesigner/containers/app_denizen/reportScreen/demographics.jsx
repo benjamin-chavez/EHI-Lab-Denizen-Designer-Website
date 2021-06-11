@@ -104,7 +104,7 @@ class Demographics extends Component {
             </Tab.Content>
             <Row className=''>
               <Col>
-                <Nav variant='pills' className='list-inline '>
+                <Nav fill variant='pills' className='list-inline '>
                   <Nav.Item className='report-chart-category mb-2'>
                     <Nav.Link eventKey='gender'>Gender</Nav.Link>
                   </Nav.Item>

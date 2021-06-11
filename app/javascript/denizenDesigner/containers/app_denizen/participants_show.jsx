@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
@@ -16,6 +16,16 @@ import { fetchParticipant, fetchQuotes } from '../../actions';
 import Fade from 'react-reveal/Fade';
 
 export class ParticipantsShow extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: true };
+    this.goBack = this.goBack.bind(this);
+  }
+
+  goBack() {
+    this.props.history.goBack();
+  }
+
   componentDidMount() {
     this.props.fetchQuotes;
   }
@@ -39,15 +49,19 @@ export class ParticipantsShow extends Component {
         <div>
           <Row className='mt-2'>
             <Col xs={12}>
-              <Link to='/denizendesigner/interviews'>
-                <Button className='back-btn' variant='light'>
+              {/* <button onClick={this.goBack}>Go Back</button> */}
+
+              <Button
+                className='back-btn'
+                variant='light'
+                onClick={this.goBack}
+              >
+                {' '}
+                <i className='fa fa-chevron-left'>
                   {' '}
-                  <i className='fa fa-chevron-left'>
-                    {' '}
-                    <span className='back-btn-text'>Back</span>
-                  </i>
-                </Button>
-              </Link>
+                  <span className='back-btn-text'>Back</span>
+                </i>
+              </Button>
             </Col>
           </Row>
 

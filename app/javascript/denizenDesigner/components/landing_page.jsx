@@ -26,7 +26,7 @@ class LandingPage extends Component {
           </Row>
           <Row className='justify-content-center mt-4'>
             <Col className='col-center'>
-              <Fade duration={1500} delay={1000} count={1}>
+              <Fade duration={1500} delay={500} count={1}>
                 <p className='lp-subtitle'>
                   The Denizen Designer Project is an ethnographic exploration of
                   best practices and use cases of participatory design as a
@@ -54,7 +54,7 @@ class LandingPage extends Component {
             </Col> */}
             <Col lg={4} md={6} sm={12} xs={12}>
               <Link to={`/denizendesigner/home`}>
-                <Fade duration={1500} delay={2000} count={1}>
+                <Fade duration={1500} delay={1000} count={1}>
                   <Button
                     className='landing-btn'
                     variant='light'
@@ -62,7 +62,7 @@ class LandingPage extends Component {
                     onMouseDown={(e) => e.preventDefault()}
                     block
                   >
-                    <span className='btn-text '>
+                    <span className='btn-text px-2 '>
                       The Denizen Designer Project
                     </span>
                   </Button>
