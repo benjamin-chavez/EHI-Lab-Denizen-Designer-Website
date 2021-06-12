@@ -18,7 +18,11 @@ import Fade from 'react-reveal/Fade';
 export class ParticipantsShow extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: true };
+    this.state = {
+      value: true,
+      matches: window.matchMedia('(min-width: 768px)').matches,
+    };
+
     this.goBack = this.goBack.bind(this);
   }
 
@@ -28,6 +32,11 @@ export class ParticipantsShow extends Component {
 
   componentDidMount() {
     this.props.fetchQuotes;
+  }
+
+  componentDidMount() {
+    const handler = (e) => this.setState({ matches: e.matches });
+    window.matchMedia('(min-width: 768px)').addListener(handler);
   }
 
   componentWillMount() {
@@ -116,56 +125,112 @@ export class ParticipantsShow extends Component {
           <Row>
             <Col xs={12} lg={4} xl={3}></Col>
             <Col xs={12} lg={8} xl={8}>
-              <Fade bottom duration={1500} delay={850} count={1}>
-                <ul className='socialLinksList p-0'>
-                  {this.props.participant.instagram != '' ? (
-                    <li className='mr-3'>
-                      <a
-                        className='socialLinks'
-                        target='_blank'
-                        href={`https://instagram.com/${this.props.participant.instagram}`}
-                      >
-                        <Button variant='light' className='socialLinksBtn'>
-                          <Image
-                            src={InstagramColorIcon}
-                            alt='Instagram Icon'
-                            fluid
-                          />
-                          <span className='ml-1'>
-                            {' '}
-                            {this.props.participant.instagram}
-                          </span>
-                        </Button>
-                      </a>
-                    </li>
-                  ) : (
-                    ''
-                  )}
-                  {this.props.participant.twitter != '' ? (
-                    <li className='mr-3'>
-                      <a
-                        className='socialLinks'
-                        target='_blank'
-                        href={`https://twitter.com/${this.props.participant.twitter}`}
-                      >
-                        <Button variant='light' className='socialLinksBtn'>
-                          <Image
-                            src={TwitterColorIcon}
-                            alt='Twitter Icon'
-                            fluid
-                          />
-                          <span className='ml-1'>
-                            {' '}
-                            {this.props.participant.twitter}
-                          </span>
-                        </Button>
-                      </a>
-                    </li>
-                  ) : (
-                    ''
-                  )}
-                </ul>
-              </Fade>
+              {this.state.matches && (
+                <Fade bottom duration={1500} delay={850} count={1}>
+                  \<h1>Big Screen</h1>
+                  <ul className='socialLinksList p-0'>
+                    {this.props.participant.instagram != '' ? (
+                      <li className='mr-3'>
+                        <a
+                          className='socialLinks'
+                          target='_blank'
+                          href={`https://instagram.com/${this.props.participant.instagram}`}
+                        >
+                          <Button variant='light' className='socialLinksBtn'>
+                            <Image
+                              src={InstagramColorIcon}
+                              alt='Instagram Icon'
+                              fluid
+                            />
+                            <span className='ml-1'>
+                              {' '}
+                              {this.props.participant.instagram}
+                            </span>
+                          </Button>
+                        </a>
+                      </li>
+                    ) : (
+                      ''
+                    )}
+                    {this.props.participant.twitter != '' ? (
+                      <li className='mr-3'>
+                        <a
+                          className='socialLinks'
+                          target='_blank'
+                          href={`https://twitter.com/${this.props.participant.twitter}`}
+                        >
+                          <Button variant='light' className='socialLinksBtn'>
+                            <Image
+                              src={TwitterColorIcon}
+                              alt='Twitter Icon'
+                              fluid
+                            />
+                            <span className='ml-1'>
+                              {' '}
+                              {this.props.participant.twitter}
+                            </span>
+                          </Button>
+                        </a>
+                      </li>
+                    ) : (
+                      ''
+                    )}
+                  </ul>
+                </Fade>
+              )}
+              {!this.state.matches && (
+                <Fade bottom duration={1500} delay={0} count={1}>
+                  <h3>Small Screen</h3>
+                  <ul className='socialLinksList p-0'>
+                    {this.props.participant.instagram != '' ? (
+                      <li className='mr-3'>
+                        <a
+                          className='socialLinks'
+                          target='_blank'
+                          href={`https://instagram.com/${this.props.participant.instagram}`}
+                        >
+                          <Button variant='light' className='socialLinksBtn'>
+                            <Image
+                              src={InstagramColorIcon}
+                              alt='Instagram Icon'
+                              fluid
+                            />
+                            <span className='ml-1'>
+                              {' '}
+                              {this.props.participant.instagram}
+                            </span>
+                          </Button>
+                        </a>
+                      </li>
+                    ) : (
+                      ''
+                    )}
+                    {this.props.participant.twitter != '' ? (
+                      <li className='mr-3'>
+                        <a
+                          className='socialLinks'
+                          target='_blank'
+                          href={`https://twitter.com/${this.props.participant.twitter}`}
+                        >
+                          <Button variant='light' className='socialLinksBtn'>
+                            <Image
+                              src={TwitterColorIcon}
+                              alt='Twitter Icon'
+                              fluid
+                            />
+                            <span className='ml-1'>
+                              {' '}
+                              {this.props.participant.twitter}
+                            </span>
+                          </Button>
+                        </a>
+                      </li>
+                    ) : (
+                      ''
+                    )}
+                  </ul>
+                </Fade>
+              )}
             </Col>
           </Row>
         </div>
