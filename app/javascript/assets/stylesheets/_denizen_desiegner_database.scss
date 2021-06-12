@@ -1,10 +1,4 @@
-.designer-database {
-  
-}
-
 .designer-database .card {
-  // background-color: salmon !important;
-  // width: 100% !important;
   border: none;
   background: rgba(0,0,0,0);
 }
@@ -26,11 +20,6 @@
   /* infographic primary */
 
   color: #08439a;
-}
-
-.designer-database .participant-name:hover {
-  // color: #2dba90;
-  // cursor: default;
 }
 
 .designer-database .role {
@@ -71,36 +60,6 @@
 .designer-database a:hover {
   color: #2dba90;
 }
-
-// .database-card .card-name {
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 500 !important;
-//   font-size: 16px;
-//   line-height: 19px;
-//   /* identical to box height */
-
-//   display: flex;
-//   align-items: center;
-
-//   /* black */
-
-//   color: #2a2e33;
-// }
-
-// .database-card .card-text {
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 19px;
-
-//   display: flex;
-//   align-items: center;
-
-//   /* black */
-//   color: #2a2e33;
-// }
 
 @media (max-width: 768px) {
   .designer-database .data-list > li {

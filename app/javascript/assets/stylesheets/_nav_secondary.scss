@@ -1,7 +1,5 @@
 .Nav-Secondary {
   display: inline;
-  // border-bottom: 1px solid #bcc5d2;
-  // border-bottom: 10px solid red;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -13,16 +11,13 @@
   display: flex;
   justify-content: left; /* align horizontal */
   align-items: center;
-  // padding-top: 88px;
 }
 
 .nav-secondaryy > ul {
-  // background-color: red;
   display: flex;
   justify-content: left; /* align horizontal */
   align-items: center;
   margin-bottom: 0px;
-  // border-bottom: 1px solid #bcc5d2;
 }
 
 .list-inline-nav-sec {
@@ -42,7 +37,6 @@
   
 }
 .denizen-tab:hover {
-  // color: #8593a8;
   color: #2dba90;
   text-decoration: none;
 }
@@ -52,13 +46,10 @@
   background-color: rgba(0,0,0,0) !important;
   box-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
 }
-// Nav-Secondary,List-Inline
 
 @media (max-width: 576px) {
   .denizen-tab:hover {
     color: #8593a8;
-    
-  }
-  
+  }  
 }
 
