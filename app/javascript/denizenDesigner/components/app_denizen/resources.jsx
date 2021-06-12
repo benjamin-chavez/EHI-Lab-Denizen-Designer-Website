@@ -2,14 +2,21 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 
-// import ArticleLinkIcon from '../../../../assets/images/article-link-icon.svg';
-// import ArticlCardImage from '../../../../assets/images/Aricle-card-image.svg';
-// import resourcesImage1 from '../../../../assets/images/resourcesImage1.png';
 import ResourcesThumbnail from '../../../../assets/images/resources-thumbnail.png';
 
 import Fade from 'react-reveal/Fade';
 
 class Resources extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { matches: window.matchMedia('(min-width: 768px)').matches };
+  }
+
+  componentDidMount() {
+    const handler = (e) => this.setState({ matches: e.matches });
+    window.matchMedia('(min-width: 768px)').addListener(handler);
+  }
+
   render() {
     if (!this.props) {
       return <p>Loading...</p>;
@@ -75,307 +82,617 @@ class Resources extends Component {
             </Fade>
           </Col>
         </Row>
-
-        <Row className='mb-4'>
-          <Col sm={12}>
-            <Fade bottom duration={1500} delay={1200} count={1}>
-              <Card className='resourceCard card2'>
-                <Card.Body className='pt-4'>
-                  <Row>
-                    <Col sm={12} md={7} className='mb-4'>
-                      <p className='title mb-2'>
-                        Guide to understanding PD (Participatory Design){' '}
-                      </p>
-                      <span className='bodyText '>
-                        Participatory design can be traced back to the ‘70s,
-                        where it was coined in Scandinavia after the rise of
-                        workplace democracy and unionization. It was inherently
-                        political and challenged historical systems of power
-                        through open dialogue and democratized input. It has
-                        since been adopted by designers worldwide who take a
-                        collaborative approach to design and has shaped various
-                        theories.
-                      </span>
-                      <a
-                        href='http://kateferguson.org/documents/Participatory-Design-Handbook.pdf'
-                        target='_blank'
-                        className='cardLink mt-2'
-                      >
-                        Visit
-                      </a>
-                    </Col>
-                    <Col sm={12} md={5} className='mb-4'>
-                      <p className='title mb-2'>Design Justice</p>
-                      <span className='bodyText '>
-                        Design justice focuses explicitly on how design
-                        reproduces and/or challenges the matrix of domination
-                        (Patricia Hill Collins): white supremacy,
-                        heteropatriarchy, capitalism, ableism, settler
-                        colonialism, and other forms of structural inequality.{' '}
-                      </span>
-                      <a
-                        className='cardLink mt-2'
-                        href='https://www.dropbox.com/s/m975ykjhi8x92dl/DESIGN%2BJUSTICE%2BZINE_ISS'
-                        target='_blank'
-                      >
-                        Visit
-                      </a>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Fade>
-          </Col>
-        </Row>
+        {/* Fade animation for Desktop (longer delay) */}
+        {this.state.matches && (
+          <Row className='mb-4'>
+            <Col sm={12}>
+              <Fade bottom duration={1500} delay={1200} count={1}>
+                <Card className='resourceCard card2'>
+                  <Card.Body className='pt-4'>
+                    <Row>
+                      <Col sm={12} md={7} className='mb-4'>
+                        <p className='title mb-2'>
+                          Guide to understanding PD (Participatory Design){' '}
+                        </p>
+                        <span className='bodyText '>
+                          Participatory design can be traced back to the ‘70s,
+                          where it was coined in Scandinavia after the rise of
+                          workplace democracy and unionization. It was
+                          inherently political and challenged historical systems
+                          of power through open dialogue and democratized input.
+                          It has since been adopted by designers worldwide who
+                          take a collaborative approach to design and has shaped
+                          various theories.
+                        </span>
+                        <a
+                          href='http://kateferguson.org/documents/Participatory-Design-Handbook.pdf'
+                          target='_blank'
+                          className='cardLink mt-2'
+                        >
+                          Visit
+                        </a>
+                      </Col>
+                      <Col sm={12} md={5} className='mb-4'>
+                        <p className='title mb-2'>Design Justice</p>
+                        <span className='bodyText '>
+                          Design justice focuses explicitly on how design
+                          reproduces and/or challenges the matrix of domination
+                          (Patricia Hill Collins): white supremacy,
+                          heteropatriarchy, capitalism, ableism, settler
+                          colonialism, and other forms of structural inequality.{' '}
+                        </span>
+                        <a
+                          className='cardLink mt-2'
+                          href='https://www.dropbox.com/s/m975ykjhi8x92dl/DESIGN%2BJUSTICE%2BZINE_ISS'
+                          target='_blank'
+                        >
+                          Visit
+                        </a>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </Fade>
+            </Col>
+          </Row>
+        )}
+        {/* Fade animation for Mobile (shorter delay) */}
+        {!this.state.matches && (
+          <Row className='mb-4'>
+            <Col sm={12}>
+              <Fade bottom duration={1500} delay={0} count={1}>
+                <Card className='resourceCard card2'>
+                  <Card.Body className='pt-4'>
+                    <Row>
+                      <Col sm={12} md={7} className='mb-4'>
+                        <p className='title mb-2'>
+                          Guide to understanding PD (Participatory Design){' '}
+                        </p>
+                        <span className='bodyText '>
+                          Participatory design can be traced back to the ‘70s,
+                          where it was coined in Scandinavia after the rise of
+                          workplace democracy and unionization. It was
+                          inherently political and challenged historical systems
+                          of power through open dialogue and democratized input.
+                          It has since been adopted by designers worldwide who
+                          take a collaborative approach to design and has shaped
+                          various theories.
+                        </span>
+                        <a
+                          href='http://kateferguson.org/documents/Participatory-Design-Handbook.pdf'
+                          target='_blank'
+                          className='cardLink mt-2'
+                        >
+                          Visit
+                        </a>
+                      </Col>
+                      <Col sm={12} md={5} className='mb-4'>
+                        <p className='title mb-2'>Design Justice</p>
+                        <span className='bodyText '>
+                          Design justice focuses explicitly on how design
+                          reproduces and/or challenges the matrix of domination
+                          (Patricia Hill Collins): white supremacy,
+                          heteropatriarchy, capitalism, ableism, settler
+                          colonialism, and other forms of structural inequality.{' '}
+                        </span>
+                        <a
+                          className='cardLink mt-2'
+                          href='https://www.dropbox.com/s/m975ykjhi8x92dl/DESIGN%2BJUSTICE%2BZINE_ISS'
+                          target='_blank'
+                        >
+                          Visit
+                        </a>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </Fade>
+            </Col>
+          </Row>
+        )}
         <Container fluid>
-          <Fade bottom duration={1500} delay={2200} count={1}>
-            <Row>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a
-                          target='_blank'
-                          href='https://floxstudio.com/resources'
-                        >
-                          Flox Studio Resources
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a
-                          target='_blank'
-                          href='https://www.aiga.org/designforgood-get-involved '
-                        >
-                          AIGA - Design For Good
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a
-                          target='_blank'
-                          href='https://www.communitydesign.org'
-                        >
-                          Association For Community Design
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
+          {/* Fade animation for Desktop (longer delay) */}
+          {this.state.matches && (
+            <Fade bottom duration={1500} delay={2200} count={1}>
+              <Row>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://floxstudio.com/resources'
+                          >
+                            Flox Studio Resources
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.aiga.org/designforgood-get-involved '
+                          >
+                            AIGA - Design For Good
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.communitydesign.org'
+                          >
+                            Association For Community Design
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
 
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a
-                          target='_blank'
-                          href='https://www.publicinterestdesign.com/   '
-                        >
-                          Public Interest Design
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a
-                          target='_blank'
-                          href='https://www.creativereactionlab.com   '
-                        >
-                          Creative Reaction Lab
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text'>
-                        <a target='_blank' href='https://colloqate.org/'>
-                          Colloqate
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a target='_blank' href='https://www.arts.gov/'>
-                          National Endowment For The Arts
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a
-                          target='_blank'
-                          href='https://lbodre.ideo.com/about.html'
-                        >
-                          The Little Book For Design Research Ethics
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a target='_blank' href='https://www.kounkuey.org/ '>
-                          Kounkuey Design Initiative
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col
-                md={0}
-                lg={4}
-                className='resource-ext-link mb-3 empty-card'
-              ></Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={4}
-                className='resource-ext-link mb-3'
-              >
-                <Card className='resource-ext-card'>
-                  <Card.Body>
-                    <Row className='resource-card-row'>
-                      <Col xs={2} className='resource-card-col2'>
-                        <Image src={ResourcesThumbnail}></Image>
-                      </Col>
-                      <Col xs={10} className='card-resource-text '>
-                        <a target='_blank' href='https://www.blackspace.org/'>
-                          Blackspace
-                        </a>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Fade>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.publicinterestdesign.com/   '
+                          >
+                            Public Interest Design
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.creativereactionlab.com   '
+                          >
+                            Creative Reaction Lab
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text'>
+                          <a target='_blank' href='https://colloqate.org/'>
+                            Colloqate
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a target='_blank' href='https://www.arts.gov/'>
+                            National Endowment For The Arts
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://lbodre.ideo.com/about.html'
+                          >
+                            The Little Book For Design Research Ethics
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a target='_blank' href='https://www.kounkuey.org/ '>
+                            Kounkuey Design Initiative
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  md={0}
+                  lg={4}
+                  className='resource-ext-link mb-3 empty-card'
+                ></Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a target='_blank' href='https://www.blackspace.org/'>
+                            Blackspace
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Fade>
+          )}
+          {/* Fade animation for Mobile (shorter delay) */}
+          {!this.state.matches && (
+            <Fade bottom duration={1500} delay={0} count={1}>
+              <Row>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://floxstudio.com/resources'
+                          >
+                            Flox Studio Resources
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.aiga.org/designforgood-get-involved '
+                          >
+                            AIGA - Design For Good
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.communitydesign.org'
+                          >
+                            Association For Community Design
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.publicinterestdesign.com/   '
+                          >
+                            Public Interest Design
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://www.creativereactionlab.com   '
+                          >
+                            Creative Reaction Lab
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text'>
+                          <a target='_blank' href='https://colloqate.org/'>
+                            Colloqate
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a target='_blank' href='https://www.arts.gov/'>
+                            National Endowment For The Arts
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a
+                            target='_blank'
+                            href='https://lbodre.ideo.com/about.html'
+                          >
+                            The Little Book For Design Research Ethics
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a target='_blank' href='https://www.kounkuey.org/ '>
+                            Kounkuey Design Initiative
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col
+                  md={0}
+                  lg={4}
+                  className='resource-ext-link mb-3 empty-card'
+                ></Col>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  className='resource-ext-link mb-3'
+                >
+                  <Card className='resource-ext-card'>
+                    <Card.Body>
+                      <Row className='resource-card-row'>
+                        <Col xs={2} className='resource-card-col2'>
+                          <Image src={ResourcesThumbnail}></Image>
+                        </Col>
+                        <Col xs={10} className='card-resource-text '>
+                          <a target='_blank' href='https://www.blackspace.org/'>
+                            Blackspace
+                          </a>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Fade>
+          )}
         </Container>
       </div>
     );
