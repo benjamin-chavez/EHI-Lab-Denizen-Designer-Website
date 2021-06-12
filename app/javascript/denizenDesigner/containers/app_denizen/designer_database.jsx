@@ -77,8 +77,7 @@ class DesignerDatabase extends Component {
           <a
             className='participate-btn'
             target='_blank'
-            rel='noopener noreferrer'
-            href='mailto: depaulehilab@gmail.com'
+            href='https://docs.google.com/forms/d/e/1FAIpQLSchBVuk3J8N3_lcZnCvh12G1PM56qySbVFo5UMB-2wywuUPQQ/viewform'
           >
             <div>
               {'  '}
