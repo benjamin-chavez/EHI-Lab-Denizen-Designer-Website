@@ -54,8 +54,11 @@
 }
 // Nav-Secondary,List-Inline
 
-@media (max-width: 992px) {
-  .nav-secondaryy {
-    // padding-top: 70px;
+@media (max-width: 576px) {
+  .denizen-tab:hover {
+    color: #8593a8;
+    
   }
+  
 }
+

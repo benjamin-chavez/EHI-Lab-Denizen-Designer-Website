@@ -4,16 +4,17 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
 import LoadSpinner from '../shared/spinner';
-// import reportImage from '../../../../assets/images/report-img-1.svg';
-// <Image src={instagramColorIcon} alt='Denizen Designer Logo' fluid />
+
 import InstagramColorIcon from '../../../../assets/images/instagramColorIcon.svg';
 import TwitterColorIcon from '../../../../assets/images/twitterColorIcon.svg';
-import IntShowQuotes from './interviewsScreens/intShowQuotes';
+
 import ParticipantsShowQuotes from './participants_show_quotes';
 
-// instagramColorIcon.svg;
 import { fetchParticipant, fetchQuotes } from '../../actions';
 import Fade from 'react-reveal/Fade';
+
+/* NOTE: This page currently duplicate code due to the animation the animation on mobile has no delay time so that it does load awkwardly on mobile. If you update the code on this page, you will have to be careful that you update every place where the changed code occurs. The alternative to this would be to create a variable that changes based on screen size, which would allow you to avoid having duplicate code. I did not have time do implement that.
+ */
 
 export class ParticipantsShow extends Component {
   constructor(props) {
@@ -59,7 +60,6 @@ export class ParticipantsShow extends Component {
           <Row className='mt-2'>
             <Col xs={12}>
               {/* <button onClick={this.goBack}>Go Back</button> */}
-
               <Button
                 className='back-btn'
                 variant='light'
@@ -76,25 +76,6 @@ export class ParticipantsShow extends Component {
 
           <Row className='my-4'>
             <Col xs={12} lg={4} xl={3} className='mb-4'>
-              {/* <Card>
-                <Card.Body>
-                  <Image src={InstagramColorIcon} alt='Instagram Icon' fluid />
-                </Card.Body>
-              </Card> */}
-
-              {/* <Image
-                src='https://res.cloudinary.com/dyy8g76av/image/upload/v1611545967/Denizen%20Designer%20%28Temp%29/participant_tjkgwb.jpg'
-                className='showImage'
-                fluid
-              /> */}
-              {/* <div className='report-img'>
-                {' '}
-                <Image
-                  src={this.props.participant.profileImgLink}
-                  alt='Education Graphic'
-                  fluid
-                />
-              </div> */}
               <Fade bottom duration={1500} delay={0} count={1}>
                 <Image
                   src={this.props.participant.profileImgLink}
@@ -102,9 +83,6 @@ export class ParticipantsShow extends Component {
                   fluid
                 />
               </Fade>
-              {/* <div className='participant-show-img'></div> */}
-
-              {/* THE ABOVE LINE IS THE IMAGE THAT NEEDS TO BE EDITED */}
             </Col>
             <Col xs={12} lg={8} xl={8}>
               <Fade bottom duration={1500} delay={500} count={1}>
@@ -116,7 +94,6 @@ export class ParticipantsShow extends Component {
                   {this.props.participant.designer_type}
                 </p>
                 <p className='bio'>{this.props.participant.bio}</p>
-                {/* <IntShowQuotes /> */}
 
                 <ParticipantsShowQuotes />
               </Fade>
@@ -125,6 +102,7 @@ export class ParticipantsShow extends Component {
           <Row>
             <Col xs={12} lg={4} xl={3}></Col>
             <Col xs={12} lg={8} xl={8}>
+              {/* Fade animation for Desktop (longer delay) */}
               {this.state.matches && (
                 <Fade bottom duration={1500} delay={850} count={1}>
                   \<h1>Big Screen</h1>
@@ -178,6 +156,7 @@ export class ParticipantsShow extends Component {
                   </ul>
                 </Fade>
               )}
+              {/* Fade animation for Mobile (shorter delay) */}
               {!this.state.matches && (
                 <Fade bottom duration={1500} delay={0} count={1}>
                   <h3>Small Screen</h3>
@@ -243,7 +222,6 @@ function mapReduxStateToProps(reduxState, ownProps) {
   const idFromUrl = parseInt(ownProps.match.params.id, 10);
   const participant = reduxState.participants.find((p) => p.id === idFromUrl);
   const quoteData = reduxState.quotes;
-  // const quotes1 = quoteData.quotes.find((p) => p.id === idFromUrl);
   return { participant, quoteData };
 }
 

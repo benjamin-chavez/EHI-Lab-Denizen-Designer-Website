@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 import ResourcesThumbnail from '../../../../assets/images/resources-thumbnail.png';
 
-import Fade from 'react-reveal/Fade';
+/* NOTE: This page currently duplicate code due to the animation the animation on mobile has no delay time so that it does load awkwardly on mobile. If you update the code on this page, you will have to be careful that you update every place where the changed code occurs. The alternative to this would be to create a variable that changes based on screen size, which would allow you to avoid having duplicate code. I did not have time do implement that.
+ */
 
 class Resources extends Component {
   constructor(props) {
@@ -700,96 +702,3 @@ class Resources extends Component {
 }
 
 export default Resources;
-
-// <ul className='resources-list'>
-//           <li className='m-1'>
-//             {/* <a
-//               className='ext-resource-link px-2 py-1'
-//               target='_blank'
-//               href='https://floxstudio.com/resources'
-//             > */}
-//             Flox Studio Resources
-//             {/* </a> */}
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://www.aiga.org/designforgood-get-involved '
-//             >
-//               AIGA - Design for good
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://www.communitydesign.org'
-//             >
-//               Association for community design
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://www.publicinterestdesign.com/ '
-//             >
-//               Public Interest Design
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://www.creativereactionlab.com '
-//             >
-//               Creative Reaction Lab
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://colloqate.org/ '
-//             >
-//               Colloqate
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://www.arts.gov/ '
-//             >
-//               National Endowment For the arts
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://lbodre.ideo.com/about.html '
-//             >
-//               The Little Book For Design Research Ethics
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://www.kounkuey.org/'
-//             >
-//               Kounkuey Design Initiative
-//             </a>
-//           </li>
-//           <li className='m-1'>
-//             <a
-//               className='ext-resource-link'
-//               target='_blank'
-//               href='https://www.blackspace.org/ '
-//             >
-//               Blackspace
-//             </a>
-//           </li>
-//         </ul>
