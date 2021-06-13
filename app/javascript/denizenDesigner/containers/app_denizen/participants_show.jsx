@@ -105,7 +105,6 @@ export class ParticipantsShow extends Component {
               {/* Fade animation for Desktop (longer delay) */}
               {this.state.matches && (
                 <Fade bottom duration={1500} delay={850} count={1}>
-                  \<h1>Big Screen</h1>
                   <ul className='socialLinksList p-0'>
                     {this.props.participant.instagram != '' ? (
                       <li className='mr-3'>
@@ -159,7 +158,6 @@ export class ParticipantsShow extends Component {
               {/* Fade animation for Mobile (shorter delay) */}
               {!this.state.matches && (
                 <Fade bottom duration={1500} delay={0} count={1}>
-                  <h3>Small Screen</h3>
                   <ul className='socialLinksList p-0'>
                     {this.props.participant.instagram != '' ? (
                       <li className='mr-3'>
