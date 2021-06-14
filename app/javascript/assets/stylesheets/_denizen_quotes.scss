@@ -7,7 +7,6 @@
 .quote-filter-menu > li {
   text-decoration: none;
   margin: 10px 0px 10px 0px;
-  // padding-right: 35px;
   text-align: center;
   display: inline-block;
   font-family: Roboto;
@@ -20,7 +19,6 @@
   cursor: pointer;
 }
 
-// .quote-filter-menu > li a {
 .quote-filter-menu a {
   text-decoration: none;
   font-family: Roboto;
@@ -31,8 +29,6 @@
   align-items: center;
   color: #6b7390;
   cursor: pointer;
-  // background-color: red;
-
   padding: 6px 18px;
   border-radius: 20px;
 }
@@ -51,13 +47,9 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 153.4%;
-  /* or 21px */
-
   display: flex;
-  // align-items: center;
 
   /* Primary */
-
   color: #475CA7;
   }
 
@@ -74,30 +66,22 @@
 }
 
 .denizen-quote-card {
-  // width: 340px;
   cursor: pointer;
   margin-bottom: 25px !important;
-  // margin-left: 25px !important;
   border: none;
   border-radius: 6px !important;
 }
 
 .denizen-quote-body {
   padding: 25px !important;
-
-  
-  /* or 27px */
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
-  /* or 27px */
   background-color: #ffffff;
   box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
   border-radius: 6px;
-  // width: 340px;
-  // min-height: 223px;
 }
 
 .denizen-quote-author {
@@ -111,9 +95,7 @@
   align-items: center;
 
   /* secondary */
-
   color: #5a6795da;
-
   margin: 14px 0px 0px 10px;
 }
 
@@ -122,17 +104,12 @@ a.denizen-quote-author:hover {
   text-decoration: none !important;
 }
 
-.quote-item {
-}
-
 .quote-modal .modal-content {
   border-radius: 12px;
 }
 
 .quote-modal .close-button {
   background: #ffffff;
-  // width: 55px;
-  // height: 31px;
   border: 1px solid #8593a8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -141,7 +118,6 @@ a.denizen-quote-author:hover {
 
 .quote-modal .close-button:hover {
   background-color: #475ca7;
-  // background-color: #475ca7;
   color: #ffffff;
   text-decoration: none;
 }
@@ -158,15 +134,10 @@ a.denizen-quote-author:hover {
   font-weight: normal;
   font-size: 26px;
   line-height: 150%;
-  /* or 39px */
-
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
-
-  /* black */
-
   color: #2a2e33;
 }
 
@@ -176,13 +147,10 @@ a.denizen-quote-author:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 159%;
-  /* or 22px */
-
   text-align: center;
   border-bottom: 1px solid #bcc5d2;
-
+  
   /* infographic primary */
-
   color: #08439a;
 }
 
@@ -198,10 +166,8 @@ a.modal-name:hover {
   font-size: 12px;
   line-height: 159%;
   text-align: center;
-  /* identical to box height, or 19px */
 
   /* secondary */
-
   color: #8593a8;
 }
 
@@ -217,10 +183,7 @@ a.modal-name:hover {
   background-clip: padding-box;
 }
 
-/* Style your items */
 .my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
-  // background: grey;
   margin-bottom: 30px;
 }
 
@@ -234,7 +197,6 @@ a.modal-name:hover {
 
 @media (max-width: 576px) {
   .quote-modal .modal-quote-body {
-    // color: red;
     font-size: 18px;
   }
 }

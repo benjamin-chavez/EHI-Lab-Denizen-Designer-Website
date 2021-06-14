@@ -1,8 +1,5 @@
 .landing-pg {
-  // display: flex;
   height: 100vh;
-}
-.logo-landing-pg {
 }
 
 .landing-pg a {
@@ -12,29 +9,12 @@
 .wrapper {
   height: 100%;
   margin-bottom: -80px;
-  // background-color: red;
 }
 
 .landing-pg .col-center {
   display: flex;
   justify-content: center; /* align horizontal */
 }
-
-// .btn-landing-pg {
-//   min-height: 60px;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 19px;
-//   text-align: center;
-//   text-transform: uppercase;
-//   /* Gray 5 */
-//   color: #ffffff !important;
-//   margin: 10px 40px;
-//   cursor: pointer;
-//   color: red;
-// }
 
 .lp-subtitle {
   font-family: Roboto;
@@ -50,17 +30,11 @@
 }
 
 .landing-btn {
-  // color: #ffffff !important;
-  // background-color: #475ca7;
-  // border-radius: 8px;
-  // font-family: Roboto;
-  // min-height: 3.75rem;
   border: none;
   text-transform: uppercase;
   background-color: #f1f3f8;
   font-family: Roboto;
   font-style: normal;
-  // font-weight: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -71,25 +45,15 @@
   text-decoration: none !important;
   background-color: #f1f3f8;
   color: #475ca7;
-  // border-bottom: 4px solid #2dba90;
 }
 
 .landing-btn:hover .btn-text {
-  // background-color: #3a4d8f;
-  // text-decoration: none !important;
   background-color: #f1f3f8;
   color: #475ca7;
-  
-  // padding-bottom: 10px;
-  // border-bottom: 1px solid #2dba90;
-  // text-decoration: underline 1px solid #2dba90 !important;
-  // text-underline-position: under;
 }
 
 .landing-btn:hover .btn-text {
-
   border-bottom: 4px solid #2dba90;
-
 }
 
 .width100{
@@ -114,29 +78,21 @@
 @media (max-width: 992px) {
   .landing-pg {
     padding-top: 0px !important;
-    // height: 100vh;
-    // background-color: red;
   }
 
   .wrapper {
     height: 100%;
     margin-bottom: 100px;
-    // background-color: red;
   }
-
-  
 }
 
 
 @media (max-width: 576px) {
   .landing-btn:hover {
-  
     border-bottom: 4px solid #2dba90;
   }
 
   .landing-btn:hover .btn-text {
-
     border-bottom: none;
-  
   }
 }

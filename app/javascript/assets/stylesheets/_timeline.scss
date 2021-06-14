@@ -1,18 +1,15 @@
 .timeline-years {
-  // background-color: red;
   list-style: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  // display: flex;
   align-items: center;
   text-align: center;
   flex: none;
   order: 0;
   flex-grow: 0;
-  // margin: 10px 0px;
 }
 
 .timeline-years > li {
@@ -25,16 +22,9 @@
   margin-top: 29px;
 }
 
-.timeline-reports {
-  //
-}
-
-.timeline-card {
-  // width: 843px;
+.timeline-card { 
   height: 455px;
-  // border-radius: 12px;
   background-color: yellow;
-  // filter: drop-shadow(0px 13px 28px rgba(0, 39, 92, 0.08));
 }
 
 .timeline-card h3 {
@@ -43,19 +33,15 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 153.4%;
-  /* identical to box height, or 25px */
-
   display: flex;
   align-items: center;
 
   /* secondary */
-
   color: #5a6795;
 }
 
 .timeline-card .year-col {
   font-family: 'Playfair Display', serif;
-  // background-color: red;
   font-style: normal;
   font-weight: normal;
   font-size: 50.75px;
@@ -75,22 +61,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  border-radius: 12px 0px 0px 12px;
+  height: 455px;
   /* Gray 5 */
 
   color: #ffffff;
-
-  border-radius: 12px 0px 0px 12px;
-  height: 455px;
-  // width: 266px;
 }
 
 .timeline-card .card-body {
   background-color: #ffffff;
   border-radius: 0px 12px 12px 0px;
   height: 455px;
-
-  // width: 577px;
   padding-top: 44px;
 }
 
@@ -100,19 +81,11 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 171.4%;
-  /* or 27px */
-
   display: flex;
   align-items: center;
 
   /* black */
-
   color: #2a2e33;
-}
-
-.timeline-card .card-links {
-  // color: red;
-  // list-style: none;
 }
 
 .timeline-card .card-links > li {
@@ -120,8 +93,6 @@
   list-style: none;
   display: inline;
   margin: 0px 0px 0px 10px;
-  // display: flex;
-  // flex-direction: row;
   align-items: center;
   padding: 6px 18px;
   width: 103px;

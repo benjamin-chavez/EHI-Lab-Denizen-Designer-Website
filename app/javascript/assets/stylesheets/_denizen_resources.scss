@@ -1,5 +1,4 @@
 .resourcesPage .resourceCard {
-  // background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613443433/Denizen%20Designer%20%28Temp%29/resourcesImage1_y6yyqq.png');
   min-height: 11.25rem;
   border-radius: 4px;
   background-color: #435289;
@@ -18,35 +17,26 @@
 }
 
 .resourceCard .title {
-  // display: block;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
   font-size: 1.125rem;
   line-height: 159%;
-  /* or 22px */
-
   text-transform: uppercase;
 
   /* BATON YELLOW */
-
   color: #ffd600;
 }
 
 .resourceCard .bodyText {
-  // display: block;
-  // min-height: 28.55rem;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 145%;
-  /* or 17px */
-
   letter-spacing: 0.01em;
 
   /* Gray 5 */
-
   color: #ffffff;
 }
 
@@ -57,25 +47,16 @@
   font-weight: bold;
   font-size: 0.875rem;
   line-height: 159%;
-  /* identical to box height, or 19px */
-
   letter-spacing: 0.02em;
   text-decoration-line: underline;
 
   /* BATON YELLOW */
-
   color: #ffd600;
 }
 
 .resourceCard .cardLink:hover {
   color: #f3cb02;
 }
-
-// .resource-card-row {
-//   display: flex;
-//   justify-content: center; /* align horizontal */
-//   align-items: center; /* align vertical */
-// }
 
 .resource-ext-link {
   border-radius: 8px;
@@ -84,17 +65,10 @@
   font-weight: 800;
   font-size: 14px;
   line-height: 159%;
-  /* or 22px */
-
-  // display: flex;
-  // align-items: center;
   text-transform: uppercase;
 
   /* Primary */
-
   color: #475ca7;
-  // display: flex;
-  // justify-content: center; /* align horizontal */
 }
 
 .resource-ext-link a {
@@ -110,7 +84,6 @@
 
 .resource-ext-card {
   min-width: 340px;
-  // max-width: 340px;
   min-height: 4.25rem;
   border: none !important;
   border-radius: 8px !important;
@@ -121,24 +94,19 @@
   display: flex;
   align-items: center; /* align vertical */
   width: 100%;
- 
 }
 
 .resource-card-row {
   width: 100%;
-  // background-color: green;
-  // s
 }
 
 .resourceCard .card-body {
-  // background-color: red;
   padding-left: 48px;
   padding-right: 48px;
 }
 
 @media (max-width: 768px) {
   .resourceCard .title {
-
     max-width: 14.813rem;
     word-wrap: break-word;
   }

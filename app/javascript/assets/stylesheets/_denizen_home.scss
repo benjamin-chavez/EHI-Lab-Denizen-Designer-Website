@@ -1,7 +1,3 @@
-// .homeScreenWrapper {
-
-// }
-
 .homeScreen {
   background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1615901813/Denizen%20Designer%20%28Temp%29/home-backgroundv2_chgolp.png');
   background-repeat: no-repeat;
@@ -12,12 +8,7 @@
   background-size: auto 100%;
   min-height: 786px;
   margin-top: -16px;
-  // background-repeat: no-repeat;
   background-position: left top;
-  // background-color: red;
-  // height: 100vh;
- 
-  // should expand with the div and not clip
 }
 
 .homeScreen .title {
@@ -27,12 +18,9 @@
   font-weight: bold;
   font-size: 3.2rem;
   line-height: 106.4%;
-  /* or 45px */
-
   text-transform: uppercase;
 
   /* Primary */
-
   color: #475ca7;
 }
 
@@ -42,27 +30,11 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 171%;
-  /* or 27px */
-
-  // text-align: justify;
   letter-spacing: 0.02em;
 
   /* Primary */
-
   color: #475ca7;
 }
-
-// .denizen-home {
-//   font-family: "Roboto", sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 33px;
-//   /* or 206% */
-
-//   text-align: center;
-//   margin-top: 40px;
-// }
 
 .denizen-link {
   font-family: 'Roboto', sans-serif;
@@ -70,19 +42,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  /* identical to box height */
-
-  // display: flex;
-  // align-items: center;
   text-align: center;
 
   /* Primary */
-
   color: #475ca7;
 }
 
 .homeScreen .homeBtn {
-  // background-color: red;
   border: 1px solid #475ca7;
   border-radius: 4px;
   font-family: Montserrat;
@@ -93,7 +59,6 @@
   /* Primary */
 
   color: #475ca7;
-  // background-color: none ;
   background: rgba(0,0,0,0);
 }
 
@@ -109,28 +74,11 @@
   color: #ffffff !important;
 }
 
-// .landing-btn{
-//   color: #ffffff !important;
-//   background-color: #475ca7 ;
-//   border-radius: 8px;
-//   font-family: Roboto;
-//   min-height: 3.75rem;
-// }
-
-// .landing-btn:hover{
-//   background-color: #3a4d8f ;
-//   text-decoration: none !important;
-// }
-
 .homeScreen a {
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  // .homeScreen,
-  // .title,
-  // .textBody {
-  // background-color: red;
   .homeScreen .center {
     text-align: center;
     align-items: center;
