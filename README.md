@@ -15,4 +15,6 @@ $ rails s
 - bootstrap
 - Ruby on rails
 - React Redux
+- explain where each important element of code is and the general structure of the file system
+- review the other readme and add any necesary instructions to this one
 ```
