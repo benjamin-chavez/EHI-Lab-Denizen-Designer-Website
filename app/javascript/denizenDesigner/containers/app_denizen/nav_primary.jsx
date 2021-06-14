@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+// import { bindActionCreators } from "redux";
+// import { connect } from "react-redux";
+// import { selectDenizenTab, setNavSecondaryz } from "../../actions";
 import { Link, NavLink } from 'react-router-dom';
 import NavSecondary from './nav_secondary';
 
@@ -15,6 +18,7 @@ import {
 import { useLocation } from 'react-router';
 
 // import test from "../../../assets/images/dd-logo-nav";
+import Media from 'react-bootstrap/Media';
 import NavLogo from '../../../../assets/images/dd-logo-nav.svg';
 import NavLogoMobile from '../../../../assets/images/dd-logo-nav-mobile.svg';
 import Fade from 'react-reveal/Fade';
@@ -118,3 +122,50 @@ class NavPrimary extends Component {
 }
 
 export default NavPrimary;
+
+// import React, { Component } from 'react';
+// import { LinkContainer } from 'react-router-bootstrap';
+// // import { bindActionCreators } from "redux";
+// // import { connect } from "react-redux";
+// // import { selectDenizenTab, setNavSecondaryz } from "../../actions";
+// // import { Link } from "react-router-dom";
+// import { Container, Row, Col, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+
+// class NavPrimary extends Component {
+//   render() {
+//     return (
+//       <div className='nav-primary'>
+//         <Navbar collapseOnSelect expand='lg'>
+//           {/* <LinkContainer to='/'>
+//         <Navbar.Brand > */}
+//           <Navbar.Brand href='/denizendesigner/home'>
+//             <img
+//               src='../../../../assets/images/dd-logo-nav.svg'
+//               className='d-inline-block align-top'
+//               alt='Denizen Designer Logo'
+//             />
+//           </Navbar.Brand>
+//           {/* </LinkContainer> */}
+//           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+//           <Navbar.Collapse id='responsive-navbar-nav'>
+//             <Nav className='mr-auto'></Nav>
+//             <Nav>
+//               <LinkContainer to='/historyofparticipatorydesign/timeline'>
+//                 <Nav.Link className='nav-primary-text'>
+//                   History of Participatory Design
+//                 </Nav.Link>
+//               </LinkContainer>
+//               <LinkContainer to='/denizendesigner/home'>
+//                 <Nav.Link eventKey={2} className='nav-primary-text'>
+//                   Denizen Designer
+//                 </Nav.Link>
+//               </LinkContainer>
+//             </Nav>
+//           </Navbar.Collapse>
+//         </Navbar>
+//       </div>
+//     );
+//   }
+// }
+
+// export default NavPrimary;

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Button, Image } from 'react-bootstrap';
 import Logo from '../../../assets/images/dd-logo2.svg';
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 
 const currentYear = new Date().getFullYear();
 

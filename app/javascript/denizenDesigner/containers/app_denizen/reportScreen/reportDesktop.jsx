@@ -1,21 +1,6 @@
 import React, { Component } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Tab,
-  TabContainer,
-  TabContent,
-  TabPane,
-  Nav,
-  Tabs,
-  Card,
-  Button,
-} from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 
-// import * as Scroll from 'react-scroll';
-import Bibliography from './bibliography';
 import ExecutiveSummary from './executiveSummary';
 import Introduction from './introduction';
 import Overview from './overview';
@@ -25,16 +10,10 @@ import Summary from './summary';
 import Conclusions from './conclusions';
 import References from './references';
 
-// import reportImage from '../../../../assets/images/report-img-1.svg';
-// import ArrowDown from '../../../../assets/images/ArrowDown.svg';
-
-// import Chart from './reportScreen/raceChart';
-
 import Scroll from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
 var Link = Scroll.Link;
-var DirectLink = Scroll.DirectLink;
 var Element = Scroll.Element;
 var Events = Scroll.Events;
 var scroll = Scroll.animateScroll;
@@ -70,7 +49,6 @@ class ReportDesktop extends Component {
     return (
       <Row className='mb-3'>
         <Col sm={3} className='report-col-2'>
-          {/* <Col sm={3} className='mr-2'> */}
           <Fade bottom duration={1500} delay={0} count={1}>
             <ul className='test123'>
               <li className='reportDownloadButton'>
@@ -88,10 +66,8 @@ class ReportDesktop extends Component {
                   smooth={true}
                   duration={500}
                   containerId='containerElement'
-                  // style={{ display: 'inline-block', margin: '20px' }}
                 >
                   Executive Summary
-                  {/* <Image src={ArrowDown} className='pl-2' /> */}
                 </Link>
               </li>
               <li className='report-li'>
@@ -104,7 +80,6 @@ class ReportDesktop extends Component {
                   containerId='containerElement'
                 >
                   Overview
-                  {/* <Image src={ArrowDown} className='pl-2' /> */}
                 </Link>
               </li>
               <li className='report-li'>
@@ -117,7 +92,6 @@ class ReportDesktop extends Component {
                   containerId='containerElement'
                 >
                   Introduction
-                  {/* <Image src={ArrowDown} className='pl-2' /> */}
                 </Link>
               </li>
               <li className='report-li'>
@@ -130,7 +104,6 @@ class ReportDesktop extends Component {
                   containerId='containerElement'
                 >
                   Research Process
-                  {/* <Image src={ArrowDown} className='pl-2' /> */}
                 </Link>
               </li>
               <li className='report-li'>
@@ -143,7 +116,6 @@ class ReportDesktop extends Component {
                   containerId='containerElement'
                 >
                   Demographics
-                  {/* <Image src={ArrowDown} className='pl-2' /> */}
                 </Link>
               </li>
               <li className='report-li'>
@@ -156,7 +128,6 @@ class ReportDesktop extends Component {
                   containerId='containerElement'
                 >
                   Summary & Key Findings
-                  {/* <Image src={ArrowDown} className='pl-2' /> */}
                 </Link>
               </li>
               <li className='report-li '>
@@ -169,7 +140,6 @@ class ReportDesktop extends Component {
                   containerId='containerElement'
                 >
                   Conclusions & Key Recommendations
-                  {/* <Image src={ArrowDown} className='pl-2 ' /> */}
                 </Link>
               </li>
               <li className='report-li '>
@@ -182,27 +152,21 @@ class ReportDesktop extends Component {
                   containerId='containerElement'
                 >
                   References
-                  {/* <Image src={ArrowDown} className='pl-2 ' /> */}
                 </Link>
               </li>
               {/* ****************************************************** */}
             </ul>
           </Fade>
         </Col>
-        {/* <div className='mr-4'></div> */}
         <Col sm={9} className='report-col-9'>
-          {/* <Container className='report-container'> */}
           <Fade duration={1500} delay={1000} count={1}>
             <Element
               name='test7'
               className='report-container'
               id='containerElement'
               style={{
-                // position: 'relative',
-                // height: '100%',
                 width: '100%',
                 overflow: 'scroll',
-                // marginBottom: '100px',
               }}
             >
               <ExecutiveSummary />

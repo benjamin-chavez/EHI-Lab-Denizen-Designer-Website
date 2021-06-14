@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Container, Card, Row, Col, Image } from 'react-bootstrap';
+import { Card, Row, Col, Image } from 'react-bootstrap';
 import igIcon from '../../../../assets/images/igIcon.svg';
 import twitterIcon from '../../../../assets/images/twitterIcon.svg';
 import mailIcon from '../../../../assets/images/mailIcon.svg';

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
 
 import Scroll from 'react-scroll';
 
@@ -48,7 +47,6 @@ class References extends Component {
             promotion practice, 7(3), 312-323.{' '}
           </p>
         </Element>
-        {/* <p>Dr. Harrington will write this..</p> */}
       </div>
     );
   }

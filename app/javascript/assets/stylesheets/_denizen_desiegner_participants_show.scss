@@ -1,3 +1,61 @@
+.participant-show .name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  /* black */
+
+  color: #2a2e33;
+}
+
+.participant-show .designer-type {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  /* secondary */
+
+  color: #5a6795;
+}
+
+.participant-show .bio {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  white-space: pre-line;
+  /* black */
+
+  color: #2a2e33;
+}
+
+.back-btn {
+  background-color: #eaedf3 !important;
+  width: 102px !important;
+  height: 40px !important;
+  border-radius: 29px !important;
+}
+
+.fa.fa-chevron-left {
+  color: #4f4f4f !important;
+}
+
+.back-btn-text {
+  color: #4f4f4f !important;
+  font-family: Roboto !important;
+  font-style: normal !important ;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+}
 .participantShow .quoteCard {
   border-radius: 6px;
   font-family: Montserrat;
