@@ -21,6 +21,19 @@ $ rails s
 
 ## Stack Used
 
+Backend: 
+  - Ruby on Rails
+Frontend: 
+  - React and Redux
+  - React Bootstrap
+
+## Import Commands:
+Push to Production Repo on Heroku
+```
+  $ git push heroku master
+```
+
+
 
 ## Adding new `.scss` files
 
