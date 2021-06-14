@@ -1,3 +1,5 @@
+/* The original design essentially had two nav bars. Once the history of participatory design portion of the website is complete, Dr. Harrington might request the orignal navbar design be added. At the moment the primary nav bar only holds the DD logo and then renders the secondary navbar. The secondary navbar currently hold the actual navigation between pages.  */
+
 import React, { Component } from 'react';
 // import { bindActionCreators } from "redux";
 // import { connect } from "react-redux";

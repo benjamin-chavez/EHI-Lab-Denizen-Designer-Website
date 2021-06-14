@@ -1,3 +1,5 @@
+// This is the base component for everything on the Denizen Designer portion of the website.
+
 import React from 'react';
 
 import {

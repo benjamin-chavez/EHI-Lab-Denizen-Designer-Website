@@ -68,7 +68,7 @@ class ReportMobile extends Component {
       <Row className='mb-3'>
         <Col sm={3} className='report-col-2'>
           <Fade bottom duration={1500} delay={0} count={1}>
-            <ul className='test123'>
+            <ul className='reportChapterList'>
               <li className='reportDownloadButton'>
                 <Button className='pl-0 reportDownloadBtn'>
                   <Link className='' target='_blank' download>
@@ -88,7 +88,7 @@ class ReportMobile extends Component {
                 <span className='ml-1'>{activeSection}</span>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey='0'>
-                <ul className='test123'>
+                <ul className='reportChapterList'>
                   <li className='report-li'>
                     <Link
                       activeClass='active'
