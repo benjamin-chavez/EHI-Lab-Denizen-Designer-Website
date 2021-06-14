@@ -18,3 +18,10 @@ $ rails s
 - explain where each important element of code is and the general structure of the file system
 - review the other readme and add any necesary instructions to this one
 ```
+
+## Adding new `.scss` files
+
+Look at your main `application.scss` file to see how SCSS files are imported. There should **not** be a `*= require_tree .` line in the file.
+
+```scss
+// app/assets/stylesheets/application.scss
