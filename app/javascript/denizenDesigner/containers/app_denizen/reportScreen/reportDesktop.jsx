@@ -1,3 +1,6 @@
+/* NOTE: This page currently duplicate code due to the collapsable chapter menu that is visible on mobile. If you update the code on this page, you will have to be careful that you update the file reportDesktop in the same locations. The alternative to this would be to create a variable that changes based on screen size, which would allow you to avoid having duplicate code. I did not have time do implement that.
+ */
+
 import React, { Component } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 
