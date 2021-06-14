@@ -19,6 +19,9 @@ $ rails s
 - review the other readme and add any necesary instructions to this one
 ```
 
+## Stack Used
+
+
 ## Adding new `.scss` files
 
 Look at your main `application.scss` file to see how SCSS files are imported. There should **not** be a `*= require_tree .` line in the file.
