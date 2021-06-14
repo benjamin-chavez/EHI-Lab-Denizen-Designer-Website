@@ -76,7 +76,6 @@ class RaceChart extends Component {
                     display: this.props.displayLegend,
                     position: 'bottom',
                   },
-                  // width: 60,
                 },
               }}
             />
