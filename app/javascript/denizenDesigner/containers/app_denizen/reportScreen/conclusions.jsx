@@ -1,3 +1,5 @@
+// See reportMain component for base component
+
 import React, { Component } from 'react';
 
 import Scroll from 'react-scroll';

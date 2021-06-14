@@ -1,3 +1,5 @@
+// This is the main component that renders either the reportMobile Component or the reportDesktop component. ALl other components are rendered through one of those to components
+
 import React, { Component } from 'react';
 
 import ReportMobile from './reportMobile';

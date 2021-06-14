@@ -1,3 +1,5 @@
+// This is the base component. Each Designer is rendered here through the designers_index.jsx file
+
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

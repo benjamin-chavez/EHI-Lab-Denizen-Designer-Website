@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Jumbotron, Button, Card, Container } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 
 import Fade from 'react-reveal/Fade';
 

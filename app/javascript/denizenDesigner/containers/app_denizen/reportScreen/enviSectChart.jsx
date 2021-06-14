@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+// See reportMain component for base component
 
+import React, { Component } from 'react';
 import { Bar } from 'react-chartjs-2';
 
 class EnviSectChart extends Component {
@@ -93,5 +94,3 @@ class EnviSectChart extends Component {
 }
 
 export default EnviSectChart;
-
-// export default enviSectChart;

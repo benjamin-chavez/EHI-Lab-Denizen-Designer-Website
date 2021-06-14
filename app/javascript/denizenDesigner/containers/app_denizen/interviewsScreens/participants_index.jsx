@@ -1,3 +1,5 @@
+// Populates the list of participants/interviews and then this page is rendered on the interviews component
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect, useSelector } from 'react-redux';

@@ -1,3 +1,5 @@
+// Renders the individual show page for each participant. The participant quotes are poplated on the participants_show_quotes component, which is then rendered here.
+
 import React, { Component } from 'react';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';

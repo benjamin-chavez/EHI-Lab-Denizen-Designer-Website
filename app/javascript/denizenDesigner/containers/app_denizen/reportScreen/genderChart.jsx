@@ -1,3 +1,5 @@
+// See reportMain component for base component
+
 import React, { Component } from 'react';
 
 import { Doughnut, Line, Pie } from 'react-chartjs-2';

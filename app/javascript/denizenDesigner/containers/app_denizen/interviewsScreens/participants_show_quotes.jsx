@@ -1,8 +1,7 @@
-import React, { useEffect, useState, Component } from 'react';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router';
-import { bindActionCreators } from 'redux';
-import { connect, useSelector } from 'react-redux';
+// Populates the list of quotes for a specific participant and then the result is rendered on the participants_show component
+
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
 import { Card } from 'react-bootstrap';
 
 import {
@@ -10,13 +9,11 @@ import {
   fetchParticipant,
   fetchQuotes,
 } from '../../../actions';
-import quotes from '../QuotesScreen/quotes';
 
 function ParticipantsShowQuotes({
   quoteData,
   fetchQuotes,
   fetchParticipants1,
-  quoteCategoryPath,
   participantsData,
 }) {
   useEffect(() => {

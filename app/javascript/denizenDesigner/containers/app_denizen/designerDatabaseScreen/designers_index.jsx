@@ -1,3 +1,5 @@
+// Each Designer is rendered here and this file is rendered on the designer_database main component.
+
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

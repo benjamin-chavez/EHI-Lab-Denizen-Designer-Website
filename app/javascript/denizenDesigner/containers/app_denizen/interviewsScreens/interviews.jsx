@@ -1,3 +1,5 @@
+// This is the base/main component that renders the rest
+
 import React, { Component } from 'react';
 import ParticipantsIndex from './participants_index';
 
