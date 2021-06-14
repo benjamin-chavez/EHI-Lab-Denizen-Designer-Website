@@ -1,5 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
-
 ## Starting the App
 
 ```
@@ -9,16 +7,6 @@ $ ./bin/webpack-dev-server
 $ rails s
 ```
 
-```
-- how to update seeds in both dev and deployed databases
-- link to animation library
-- bootstrap
-- Ruby on rails
-- React Redux
-- explain where each important element of code is and the general structure of the file system
-- review the other readme and add any necesary instructions to this one
-```
-
 ## Stack Used
 
 Backend: 
@@ -26,13 +14,31 @@ Backend:
 Frontend: 
   - React and Redux
   - React Bootstrap
+  - React Reveal: https://www.react-reveal.com/
 
 ## Import Commands:
-Push to Production Repo on Heroku
+Push to Production Repo on Heroku 
 ```
   $ git push heroku master
 ```
+Seed the development database:
+```
+  $ rails db:drop
+  $ rails db:create
+  $ rails db:migrate
+  $ rails db:seed:all
+```
+Seed the proudctions database:
+```
+  $ heroku pg:reset DATABASE --confirm {app-name}
+  $ heroku run rake db:migrate
+  $ heroku run rake db:seed:all
+```
 
+
+```
+  $ 
+```
 
 
 ## Adding new `.scss` files
@@ -41,3 +47,11 @@ Look at your main `application.scss` file to see how SCSS files are imported. Th
 
 ```scss
 // app/assets/stylesheets/application.scss
+
+
+
+
+```
+- explain where each important element of code is and the general structure of the file system
+- review the other readme and add any necesary instructions to this one
+```
