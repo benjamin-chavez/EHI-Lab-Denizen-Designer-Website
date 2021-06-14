@@ -1,6 +1,4 @@
 const ROOT_URL = '/api/v1/participants';
-// const ROOT_URL =
-//   'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/participants.json';
 
 export const SET_PARTICIPANTS = 'SET_PARTICIPANTS';
 export const SET_NAV_SECONDARY = 'SET_NAV_SECONDARY';

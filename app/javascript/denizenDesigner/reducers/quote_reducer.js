@@ -1,4 +1,3 @@
-// import { FETCH_QUOTES } from '../actions';
 import {
   FETCH_QUOTES_REQUEST,
   FETCH_QUOTES_SUCCESS,

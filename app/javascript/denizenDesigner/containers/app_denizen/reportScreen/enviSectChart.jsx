@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
+// See reportMain component for base component
 
-import { Doughnut, Line, Pie, Bar } from 'react-chartjs-2';
-import { Container } from 'react-bootstrap';
-import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
+import React, { Component } from 'react';
+import { Bar } from 'react-chartjs-2';
 
 class EnviSectChart extends Component {
   constructor(props) {
     super(props);
-    // this.DATA_COUNT = 7;
-    // this.NUMBER_CFG = { count: DATA_COUNT, min: -100, max: 100 };
-
-    // this.labels = Utils.months({ count: 7 });
     this.state = {
       chartData: {
         labels: [
@@ -21,22 +16,6 @@ class EnviSectChart extends Component {
           'Foundation',
           'For Profit/Industry',
         ],
-        // datasets: [
-        //   {
-        //     label: 'Population',
-        //     data: [26, 63, 1, 0, 4, 7, 0, 3],
-        //     backgroundColor: [
-        //       'rgba(255, 99, 132, 0.6)',
-        //       'rgba(54, 162, 235, 0.6)',
-        //       'rgba(255, 206, 86, 0.6)',
-        //       'rgba(75, 192, 192, 0.6)',
-        //       'rgba(153, 102, 255, 0.6)',
-        //       'rgba(255, 159, 64, 0.6)',
-        //       'rgba(252, 2, 40, 0.8)',
-        //       'rgba(21, 0, 255, 0.9)',
-        //     ],
-        //   },
-        // ],
         datasets: [
           {
             label: 'Both',
@@ -108,30 +87,6 @@ class EnviSectChart extends Component {
               }}
             />
           </article>
-          <div id=''>
-            {/* <iframe
-              width='698.1827830188679'
-              height='305.5'
-              seamless
-              frameborder='0'
-              scrolling='no'
-              src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-c0VL15uZa6dSa-0GXJbfZ7lrmIO3cGpQciUjWJgyX3onnlesVFclucRVKejlctPIFwJtRDxG3Rg/pubchart?oid=1200789362&amp;format=interactive'
-            ></iframe> */}
-
-            {/* <iframe
-                class='embed-responsive-item'
-                src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-c0VL15uZa6dSa-0GXJbfZ7lrmIO3cGpQciUjWJgyX3onnlesVFclucRVKejlctPIFwJtRDxG3Rg/pubchart?oid=1200789362&amp;format=interactive'
-              ></iframe>
-             */}
-            {/* <div style={{ width: 'auto', height: 'auto' }}>
-              <ResponsiveEmbed aspectRatio='1by1' bsPrefix='embed-responsive'>
-                <embed
-                  type='image/svg+xml'
-                  src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSj-c0VL15uZa6dSa-0GXJbfZ7lrmIO3cGpQciUjWJgyX3onnlesVFclucRVKejlctPIFwJtRDxG3Rg/pubchart?oid=1200789362&amp;format=interactive'
-                />
-              </ResponsiveEmbed>
-            </div> */}
-          </div>
         </div>
       </div>
     );
@@ -139,5 +94,3 @@ class EnviSectChart extends Component {
 }
 
 export default EnviSectChart;
-
-// export default enviSectChart;

@@ -21,7 +21,6 @@ const HopdTimeline = () => {
           </ul>
         </Col>
         <Col sm={9} className='timeline-reports'>
-          {/* <h1>Timeline Page</h1> */}
           <div className='timeline-card'>
             <Row>
               <Col sm={3} className='year-col'>
@@ -59,19 +58,5 @@ const HopdTimeline = () => {
     </div>
   );
 };
-
-// export default timeline
-
-// import React, { Component } from "react";
-
-// class HopdTimeline extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <h1>Timeline Page</h1>
-//       </div>
-//     );
-//   }
-// }
 
 export default HopdTimeline;

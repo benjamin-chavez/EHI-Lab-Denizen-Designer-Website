@@ -25,6 +25,7 @@ export const fetchQuotesFailure = (error) => {
   };
 };
 
+// The below funtion randomizes the quotes so that they do not populate in the order in which they were entered into the database.
 function shuffleArray(array) {
   let i = array.length - 1;
   for (; i > 0; i--) {
@@ -40,10 +41,7 @@ export const fetchQuotes = () => {
   return (dispatch) => {
     dispatch(fetchQuotesRequest);
     axios
-      .get(
-        // 'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/quotes.json'
-        '/api/v1/quotes'
-      )
+      .get('/api/v1/quotes')
       .then((response) => {
         const quotes = shuffleArray(response.data);
         dispatch(fetchQuotesSuccess(quotes));

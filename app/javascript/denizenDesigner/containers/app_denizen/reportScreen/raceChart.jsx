@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+// See reportMain component for base component
 
-import { Doughnut, Line, Pie } from 'react-chartjs-2';
-import { Container, Card } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Pie } from 'react-chartjs-2';
 
 class RaceChart extends Component {
   constructor(props) {
@@ -76,7 +76,6 @@ class RaceChart extends Component {
                     display: this.props.displayLegend,
                     position: 'bottom',
                   },
-                  // width: 60,
                 },
               }}
             />

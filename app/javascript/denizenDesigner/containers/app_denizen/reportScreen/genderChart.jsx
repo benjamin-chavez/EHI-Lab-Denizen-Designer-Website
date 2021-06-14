@@ -1,7 +1,8 @@
+// See reportMain component for base component
+
 import React, { Component } from 'react';
 
-import { Doughnut, Line, Pie } from 'react-chartjs-2';
-import { Container } from 'react-bootstrap';
+import { Doughnut } from 'react-chartjs-2';
 
 class GenderChart extends Component {
   constructor(props) {
@@ -53,11 +54,7 @@ class GenderChart extends Component {
               options={{
                 plugins: {
                   align: 'center',
-                  title: {
-                    display: this.props.displayTitle,
-                    // text: 'Demographics of the Denizen Designers',
-                    fontSize: 25,
-                  },
+
                   legend: {
                     position: 'right',
                     display: this.props.displayLegend,

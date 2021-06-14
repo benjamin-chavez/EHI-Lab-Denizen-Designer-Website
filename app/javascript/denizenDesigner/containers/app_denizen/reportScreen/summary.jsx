@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image, Card } from 'react-bootstrap';
+import { Image, Card } from 'react-bootstrap';
 
 import Scroll from 'react-scroll';
 import SummaryGraphic from '../../../../../assets/images/reportAssets/themes.png';

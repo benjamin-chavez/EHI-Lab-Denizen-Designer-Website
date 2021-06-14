@@ -1,12 +1,10 @@
-import { SET_NAV_SECONDARY } from "../actions";
+import { SET_NAV_SECONDARY } from '../actions';
 
 const navSecondaryReducer = (state, action) => {
-  // Compute and returen the new state
+  // Compute and return the new state
   if (state == null) {
     return [];
   }
-
-  // TODO: handle actions
   switch (action.type) {
     case SET_NAV_SECONDARY:
       return action.payload;

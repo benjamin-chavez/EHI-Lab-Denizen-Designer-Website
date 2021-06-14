@@ -1,3 +1,5 @@
+// See reportMain component for base component
+
 import React, { Component } from 'react';
 import {
   Container,
@@ -44,7 +46,6 @@ class Demographics extends Component {
               <Tab.Pane eventKey='education'>
                 <div className='report-img'>
                   <Image
-                    // src={NavLogo}
                     src={educationImg}
                     className=''
                     alt='Education Graphic'
@@ -68,7 +69,6 @@ class Demographics extends Component {
               <Tab.Pane eventKey='issues'>
                 <div className='report-img'>
                   <Image
-                    // src={NavLogo}
                     src={issuesImg}
                     className=''
                     alt='Education Graphic'
@@ -77,10 +77,8 @@ class Demographics extends Component {
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey='roles'>
-                {/* <p className=''>Roles And Background In Design</p> */}
                 <div className='report-img'>
                   <Image
-                    // src={NavLogo}
                     src={rolesImg}
                     className=''
                     alt='Education Graphic'
@@ -89,11 +87,8 @@ class Demographics extends Component {
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey='designEmp'>
-                {/* <p className=''>Design Employment</p> */}
-
                 <div className='report-img'>
                   <Image
-                    // src={NavLogo}
                     src={designEmployment}
                     className=''
                     alt='Education Graphic'
