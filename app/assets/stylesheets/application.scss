@@ -68,16 +68,16 @@ body,
 }
 
 // Import all stylesheets
-@import '../../javascript/assets/stylesheets/nav_secondary';
-@import '../../javascript/assets/stylesheets/nav_primary';
-@import '../../javascript/assets/stylesheets/denizen_home';
-@import '../../javascript/assets/stylesheets/denizen_quotes';
-@import '../../javascript/assets/stylesheets/denizen_report';
-@import '../../javascript/assets/stylesheets/denizen_resources';
-@import '../../javascript/assets/stylesheets/landing_page';
-@import '../../javascript/assets/stylesheets/timeline.scss';
-@import '../../javascript/assets/stylesheets/_denizen_interviews';
-@import '../../javascript/assets/stylesheets/_denizen_desiegner_database';
-@import '../../javascript/assets/stylesheets/_denizen_desiegner_participants_show';
-@import '../../javascript/assets/stylesheets/load_spinner';
-@import '../../javascript/assets/stylesheets/footer';
+@import '../../javascript/assets/stylesheets/shared/nav_secondary';
+@import '../../javascript/assets/stylesheets/shared/nav_primary';
+@import '../../javascript/assets/stylesheets/app_denizen/home';
+@import '../../javascript/assets/stylesheets/app_denizen/quotes';
+@import '../../javascript/assets/stylesheets/app_denizen/report';
+@import '../../javascript/assets/stylesheets/app_denizen/resources';
+@import '../../javascript/assets/stylesheets/shared/landing_page';
+@import '../../javascript/assets/stylesheets/app_hopd/timeline';
+@import '../../javascript/assets/stylesheets/app_denizen/interviews';
+@import '../../javascript/assets/stylesheets/app_denizen/desiegner_database';
+@import '../../javascript/assets/stylesheets/app_denizen/participants_show';
+@import '../../javascript/assets/stylesheets/shared/load_spinner';
+@import '../../javascript/assets/stylesheets/shared/footer';

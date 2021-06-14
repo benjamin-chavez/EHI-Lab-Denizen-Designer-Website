@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Card, Row, Col, Image } from 'react-bootstrap';
-import igIcon from '../../../../assets/images/igIcon.svg';
-import twitterIcon from '../../../../assets/images/twitterIcon.svg';
-import mailIcon from '../../../../assets/images/mailIcon.svg';
+import igIcon from '../../../../../assets/images/igIcon.svg';
+import twitterIcon from '../../../../../assets/images/twitterIcon.svg';
+import mailIcon from '../../../../../assets/images/mailIcon.svg';
 import Fade from 'react-reveal/Fade';
-import { fetchParticipants } from '../../actions';
+import { fetchParticipants } from '../../../actions';
 
 class DesignersIndex extends Component {
   componentWillMount() {

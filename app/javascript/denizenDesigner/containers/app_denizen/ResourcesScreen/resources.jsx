@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
-import ResourcesThumbnail from '../../../../assets/images/resources-thumbnail.png';
+import ResourcesThumbnail from '../../../../../assets/images/resources-thumbnail.png';
 
 /* NOTE: This page currently duplicate code due to the animation the animation on mobile has no delay time so that it does load awkwardly on mobile. If you update the code on this page, you will have to be careful that you update every place where the changed code occurs. The alternative to this would be to create a variable that changes based on screen size, which would allow you to avoid having duplicate code. I did not have time do implement that.
  */

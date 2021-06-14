@@ -3,14 +3,14 @@ import { Link, withRouter, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
-import LoadSpinner from '../shared/spinner';
+import LoadSpinner from '../../shared/spinner';
 
-import InstagramColorIcon from '../../../../assets/images/instagramColorIcon.svg';
-import TwitterColorIcon from '../../../../assets/images/twitterColorIcon.svg';
+import InstagramColorIcon from '../../../../../assets/images/instagramColorIcon.svg';
+import TwitterColorIcon from '../../../../../assets/images/twitterColorIcon.svg';
 
 import ParticipantsShowQuotes from './participants_show_quotes';
 
-import { fetchParticipant, fetchQuotes } from '../../actions';
+import { fetchParticipant, fetchQuotes } from '../../../actions';
 import Fade from 'react-reveal/Fade';
 
 /* NOTE: This page currently duplicate code due to the animation the animation on mobile has no delay time so that it does load awkwardly on mobile. If you update the code on this page, you will have to be careful that you update every place where the changed code occurs. The alternative to this would be to create a variable that changes based on screen size, which would allow you to avoid having duplicate code. I did not have time do implement that.

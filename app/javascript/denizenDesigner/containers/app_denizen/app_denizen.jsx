@@ -7,16 +7,16 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import NavPrimary from '../containers/app_denizen/nav_primary';
-import DenizenHome from '../components/app_denizen/denizen_home';
-import Interviews from '../containers/app_denizen/interviews';
-import Report from '../containers/app_denizen/report';
-import DesignerDatabase from '../containers/app_denizen/designer_database';
-import Quotes from '../containers/app_denizen/quotes';
-import Resources from '../components/app_denizen/resources';
-import Footer from './footer';
+import NavPrimary from '../shared/nav_primary';
+import DenizenHome from './HomeScreen/denizen_home';
+import Interviews from './interviewsScreens/interviews';
+import Report from './reportScreen/reportMain';
+import DesignerDatabase from './designerDatabaseScreen/designer_database';
+import Quotes from './QuotesScreen/quotes';
+import Resources from './ResourcesScreen/resources';
+import Footer from '../shared/footer';
 
-import ParticipantsShow from '../containers/app_denizen/participants_show';
+import ParticipantsShow from './interviewsScreens/participants_show';
 
 const AppDenizen = (props) => {
   return (

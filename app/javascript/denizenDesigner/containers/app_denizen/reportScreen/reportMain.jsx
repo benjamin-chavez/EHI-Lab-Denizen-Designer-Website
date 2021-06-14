@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import ReportMobile from './reportScreen/reportMobile';
-import ReportDesktop from './reportScreen/reportDesktop';
+import ReportMobile from './reportMobile';
+import ReportDesktop from './reportDesktop';
 import Scroll from 'react-scroll';
 
 var Events = Scroll.Events;
 var scroll = Scroll.animateScroll;
 var scrollSpy = Scroll.scrollSpy;
 
-class Report extends Component {
+class ReportMain extends Component {
   constructor(props) {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
@@ -59,4 +59,4 @@ class Report extends Component {
   }
 }
 
-export default Report;
+export default ReportMain;

@@ -9,8 +9,8 @@ import {
   fetchParticipants1,
   fetchParticipant,
   fetchQuotes,
-} from '../../actions';
-import quotes from './quotes';
+} from '../../../actions';
+import quotes from '../QuotesScreen/quotes';
 
 function ParticipantsShowQuotes({
   quoteData,

@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router';
 import { Row, Col, Dropdown, Image, Container } from 'react-bootstrap';
 
-import CitiesBannerGraphic from '../../../../assets/images/citiesBannerGraphic.svg';
+import CitiesBannerGraphic from '../../../../../assets/images/citiesBannerGraphic.svg';
 
-import CitiesBannerGraphicSM from '../../../../assets/images/citiesBannerGraphicSM.svg';
-import DocumentIcon from '../../../../assets/images/documentIcon.svg';
+import CitiesBannerGraphicSM from '../../../../../assets/images/citiesBannerGraphicSM.svg';
+import DocumentIcon from '../../../../../assets/images/documentIcon.svg';
 
-import { fetchParticipants } from '../../actions';
+import { fetchParticipants } from '../../../actions';
 
 class DesignerDatabase extends Component {
   constructor(props) {

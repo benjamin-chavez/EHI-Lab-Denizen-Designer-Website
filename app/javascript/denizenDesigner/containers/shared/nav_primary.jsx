@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import { connect } from "react-redux";
 // import { selectDenizenTab, setNavSecondaryz } from "../../actions";
 import { Link, NavLink } from 'react-router-dom';
-import NavSecondary from './nav_secondary';
+import NavSecondary from '../shared/nav_secondary';
 
 import {
   Container,
@@ -17,7 +17,6 @@ import {
 
 import { useLocation } from 'react-router';
 
-// import test from "../../../assets/images/dd-logo-nav";
 import Media from 'react-bootstrap/Media';
 import NavLogo from '../../../../assets/images/dd-logo-nav.svg';
 import NavLogoMobile from '../../../../assets/images/dd-logo-nav-mobile.svg';

@@ -1,12 +1,14 @@
+//  The actual quotes are being rendered here, but this component is rendered on the quotes component.
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Row, Col, Card, CardColumns, Modal, Button } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
-import { fetchQuotes } from '../../actions';
+import { fetchQuotes } from '../../../actions';
 
-import { fetchParticipants1 } from '../../actions';
+import { fetchParticipants1 } from '../../../actions';
 
 function QuotesIndex({
   quoteData,

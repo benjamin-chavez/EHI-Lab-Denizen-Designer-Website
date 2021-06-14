@@ -1,9 +1,11 @@
+// This is the Base component for the quotes page. The actual quotes are rendered through the quotes index component.
+
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import QuotesIndex from './quotes_index';
+import QuotesIndex from '../QuotesScreen/quotes_index';
 import { NavLink } from 'react-router-dom';
-import { selectQuoteCategory } from '../../actions';
+import { selectQuoteCategory } from '../../../actions';
 import { Button, Accordion } from 'react-bootstrap';
 
 import { Redirect, Switch } from 'react-router-dom';

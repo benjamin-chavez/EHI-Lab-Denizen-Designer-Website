@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ParticipantsIndex from './participants_indexFC';
+import ParticipantsIndex from './participants_index';
 
 class Interviews extends Component {
   render() {

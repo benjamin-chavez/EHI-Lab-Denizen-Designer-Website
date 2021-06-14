@@ -5,9 +5,9 @@ import { Row, Col, Card } from 'react-bootstrap';
 
 import Fade from 'react-reveal/Fade';
 
-import { fetchParticipants } from '../../actions';
+import { fetchParticipants } from '../../../actions';
 
-function participants_indexFC({ fetchParticipants }) {
+function participants_index({ fetchParticipants }) {
   useEffect(() => {
     fetchParticipants();
   }, []);
@@ -74,7 +74,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(participants_indexFC);
+export default connect(mapStateToProps, mapDispatchToProps)(participants_index);

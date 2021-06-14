@@ -3,19 +3,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import store from './store';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './containers/shared/ScrollToTop';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
 
 // Internal modules
-import AppHopd from './components/app_hopd';
-import AppDenizen from './components/app_denizen';
-import LandingPage from './components/landing_page';
-import Dashboard from './containers/app_denizen/dashboard';
-import EditParticipant from './containers/app_denizen/edit_participant';
-import NewParticipant from './containers/app_denizen/new_participant';
+import AppHopd from './containers/app_hopd/app_hopd';
+import AppDenizen from './containers/app_denizen/app_denizen';
+import LandingPage from './containers/shared/landing_page';
+import Dashboard from './containers/dashboard/dashboard';
+import EditParticipant from './containers/dashboard/edit_participant';
+import NewParticipant from './containers/dashboard/new_participant';
 
 class HelloWorld extends React.Component {
   render() {
