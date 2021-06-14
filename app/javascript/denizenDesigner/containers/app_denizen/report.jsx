@@ -1,43 +1,9 @@
 import React, { Component } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  Tab,
-  TabContainer,
-  TabContent,
-  TabPane,
-  Nav,
-  Tabs,
-  Card,
-  Button,
-  Collapse,
-  Accordion,
-} from 'react-bootstrap';
 
-// import * as Scroll from 'react-scroll';
-import Bibliography from './reportScreen/bibliography';
-import ExecutiveSummary from './reportScreen/executiveSummary';
-import Introduction from './reportScreen/introduction';
-import Overview from './reportScreen/overview';
-import ResearchProcess from './reportScreen/researchProcess';
-import Demographics from './reportScreen/demographics';
-import Summary from './reportScreen/summary';
-import Conclusions from './reportScreen/conclusions';
 import ReportMobile from './reportScreen/reportMobile';
 import ReportDesktop from './reportScreen/reportDesktop';
-
-import reportImage from '../../../../assets/images/report-img-1.svg';
-import ArrowDown from '../../../../assets/images/ArrowDown.svg';
-
-import Chart from './reportScreen/raceChart';
-
 import Scroll from 'react-scroll';
 
-var Link = Scroll.Link;
-var DirectLink = Scroll.DirectLink;
-var Element = Scroll.Element;
 var Events = Scroll.Events;
 var scroll = Scroll.animateScroll;
 var scrollSpy = Scroll.scrollSpy;
@@ -80,12 +46,9 @@ class Report extends Component {
 
   render() {
     const changeActiveSection = (newSection) => {
-      // console.log('changeactiveSection');
       this.setState({ activeSection: newSection });
       this.CollapseMenu();
     };
-
-    let activeSection = this.state.activeSection;
 
     return (
       <div>

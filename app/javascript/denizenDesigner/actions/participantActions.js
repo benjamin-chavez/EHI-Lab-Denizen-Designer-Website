@@ -28,10 +28,7 @@ export const fetchParticipants1 = () => {
   return (dispatch) => {
     dispatch(fetchParticipantsRequest);
     axios
-      .get(
-        // 'https://raw.githubusercontent.com/bmchavez/EHI-Lab--Denizen-Designer-Website/main/app/javascript/participants.json'
-        '/api/v1/participants'
-      )
+      .get('/api/v1/participants')
       .then((response) => {
         const participants1 = response.data;
         dispatch(fetchParticipantsSuccess(participants1));

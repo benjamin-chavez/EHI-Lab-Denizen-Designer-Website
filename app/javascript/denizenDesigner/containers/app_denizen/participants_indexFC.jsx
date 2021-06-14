@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
-import { connect, useDispatch, useSelector } from 'react-redux';
-import { Container, Row, Col, Card, Footer } from 'react-bootstrap';
-import ParticipantImage from '../../../../assets/images/participant.jpeg';
+import { connect, useSelector } from 'react-redux';
+import { Row, Col, Card } from 'react-bootstrap';
 
 import Fade from 'react-reveal/Fade';
 
@@ -76,13 +74,7 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({ fetchParticipants }, dispatch);
-// }
-
 export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(participants_indexFC);
-
-// export default participants_indexFC;

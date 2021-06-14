@@ -1,3 +1,5 @@
+# See documentation for further instructions on seed creation
+
 # CLEAN DATABASE
 puts "Cleaning Quote Database Table..."
 Quote.destroy_all
@@ -1110,13 +1112,3 @@ Quote.create!({
   quote_body: "...design has offered really concrete languages for talking about process, in a way that's really important for me. Most of the time my ideas are amorphous, unwieldy, unbounded but exciting, and the design process helps me to start focusing and synthesizing those things.",
   categories: ['design'],
 })
-
-# Quote.create!({
-#   participant_id: 31,
-#   first_name: "Gabe",
-#   last_name: "Moreno",
-#   quote_body: "",
-#   categories: [''],
-# })
-
-

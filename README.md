@@ -8,3 +8,11 @@ $ bundle
 $ ./bin/webpack-dev-server
 $ rails s
 ```
+
+```
+- how to update seeds in both dev and deployed databases
+- link to animation library
+- bootstrap
+- Ruby on rails
+- React Redux
+```

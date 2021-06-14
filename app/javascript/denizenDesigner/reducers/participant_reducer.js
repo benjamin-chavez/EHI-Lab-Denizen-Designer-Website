@@ -20,11 +20,7 @@ const participantReducer = (state, action) => {
       return action.payload;
     case FETCH_PARTICIPANT:
       return action.payload;
-    // case PARTICIPANT_CREATED:
-    // // TODO: push it to the array of participants
-    //   return state;
     case DELETE_PARTICIPANT:
-      // return action.payload;
       return state.filter((participant) => participant.id !== action.id);
     default:
       return state;

@@ -33,15 +33,7 @@ function ParticipantsShowQuotes({
 
   useEffect(() => {}, []);
 
-  // const [show, setShow] = useState(false);
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
-
-  // const [curQuote, setCurQuote] = useState('');
-  const [quoteOwner, setQuoteOwner] = useState();
-  // const [ownerRole, setOwnerRole] = useState('');
-  // const [ownerID, setOwnerID] = useState('');
-  // const [fadeState, setfadeState] = useState(true);
+  const [setQuoteOwner] = useState();
 
   const lala = () => {
     return participantsData.loading
@@ -63,7 +55,6 @@ function ParticipantsShowQuotes({
 
   const filteredQuotesFunc = (quotesArray) => {
     quotesArray.forEach((quote) => {
-      // console.log(quote.participant_id);
       if (quote.participant_id == location.pathname.split('/').pop()) {
         filteredQuotes.push(quote);
       }
@@ -71,14 +62,6 @@ function ParticipantsShowQuotes({
     filteredQuotes = filteredQuotes.slice(0, 2);
     console.log(filteredQuotes);
   };
-
-  // // let curParticipant1 = '';
-
-  // const curParticipantFunc = (participantsArray) => {
-  //   participantsArray.forEach((participant) => {
-  //     console.log('hihihihihihihihihihihi');
-  //   });
-  // };
 
   return quoteData.loading ? (
     <h2>Loading...</h2>

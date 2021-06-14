@@ -21,7 +21,6 @@
 
 // External imports
 import 'bootstrap';
-// import '../denizenDesigner';
 
 // // Internal imports, e.g:
 // // import { initSelect2 } from '../components/init_select2';

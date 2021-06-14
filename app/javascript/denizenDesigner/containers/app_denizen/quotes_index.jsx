@@ -1,23 +1,12 @@
-import React, { useEffect, useState, Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
-import { connect, useSelector } from 'react-redux';
-import {
-  Row,
-  Col,
-  Card,
-  CardColumns,
-  Container,
-  Modal,
-  Button,
-} from 'react-bootstrap';
-// import Pagination from './pagination';
+import { connect } from 'react-redux';
+import { Row, Col, Card, CardColumns, Modal, Button } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
+
 import { fetchQuotes } from '../../actions';
 
 import { fetchParticipants1 } from '../../actions';
-import quotes from './quotes';
 
 function QuotesIndex({
   quoteData,
@@ -44,23 +33,6 @@ function QuotesIndex({
   const [quoteOwner, setQuoteOwner] = useState('');
   const [ownerRole, setOwnerRole] = useState('');
   const [ownerID, setOwnerID] = useState('');
-  const [fadeState, setfadeState] = useState(true);
-
-  const lala = () => {
-    return participantsData.loading
-      ? console.log(
-          // participantsData.participants1.find((item) => item.id === 1).first_name
-          'nooooooooooooooooooooo'
-        )
-      : console.log(
-          participantsData.participants1.find((item) => item.id === 1)
-            .first_name
-        );
-  };
-
-  // console.log('testing');
-  // console.log(lala);
-  // lala;
 
   return quoteData.loading ? (
     <h2>Loading...</h2>
@@ -108,8 +80,6 @@ function QuotesIndex({
       </div>
 
       <div className=''>
-        {/* <p>{quote.first}</p> */}
-
         <CardColumns>
           {quoteData &&
             quoteData.quotes &&
@@ -133,7 +103,6 @@ function QuotesIndex({
                             ).last_name
                           }`
                         );
-                        // setOwnerRole('Designer Type');
                         setOwnerRole(
                           participantsData.participants1.find(
                             (item) => item.id === quote.participant_id
@@ -141,7 +110,6 @@ function QuotesIndex({
                         );
                         setOwnerID(quote.participant_id);
                         handleShow();
-                        lala();
                       }}
                     >
                       <Card.Body className='denizen-quote-body'>
@@ -173,11 +141,6 @@ function QuotesIndex({
               )
             )}
         </CardColumns>
-        {/* <Pagination
-          quotesPerPage={quotesPerPage}
-          totalQuotes={134}
-          paginate={paginate}
-        /> */}
       </div>
     </div>
   );

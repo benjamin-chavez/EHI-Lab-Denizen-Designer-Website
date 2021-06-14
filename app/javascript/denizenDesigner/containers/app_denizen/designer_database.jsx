@@ -2,19 +2,9 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import DesignersIndex from './designers_index';
-import ParticipantsIndex from './participants_index';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router';
-import queryString from 'query-string';
-import {
-  Row,
-  Col,
-  Dropdown,
-  DropdownButton,
-  Button,
-  Image,
-  Container,
-} from 'react-bootstrap';
+import { Row, Col, Dropdown, Image, Container } from 'react-bootstrap';
 
 import CitiesBannerGraphic from '../../../../assets/images/citiesBannerGraphic.svg';
 
@@ -43,7 +33,6 @@ class DesignerDatabase extends Component {
   };
 
   renderDesignersIndex(city) {
-    // const city = location.pathname.split('/').pop();
     return (
       <div>
         <DesignersIndex city={city} />
@@ -90,11 +79,7 @@ class DesignerDatabase extends Component {
         <Row className='designer-city-banner my-2'>
           <Col>
             <Dropdown>
-              <Dropdown.Toggle
-                variant='outline-light'
-                id='dropdown-basic'
-                // className='dropdownButon'
-              >
+              <Dropdown.Toggle variant='outline-light' id='dropdown-basic'>
                 {city == 'designerdatabase' || city == 'All Cities'
                   ? 'Cities'
                   : city}
@@ -144,7 +129,6 @@ class DesignerDatabase extends Component {
   }
 }
 
-// export default DesignerDatabase;
 function mapStateToProps(state) {
   return {
     participants: state.participants,

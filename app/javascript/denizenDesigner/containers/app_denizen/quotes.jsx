@@ -1,31 +1,16 @@
-import React, { useEffect, useState, Component } from 'react';
+import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import QuotesIndex from './quotes_index';
-import { useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { selectQuoteCategory } from '../../actions';
-import {
-  Row,
-  Col,
-  Button,
-  Collapse,
-  Accordion,
-  Card,
-  Nav,
-} from 'react-bootstrap';
+import { Button, Accordion } from 'react-bootstrap';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from 'react-router-dom';
+import { Redirect, Switch } from 'react-router-dom';
 
 class Quotes extends Component {
   constructor() {
     super();
-    // this.state = { filterView: 'Click text' };
     this.state = { clicked: true };
   }
 
@@ -46,13 +31,8 @@ class Quotes extends Component {
       this.props.quoteCategories.length
     );
 
-    // let filterView = 'Expand';
-
     const changeFilterView = () => {
       console.log('changeFilterVIew');
-      // this.setState({ filterView: 'Collapse' });
-      // this.setState({clicked: !this.state.clicked})
-      // this.state.clicked === true ? this.state.clicked =
       this.setState({ clicked: !this.state.clicked });
     };
 
@@ -124,12 +104,9 @@ class Quotes extends Component {
   }
 }
 
-// export default Quotes;
-
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
-      // setNavSecondary: setNavSecondary
       selectQuoteCategory,
     },
     dispatch
@@ -138,7 +115,6 @@ function mapDispatchToProps(dispatch) {
 
 function mapReduxStateToProps(reduxState) {
   return {
-    // selectQuoteCategory: reduxState.selectedQuoteCategory,
     selectedQuoteCategories: reduxState.selectedQuoteCategories,
     quoteCategories: reduxState.quoteCategories,
   };

@@ -30,8 +30,6 @@ export class EditParticipant extends Component {
   }
 
   render() {
-    // const { handleSubmit, load, pristine, reset, submitting } = props;
-
     if (!this.props.participant) {
       return <p>Loading...</p>;
     }

@@ -1,4 +1,3 @@
-// import { FETCH_PARTICIPANTS } from '../actions';
 import {
   FETCH_PARTICIPANTS_REQUEST,
   FETCH_PARTICIPANTS_SUCCESS,

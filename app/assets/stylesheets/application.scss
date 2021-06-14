@@ -1,3 +1,5 @@
+// NOTE: This is the master scss stylesheet. All other stylesheets are imported into the project through this file.
+
 // Graphical variables
 @import 'config/fonts';
 @import 'config/colors';
@@ -22,7 +24,6 @@ body,
   margin: 0;
   background-image: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1615826819/Denizen%20Designer%20%28Temp%29/bg-repeat-full_buobfv.svg');
   background-repeat: repeat;
-  // opacity: 0.75;
 }
 
 #wrapper {
@@ -38,7 +39,6 @@ body,
 }
 
 .container-fluid {
-  // background-color: green;
   max-width: 80.188rem;
 }
 
@@ -54,208 +54,17 @@ body,
 .gr {
   background-color: green;
 }
-// @import "card";
-// @import "nav_secondary";
-// @import "nav_primary";
-// @import "denizen_home";
-// @import "denizen_quotes";
-// @import "denizen_report";
-// @import "denizen_resources";
-// @import "landing_page";
 
 // IMPORT FONTS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-// // #root {
-// //   height: 100vh;
-// //   display: flex;
-// //   align-items: center;
-// //   justify-content: center;
-// // }
-
-// .participant-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   list-style: none;
-//   justify-content: space-between;
-// }
-
-// .participant-item {
-//   flex: 50% 0 0;
-//   color: white;
-//   cursor: pointer;
-//   margin-left: 20px;
-//   margin-bottom: 24px;
-//   width: 150px;
-//   height: 143px;
-//   border-radius: 6px;
-//   padding: 10px;
-//   border-radius: 6px;
-//   background: linear-gradient(
-//       180deg,
-//       rgba(196, 196, 196, 0) 0%,
-//       rgba(20, 54, 92, 0.56) 100%
-//     ),
-//     url('../images/participant.jpeg'), #c4c4c4;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   vertical-align: text-bottom;
-//   position: relative;
-// }
-
-// .participant-item-img {
-//   position: absolute;
-//   bottom: 5%;
-//   left: 4.03;
-// }
-// .participant-item-name {
-//   font-family: 'Montserrat', sans-serif;
-//   font-style: normal;
-//   font-weight: 600;
-//   font-size: 16px;
-//   line-height: 20px;
-//   display: flex;
-//   align-items: center;
-//   color: #ffffff;
-// }
-// .participant-item-designer {
-//   // color: salmon;
-//   // vertical-align: text-bottom;
-//   font-family: 'Roboto', sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 13px;
-//   line-height: 15px;
-//   display: flex;
-//   align-items: center;
-//   color: #ffffff;
-// }
-
-// .participant-show-img {
-//   width: 303.06px;
-//   height: 260px;
-//   box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
-//   border-radius: 6px;
-//   background: linear-gradient(
-//       180deg,
-//       rgba(196, 196, 196, 0) 0%,
-//       rgba(20, 54, 92, 0.56) 100%
-//     ),
-//     url('https://s3-alpha-sig.figma.com/img/f5af/d022/a6172e4a22f5b284a8898f11c5877e62?Expires=1607299200&Signature=Giwm96H7PTzF7iEhkVnl8IFyxeTVzKPuY63-MqLAOq65pPtO13kcn7oIc9H4bTZnDC8tibuqcs2Q4bxRM~nAjKjuEwhpTvSvvG-c07EVJ3YfxfHGGyb5xv6v4zAx65mM6JRcV1LDP7Oo3DfCcYx72cnJy-rVuaP0YKTFRm9sCtd5q89sfZOZ7IshSaxRrNXSPiqCxmYitRja7~aupiI0BH4x6Wj8t5rQsSyNoaGZNfbhuqBn3wUm6C9a6oSjF-6WQEB1ntPcOzpY5BIKHuYU5gE1RDixiTw-Tep7FekmtfuzAYEPNv9aJz1D~c-WQCxmUbswqJ8U9amOTwKLbHSRzA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'),
-//     #c4c4c4;
-//   border-radius: 6px;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   margin: auto;
-//   display: block;
-//   text-decoration: none !important;
-// }
-
-// // . {
-// // }
-
-// .back-btn {
-//   background-color: #eaedf3 !important;
-//   width: 102px !important;
-//   height: 40px !important;
-//   border-radius: 29px !important;
-// }
-
-// .back-btn-text {
-//   color: #4f4f4f !important;
-// }
-
-// .database-card {
-//   background-color: #ffffff;
-
-//   margin-bottom: 10px;
-//   display: flex;
-//   justify-content: center; /* align horizontal */
-//   align-items: center; /* align vertical */
-//   border-radius: 2px;
-//   height: 39px;
-// }
-
-// .designer-city-menu {
-//   list-style: none;
-//   padding: 0;
-//   display: inline-block;
-// }
-
-// .designer-city-menu > li {
-//   margin: 5px;
-//   height: 54px;
-//   width: 54px;
-//   line-height: 54px;
-//   text-align: center;
-//   border-radius: 50%;
-//   display: inline-block;
-//   cursor: pointer;
-//   color: #6b7390;
-//   border: 1px solid #6b7390;
-// }
-// .designer-city-item.selected {
-//   background-color: #6b7390;
-//   color: white;
-
-//   //   display: flex;
-//   //   justify-content: center; /* align horizontal */
-//   //   align-items: center;
-// }
-
-// // .card-text {
-// //   // display: flex;
-// //   // justify-content: center; /* align horizontal */
-// //   // align-items: center;
-// // }
-
-// #root {
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
 .participant-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // list-style: none;
   justify-content: space-between;
-  // justify-content: space-around;
 }
 
-
-
-
-
-
-
-// .participant-item-img {
-//   position: absolute;
-//   bottom: 5%;
-//   left: 4.03;
-// }
-
-// // .cardBodyInterview.card-body {
-// //   height: 100%;
-// // }
-
-// .participant-item-img1 {
-//   // maxWidth: '15.241rem', maxHeight: '8.938rem'
-//   background-blend-mode: screen;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
-
-
-
 .participant-show-img {
-  // min-width: 303.06px;
   max-width: 100%;
   height: 260px;
   box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
@@ -315,17 +124,9 @@ body,
   font-size: 16px;
   line-height: 25px;
   white-space: pre-line;
-  /* or 156% */
-
   /* black */
 
   color: #2a2e33;
-
-  // /* Inside Auto Layout */
-
-  // flex: none;
-  // order: 0;
-  // flex-grow: 0;
 }
 
 .back-btn {
@@ -371,23 +172,18 @@ body,
   text-align: right;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
   align-items: center; /* align vertical */
 
   /* Primary */
 
   color: #475ca7;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  // margin: 0px 8px;
 }
 
 .participate-btn-text {
   height: 100%;
-
   align-items: center; /* align vertical */
 }
 
@@ -399,60 +195,26 @@ body,
 }
 
 .designer-city-banner {
-  // background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1612154128/Denizen%20Designer%20%28Temp%29/database-city-banner-background_xf7z8f.svg');
-  // width: 100%;
   height: 66px;
   background: #475ca7;
   border-radius: 4px;
   align-items: center; /* align vertical */
-  // background-color: red !important;
-  // color: red !important;
 }
 
-// #bannerContainer {
-//   color: red;
-//   background-color: #ffffff;
-
-//   margin-bottom: 10px;
-//   display: flex;
-//   // justify-content: center; /* align horizontal */
-//   align-items: center; /* align vertical */
-//   border-radius: 2px;
-//   height: 39px;
-//   // height: 500px;
-// }
 
 .designer-city-banner #dropdown-basic {
   margin: auto;
-  // color: red !important;
-  // background-color: blue !important;
-  // vertical-align: middle !important;
-}
-
-.designer-city-banner #dropdown-basic:hover {
-  // margin: auto;
-  // color: red !important;
-  // opacity: 0.5;
-  // color: white;
-  // background-color: blue !important;
-  // vertical-align: middle !important;
 }
 
 .cities-banner-graphic {
-  // background-color: red;
   height: 100%;
-  // vertical-align: text-bottom;
-  // align-items: bottom !important;
   align-items: center;
   position: relative;
-  
 }
 
 .cities-banner-graphic-img {
-  // background-color: red;
   position: absolute;
   bottom: 0;
-  // left: 0;
   right: 0;
   padding-right: 4px;
   
@@ -491,19 +253,13 @@ body,
   background-color: #475ca7 ;
 }
 
-
-
 @media (max-width: 594px) {
   #content {
-    // padding-bottom: 100px;
     padding-top: 140px;
-    // background-color: red;
-    /* Height of the footer element */
   }
-  
 }
 
-
+// Import all stylesheets
 @import '../../javascript/assets/stylesheets/nav_secondary';
 @import '../../javascript/assets/stylesheets/nav_primary';
 @import '../../javascript/assets/stylesheets/denizen_home';

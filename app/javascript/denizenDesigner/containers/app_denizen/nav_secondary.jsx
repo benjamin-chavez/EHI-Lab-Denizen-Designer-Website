@@ -1,11 +1,8 @@
 import React, { Component, useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { selectDenizenTab, setNavSecondaryz } from '../../actions';
-import { Link, NavLink } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { selectDenizenTab } from '../../actions';
+import { NavLink } from 'react-router-dom';
 
 class NavSecondary extends Component {
   handleClick = (denizenTab) => {
@@ -31,17 +28,11 @@ class NavSecondary extends Component {
 
   render() {
     return (
-      // <div>
-      //   <Row>
-      //     <Col>
       <div className='nav-secondaryy'>
         <ul className='list-inline-nav-sec'>
           {this.props.denizenTabs.map(this.renderDenizenTab)}
         </ul>
       </div>
-      //     </Col>
-      //   </Row>
-      // </div>
     );
   }
 }

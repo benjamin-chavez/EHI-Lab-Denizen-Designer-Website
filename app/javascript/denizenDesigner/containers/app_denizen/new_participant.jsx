@@ -66,8 +66,6 @@ export class NewParticipant extends Component {
   }
 }
 
-// export default NewParticipant;
-
 export default reduxForm({ form: 'newParticipantForm ' })(
   connect(null, { createParticipant })(NewParticipant)
 );

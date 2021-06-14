@@ -6,11 +6,8 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
-// import { createHistory as history } from "history";
 
 import NavPrimary from '../containers/app_denizen/nav_primary';
-import NavSecondary from '../containers/app_denizen/nav_secondary';
-// import ParticipantList from "../containers/app_denizen/participant_list";
 import DenizenHome from '../components/app_denizen/denizen_home';
 import Interviews from '../containers/app_denizen/interviews';
 import Report from '../containers/app_denizen/report';
@@ -19,10 +16,7 @@ import Quotes from '../containers/app_denizen/quotes';
 import Resources from '../components/app_denizen/resources';
 import Footer from './footer';
 
-import { Container } from 'react-bootstrap';
-
 import ParticipantsShow from '../containers/app_denizen/participants_show';
-import ParticipantsIndex from '../containers/app_denizen/participants_index';
 
 const AppDenizen = (props) => {
   return (
@@ -31,7 +25,6 @@ const AppDenizen = (props) => {
         <NavPrimary />
 
         {/* <NavSecondary /> */}
-
         <Route path='/denizendesigner/home' component={DenizenHome} />
         <Route
           exact
