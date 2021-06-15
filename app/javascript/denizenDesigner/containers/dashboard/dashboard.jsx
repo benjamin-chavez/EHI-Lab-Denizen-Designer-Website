@@ -4,7 +4,7 @@ const dashboard = () => {
   return (
     <div>
       <dir>
-        <p> test</p>
+        <p>Dashboard</p>
       </dir>
     </div>
   );
