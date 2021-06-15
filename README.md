@@ -48,7 +48,7 @@ Look at your main `application.scss` file to see how SCSS files are imported. Th
 
 ```scss
 // app/assets/stylesheets/application.scss
-
+```
 
 
 
