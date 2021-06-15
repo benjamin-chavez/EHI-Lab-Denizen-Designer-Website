@@ -70,11 +70,34 @@
   color: #08439A;
 }
 
+.reportDownloadBtn:focus{
+  outline:0 !important;
+  box-shadow:none !important;
+
+}
+.reportDownloadBtn:active {
+  background-color: rgba(0, 0, 0, 0) !important;
+ } 
+
+
 .reportDownloadButton .btn-primary {
  background: rgba(0,0,0,0);
+ 
  border:none;
 }
 
+.reportDownloadBtn a:hover{
+  background-color: #475ca7;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.reportDownloadBtn a:focus,
+a:active{
+  background-color: #3a4d8f !important;
+  background-color: red;
+  color: #ffffff !important;
+}
 
 .report-container {
   background-color: #ffffff;
