@@ -7,7 +7,7 @@ You will find the majority of the frontend code in the 'app/javascript' folder.T
 
 The majority of the scss stylesheets are placed within the "javascript/assets" folder. These .scss files are then imported into the application.scss file located at 'app/assets/stylesheets/application.scss'. 
 
-All image media is stored in the 'app/assets/images' folder, not in the 'app/javascript/assets' folder.
+All local image media is stored in the 'app/assets/images' folder, not in the 'app/javascript/assets' folder. External image media is stored on cloudinary.com. Login details can be provided by The EHI Lab.
 
 The backend ruby on rails api is located in the 'app/controllers/api/v1' folder.
 
@@ -29,7 +29,7 @@ Backend:
   - Database => https://www.postgresql.org/
 
 Frontend: 
-  - React: Frontend framework
+  - React: Frontend framework => https://reactjs.org/
   - Redux: State Handler => https://redux.js.org/
   - React Bootstrap: CSS style library => https://react-bootstrap.github.io/
   - React Reveal: Animation library  =>  https://www.react-reveal.com/
