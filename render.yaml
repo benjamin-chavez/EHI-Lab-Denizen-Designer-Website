@@ -34,7 +34,7 @@ databases:
 
 services:
   - type: web
-    name: rails
+    name: ehi-lab-denizen-designer-websti
     env: ruby
     buildCommand: "bin/render-build.sh"
     startCommand: "bundle exec rails s"
