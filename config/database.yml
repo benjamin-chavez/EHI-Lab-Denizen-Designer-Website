@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: EHI_Lab_Denizen_Designer_Website_production
   username: EHI_Lab_Denizen_Designer_Website
   password: <%= ENV['EHI_LAB_DENIZEN_DESIGNER_WEBSITE_DATABASE_PASSWORD'] %>
