@@ -7,7 +7,7 @@ import {
 } from '../actions';
 
 const participantReducer = (state, action) => {
-  // Compute and returen the new state
+  // Compute and return the new state
   if (state == undefined) {
     return [];
   }

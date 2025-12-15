@@ -12,7 +12,7 @@ class Api::V1::ParticipantsController < ActionController::Base
     participant = Participant.find(params[:id])
     render json: participant
   end
-  
+
   def update
     @participant = Participant.find(params[:id])
     @participant.update(participant_params)
@@ -31,8 +31,8 @@ class Api::V1::ParticipantsController < ActionController::Base
     render json: @participant
 
     # @participant = Participant.new(participant_params)
-    
-    # @participant.save 
+
+    # @participant.save
     # render json: @participant, status: :created
   end
 
@@ -40,7 +40,7 @@ class Api::V1::ParticipantsController < ActionController::Base
     # @participant = Participant.find(params[:id])
     @participant = Participant.where(id: params[:id]).first
     @participant.destroy
-      
+
     if @participant.destroy
       head(:ok)
     else
@@ -56,5 +56,5 @@ class Api::V1::ParticipantsController < ActionController::Base
   end
 
 
-  
+
 end

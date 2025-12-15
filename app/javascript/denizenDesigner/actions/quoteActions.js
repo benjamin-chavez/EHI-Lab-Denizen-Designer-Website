@@ -25,7 +25,7 @@ export const fetchQuotesFailure = (error) => {
   };
 };
 
-// The below funtion randomizes the quotes so that they do not populate in the order in which they were entered into the database.
+// The below function randomizes the quotes so that they do not populate in the order in which they were entered into the database.
 function shuffleArray(array) {
   let i = array.length - 1;
   for (; i > 0; i--) {
