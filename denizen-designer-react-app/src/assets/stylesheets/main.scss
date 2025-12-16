@@ -1,0 +1,115 @@
+// Graphical variables
+@import 'config/fonts';
+@import 'config/colors';
+@import 'config/bootstrap_variables';
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// @import "font-awesome"; // Removed due to missing font files
+
+// Font imports
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+// Global styles
+html,
+body,
+#root,
+.App {
+  font-family: Helvetica;
+  background-color: #f1f3f8;
+  height: 100%;
+  margin: 0;
+  background-image: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1615826819/Denizen%20Designer%20%28Temp%29/bg-repeat-full_buobfv.svg');
+  background-repeat: repeat;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content {
+  padding-bottom: 100px;
+  padding-top: 101px;
+  /* Height of the footer element */
+}
+
+.container-fluid {
+  max-width: 80.188rem;
+}
+
+.List-Inline {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 594px) {
+  #content {
+    padding-top: 140px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Common spacing fixes
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+// Ensure proper gutter spacing
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// Card columns spacing for quotes
+.card-columns {
+  @include media-breakpoint-up(sm) {
+    column-count: 2;
+    column-gap: 1.25rem;
+  }
+  @include media-breakpoint-up(md) {
+    column-count: 3;
+    column-gap: 1.25rem;
+  }
+  @include media-breakpoint-up(lg) {
+    column-count: 3;
+    column-gap: 1.25rem;
+  }
+  @include media-breakpoint-up(xl) {
+    column-count: 4;
+    column-gap: 1.25rem;
+  }
+}
+
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+
+// Import component styles
+@import './shared/nav_primary';
+@import './shared/nav_secondary';
+@import './shared/footer';
+@import './shared/landing_page';
+@import './shared/load_spinner';
+@import './app_denizen/home';
+@import './app_denizen/interviews';
+@import './app_denizen/participants_show';
+@import './app_denizen/report';
+@import './app_denizen/desiegner_database';
+@import './app_denizen/quotes';
+@import './app_denizen/resources';
+@import './app_hopd/timeline';

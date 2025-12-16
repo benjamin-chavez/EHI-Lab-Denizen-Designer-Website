@@ -1,0 +1,87 @@
+.homeScreen {
+  background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1615901813/Denizen%20Designer%20%28Temp%29/home-backgroundv2_chgolp.png');
+  background-repeat: no-repeat;
+  background-position: center;      /* center the image */
+  background-size: cover;
+  overflow-x: visible;
+  overflow: visible;
+  background-size: auto 100%;
+  min-height: 786px;
+  margin-top: -16px;
+  background-position: left top;
+}
+
+.homeScreen .title {
+  margin-top: 100px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 106.4%;
+  text-transform: uppercase;
+
+  /* Primary */
+  color: #475ca7;
+}
+
+.homeScreen .textBody {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 171%;
+  letter-spacing: 0.02em;
+
+  /* Primary */
+  color: #475ca7;
+}
+
+.denizen-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  /* Primary */
+  color: #475ca7;
+}
+
+.homeScreen .homeBtn {
+  border: 1px solid #475ca7;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* Primary */
+
+  color: #475ca7;
+  background: rgba(0,0,0,0);
+}
+
+.homeScreen .homeBtn:hover {
+  background-color: #475ca7;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.homeScreen .homeBtn:focus,
+.homeBtn:active {
+  background-color: #3a4d8f !important;
+  color: #ffffff !important;
+}
+
+.homeScreen a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .homeScreen .center {
+    text-align: center;
+    align-items: center;
+  }
+
+}

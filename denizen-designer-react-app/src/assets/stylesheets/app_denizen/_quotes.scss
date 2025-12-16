@@ -1,0 +1,202 @@
+.quote-filter-menu {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+.quote-filter-menu > li {
+  text-decoration: none;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153.4%;
+  align-items: center;
+  color: #6b7390;
+  cursor: pointer;
+}
+
+.quote-filter-menu a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 153.4%;
+  align-items: center;
+  color: #6b7390;
+  cursor: pointer;
+  padding: 6px 18px;
+  border-radius: 20px;
+}
+
+.quote-filter-item a.active {
+  color: #f0f0f0;
+  padding: 6px 18px;
+  background-color: #475ca7;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.quotes-expand-btn{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 153.4%;
+  display: flex;
+
+  /* Primary */
+  color: #475CA7;
+  }
+
+  .quotes-expand-btn:hover {
+    text-decoration: none !important;  
+    color: #475CA7;
+  }
+
+.quote-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.denizen-quote-card {
+  cursor: pointer;
+  margin-bottom: 25px !important;
+  border: none;
+  border-radius: 6px !important;
+}
+
+.denizen-quote-body {
+  padding: 25px !important;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  background-color: #ffffff;
+  box-shadow: 0px 13px 28px rgba(0, 39, 92, 0.08);
+  border-radius: 6px;
+}
+
+.denizen-quote-author {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+
+  /* secondary */
+  color: #5a6795da;
+  margin: 14px 0px 0px 10px;
+}
+
+a.denizen-quote-author:hover {
+  color: #2dba90;
+  text-decoration: none !important;
+}
+
+.quote-modal .modal-content {
+  border-radius: 12px;
+}
+
+.quote-modal .close-button {
+  background: #ffffff;
+  border: 1px solid #8593a8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #8593a8;
+}
+
+.quote-modal .close-button:hover {
+  background-color: #475ca7;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.quote-modal .close-button:focus,
+.close-button:active {
+  background-color: #3a4d8f !important;
+  color: #ffffff !important;
+}
+
+.quote-modal .modal-quote-body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2a2e33;
+}
+
+.quote-modal .modal-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 159%;
+  text-align: center;
+  border-bottom: 1px solid #bcc5d2;
+  
+  /* infographic primary */
+  color: #08439a;
+}
+
+a.modal-name:hover {
+  color: #2dba90;
+  text-decoration: none !important;
+}
+
+.quote-modal .modal-role {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 159%;
+  text-align: center;
+
+  /* secondary */
+  color: #8593a8;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  margin-bottom: 30px;
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+
+
+
+@media (max-width: 576px) {
+  .quote-modal .modal-quote-body {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,136 @@
+.resourcesPage .resourceCard {
+  min-height: 11.25rem;
+  border-radius: 4px;
+  background-color: #435289;
+}
+
+.card1 {
+  background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613443433/Denizen%20Designer%20%28Temp%29/resourcesImage1_y6yyqq.png');
+  min-height: 11.25rem;
+  border-radius: 4px;
+}
+
+.card2 {
+  background: url('https://res.cloudinary.com/dyy8g76av/image/upload/v1613443433/Denizen%20Designer%20%28Temp%29/resourcesImage2_rysbkj.png');
+  min-height: 11.25rem;
+  border-radius: 4px;
+}
+
+.resourceCard .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 159%;
+  text-transform: uppercase;
+
+  /* BATON YELLOW */
+  color: #ffd600;
+}
+
+.resourceCard .bodyText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 145%;
+  letter-spacing: 0.01em;
+
+  /* Gray 5 */
+  color: #ffffff;
+}
+
+.resourceCard .cardLink {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+
+  /* BATON YELLOW */
+  color: #ffd600;
+}
+
+.resourceCard .cardLink:hover {
+  color: #f3cb02;
+}
+
+.resource-ext-link {
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 159%;
+  text-transform: uppercase;
+
+  /* Primary */
+  color: #475ca7;
+}
+
+.resource-ext-link a {
+  color: #475ca7;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* align vertical */
+}
+
+.resource-ext-link a:hover {
+  color: #2dba90;
+}
+
+.resource-ext-card {
+  min-width: 340px;
+  min-height: 4.25rem;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+
+.card-resource-text {
+  display: flex;
+  align-items: center; /* align vertical */
+  width: 100%;
+}
+
+.resource-card-row {
+  width: 100%;
+}
+
+.resourceCard .card-body {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+@media (max-width: 768px) {
+  .resourceCard .title {
+    max-width: 14.813rem;
+    word-wrap: break-word;
+  }
+
+  .resource-ext-card {
+    min-width: 0px;
+  }
+
+  .resource-card-col2{
+    padding-left: 8px;
+  }
+
+  .resourceCard .card-body {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .empty-card {
+    width: 0px !important;
+    height: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+}

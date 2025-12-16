@@ -1,0 +1,28 @@
+.footer-landing-pg {
+  align-items: center;
+  min-height: 60px;
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 7px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.25rem;
+  text-align: center;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  overflow: visible;
+  padding: 0.625;
+  font-size: 0.75rem;
+  box-sizing: border;
+  color: #475ca7;
+}
+
+.footer-landing-pg .main-site-link {
+  color: #475ca7;
+}
+
+.footer-container{
+  padding-bottom: 10px;
+  margin-top: auto;
+  flex-grow: auto; 
+}

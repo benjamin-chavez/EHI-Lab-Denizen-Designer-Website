@@ -9,6 +9,8 @@ ruby '3.1.3'
 # gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem "rails", "~> 7.0.8"
 
+gem 'bootstrap', '~> 5.3'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
