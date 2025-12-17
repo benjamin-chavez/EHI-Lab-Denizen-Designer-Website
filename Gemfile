@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.7'
 # Cloudinary Image Hosting
 # gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
-
+gem 'execjs', '~> 2.9'
 # Authentication
 gem 'devise'
 

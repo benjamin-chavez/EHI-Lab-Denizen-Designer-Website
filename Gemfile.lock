@@ -134,7 +134,7 @@ GEM
       railties (>= 3.2)
     drb (2.2.3)
     erubi (1.13.1)
-    execjs (2.8.1)
+    execjs (2.10.0)
     ffi (1.15.5)
     font-awesome-sass (6.2.1)
       sassc (~> 2.0)
@@ -334,6 +334,7 @@ DEPENDENCIES
   cloudinary (~> 1.16.0)
   devise
   dotenv-rails
+  execjs (~> 2.9)
   font-awesome-sass
   jbuilder (~> 2.7)
   listen (~> 3.2)
