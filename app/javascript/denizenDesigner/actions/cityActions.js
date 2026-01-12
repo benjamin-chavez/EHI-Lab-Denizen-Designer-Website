@@ -1,4 +1,5 @@
-import axios from 'axios';
+// Static data - no database queries
+import { participants } from '../data/participants';
 
 export const FETCH_CITIES_REQUEST = 'FETCH_CITIES_REQUEST';
 export const FETCH_CITIES_SUCCESS = 'FETCH_CITIES_SUCCESS';
@@ -10,10 +11,10 @@ export const fetchCitiesRequest = () => {
   };
 };
 
-export const fetchCitiesSuccess = (quotes) => {
+export const fetchCitiesSuccess = (cities) => {
   return {
     type: FETCH_CITIES_SUCCESS,
-    payload: quotes,
+    payload: cities,
   };
 };
 
@@ -26,16 +27,14 @@ export const fetchCitiesFailure = (error) => {
 
 export const fetchCities = () => {
   return (dispatch) => {
-    dispatch(fetchCitiesRequest);
-    axios
-      .get('/api/v1/participants')
-      .then((response) => {
-        const cities = response.data;
-        dispatch(fetchCitiesSuccess(cities));
-      })
-      .catch((error) => {
-        const errorMsg = error.message;
-        dispatch(fetchCitiesFailure(errorMsg));
-      });
+    dispatch(fetchCitiesRequest());
+    // Use static data instead of API call
+    setTimeout(() => {
+      try {
+        dispatch(fetchCitiesSuccess(participants));
+      } catch (error) {
+        dispatch(fetchCitiesFailure(error.message));
+      }
+    }, 100);
   };
 };

@@ -1,4 +1,5 @@
-import axios from 'axios';
+// Static data - no database queries
+import { participants } from '../data/participants';
 
 export const FETCH_PARTICIPANTS_REQUEST = 'FETCH_PARTICIPANTS_REQUEST';
 export const FETCH_PARTICIPANTS_SUCCESS = 'FETCH_PARTICIPANTS_SUCCESS';
@@ -26,16 +27,14 @@ export const fetchParticipantsFailure = (error) => {
 
 export const fetchParticipants1 = () => {
   return (dispatch) => {
-    dispatch(fetchParticipantsRequest);
-    axios
-      .get('/api/v1/participants')
-      .then((response) => {
-        const participants1 = response.data;
-        dispatch(fetchParticipantsSuccess(participants1));
-      })
-      .catch((error) => {
-        const errorMsg = error.message;
-        dispatch(fetchParticipantsFailure(errorMsg));
-      });
+    dispatch(fetchParticipantsRequest());
+    // Use static data instead of API call
+    setTimeout(() => {
+      try {
+        dispatch(fetchParticipantsSuccess(participants));
+      } catch (error) {
+        dispatch(fetchParticipantsFailure(error.message));
+      }
+    }, 100);
   };
 };

@@ -1,4 +1,7 @@
-const ROOT_URL = '/api/v1/participants';
+// NOTE: API calls have been removed. Data is now loaded from static JSON files.
+// See data/participants.js and data/quotes.js
+
+import { participants } from '../data/participants';
 
 export const SET_PARTICIPANTS = 'SET_PARTICIPANTS';
 export const SET_NAV_SECONDARY = 'SET_NAV_SECONDARY';
@@ -15,21 +18,16 @@ export const FETCH_PARTICIPANTS_SUCCESS = 'FETCH_PARTICIPANTS_SUCCESS';
 export const FETCH_PARTICIPANTS_FAILURE = 'FETCH_PARTICIPANTS_FAILURE';
 
 // QUOTE TYPES
-// export const FETCH_QUOTES = 'FETCH_QUOTES';
 export * from './quoteActions';
 export * from './cityActions';
 export * from './participantActions';
 
 export function setParticipants() {
-  // switch this url to local route once in rails
-  return fetch(`${ROOT_URL}`)
-    .then((response) => response.json())
-    .then((data) => {
-      return {
-        type: SET_PARTICIPANTS,
-        payload: data,
-      };
-    });
+  // Use static data instead of API call
+  return Promise.resolve({
+    type: SET_PARTICIPANTS,
+    payload: participants,
+  });
 }
 
 export function selectDenizenTab(denizenTab) {
@@ -47,69 +45,45 @@ export function selectHopdTab(hopdTab) {
 }
 
 export function fetchParticipant(id) {
-  const promise = fetch(`${ROOT_URL}`).then((response) => response.json());
-
+  // Use static data instead of API call
+  const participant = participants.find(p => p.id === parseInt(id, 10));
   return {
     type: FETCH_PARTICIPANT,
-    payload: promise,
+    payload: Promise.resolve(participant || participants),
   };
 }
 
 export function fetchParticipants() {
-  const promise = fetch(`${ROOT_URL}`).then((response) => response.json());
+  // Use static data instead of API call
   return {
     type: FETCH_PARTICIPANTS,
-    payload: promise,
+    payload: Promise.resolve(participants),
   };
 }
 
-export function createParticipant(body, callback) {
-  const request = fetch(`${ROOT_URL}`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(body),
-  })
-    .then((response) => response.json())
-    .then(callback);
+// DEPRECATED: These CRUD operations are no longer functional since data is now static.
+// The dashboard features that use these will not work without a backend API.
 
+export function createParticipant(body, callback) {
+  console.warn('createParticipant: This action is deprecated. Data is now static.');
   return {
     type: PARTICIPANT_CREATED,
-    payload: request,
+    payload: Promise.reject(new Error('CRUD operations disabled - data is static')),
   };
 }
 
 export function updateParticipant(id, body, callback) {
-  const request = fetch(`${ROOT_URL}/${id}`, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(body),
-  })
-    .then((response) => response.json())
-    .then(callback);
-
+  console.warn('updateParticipant: This action is deprecated. Data is now static.');
   return {
     type: PARTICIPANT_UPDATED,
-    payload: request,
+    payload: Promise.reject(new Error('CRUD operations disabled - data is static')),
   };
 }
 
 export function deleteParticipant(id) {
-  const promise = fetch(`${ROOT_URL}/${id}`, {
-    method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-  });
-
+  console.warn('deleteParticipant: This action is deprecated. Data is now static.');
   return {
     type: DELETE_PARTICIPANT,
-    payload: promise,
+    payload: Promise.reject(new Error('CRUD operations disabled - data is static')),
   };
 }

@@ -1,4 +1,5 @@
-import axios from 'axios';
+// Static data - no database queries
+import { quotes as quotesData } from '../data/quotes';
 
 export const FETCH_QUOTES_REQUEST = 'FETCH_QUOTES_REQUEST';
 export const FETCH_QUOTES_SUCCESS = 'FETCH_QUOTES_SUCCESS';
@@ -39,17 +40,16 @@ function shuffleArray(array) {
 
 export const fetchQuotes = () => {
   return (dispatch) => {
-    dispatch(fetchQuotesRequest);
-    axios
-      .get('/api/v1/quotes')
-      .then((response) => {
-        const quotes = shuffleArray(response.data);
+    dispatch(fetchQuotesRequest());
+    // Use static data instead of API call
+    setTimeout(() => {
+      try {
+        const quotes = shuffleArray([...quotesData]);
         dispatch(fetchQuotesSuccess(quotes));
-      })
-      .catch((error) => {
-        const errorMsg = error.message;
-        dispatch(fetchQuotesFailure(errorMsg));
-      });
+      } catch (error) {
+        dispatch(fetchQuotesFailure(error.message));
+      }
+    }, 100);
   };
 };
 
