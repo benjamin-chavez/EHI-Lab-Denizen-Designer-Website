@@ -5,7 +5,7 @@ const HopdTimeline = () => {
   return (
     <div>
       <Row>
-        <Col sm={2} className='mr-2 '>
+        <Col sm={2} className='me-2 '>
           <ul className='timeline-years'>
             <li className='active'>2009</li>
             <li className=''>2010</li>

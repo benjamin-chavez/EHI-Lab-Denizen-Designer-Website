@@ -8,7 +8,7 @@ import navSecondaryReducer from './reducers/nav_secondary_reducer';
 import participantReducer from './reducers/participant_reducer';
 import quoteReducer from './reducers/quote_reducer';
 import participantsReducer1 from './reducers/participants1reducer';
-import cityReducer from './reducers/quote_reducer';
+import cityReducer from './reducers/city_reducer';
 import { reducer as formReducer } from 'redux-form';
 
 const identityReducer = (state = null) => state;

@@ -71,7 +71,7 @@ class DesignerDatabase extends Component {
               <Image src={DocumentIcon} alt='Document Icon' fluid />
               {'  '}
             </div>
-            <span className='pl-1 participate-btn-text'> Participate</span>
+            <span className='ps-1 participate-btn-text'> Participate</span>
           </a>
         </Row>
         <Row className='designer-city-banner my-2'>

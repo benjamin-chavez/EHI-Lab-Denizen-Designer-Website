@@ -56,7 +56,7 @@ class ReportDesktop extends Component {
           <Fade bottom duration={1500} delay={0} count={1}>
             <ul className='reportChapterList'>
               <li className='reportDownloadButton'>
-                <Button className='pl-0 reportDownloadBtn'>
+                <Button className='ps-0 reportDownloadBtn'>
                   <a className='' target='_blank' download href='#'>
                     Download
                   </a>

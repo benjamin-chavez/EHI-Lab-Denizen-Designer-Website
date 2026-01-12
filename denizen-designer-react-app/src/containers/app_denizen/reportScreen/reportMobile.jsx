@@ -70,7 +70,7 @@ class ReportMobile extends Component {
           <Fade bottom duration={1500} delay={0} count={1}>
             <ul className='reportChapterList'>
               <li className='reportDownloadButton'>
-                <Button className='pl-0 reportDownloadBtn'>
+                <Button className='ps-0 reportDownloadBtn'>
                   <Link className='' target='_blank' download>
                     Download
                   </Link>
@@ -78,15 +78,14 @@ class ReportMobile extends Component {
               </li>
             </ul>
             <Accordion>
-              <Accordion.Toggle
+              <Accordion.Button
                 className='accordianBtn'
                 ref={this.myRef}
-                eventKey='0'
               >
                 <i className='fa fa-chevron-down'> </i>
                 {''}
-                <span className='ml-1'>{activeSection}</span>
-              </Accordion.Toggle>
+                <span className='ms-1'>{activeSection}</span>
+              </Accordion.Button>
               <Accordion.Collapse eventKey='0'>
                 <ul className='reportChapterList'>
                   <li className='report-li'>

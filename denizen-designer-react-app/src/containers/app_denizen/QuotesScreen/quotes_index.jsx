@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import { Row, Col, Card, CardColumns, Modal, Button } from 'react-bootstrap';
+import { Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
 import { fetchQuotes } from '../../../actions';
@@ -83,7 +83,7 @@ function QuotesIndex({
       </div>
 
       <div className=''>
-        <CardColumns>
+        <div className="card-columns">
           {quoteData &&
             quoteData.quotes &&
             quoteData.quotes.map((quote) => {
@@ -115,7 +115,7 @@ function QuotesIndex({
                             {' '}
                             <Link
                               to={`/denizendesigner/interviews/${quote.participant_id}`}
-                              className='denizen-quote-author ml-0'
+                              className='denizen-quote-author ms-0'
                             >
                               <Card.Text>
                                 {quote.first_name}
@@ -131,7 +131,7 @@ function QuotesIndex({
                 </div>
               ) : null;
             })}
-        </CardColumns>
+        </div>
       </div>
     </div>
   );

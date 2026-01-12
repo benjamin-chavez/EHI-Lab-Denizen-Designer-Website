@@ -37,12 +37,12 @@ function participants_index({ fetchParticipants }) {
                       <Card.ImgOverlay className='cardImageOverlay'>
                         <Card.Body className='cardBodyInterview p-0'>
                           <Row className='card-row'>
-                            <Col md={12} className='pl-4 mb-0'>
+                            <Col md={12} className='ps-4 mb-0'>
                               <div className='participant-item-name'>
                                 {participant.first_name} {participant.last_name}
                               </div>
                             </Col>
-                            <Col md={12} className='pl-4 mb-2'>
+                            <Col md={12} className='ps-4 mb-2'>
                               <div className='participant-item-designer'>
                                 {participant.designer_type}
                               </div>

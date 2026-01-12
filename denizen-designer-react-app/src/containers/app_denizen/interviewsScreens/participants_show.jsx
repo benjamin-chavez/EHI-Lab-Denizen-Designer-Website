@@ -109,7 +109,7 @@ export class ParticipantsShow extends Component {
                 <Fade bottom duration={1500} delay={850} count={1}>
                   <ul className='socialLinksList p-0'>
                     {this.props.participant.instagram != '' ? (
-                      <li className='mr-3'>
+                      <li className='me-3'>
                         <a
                           className='socialLinks'
                           target='_blank'
@@ -121,7 +121,7 @@ export class ParticipantsShow extends Component {
                               alt='Instagram Icon'
                               fluid
                             />
-                            <span className='ml-1'>
+                            <span className='ms-1'>
                               {' '}
                               {this.props.participant.instagram}
                             </span>
@@ -132,7 +132,7 @@ export class ParticipantsShow extends Component {
                       ''
                     )}
                     {this.props.participant.twitter != '' ? (
-                      <li className='mr-3'>
+                      <li className='me-3'>
                         <a
                           className='socialLinks'
                           target='_blank'
@@ -144,7 +144,7 @@ export class ParticipantsShow extends Component {
                               alt='Twitter Icon'
                               fluid
                             />
-                            <span className='ml-1'>
+                            <span className='ms-1'>
                               {' '}
                               {this.props.participant.twitter}
                             </span>
@@ -162,7 +162,7 @@ export class ParticipantsShow extends Component {
                 <Fade bottom duration={1500} delay={0} count={1}>
                   <ul className='socialLinksList p-0'>
                     {this.props.participant.instagram != '' ? (
-                      <li className='mr-3'>
+                      <li className='me-3'>
                         <a
                           className='socialLinks'
                           target='_blank'
@@ -174,7 +174,7 @@ export class ParticipantsShow extends Component {
                               alt='Instagram Icon'
                               fluid
                             />
-                            <span className='ml-1'>
+                            <span className='ms-1'>
                               {' '}
                               {this.props.participant.instagram}
                             </span>
@@ -185,7 +185,7 @@ export class ParticipantsShow extends Component {
                       ''
                     )}
                     {this.props.participant.twitter != '' ? (
-                      <li className='mr-3'>
+                      <li className='me-3'>
                         <a
                           className='socialLinks'
                           target='_blank'
@@ -197,7 +197,7 @@ export class ParticipantsShow extends Component {
                               alt='Twitter Icon'
                               fluid
                             />
-                            <span className='ml-1'>
+                            <span className='ms-1'>
                               {' '}
                               {this.props.participant.twitter}
                             </span>

@@ -86,17 +86,14 @@ class Quotes extends Component {
               </Accordion.Collapse>
             </ul>
 
-            <Accordion.Toggle
-              className='quotes-expand-btn pl-0 mb-3'
-              as={Button}
+            <Button
+              className='quotes-expand-btn ps-0 mb-3'
               variant='link'
-              eventKey='1'
               onMouseDown={(e) => e.preventDefault()}
-              block
               onClick={changeFilterView}
             >
               {this.state.clicked ? 'Expand' : 'Collapse'}
-            </Accordion.Toggle>
+            </Button>
           </Accordion>
           <QuotesIndex quoteCategoryPath={quoteCategoryPath} />
         </div>

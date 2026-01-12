@@ -69,23 +69,28 @@ body,
   padding-right: 15px;
 }
 
-// Card columns spacing for quotes
+// Card columns spacing for quotes (Bootstrap 5 compatible - card-columns removed in BS5)
 .card-columns {
-  @include media-breakpoint-up(sm) {
+  column-count: 1;
+  column-gap: 1.25rem;
+
+  @media (min-width: 576px) {
     column-count: 2;
-    column-gap: 1.25rem;
   }
-  @include media-breakpoint-up(md) {
+  @media (min-width: 768px) {
     column-count: 3;
-    column-gap: 1.25rem;
   }
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     column-count: 3;
-    column-gap: 1.25rem;
   }
-  @include media-breakpoint-up(xl) {
+  @media (min-width: 1200px) {
     column-count: 4;
-    column-gap: 1.25rem;
+  }
+
+  .card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.25rem;
   }
 }
 

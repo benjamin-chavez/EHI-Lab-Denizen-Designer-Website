@@ -19,7 +19,7 @@ import {
 
 import { withRouter } from 'react-router';
 
-import Media from 'react-bootstrap/Media';
+// Media component removed in react-bootstrap 2.x (Bootstrap 5)
 import NavLogo from '../../assets/images/dd-logo-nav.svg';
 import NavLogoMobile from '../../assets/images/dd-logo-nav-mobile.svg';
 import Fade from 'react-reveal/Fade';
@@ -35,7 +35,7 @@ class NavPrimary extends Component {
           collapseOnSelect
           expand='lg'
         >
-          <Container fluid className='pl-0'>
+          <Container fluid className='ps-0'>
             <Fade bottom duration={1500} count={1}>
               <Row>
                 <Col md={12} className='pb-2'>
@@ -65,8 +65,8 @@ class NavPrimary extends Component {
                       alt='Denizen Designer Logo'
                     />
                   </Navbar.Brand>
-                  <Nav className='mr-auto rr'></Nav>
-                  <div className='pr-0'>
+                  <Nav className='me-auto rr'></Nav>
+                  <div className='pe-0'>
                     {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
                     {/* <Link
                 to='/historyofparticipatorydesign'
@@ -86,10 +86,10 @@ class NavPrimary extends Component {
                   </div>
                   {/* <Navbar.Toggle
               aria-controls='responsive-navbar-nav'
-              className='pr-0'
+              className='pe-0'
             /> */}
                   <Navbar.Collapse id='responsive-navbar-nav'>
-                    <Nav className='mr-auto'></Nav>
+                    <Nav className='me-auto'></Nav>
                     <Nav>
                       {/* UNCOMMENT THE FOLLOWING BLOCK OF CODE TO SHOW THE HOPD BUTTON */}
                       {/* <Link
@@ -149,7 +149,7 @@ export default NavPrimary;
 //           {/* </LinkContainer> */}
 //           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
 //           <Navbar.Collapse id='responsive-navbar-nav'>
-//             <Nav className='mr-auto'></Nav>
+//             <Nav className='me-auto'></Nav>
 //             <Nav>
 //               <LinkContainer to='/historyofparticipatorydesign/timeline'>
 //                 <Nav.Link className='nav-primary-text'>

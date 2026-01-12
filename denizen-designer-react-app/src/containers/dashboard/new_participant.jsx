@@ -15,7 +15,7 @@ export class NewParticipant extends Component {
 
   renderField(field) {
     return (
-      <div className='form-group'>
+      <div className='mb-3'>
         <label htmlFor=''>{field.label}</label>
         <input className='form-control' type={field.type} {...field.input} />
       </div>

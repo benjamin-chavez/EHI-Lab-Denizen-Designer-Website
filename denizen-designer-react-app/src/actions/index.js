@@ -1,4 +1,5 @@
-const ROOT_URL = '/api/v1/participants';
+// NOTE: API calls have been removed. Data is now loaded from static JSON files.
+// See src/data/participants.js and src/data/quotes.js
 
 export const SET_PARTICIPANTS = 'SET_PARTICIPANTS';
 export const SET_NAV_SECONDARY = 'SET_NAV_SECONDARY';
@@ -73,53 +74,29 @@ export function fetchParticipants() {
   };
 }
 
-export function createParticipant(body, callback) {
-  const request = fetch(`${ROOT_URL}`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(body),
-  })
-    .then((response) => response.json())
-    .then(callback);
+// DEPRECATED: These CRUD operations are no longer functional since data is now static.
+// The dashboard features that use these will not work without a backend API.
 
+export function createParticipant(body, callback) {
+  console.warn('createParticipant: This action is deprecated. Data is now static.');
   return {
     type: PARTICIPANT_CREATED,
-    payload: request,
+    payload: Promise.reject(new Error('CRUD operations disabled - data is static')),
   };
 }
 
 export function updateParticipant(id, body, callback) {
-  const request = fetch(`${ROOT_URL}/${id}`, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(body),
-  })
-    .then((response) => response.json())
-    .then(callback);
-
+  console.warn('updateParticipant: This action is deprecated. Data is now static.');
   return {
     type: PARTICIPANT_UPDATED,
-    payload: request,
+    payload: Promise.reject(new Error('CRUD operations disabled - data is static')),
   };
 }
 
 export function deleteParticipant(id) {
-  const promise = fetch(`${ROOT_URL}/${id}`, {
-    method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-  });
-
+  console.warn('deleteParticipant: This action is deprecated. Data is now static.');
   return {
     type: DELETE_PARTICIPANT,
-    payload: promise,
+    payload: Promise.reject(new Error('CRUD operations disabled - data is static')),
   };
 }
