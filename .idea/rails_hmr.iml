@@ -51,6 +51,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.5, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.6.5, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.4, rbenv: 2.6.3) [gem]" level="application" />
+    <orderEntry type="module" module-name="v2__ehi-lab-denizen-designer-website" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

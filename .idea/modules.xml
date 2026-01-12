@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/rails_hmr.iml" filepath="$PROJECT_DIR$/.idea/rails_hmr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../v2__ehi-lab-denizen-designer-website/.idea/v2__ehi-lab-denizen-designer-website.iml" filepath="$PROJECT_DIR$/../v2__ehi-lab-denizen-designer-website/.idea/v2__ehi-lab-denizen-designer-website.iml" />
     </modules>
   </component>
 </project>
