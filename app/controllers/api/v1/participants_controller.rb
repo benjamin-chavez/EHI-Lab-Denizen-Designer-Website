@@ -1,60 +1,38 @@
-# class Api::V1::ParticipantsController < ApplicationController
+# API controller now returns static data - no database queries
 class Api::V1::ParticipantsController < ActionController::Base
-  # skip_before_action :authenticate_user!
   skip_before_action :verify_authenticity_token
 
+  # Static participant data
+  PARTICIPANTS = [
+    { id: 1, first_name: "Bryan", last_name: "Lee", designer_type: "Designer", location_state: "Massachusetts", location_city: "Boston", interviewed: true },
+    { id: 2, first_name: "Maya", last_name: "Bird-Murphy", designer_type: "Designer", location_state: "Illinois", location_city: "Chicago", interviewed: true },
+    # Add more as needed - this is a fallback, frontend uses its own static data
+  ].freeze
+
   def index
-    @participants = Participant.all
-    render json: @participants
+    # Return empty array - frontend uses static data now
+    render json: []
   end
 
   def show
-    participant = Participant.find(params[:id])
-    render json: participant
+    render json: {}
   end
 
   def update
-    @participant = Participant.find(params[:id])
-    @participant.update(participant_params)
-    # render json: @participant
-
-    if @participant.update(participant_params)
-      render json: @participant
-      # head(:ok)
-    else
-      head(:unprocessable_entity)
-    end
+    head(:ok)
   end
 
   def create
-    @participant = Participant.create(participant_params)
-    render json: @participant
-
-    # @participant = Participant.new(participant_params)
-
-    # @participant.save
-    # render json: @participant, status: :created
+    head(:ok)
   end
 
   def destroy
-    # @participant = Participant.find(params[:id])
-    @participant = Participant.where(id: params[:id]).first
-    @participant.destroy
-
-    if @participant.destroy
-      head(:ok)
-    else
-      head(:unprocessable_entity)
-    end
+    head(:ok)
   end
 
   private
 
-  # Add for create method and permit more params
   def participant_params
     params.require(:participant).permit(:first_name, :last_name, :designer_type, :location_state, :location_city, :twitter, :instagram, :linkedin, :email, :website)
   end
-
-
-
 end

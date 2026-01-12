@@ -1,20 +1,13 @@
-class Api::V1::QuotesController < ApplicationController
-  
+# API controller now returns static data - no database queries
+class Api::V1::QuotesController < ActionController::Base
+  skip_before_action :verify_authenticity_token
+
   def index
-    @quotes = Quote.all
-    render json: @quotes
+    # Return empty array - frontend uses static data now
+    render json: []
   end
 
   def show
-    # participant = Participant.find(params[:id])
-    quote = Quote.find(params[:id])
-    render json: quote
+    render json: {}
   end
-
-  private
-
-  # Add for create method and permit more params
-  # def particpant_params
-  #   params.require(:participant).permit(:first_name, :last_name)
-  # en
 end

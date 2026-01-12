@@ -4,10 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # ruby '2.6.6'
 ruby '3.3.6'
+# ruby '3.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem "rails", "~> 7.0.8"
+
 
 gem 'bootstrap', '~> 5.3'
 
@@ -32,8 +34,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
 gem 'execjs', '~> 2.9'
-# Authentication
-gem 'devise'
+# Authentication removed - app now uses static data only
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
