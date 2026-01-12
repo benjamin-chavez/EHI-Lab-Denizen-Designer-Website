@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # ruby '2.6.6'
-ruby '3.3.6'
-# ruby '3.1.3'
+# ruby '3.3.6'
+ruby '3.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
@@ -13,8 +13,8 @@ gem "rails", "~> 7.0.8"
 
 gem 'bootstrap', '~> 5.3'
 
-# Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+# Database removed - app uses static JSON data only
+# gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -41,7 +41,7 @@ gem 'execjs', '~> 2.9'
 
 gem 'react-rails'
 
-gem 'array_enum'
+# gem 'array_enum' # Requires ActiveRecord
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
