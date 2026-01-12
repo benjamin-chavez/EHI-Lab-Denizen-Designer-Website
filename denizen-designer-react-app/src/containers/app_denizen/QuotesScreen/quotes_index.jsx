@@ -37,9 +37,7 @@ function QuotesIndex({
   const [ownerID, setOwnerID] = useState('');
 
 
-  return quoteData.loading ? (
-    <h2>Loading...</h2>
-  ) : quoteData.error ? (
+  return quoteData.loading ? null : quoteData.error ? (
     <h2>{quoteData.error}</h2>
   ) : (
     <div>

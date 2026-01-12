@@ -31,7 +31,7 @@ export class EditParticipant extends Component {
 
   render() {
     if (!this.props.participant) {
-      return <p>Loading...</p>;
+      return null;
     }
 
     return (

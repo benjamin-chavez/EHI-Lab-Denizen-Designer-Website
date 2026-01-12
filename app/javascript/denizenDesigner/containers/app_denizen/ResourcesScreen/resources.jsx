@@ -21,7 +21,7 @@ class Resources extends Component {
 
   render() {
     if (!this.props) {
-      return <p>Loading...</p>;
+      return null;
     }
 
     return (
